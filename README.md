@@ -344,8 +344,163 @@ Entre sus principales características destacan:
 
 #### 1.2.2. Lean UX Process
 ##### 1.2.2.1. Lean UX Problem Statements
+
+**Problem Statement: Optimización de la Gestión Operativa y Experiencia del Huésped**
+
+El servicio de Smart Stay busca transformar la gestión hotelera mediante una solución móvil integral que conecte al Staff Operativo con las necesidades en tiempo real de los huéspedes. A través de nuestras aplicaciones móviles, el personal puede administrar de manera eficiente las habitaciones y servicios, mientras que los huéspedes obtienen el control total de su estancia.
+
+Hemos identificado que la dependencia de procesos manuales y sistemas estáticos genera errores críticos en la disponibilidad de habitaciones, tiempos de respuesta lentos en servicios de limpieza y una falta de personalización inmediata. Actualmente, el Staff Operativo carece de una herramienta móvil centralizada que permita la automatización y el monitoreo en tiempo real de los recursos del hotel.
+
+**¿Cómo podríamos digitalizar y automatizar la interacción entre el Staff Operativo y los huéspedes a través de aplicaciones móviles para reducir errores, optimizar la coordinación interna y ofrecer una experiencia personalizada basada en datos en tiempo real?**
+
+**Proposed Solutions (Features)**
+
+Para abordar esta problemática, la solución se centrará en las siguientes funcionalidades integradas en las aplicaciones móviles:
+
+- **Gestión de Inventario de Habitaciones (Staff App):** Visualización centralizada del estado de cada habitación (disponible, ocupada, en mantenimiento) con actualizaciones instantáneas.
+- **Check-in y Check-out Digital:** Proceso automatizado para que el huésped registre su entrada y salida desde su dispositivo, sincronizándose con el sistema del hotel.
+- **Gestión de Housekeeping (Staff App):** Asignación y seguimiento de tareas de limpieza en tiempo real, con notificaciones al personal cuando una habitación requiere atención.
+- **Control de Incidencias de Mantenimiento:** Registro fotográfico y seguimiento de averías reportadas por el personal o el huésped, con flujo de resolución asignado.
+- **Dashboard Operativo para el Staff:** Panel de control dentro de la aplicación para que el Staff Operativo gestione recursos, personal y métricas de ocupación diaria.
+- **Centro de Servicios al Huésped (Guest App):** Interfaz para solicitar amenities, servicios de habitación o asistencia técnica de manera autónoma.
+- **Motor de Notificaciones Inteligentes:** Alertas en tiempo real para el personal sobre nuevas solicitudes y confirmaciones de servicio para los huéspedes.
+- **Control de Acceso y Seguridad:** Gestión de llaves digitales y roles de usuario (Staff Operativo vs. Huésped) con permisos diferenciados.
+
+**Business Outcomes**
+
+**Objetivo:** Incrementar la eficiencia operativa y reducir costos por procesos manuales en un periodo de 4 meses.
+
+**Key Results (KR):**
+
+- Reducir en un 20% el tiempo de respuesta del Staff Operativo ante solicitudes de servicios.
+- Disminuir en un 10% los errores en el registro de disponibilidad de habitaciones.
+- Lograr que el 85% de las tareas de limpieza se reporten y completen a través de la aplicación móvil.
+
+**User Outcomes**
+
+**Objetivo:** Proporcionar una experiencia de usuario fluida y autónoma que maximice la satisfacción del huésped y la productividad del staff.
+
+**Key Results (KR):**
+
+- Lograr que los huéspedes realicen solicitudes de servicios en menos de 45 segundos a través de la aplicación.
+- Obtener una calificación promedio de satisfacción de 4.5/5 estrellas en las tiendas de aplicaciones sobre la facilidad de uso.
+- Reducir en un 50% la necesidad de que el huésped acuda físicamente a recepción para consultas básicas.
+
 ##### 1.2.2.2. Lean UX Assumptions
+
+**Business Assumptions**
+
+1. **Creo que mis clientes necesitan:**
+  Una solución integral de gestión hotelera que automatice procesos mediante aplicaciones móviles, optimice el uso de recursos y proporcione una experiencia personalizada a los huéspedes a través de tecnología IoT.
+
+2. **Estas necesidades se pueden resolver con:**
+  Un ecosistema de aplicaciones móviles (Android y Flutter) integradas con servicios RESTful y dispositivos IoT que permitan el monitoreo en tiempo real de habitaciones y el control personalizado del ambiente.
+
+3. **Mis clientes iniciales son (o serán):**
+  Hoteles boutique y de lujo (3-5 estrellas) con una infraestructura de 50 a 200 habitaciones ubicados en zonas turísticas de Lima Metropolitana.
+
+4. **El valor #1 que un cliente quiere de mi servicio es:**
+  Optimización operativa mediante movilidad que reduzca costos y mejore la eficiencia del Staff Operativo, junto con una experiencia tecnológica diferenciada para los huéspedes.
+
+5. **El cliente también puede obtener estos beneficios adicionales:**
+  - Reducción del 20-30% en costos de energía y servicios públicos mediante monitoreo IoT.
+  - Visualización de datos operativos en tiempo real desde dispositivos móviles.
+  - Sincronización inmediata entre las tareas de limpieza y el estado de recepción.
+  - Reportes automatizados de ocupación y rendimiento de recursos.
+
+6. **Voy a adquirir la mayoría de mis clientes a través de:**
+  Marketing directo a gerentes hoteleros, presencia en ferias de hospitalidad (como la Feria Gastronómica y Hotelera de Perú) y alianzas estratégicas con proveedores de hardware IoT.
+
+7. **Haré dinero a través de:**
+  Un modelo de suscripción mensual basado en el número de habitaciones gestionadas (SaaS), sumado a una tarifa inicial por implementación de infraestructura IoT y configuración del servicio.
+
+8. **Mi competencia principal en el mercado será:**
+  Sistemas de gestión hotelera tradicionales (PMS) que carecen de movilidad nativa, y startups de hotel-tech que no integran el control de la habitación (IoT) en su oferta core.
+
+9. **Los venceremos debido a:**
+  Nuestra especialización en movilidad dual (Staff/Huésped), la integración nativa con sensores IoT para personalización del confort y una interfaz diseñada bajo principios de arquitectura de información móvil.
+
+10. **Mi mayor riesgo de producto es:**
+   La inestabilidad de la conectividad WiFi en infraestructuras antiguas y la resistencia del Staff Operativo a sustituir métodos manuales por flujos totalmente digitales en dispositivos móviles.
+
+11. **Resolveremos esto a través de:**
+   - Implementación de un programa piloto con soporte técnico presencial 24/7.
+   - Capacitación intensiva enfocada en la facilidad de uso de las aplicaciones móviles.
+   - Modelos de financiamiento para la actualización de la infraestructura de red del hotel.
+
+12. **¿Qué otras suposiciones tenemos que, si se prueba que es falso, causará que nuestro negocio/proyecto no funcione?**
+   - Los hoteles cuentan con una red estable para soportar el tráfico de datos de sensores IoT.
+   - El Staff Operativo puede portar dispositivos móviles durante toda su jornada laboral sin inconvenientes.
+   - Los huéspedes valoran la interacción digital por encima de la interacción humana tradicional en servicios de habitación.
+
+**User Assumptions**
+
+1. **¿Quién es el usuario?**
+  Los usuarios son el Staff Operativo (limpieza, mantenimiento y recepción) y los huéspedes. El staff busca agilizar la coordinación de tareas sin depender de bases fijas, mientras que los huéspedes buscan autonomía en el control de su estancia.
+
+2. **¿Dónde encaja nuestro producto en su trabajo o vida?**
+  Smart Stay se integra en el flujo diario de trabajo: el Staff Operativo recibe órdenes de servicio y actualiza estados de habitaciones en su aplicación Android mientras se desplaza por el hotel. El huésped usa la aplicación en Flutter para gestionar su confort y servicios desde su llegada hasta el check-out.
+
+3. **¿Qué problemas tiene nuestro producto y cómo se puede resolver?**
+  El problema principal es la fragmentación de la información y los tiempos muertos en la comunicación interna. Se resuelve mediante notificaciones automáticas entre aplicaciones y la visualización instantánea del estado de los recursos capturados por IoT.
+
+4. **¿Cuándo y cómo es usado nuestro producto?**
+  Es usado continuamente: el Staff Operativo lo utiliza al iniciar turnos de limpieza o al detectar averías; los huéspedes lo activan durante su estancia para ajustar temperatura, iluminación o solicitar servicios de habitación de forma digital.
+
+5. **¿Qué características son importantes?**
+  - Actualización en tiempo real de disponibilidad de habitaciones (Staff App).
+  - Gestión de tareas de limpieza y mantenimiento (Staff App).
+  - Control de dispositivos de habitación mediante IoT (Guest App).
+  - Solicitud digital de servicios y contacto rápido (Guest App).
+  - Roles y permisos de seguridad diferenciados.
+
+6. **¿Cómo debe verse nuestro producto y cómo debe comportarse?**
+  Debe verse profesional, moderno y ser extremadamente intuitivo (UX móvil). Debe comportarse de forma fluida, con tiempos de respuesta mínimos y ser accesible para usuarios con distintos niveles de alfabetización digital, siguiendo guías de Material Design.
+
 ##### 1.2.2.3. Lean UX Hypothesis Statements
+
+**Hypothesis 1: Mobile Check-in/Check-out Autonomy**
+
+**We believe that** implementing an automated digital check-in and check-out system within the Guest App (Flutter) will reduce the average time for these processes by 15%.
+
+**We will know we are successful when we see** that guests complete their registration in less than 3 minutes and 70% of them use the mobile system without needing assistance from the reception staff.
+
+**Hypothesis 2: Staff Operativo Efficiency and Adoption**
+
+**We believe that** providing an intuitive native Android application for the Staff Operativo (housekeeping and maintenance) will achieve at least 80% adoption of the system for their daily coordination tasks.
+
+**We will know this is true when we see** consistent daily use of the Staff App and a 10% reduction in manual operational costs after the first 4 months of implementation.
+
+**Hypothesis 3: Digital Service Satisfaction**
+
+**We believe that** offering a faster and clearer mobile management experience for both guests and the Staff Operativo will significantly improve overall service satisfaction.
+
+**We will know we are successful when we see** a satisfaction score (NPS) of at least 8/10 and that 70% of returning users interact with hotel services via the App without physical intervention.
+
+**Hypothesis 4: IoT-Driven Resource Optimization**
+
+**We believe that** integrating IoT devices for monitoring temperature and energy consumption, accessible via the Staff App, will optimize the hotel's resource usage.
+
+**We will know this is true when we see** a 20% reduction in utility expenses and the generation of detailed consumption reports through the RESTful API services.
+
+**Hypothesis 5: In-Room Experience Personalization**
+
+**We believe that** allowing guests to directly control their room's environment (lighting, temperature) and schedule services through the Guest App will increase the consumption of additional hotel services.
+
+**We will know we are successful when we see** a 25% increase in satisfaction scores regarding room comfort and a 15% increase in digital room service orders.
+
+**Hypothesis 6: Boutique Hotel Market Fit**
+
+**We believe that** offering a scalable subscription model focused on boutique hotels in Lima will generate valid interest for our pilot program.
+
+**We will know this is true when we see** the participation of at least 3 local hotels in our pilot phase with signed collaboration agreements for post-development implementation.
+
+**Hypothesis 7: Mobile-IoT Competitive Advantage**
+
+**We believe that** our complete integration between native mobile applications and IoT technology will provide a superior advantage over legacy hotel management systems.
+
+**We will know we are successful when we see** that pilot hotels report specific operational improvements and express a preference for our mobile solution over traditional manual management.
+
 ##### 1.2.2.4. Lean UX Canvas
 
 ### 1.3. Segmentos objetivo
