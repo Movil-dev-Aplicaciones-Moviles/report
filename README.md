@@ -255,11 +255,93 @@ En esta sección, cada miembro del equipo formula un plan que incluye al menos d
 ## Capítulo I: Presentación
 
 ### 1.1. Startup Profile
+
+
+
 #### 1.1.1. Descripción de la Startup
+
+La startup Smart Stay surge con el objetivo de transformar la gestión hotelera mediante el uso de tecnologías digitales e Internet of Things (IoT). Nuestra propuesta integra en una sola solución la administración de huéspedes, control de habitaciones y servicios mediante una arquitectura de microservicios y conectividad constante.
+
+A diferencia de soluciones tradicionales, Smart Stay se enfoca en una experiencia móvil robusta, ofreciendo una aplicación nativa en Android (Kotlin) para la gestión operativa del personal y una aplicación multiplataforma en Flutter para el autoservicio y confort del huésped. A través de estas interfaces, el hotel puede optimizar recursos y, al mismo tiempo, ofrecer experiencias personalizadas y automatizadas que elevan el estándar de hospitalidad.
+
+Entre sus principales características destacan:
+
+- Gestión de Acceso Digital: Registro automático y control de acceso a habitaciones desde dispositivos móviles.
+
+- Control de Entorno IoT: Monitoreo y ajuste de temperatura, iluminación y consumo energético de forma remota.
+
+- Servicios Personalizados: Integración de room service y programación de limpieza con notificaciones en tiempo real.
+
+- Optimización Operativa: Tableros de estado para identificación inmediata de habitaciones libres o en mantenimiento.
+
 #### 1.1.2. Perfiles de integrantes del equipo
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Integrante</th>
+      <th>Carrera</th>
+      <th>Perfil Académico y Profesional</th>
+      <th>Fotografía</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U202518934</td>
+      <td>Herrera Albites, Marcoandres</td>
+      <td>Ing. de Software</td>
+      <td>Estudiante enfocado en la innovación tecnológica y la investigación técnica. Posee interés en cómo el Internet de las Cosas (IoT) puede mejorar la experiencia del usuario en el sector hotelero, aportando una visión práctica al desarrollo de soluciones de software eficientes.</td>
+      <td>Pendiente</td>
+    </tr>
+    <tr>
+      <td>U20231D343</td>
+      <td>Montes Ramos, Henry Jaredt</td>
+      <td>Ing. de Software</td>
+      <td>Interesado en el desarrollo de la lógica de negocio y la arquitectura de software. Cuenta con conocimientos en programación y gestión de datos, contribuyendo a la estabilidad y escalabilidad del ecosistema de Smart Stay mediante el diseño de servicios robustos.</td>
+      <td>Pendiente</td>
+    </tr>
+    <tr>
+      <td>U20211D760</td>
+      <td>Paico, July</td>
+      <td>Ing. de Software</td>
+      <td>Especialista en el diseño de interfaces y experiencia de usuario (UX/UI). Su objetivo es garantizar que tanto la aplicación en Flutter como la de Android nativo sean accesibles, intuitivas y cumplan con los estándares de diseño inclusivo para todos los segmentos de huéspedes.</td>
+      <td>Pendiente</td>
+    </tr>
+    <tr>
+      <td>U202210787</td>
+      <td>Ramirez Escalante, Carlo Patricio</td>
+      <td>Ing. de Software</td>
+      <td>Estudiante con orientación al desarrollo móvil y control de calidad. Posee habilidades técnicas en lenguajes de programación modernos y está interesado en la implementación de funcionalidades de alto rendimiento que aseguren la eficiencia operativa del personal del hotel.</td>
+      <td>Pendiente</td>
+    </tr>
+    <tr>
+      <td>U20221E617</td>
+      <td>Verona Flores, Ítalo Sebastián</td>
+      <td>Ing. de Software</td>
+      <td>Soy un estudiante con experiencia en programación y diseño de bases de datos. Tengo capacidad para resolver problemas técnicos complejos y  dominio de herramientas de desarrollo que facilitan la integración de servicios RESTful </td>
+      <td>Pendiente</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 1.2. Solution Profile
 #### 1.2.1. Antecedentes y problemática
+
+**Who? (¿Quiénes?)** El problema afecta a los administradores y personal operativo (limpieza, mantenimiento, recepción), quienes dependen de procesos manuales y comunicación fragmentada. Asimismo, impacta a los huéspedes modernos que demandan autonomía y una experiencia personalizada mediante el uso de sus propios dispositivos móviles.
+
+**What? (¿Qué?)** El problema central es la nula movilidad y falta de integración digital en la gestión hotelera integral. Esto se traduce en una dependencia de terminales fijas, control ineficiente de habitaciones por falta de datos en tiempo real (IoT), y una experiencia del huésped desconectada de los servicios del hotel.
+
+**Where? (¿Dónde?)** La problemática es omnipresente en el ecosistema hotelero: desde la recepción y áreas administrativas hasta la interacción crítica dentro de las habitaciones y la coordinación en áreas de servicio y mantenimiento.
+
+**When? (¿Cuándo?)** Ocurre de manera continua las 24 horas. La ineficiencia se agudiza en momentos críticos como los procesos de check-in/check-out, horas pico de solicitudes de servicios, y temporadas de alta ocupación donde la respuesta inmediata es vital para la satisfacción.
+
+**Why? (¿Por qué?)** Se debe a la dependencia de sistemas tradicionales (Legacy Systems) que no permiten la interoperabilidad. Existe una carencia de una arquitectura de software moderna que integre servicios RESTful con tecnología IoT, impidiendo el monitoreo de recursos y la personalización del confort del huésped de forma remota y automatizada.
+
+**How? (¿Cómo?)** El personal se ve obligado a utilizar bitácoras físicas o sistemas estáticos para verificar la disponibilidad y coordinar servicios. Los huéspedes, por su parte, deben recurrir a la interacción telefónica o presencial para ajustes básicos (temperatura, iluminación, pedidos), incrementando la carga operativa del personal y limitando su propia autonomía.
+
+**How Much? (¿Cuánto?)** La ineficiencia genera una pérdida estimada del 15-20% en la productividad operativa y un aumento innecesario en los costos de suministros y energía por falta de monitoreo. Además, la baja calificación en la experiencia de usuario (User Experience) se traduce en una disminución de la lealtad del cliente y una pérdida de competitividad frente a hoteles tecnológicamente avanzados.
+
 #### 1.2.2. Lean UX Process
 ##### 1.2.2.1. Lean UX Problem Statements
 ##### 1.2.2.2. Lean UX Assumptions
