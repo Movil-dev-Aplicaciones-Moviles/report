@@ -328,17 +328,17 @@ Entre sus principales características destacan:
 ### 1.2. Solution Profile
 #### 1.2.1. Antecedentes y problemática
 
-**Who? (¿Quiénes?)** El problema afecta a los administradores y personal operativo (limpieza, mantenimiento, recepción), quienes dependen de procesos manuales y comunicación fragmentada. Asimismo, impacta a los huéspedes modernos que demandan autonomía y una experiencia personalizada mediante el uso de sus propios dispositivos móviles.
+**Who? (¿Quiénes?)** El problema afecta al Staff Operativo (limpieza, administración, mantenimiento y recepción) y a los huéspedes que buscan autonomía. El Staff Operativo depende de procesos manuales que fragmentan la comunicación interna. Los huéspedes, por su parte, enfrentan una experiencia desconectada que limita su control sobre el entorno de la habitación y la interacción con los servicios del hotel.
 
 **What? (¿Qué?)** El problema central es la nula movilidad y falta de integración digital en la gestión hotelera integral. Esto se traduce en una dependencia de terminales fijas, control ineficiente de habitaciones por falta de datos en tiempo real (IoT), y una experiencia del huésped desconectada de los servicios del hotel.
 
-**Where? (¿Dónde?)** La problemática es omnipresente en el ecosistema hotelero: desde la recepción y áreas administrativas hasta la interacción crítica dentro de las habitaciones y la coordinación en áreas de servicio y mantenimiento.
+**Where? (¿Dónde?)** Ocurre en hoteles de tamaño mediano a grande, donde la complejidad operativa y el volumen de huéspedes hacen que los procesos manuales sean ineficientes. La falta de movilidad afecta tanto a las áreas de servicio como a las habitaciones, generando cuellos de botella en la gestión diaria.
 
 **When? (¿Cuándo?)** Ocurre de manera continua las 24 horas. La ineficiencia se agudiza en momentos críticos como los procesos de check-in/check-out, horas pico de solicitudes de servicios, y temporadas de alta ocupación donde la respuesta inmediata es vital para la satisfacción.
 
 **Why? (¿Por qué?)** Se debe a la dependencia de sistemas tradicionales (Legacy Systems) que no permiten la interoperabilidad. Existe una carencia de una arquitectura de software moderna que integre servicios RESTful con tecnología IoT, impidiendo el monitoreo de recursos y la personalización del confort del huésped de forma remota y automatizada.
 
-**How? (¿Cómo?)** El personal se ve obligado a utilizar bitácoras físicas o sistemas estáticos para verificar la disponibilidad y coordinar servicios. Los huéspedes, por su parte, deben recurrir a la interacción telefónica o presencial para ajustes básicos (temperatura, iluminación, pedidos), incrementando la carga operativa del personal y limitando su propia autonomía.
+**How? (¿Cómo?)** La falta de una solución móvil integrada genera ineficiencias operativas, pérdida de productividad y una experiencia del huésped fragmentada. El personal del hotel no puede acceder a información en tiempo real ni gestionar las habitaciones de manera eficiente, mientras que los huéspedes no pueden controlar su entorno ni interactuar con los servicios del hotel desde sus dispositivos móviles.
 
 **How Much? (¿Cuánto?)** La ineficiencia genera una pérdida estimada del 15-20% en la productividad operativa y un aumento innecesario en los costos de suministros y energía por falta de monitoreo. Además, la baja calificación en la experiencia de usuario (User Experience) se traduce en una disminución de la lealtad del cliente y una pérdida de competitividad frente a hoteles tecnológicamente avanzados.
 
