@@ -20,13 +20,13 @@
 
 ### Relación de Integrantes
 
-| Código | Apellidos y Nombres |
-| :---: | :--- |
-| U202518934 | Herrera Albites, Marcoandres |
-| U20231D343 | Montes Ramos, Henry Jaredt |
-| U20211D760 | Paico, July |
+|   Código   | Apellidos y Nombres               |
+| :--------: | :-------------------------------- |
+| U202518934 | Herrera Albites, Marcoandres      |
+| U20231D343 | Montes Ramos, Henry Jaredt        |
+| U20211D760 | Paico, July                       |
 | U202210787 | Ramirez Escalante, Carlo Patricio |
-| U20221E617 | Verona Flores, Ítalo Sebastián |
+| U20221E617 | Verona Flores, Ítalo Sebastián    |
 
 <strong> Abril, 2026</strong><br>
 
@@ -44,19 +44,17 @@ Esta sección inicia en una página nueva e incluye un cuadro con la siguiente e
 |   1.0   | 14/04/2026 | Italo Sebastian Verona Flores (Líder) | Estructuración inicial del proyecto y coordinación del equipo |
 |   1.1   | 14/04/2026 | Italo Sebastian Verona Flores         | Creación del documento inicial del Informe de Trabajo Final   |
 
-
 <div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
 - **URL del repositorio para el Project Report:** https://github.com/Movil-dev-Aplicaciones-Moviles
 
-
 El desarrollo del presente informe de trabajo final se realizó de manera colaborativa utilizando las herramientas de control de versiones de GitHub. A continuación se presenta la evidencia de la participación y contribuciones de cada miembro del equipo:
 
 El trabajo en el repositorio del informe demuestra la participación activa de todos los miembros del equipo por cada entrega.
 
-*Primer Avance*
+_Primer Avance_
 
 En el Primer Avance el objetivo principal fue la construcción completa del informe base del proyecto. El equipo trabajó en:
 
@@ -218,10 +216,10 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
-| Criterio específico | Acciones realizadas | Conclusiones |
-| :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Verona Flores, Ítalo Sebastián AV1:** <ul><li>Investigué y apliqué conceptos avanzados de Domain-Driven Design (DDD) tanto estratégico como táctico para la estructuración del proyecto.</li></ul> <br> **Carlo Patricio Ramirez Escalante (U202210787):** <br><br> **Henry Jaredt Montes Ramos (U20231D343):** <br><br> **Marcoandres Herrera Albites (U202518934):** <br><br> **July Paico (U20211D760):** | **Grupo AV1:** La adopción de **Domain-Driven Design (DDD)** para una solución móvil permitió al equipo trascender el desarrollo convencional, logrando desacoplar la lógica de negocio de la complejidad técnica de las plataformas nativas y multiplataforma. Esta capacidad de investigación autónoma sobre patrones arquitectónicos avanzados asegura que el producto sea escalable y profesional, sentando una base sólida para la integración de servicios RESTful y el almacenamiento local exigido en el proyecto. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Verona Flores, Ítalo Sebastián AV1:** <ul><li>Participé activamente en la búsqueda de soluciones a errores de compatibilidad durante la integración de capas, utilizando documentación técnica oficial y foros especializados como estrategia de aprendizaje continuo.</li></ul> <br> **Carlo Patricio Ramirez Escalante (U202210787):** <br><br> **Henry Jaredt Montes Ramos (U20231D343):** <br><br> **Marcoandres Herrera Albites (U202518934):** <br><br> **July Paico (U20211D760):** | **Grupo AV1:** El proceso de desarrollo evidenció que el ecosistema de aplicaciones móviles demanda una actualización constante debido a la rápida evolución de sus frameworks y herramientas. El equipo concluye que la superación de retos técnicos mediante la consulta de documentación oficial y la investigación autónoma es la única vía para evitar la obsolescencia y garantizar la calidad en el ciclo de vida de una solución de software profesional. |
+| Criterio específico                                                                                                                         | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Verona Flores, Ítalo Sebastián AV1:** <ul><li>Investigué y apliqué conceptos avanzados de Domain-Driven Design (DDD) tanto estratégico como táctico para la estructuración del proyecto.</li></ul> <br> **Carlo Patricio Ramirez Escalante (U202210787):** <br><br> **Henry Jaredt Montes Ramos (U20231D343):** <br><br> **Marcoandres Herrera Albites (U202518934):** <br><br> **July Paico (U20211D760):**                                                                               | **Grupo AV1:** La adopción de **Domain-Driven Design (DDD)** para una solución móvil permitió al equipo trascender el desarrollo convencional, logrando desacoplar la lógica de negocio de la complejidad técnica de las plataformas nativas y multiplataforma. Esta capacidad de investigación autónoma sobre patrones arquitectónicos avanzados asegura que el producto sea escalable y profesional, sentando una base sólida para la integración de servicios RESTful y el almacenamiento local exigido en el proyecto. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.**  | **Verona Flores, Ítalo Sebastián AV1:** <ul><li>Participé activamente en la búsqueda de soluciones a errores de compatibilidad durante la integración de capas, utilizando documentación técnica oficial y foros especializados como estrategia de aprendizaje continuo.</li></ul> <br> **Carlo Patricio Ramirez Escalante (U202210787):** <br><br> **Henry Jaredt Montes Ramos (U20231D343):** <br><br> **Marcoandres Herrera Albites (U202518934):** <br><br> **July Paico (U20211D760):** | **Grupo AV1:** El proceso de desarrollo evidenció que el ecosistema de aplicaciones móviles demanda una actualización constante debido a la rápida evolución de sus frameworks y herramientas. El equipo concluye que la superación de retos técnicos mediante la consulta de documentación oficial y la investigación autónoma es la única vía para evitar la obsolescencia y garantizar la calidad en el ciclo de vida de una solución de software profesional.                                                          |
 
 <div style="page-break-after: always;"></div>
 
@@ -230,33 +228,35 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 En esta sección, cada miembro del equipo formula un plan que incluye al menos dos objetivos SMART centrados en su desarrollo profesional tras finalizar la carrera.
 
 ### 1. Italo Sebastian Verona Flores
-* **Objetivo 1:** Obtener la certificación **AWS Certified Solutions Architect – Associate** en un plazo de **18 meses** tras la graduación, y escalar hacia la certificación **Professional** en un máximo de **3 años**, con el fin de consolidar mi perfil como **Senior Software Architect**. Esto me permitirá liderar el diseño de infraestructuras escalables para mi propia startup o consultora, asegurando una retribución mensual superior a los **15,000 soles** mediante la validación técnica de mis competencias en el mercado internacional.
-* **Objetivo 2:** Fundar y consolidar una Startup tecnológica o establecer una Consultoría de Infraestructura Independiente que sea operativamente remota en un plazo de **5 a 6 años**. El propósito es alcanzar la libertad financiera y técnica necesaria para trasladar mi residencia a un país con altos estándares de seguridad y clima cálido manteniendo un flujo de proyectos que sustente mi desarrollo profesional continuo y mi posicionamiento como referente en arquitectura de software.
+
+- **Objetivo 1:** Obtener la certificación **AWS Certified Solutions Architect – Associate** en un plazo de **18 meses** tras la graduación, y escalar hacia la certificación **Professional** en un máximo de **3 años**, con el fin de consolidar mi perfil como **Senior Software Architect**. Esto me permitirá liderar el diseño de infraestructuras escalables para mi propia startup o consultora, asegurando una retribución mensual superior a los **15,000 soles** mediante la validación técnica de mis competencias en el mercado internacional.
+- **Objetivo 2:** Fundar y consolidar una Startup tecnológica o establecer una Consultoría de Infraestructura Independiente que sea operativamente remota en un plazo de **5 a 6 años**. El propósito es alcanzar la libertad financiera y técnica necesaria para trasladar mi residencia a un país con altos estándares de seguridad y clima cálido manteniendo un flujo de proyectos que sustente mi desarrollo profesional continuo y mi posicionamiento como referente en arquitectura de software.
 
 ### 2. Carlo Patricio Ramirez Escalante
-* **Objetivo 1:** [Redactar aquí]
-* **Objetivo 2:** [Redactar aquí]
+
+- **Objetivo 1:** [Redactar aquí]
+- **Objetivo 2:** [Redactar aquí]
 
 ### 3. Henry Jaredt Montes Ramos
-* **Objetivo 1:** [Redactar aquí]
-* **Objetivo 2:** [Redactar aquí]
+
+- **Objetivo 1:** [Redactar aquí]
+- **Objetivo 2:** [Redactar aquí]
 
 ### 4. Marcoandres Herrera Albites
-* **Objetivo 1:** [Redactar aquí]
-* **Objetivo 2:** [Redactar aquí]
+
+- **Objetivo 1:** [Redactar aquí]
+- **Objetivo 2:** [Redactar aquí]
 
 ### 5. July Paico
-* **Objetivo 1:** [Redactar aquí]
-* **Objetivo 2:** [Redactar aquí]
+
+- **Objetivo 1:** [Redactar aquí]
+- **Objetivo 2:** [Redactar aquí]
 
 <div style="page-break-after: always;"></div>
-
 
 ## Capítulo I: Presentación
 
 ### 1.1. Startup Profile
-
-
 
 #### 1.1.1. Descripción de la Startup
 
@@ -326,6 +326,7 @@ Entre sus principales características destacan:
 </table>
 
 ### 1.2. Solution Profile
+
 #### 1.2.1. Antecedentes y problemática
 
 **Who? (¿Quiénes?)** El problema afecta al Staff Operativo (limpieza, administración, mantenimiento y recepción) y a los huéspedes que buscan autonomía. El Staff Operativo depende de procesos manuales que fragmentan la comunicación interna. Los huéspedes, por su parte, enfrentan una experiencia desconectada que limita su control sobre el entorno de la habitación y la interacción con los servicios del hotel.
@@ -343,6 +344,7 @@ Entre sus principales características destacan:
 **How Much? (¿Cuánto?)** La ineficiencia genera una pérdida estimada del 15-20% en la productividad operativa y un aumento innecesario en los costos de suministros y energía por falta de monitoreo. Además, la baja calificación en la experiencia de usuario (User Experience) se traduce en una disminución de la lealtad del cliente y una pérdida de competitividad frente a hoteles tecnológicamente avanzados.
 
 #### 1.2.2. Lean UX Process
+
 ##### 1.2.2.1. Lean UX Problem Statements
 
 **Problem Statement: Optimización de la Gestión Operativa y Experiencia del Huésped**
@@ -391,71 +393,75 @@ Para abordar esta problemática, la solución se centrará en las siguientes fun
 **Business Assumptions**
 
 1. **Creo que mis clientes necesitan:**
-  Una solución integral de gestión hotelera que automatice procesos mediante aplicaciones móviles, optimice el uso de recursos y proporcione una experiencia personalizada a los huéspedes a través de tecnología IoT.
+   Una solución integral de gestión hotelera que automatice procesos mediante aplicaciones móviles, optimice el uso de recursos y proporcione una experiencia personalizada a los huéspedes a través de tecnología IoT.
 
 2. **Estas necesidades se pueden resolver con:**
-  Un ecosistema de aplicaciones móviles (Android y Flutter) integradas con servicios RESTful y dispositivos IoT que permitan el monitoreo en tiempo real de habitaciones y el control personalizado del ambiente.
+   Un ecosistema de aplicaciones móviles (Android y Flutter) integradas con servicios RESTful y dispositivos IoT que permitan el monitoreo en tiempo real de habitaciones y el control personalizado del ambiente.
 
 3. **Mis clientes iniciales son (o serán):**
-  Hoteles boutique y de lujo (3-5 estrellas) con una infraestructura de 50 a 200 habitaciones ubicados en zonas turísticas de Lima Metropolitana.
+   Hoteles boutique y de lujo (3-5 estrellas) con una infraestructura de 50 a 200 habitaciones ubicados en zonas turísticas de Lima Metropolitana.
 
 4. **El valor #1 que un cliente quiere de mi servicio es:**
-  Optimización operativa mediante movilidad que reduzca costos y mejore la eficiencia del Staff Operativo, junto con una experiencia tecnológica diferenciada para los huéspedes.
+   Optimización operativa mediante movilidad que reduzca costos y mejore la eficiencia del Staff Operativo, junto con una experiencia tecnológica diferenciada para los huéspedes.
 
 5. **El cliente también puede obtener estos beneficios adicionales:**
-  - Reducción del 20-30% en costos de energía y servicios públicos mediante monitoreo IoT.
-  - Visualización de datos operativos en tiempo real desde dispositivos móviles.
-  - Sincronización inmediata entre las tareas de limpieza y el estado de recepción.
-  - Reportes automatizados de ocupación y rendimiento de recursos.
+
+- Reducción del 20-30% en costos de energía y servicios públicos mediante monitoreo IoT.
+- Visualización de datos operativos en tiempo real desde dispositivos móviles.
+- Sincronización inmediata entre las tareas de limpieza y el estado de recepción.
+- Reportes automatizados de ocupación y rendimiento de recursos.
 
 6. **Voy a adquirir la mayoría de mis clientes a través de:**
-  Marketing directo a gerentes hoteleros, presencia en ferias de hospitalidad (como la Feria Gastronómica y Hotelera de Perú) y alianzas estratégicas con proveedores de hardware IoT.
+   Marketing directo a gerentes hoteleros, presencia en ferias de hospitalidad (como la Feria Gastronómica y Hotelera de Perú) y alianzas estratégicas con proveedores de hardware IoT.
 
 7. **Haré dinero a través de:**
-  Un modelo de suscripción mensual basado en el número de habitaciones gestionadas (SaaS), sumado a una tarifa inicial por implementación de infraestructura IoT y configuración del servicio.
+   Un modelo de suscripción mensual basado en el número de habitaciones gestionadas (SaaS), sumado a una tarifa inicial por implementación de infraestructura IoT y configuración del servicio.
 
 8. **Mi competencia principal en el mercado será:**
-  Sistemas de gestión hotelera tradicionales (PMS) que carecen de movilidad nativa, y startups de hotel-tech que no integran el control de la habitación (IoT) en su oferta core.
+   Sistemas de gestión hotelera tradicionales (PMS) que carecen de movilidad nativa, y startups de hotel-tech que no integran el control de la habitación (IoT) en su oferta core.
 
 9. **Los venceremos debido a:**
-  Nuestra especialización en movilidad dual (Staff/Huésped), la integración nativa con sensores IoT para personalización del confort y una interfaz diseñada bajo principios de arquitectura de información móvil.
+   Nuestra especialización en movilidad dual (Staff/Huésped), la integración nativa con sensores IoT para personalización del confort y una interfaz diseñada bajo principios de arquitectura de información móvil.
 
 10. **Mi mayor riesgo de producto es:**
-   La inestabilidad de la conectividad WiFi en infraestructuras antiguas y la resistencia del Staff Operativo a sustituir métodos manuales por flujos totalmente digitales en dispositivos móviles.
+    La inestabilidad de la conectividad WiFi en infraestructuras antiguas y la resistencia del Staff Operativo a sustituir métodos manuales por flujos totalmente digitales en dispositivos móviles.
 
 11. **Resolveremos esto a través de:**
-   - Implementación de un programa piloto con soporte técnico presencial 24/7.
-   - Capacitación intensiva enfocada en la facilidad de uso de las aplicaciones móviles.
-   - Modelos de financiamiento para la actualización de la infraestructura de red del hotel.
+
+- Implementación de un programa piloto con soporte técnico presencial 24/7.
+- Capacitación intensiva enfocada en la facilidad de uso de las aplicaciones móviles.
+- Modelos de financiamiento para la actualización de la infraestructura de red del hotel.
 
 12. **¿Qué otras suposiciones tenemos que, si se prueba que es falso, causará que nuestro negocio/proyecto no funcione?**
-   - Los hoteles cuentan con una red estable para soportar el tráfico de datos de sensores IoT.
-   - El Staff Operativo puede portar dispositivos móviles durante toda su jornada laboral sin inconvenientes.
-   - Los huéspedes valoran la interacción digital por encima de la interacción humana tradicional en servicios de habitación.
+
+- Los hoteles cuentan con una red estable para soportar el tráfico de datos de sensores IoT.
+- El Staff Operativo puede portar dispositivos móviles durante toda su jornada laboral sin inconvenientes.
+- Los huéspedes valoran la interacción digital por encima de la interacción humana tradicional en servicios de habitación.
 
 **User Assumptions**
 
 1. **¿Quién es el usuario?**
-  Los usuarios son el Staff Operativo (limpieza, mantenimiento y recepción) y los huéspedes. El staff busca agilizar la coordinación de tareas sin depender de bases fijas, mientras que los huéspedes buscan autonomía en el control de su estancia.
+   Los usuarios son el Staff Operativo (limpieza, mantenimiento y recepción) y los huéspedes. El staff busca agilizar la coordinación de tareas sin depender de bases fijas, mientras que los huéspedes buscan autonomía en el control de su estancia.
 
 2. **¿Dónde encaja nuestro producto en su trabajo o vida?**
-  Smart Stay se integra en el flujo diario de trabajo: el Staff Operativo recibe órdenes de servicio y actualiza estados de habitaciones en su aplicación Android mientras se desplaza por el hotel. El huésped usa la aplicación en Flutter para gestionar su confort y servicios desde su llegada hasta el check-out.
+   Smart Stay se integra en el flujo diario de trabajo: el Staff Operativo recibe órdenes de servicio y actualiza estados de habitaciones en su aplicación Android mientras se desplaza por el hotel. El huésped usa la aplicación en Flutter para gestionar su confort y servicios desde su llegada hasta el check-out.
 
 3. **¿Qué problemas tiene nuestro producto y cómo se puede resolver?**
-  El problema principal es la fragmentación de la información y los tiempos muertos en la comunicación interna. Se resuelve mediante notificaciones automáticas entre aplicaciones y la visualización instantánea del estado de los recursos capturados por IoT.
+   El problema principal es la fragmentación de la información y los tiempos muertos en la comunicación interna. Se resuelve mediante notificaciones automáticas entre aplicaciones y la visualización instantánea del estado de los recursos capturados por IoT.
 
 4. **¿Cuándo y cómo es usado nuestro producto?**
-  Es usado continuamente: el Staff Operativo lo utiliza al iniciar turnos de limpieza o al detectar averías; los huéspedes lo activan durante su estancia para ajustar temperatura, iluminación o solicitar servicios de habitación de forma digital.
+   Es usado continuamente: el Staff Operativo lo utiliza al iniciar turnos de limpieza o al detectar averías; los huéspedes lo activan durante su estancia para ajustar temperatura, iluminación o solicitar servicios de habitación de forma digital.
 
 5. **¿Qué características son importantes?**
-  - Actualización en tiempo real de disponibilidad de habitaciones (Staff App).
-  - Gestión de tareas de limpieza y mantenimiento (Staff App).
-  - Control de dispositivos de habitación mediante IoT (Guest App).
-  - Solicitud digital de servicios y contacto rápido (Guest App).
-  - Roles y permisos de seguridad diferenciados.
+
+- Actualización en tiempo real de disponibilidad de habitaciones (Staff App).
+- Gestión de tareas de limpieza y mantenimiento (Staff App).
+- Control de dispositivos de habitación mediante IoT (Guest App).
+- Solicitud digital de servicios y contacto rápido (Guest App).
+- Roles y permisos de seguridad diferenciados.
 
 6. **¿Cómo debe verse nuestro producto y cómo debe comportarse?**
-  Debe verse profesional, moderno y ser extremadamente intuitivo (UX móvil). Debe comportarse de forma fluida, con tiempos de respuesta mínimos y ser accesible para usuarios con distintos niveles de alfabetización digital, siguiendo guías de Material Design.
+   Debe verse profesional, moderno y ser extremadamente intuitivo (UX móvil). Debe comportarse de forma fluida, con tiempos de respuesta mínimos y ser accesible para usuarios con distintos niveles de alfabetización digital, siguiendo guías de Material Design.
 
 ##### 1.2.2.3. Lean UX Hypothesis Statements
 
@@ -514,19 +520,22 @@ Esta sección describe los segmentos asociados al dominio del problema de gesti�
 Este segmento comprende al personal encargado de la ejecución y supervisión de las operaciones diarias del hotel, quienes utilizarán la aplicación nativa en **Android** para la gestión de tareas y monitoreo de recursos.
 
 **Perfil Demográfico y Profesional:**
-* **Roles Incluidos:** Personal de recepción, supervisores de limpieza (housekeeping), técnicos de mantenimiento y coordinadores de servicios.
-* **Edad:** Entre 25 y 45 años.
-* **Nivel Educativo:** Técnico o universitario en turismo, hotelería, mantenimiento industrial o administración.
-* **Habilidades Tecnológicas:** Usuarios habituales de smartphones con sistema operativo Android; familiarizados con herramientas de mensajería y gestión de tareas básicas.
+
+- **Roles Incluidos:** Personal de recepción, supervisores de limpieza (housekeeping), técnicos de mantenimiento y coordinadores de servicios.
+- **Edad:** Entre 25 y 45 años.
+- **Nivel Educativo:** Técnico o universitario en turismo, hotelería, mantenimiento industrial o administración.
+- **Habilidades Tecnológicas:** Usuarios habituales de smartphones con sistema operativo Android; familiarizados con herramientas de mensajería y gestión de tareas básicas.
 
 **Desafíos Operativos:**
-* **Dependencia Manual:** Uso de bitácoras físicas o comunicación verbal para reportar estados de habitaciones, lo que genera errores de disponibilidad.
-* **Fragmentación de la Información:** Falta de un sistema centralizado para conocer en tiempo real si una habitación requiere mantenimiento o limpieza inmediata.
-* **Carga Administrativa:** Tiempo excesivo dedicado a la coordinación entre áreas, reduciendo la eficiencia en la atención directa al huésped.
+
+- **Dependencia Manual:** Uso de bitácoras físicas o comunicación verbal para reportar estados de habitaciones, lo que genera errores de disponibilidad.
+- **Fragmentación de la Información:** Falta de un sistema centralizado para conocer en tiempo real si una habitación requiere mantenimiento o limpieza inmediata.
+- **Carga Administrativa:** Tiempo excesivo dedicado a la coordinación entre áreas, reduciendo la eficiencia en la atención directa al huésped.
 
 **Sustento del Segmento:**
-* En Lima Metropolitana existen más de 300 hoteles pequeños y boutique (de 20 a 100 habitaciones) que operan con procesos manuales en áreas de servicios y mantenimiento.
-* La ineficiencia operativa en este segmento puede representar pérdidas de entre el **15% y 20%** en la productividad del personal debido a fallos en la coordinación interna.
+
+- En Lima Metropolitana existen más de 300 hoteles pequeños y boutique (de 20 a 100 habitaciones) que operan con procesos manuales en áreas de servicios y mantenimiento.
+- La ineficiencia operativa en este segmento puede representar pérdidas de entre el **15% y 20%** en la productividad del personal debido a fallos en la coordinación interna.
 
 ---
 
@@ -535,26 +544,29 @@ Este segmento comprende al personal encargado de la ejecución y supervisión de
 Este segmento abarca a los usuarios finales que buscan una estancia moderna y autónoma, interactuando con el hotel mediante la aplicación multiplataforma desarrollada en **Flutter**.
 
 **Perfil Demográfico:**
-* **Edad:** Entre 25 y 50 años (predominancia de Millennials y Generación X).
-* **Nivel Socioeconómico:** Medio-alto a alto.
-* **Procedencia:** Turistas internacionales (40% provenientes de EE.UU., Europa y Latinoamérica) y viajeros nacionales (60% enfocados en viajes de negocios o experiencias urbanas).
+
+- **Edad:** Entre 25 y 50 años (predominancia de Millennials y Generación X).
+- **Nivel Socioeconómico:** Medio-alto a alto.
+- **Procedencia:** Turistas internacionales (40% provenientes de EE.UU., Europa y Latinoamérica) y viajeros nacionales (60% enfocados en viajes de negocios o experiencias urbanas).
 
 **Preferencias y Comportamiento Tecnológico:**
-* **Digital-First:** El **68%** de estos huéspedes selecciona hoteles basándose en su reputación digital y facilidades tecnológicas.
-* **Demanda de Autonomía:** Alta disposición a utilizar aplicaciones móviles para realizar check-in/check-out sin contacto y gestionar servicios de habitación.
-* **Interés en IoT:** Valoran la capacidad de controlar el ambiente de su habitación (iluminación, temperatura) desde su smartphone, asociándolo con una experiencia de lujo y confort.
+
+- **Digital-First:** El **68%** de estos huéspedes selecciona hoteles basándose en su reputación digital y facilidades tecnológicas.
+- **Demanda de Autonomía:** Alta disposición a utilizar aplicaciones móviles para realizar check-in/check-out sin contacto y gestionar servicios de habitación.
+- **Interés en IoT:** Valoran la capacidad de controlar el ambiente de su habitación (iluminación, temperatura) desde su smartphone, asociándolo con una experiencia de lujo y confort.
 
 **Uso de Tecnología durante la Estancia:**
-* **Dispositivo Principal:** Smartphone personal como herramienta única para gestionar toda la experiencia de viaje.
-* **Expectativas de Conectividad:** Requerimiento de WiFi de alta velocidad e integración con servicios digitales para solicitudes de asistencia inmediata.
+
+- **Dispositivo Principal:** Smartphone personal como herramienta única para gestionar toda la experiencia de viaje.
+- **Expectativas de Conectividad:** Requerimiento de WiFi de alta velocidad e integración con servicios digitales para solicitudes de asistencia inmediata.
 
 ---
 
 **Datos de Sustento Estadístico y Oportunidad de Mercado**
 
-* **Potencial de Adopción:** Los ingresos por servicios adicionales y "upgrades" pueden incrementarse hasta en un **20%** en hoteles que implementan soluciones digitales de autoservicio para el huésped.
-* **Optimización de Recursos:** La integración con dispositivos **IoT** permite una reducción proyectada del **20-30%** en el consumo energético al monitorear habitaciones desocupadas o ajustar sistemas de climatización automáticamente.
-* **Impacto en Satisfacción:** El uso de herramientas digitales para el registro y solicitud de servicios reduce los tiempos de espera en recepción en un **15%**, impactando directamente en la fidelización y reseñas positivas.
+- **Potencial de Adopción:** Los ingresos por servicios adicionales y "upgrades" pueden incrementarse hasta en un **20%** en hoteles que implementan soluciones digitales de autoservicio para el huésped.
+- **Optimización de Recursos:** La integración con dispositivos **IoT** permite una reducción proyectada del **20-30%** en el consumo energético al monitorear habitaciones desocupadas o ajustar sistemas de climatización automáticamente.
+- **Impacto en Satisfacción:** El uso de herramientas digitales para el registro y solicitud de servicios reduce los tiempos de espera en recepción en un **15%**, impactando directamente en la fidelización y reseñas positivas.
 
 Esta segmentación confirma la existencia de una necesidad clara: el **Staff Operativo** requiere movilidad para coordinar el trabajo, mientras que los **Huéspedes** demandan una interfaz moderna para personalizar su estancia, validando el enfoque dual de la solución móvil de **Smart Stay**.
 
@@ -563,35 +575,166 @@ Esta segmentación confirma la existencia de una necesidad clara: el **Staff Ope
 ## Capítulo II: Requirements Development and Software Solution Design
 
 ### 2.1. Competidores
+
+El mercado de soluciones para gestión hotelera presenta diversos actores. Sin embargo, la mayoría se centra en interfaces web, dejando un vacío en la experiencia móvil fluida e integrada con dispositivos físicos (IoT) que Smart Stay busca cubrir.
+
 #### 2.1.1. Análisis competitivo
+
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse; font-family: Segoe UI, Arial, sans-serif; font-size: 13px; border: 1px solid #000;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="text-align: left; width: 15%; border: 1px solid #000;">¿Por qué llevar a cabo este análisis?</th>
+      <th colspan="4" style="text-align: left; border: 1px solid #000;">El objetivo es identificar las brechas tecnológicas en la oferta actual de gestión hotelera para diferenciar a Smart Stay mediante una experiencia móvil nativa e integración IoT dirigida a hoteles boutique en LATAM.</th>
+    </tr>
+    <tr style="background-color: #e6e6e6; text-align: center;">
+      <th style="border: 1px solid #000;">Categoría / Aspecto</th>
+      <th style="border: 1px solid #000;"><strong>Smart Stay</strong><br><img src="assets/logo.png" alt="Smart Stay" width="100"></th>
+      <th style="border: 1px solid #000;"><strong>Oracle Hospitality</strong><br><img src="assets/oracle-hospitality.png" alt="Oracle" width="100"></th>
+      <th style="border: 1px solid #000;"><strong>Room Raccoon</strong><br><img src="assets/logo-roomraccoon.jpeg" alt="Room Raccoon" width="100"></th>
+      <th style="border: 1px solid #000;"><strong>Sistemas Manuales</strong><br><img src="assets/Sistemas-Manuales.jpg" alt="Sistemas Manuales" width="100"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #f9f9f9;">
+      <td colspan="5" style="font-weight: bold; border: 1px solid #000; letter-spacing: 1px;">PERFIL</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Overview</strong></td>
+      <td style="border: 1px solid #000;">Plataforma de gestión hotelera con enfoque en hoteles boutique, integrando IoT y una experiencia móvil nativa para el huésped.</td>
+      <td style="border: 1px solid #000;">Soluciones globales y robustas (PMS/OPERA) diseñadas para la gestión de grandes cadenas hoteleras internacionales.</td>
+      <td style="border: 1px solid #000;">SaaS en la nube todo-en-uno (PMS, Channel Manager) intuitivo, orientado a hoteles pequeños e independientes.</td>
+      <td style="border: 1px solid #000;">Sistemas tradicionales basados en herramientas físicas o digitales básicas como Excel y registros en papel.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Ventaja competitiva</strong><br><small>¿Qué valor ofrece a los clientes?</small></td>
+      <td style="border: 1px solid #000;">Control total del entorno de la habitación y personalización profunda desde una <strong>aplicación móvil nativa</strong>.</td>
+      <td style="border: 1px solid #000;">Reconocimiento de marca global, alta confiabilidad y cumplimiento de estándares para operaciones a gran escala.</td>
+      <td style="border: 1px solid #000;">Facilidad de implementación, soporte técnico valorado y una interfaz puramente web simplificada.</td>
+      <td style="border: 1px solid #000;">Costo de adquisición nulo y flexibilidad operativa total al no depender de infraestructura de software especializada.</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td colspan="5" style="font-weight: bold; border: 1px solid #000; letter-spacing: 1px;">PERFIL DE MARKETING</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Mercado objetivo</strong></td>
+      <td style="border: 1px solid #000;">Hoteles boutique y medianos en crecimiento en Latinoamérica que buscan diferenciación tecnológica.</td>
+      <td style="border: 1px solid #000;">Grandes cadenas hoteleras transnacionales y resorts de lujo con procesos operativos complejos.</td>
+      <td style="border: 1px solid #000;">Pequeños hoteles, hostales, Bed & Breakfasts y apartamentos turísticos de gestión independiente.</td>
+      <td style="border: 1px solid #000;">Micro-hoteles o establecimientos con baja madurez tecnológica que no han iniciado su transformación digital.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Estrategias de marketing</strong></td>
+      <td style="border: 1px solid #000;">Posicionamiento basado en la modernización, eficiencia operativa móvil y la "Experiencia del Huésped 4.0".</td>
+      <td style="border: 1px solid #000;">Ventas corporativas directas (B2B), branding global y presencia en las principales conferencias del sector.</td>
+      <td style="border: 1px solid #000;">Marketing digital enfocado en SEO/SEM, resaltando la facilidad de uso y las reseñas positivas de usuarios.</td>
+      <td style="border: 1px solid #000;">Inexistente; la adopción se da por costumbre o falta de conocimiento de alternativas digitales.</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td colspan="5" style="font-weight: bold; border: 1px solid #000; letter-spacing: 1px;">PERFIL DE PRODUCTO</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Productos & Servicios</strong></td>
+      <td style="border: 1px solid #000;">PMS, Channel Manager, Motor de Reservas y <strong>aplicaciones móviles</strong> para huéspedes y personal con control IoT.</td>
+      <td style="border: 1px solid #000;">Suite OPERA Cloud (PMS, Ventas, POS) con reportes avanzados e integraciones extensas.</td>
+      <td style="border: 1px solid #000;">Plataforma unificada que incluye PMS, Channel Manager, sistema de pagos y gestión de limpieza (Housekeeping).</td>
+      <td style="border: 1px solid #000;">Plantillas de hojas de cálculo, libros de registro físico y calendarios manuales.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Precios & Costos</strong></td>
+      <td style="border: 1px solid #000;">Modelo SaaS por suscripción mensual escalable + inversión inicial en hardware para los dispositivos IoT.</td>
+      <td style="border: 1px solid #000;">Licenciamiento de nivel empresarial con costos elevados de implementación, soporte y mantenimiento especializado.</td>
+      <td style="border: 1px solid #000;">Esquema de suscripción mensual transparente y accesible, basado principalmente en el número de habitaciones.</td>
+      <td style="border: 1px solid #000;">Gratuito o limitado al costo de licencias básicas de software de oficina.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Canales de distribución</strong><br><small>(Web y/o Móvil)</small></td>
+      <td style="border: 1px solid #000;">Plataforma en la nube y <strong>aplicaciones móviles nativas</strong> (Android/iOS) y multiplataforma.</td>
+      <td style="border: 1px solid #000;">Aplicación web basada en la nube optimizada para terminales de escritorio en estaciones de trabajo.</td>
+      <td style="border: 1px solid #000;">Interfaz web accesible desde navegadores a través de cualquier dispositivo con conexión a internet.</td>
+      <td style="border: 1px solid #000;">Offline; requiere presencia física para la manipulación y consulta de registros.</td>
+    </tr>
+    <tr style="background-color: #f2f2f2; text-align: center;">
+      <td colspan="5" style="font-weight: bold; border: 1px solid #000; letter-spacing: 1px;">ANÁLISIS SWOT</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Fortalezas</strong></td>
+      <td style="border: 1px solid #000;">Propuesta de valor única con IoT y enfoque en <strong>desarrollo móvil nativo</strong>.</td>
+      <td style="border: 1px solid #000;">Líder indiscutible del mercado con un producto altamente robusto y escalable.</td>
+      <td style="border: 1px solid #000;">Proceso de configuración rápido y excelente reputación en el segmento PYME.</td>
+      <td style="border: 1px solid #000;">Simplicidad absoluta sin necesidad de capacitación técnica para el personal.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Debilidades</strong></td>
+      <td style="border: 1px solid #000;">Marca nueva en el mercado; requiere educación del cliente sobre la instalación de hardware físico.</td>
+      <td style="border: 1px solid #000;">Interfaz de usuario compleja y costos de entrada prohibitivos para hoteles locales pequeños.</td>
+      <td style="border: 1px solid #000;">Funcionalidades limitadas para la gestión de dispositivos físicos y hardware en tiempo real.</td>
+      <td style="border: 1px solid #000;">Propenso a errores humanos críticos, nula capacidad de escala y falta de conectividad online.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Oportunidades</strong></td>
+      <td style="border: 1px solid #000;">Alta demanda de soluciones sin contacto (contactless) y experiencias digitales personalizadas.</td>
+      <td style="border: 1px solid #000;">Migración de su extensa base de clientes antiguos hacia infraestructuras modernas en la nube.</td>
+      <td style="border: 1px solid #000;">Expansión hacia mercados emergentes mediante la adición de módulos de gestión simplificados.</td>
+      <td style="border: 1px solid #000;">La necesidad obligatoria de digitalización representa el punto de partida para adoptar software básico.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000;"><strong>Amenazas</strong></td>
+      <td style="border: 1px solid #000;">Competidores establecidos desarrollando módulos móviles básicos para competir en el mismo nicho.</td>
+      <td style="border: 1px solid #000;">Surgimiento de startups ágiles que ofrecen soluciones especializadas a una fracción del costo.</td>
+      <td style="border: 1px solid #000;">Saturación del mercado de PMS básicos y guerra de precios entre proveedores SaaS.</td>
+      <td style="border: 1px solid #000;">Cualquier solución de software gratuita o de bajo costo representa una amenaza existencial para este método.</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 2.1.2. Estrategias y tácticas frente a competidores
 
 ### 2.2. Entrevistas
+
 #### 2.2.1. Diseño de entrevistas
+
 #### 2.2.2. Registro de entrevistas
+
 #### 2.2.3. Análisis de entrevistas
 
 ### 2.3. Needfinding
+
 #### 2.3.1. User Personas
+
 #### 2.3.2. User Task Matrix
+
 #### 2.3.3. User Journey Mapping
+
 #### 2.3.4. Empathy Mapping
+
 #### 2.3.5. Ubiquitous Language
 
 ### 2.4. Requirements Specification
+
 #### 2.4.1. User Stories
+
 #### 2.4.2. Impact Mapping
+
 #### 2.4.3. Product Backlog
 
 ### 2.5. Strategic-Level Domain-Driven Design
+
 #### 2.5.1. EventStorming
+
 ##### 2.5.1.1. Candidate Context Discovery
+
 ##### 2.5.1.2. Domain Message Flows Modeling
+
 ##### 2.5.1.3. Bounded Context Canvases
+
 #### 2.5.2. Context Mapping
+
 #### 2.5.3. Software Architecture
+
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
+
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
+
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
 
 ### 2.6. Tactical-Level Domain-Driven Design
@@ -599,33 +742,57 @@ Esta segmentación confirma la existencia de una necesidad clara: el **Staff Ope
 #### 2.6.1. Bounded Context: [Nombre del Bounded Context]
 
 ##### 2.6.1.1. Domain Layer
+
 ##### 2.6.1.2. Interface Layer
+
 ##### 2.6.1.3. Application Layer
+
 ##### 2.6.1.4. Infrastructure Layer
+
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
 ##### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
 
 ## Capítulo III: Solution UI/UX Design
 
 ### 3.1. Product design
+
 #### 3.1.1. Style Guidelines
+
 ##### 3.1.1.1. General Style Guidelines
+
 #### 3.1.2. Information Architecture
+
 ##### 3.1.2.1. Organization Systems
+
 ##### 3.1.2.2. Labelling Systems
+
 ##### 3.1.2.3. SEO Tags and Meta Tags
+
 ##### 3.1.2.4. Searching Systems
+
 ##### 3.1.2.5. Navigation Systems
+
 #### 3.1.3. Landing Page UI Design
+
 ##### 3.1.3.1. Landing Page Wireframe
+
 ##### 3.1.3.2. Landing Page Mock-up
+
 #### 3.1.4. Mobile Applications UX/UI Design
+
 ##### 3.1.4.1. Mobile Applications Wireframes
+
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
 ##### 3.1.4.3. Mobile Applications Mock-ups
+
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
+
 ##### 3.1.4.5. Mobile Applications Prototyping
 
 ---
@@ -633,33 +800,55 @@ Esta segmentación confirma la existencia de una necesidad clara: el **Staff Ope
 ## Capítulo IV: Product Implementation & Validation
 
 ### 4.1. Software Configuration Management
+
 #### 4.1.1. Software Development Environment Configuration
+
 #### 4.1.2. Source Code Management
+
 #### 4.1.3. Source Code Style Guide & Conventions
+
 #### 4.1.4. Software Deployment Configuration
 
 ### 4.2. Landing Page & Mobile Application Implementation
+
 #### 4.2.1. Sprint 1
+
 ##### 4.2.1.1. Sprint Planning 1
+
 ##### 4.2.1.2. Sprint Backlog 1
+
 ##### 4.2.1.3. Development Evidence for Sprint Review
+
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
+
 ##### 4.2.1.5. Execution Evidence for Sprint Review
+
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
+
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
 ##### 4.2.1.8. Team Collaboration Insights during Sprint
 
 ### 4.3. Validation Interviews
+
 #### 4.3.1. Diseño de Entrevistas
+
 #### 4.3.2. Registro de Entrevistas
+
 #### 4.3.3. Evaluaciones según heurísticas
 
 ---
 
 ## Conclusiones y recomendaciones
+
 ## Video App Validation
+
 ### Video About the product
+
 ### Video About the team
+
 ## Glosario
+
 ## Bibliografía
+
 ## Anexos
