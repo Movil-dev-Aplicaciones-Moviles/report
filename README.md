@@ -505,6 +505,59 @@ Para abordar esta problemática, la solución se centrará en las siguientes fun
 
 ### 1.3. Segmentos objetivo
 
+Esta sección describe los segmentos asociados al dominio del problema de gestión hotelera manual e ineficiente. Se detallan sus características demográficas e información estadística que sustenta la viabilidad de la solución **Smart Stay** en el mercado de Lima Metropolitana.
+
+---
+
+**Segmento Primario: Staff Operativo de Hoteles Boutique y Pequeños en Lima**
+
+Este segmento comprende al personal encargado de la ejecución y supervisión de las operaciones diarias del hotel, quienes utilizarán la aplicación nativa en **Android** para la gestión de tareas y monitoreo de recursos.
+
+**Perfil Demográfico y Profesional:**
+* **Roles Incluidos:** Personal de recepción, supervisores de limpieza (housekeeping), técnicos de mantenimiento y coordinadores de servicios.
+* **Edad:** Entre 25 y 45 años.
+* **Nivel Educativo:** Técnico o universitario en turismo, hotelería, mantenimiento industrial o administración.
+* **Habilidades Tecnológicas:** Usuarios habituales de smartphones con sistema operativo Android; familiarizados con herramientas de mensajería y gestión de tareas básicas.
+
+**Desafíos Operativos:**
+* **Dependencia Manual:** Uso de bitácoras físicas o comunicación verbal para reportar estados de habitaciones, lo que genera errores de disponibilidad.
+* **Fragmentación de la Información:** Falta de un sistema centralizado para conocer en tiempo real si una habitación requiere mantenimiento o limpieza inmediata.
+* **Carga Administrativa:** Tiempo excesivo dedicado a la coordinación entre áreas, reduciendo la eficiencia en la atención directa al huésped.
+
+**Sustento del Segmento:**
+* En Lima Metropolitana existen más de 300 hoteles pequeños y boutique (de 20 a 100 habitaciones) que operan con procesos manuales en áreas de servicios y mantenimiento.
+* La ineficiencia operativa en este segmento puede representar pérdidas de entre el **15% y 20%** en la productividad del personal debido a fallos en la coordinación interna.
+
+---
+
+**Segmento Secundario: Huéspedes de Hoteles**
+
+Este segmento abarca a los usuarios finales que buscan una estancia moderna y autónoma, interactuando con el hotel mediante la aplicación multiplataforma desarrollada en **Flutter**.
+
+**Perfil Demográfico:**
+* **Edad:** Entre 25 y 50 años (predominancia de Millennials y Generación X).
+* **Nivel Socioeconómico:** Medio-alto a alto.
+* **Procedencia:** Turistas internacionales (40% provenientes de EE.UU., Europa y Latinoamérica) y viajeros nacionales (60% enfocados en viajes de negocios o experiencias urbanas).
+
+**Preferencias y Comportamiento Tecnológico:**
+* **Digital-First:** El **68%** de estos huéspedes selecciona hoteles basándose en su reputación digital y facilidades tecnológicas.
+* **Demanda de Autonomía:** Alta disposición a utilizar aplicaciones móviles para realizar check-in/check-out sin contacto y gestionar servicios de habitación.
+* **Interés en IoT:** Valoran la capacidad de controlar el ambiente de su habitación (iluminación, temperatura) desde su smartphone, asociándolo con una experiencia de lujo y confort.
+
+**Uso de Tecnología durante la Estancia:**
+* **Dispositivo Principal:** Smartphone personal como herramienta única para gestionar toda la experiencia de viaje.
+* **Expectativas de Conectividad:** Requerimiento de WiFi de alta velocidad e integración con servicios digitales para solicitudes de asistencia inmediata.
+
+---
+
+**Datos de Sustento Estadístico y Oportunidad de Mercado**
+
+* **Potencial de Adopción:** Los ingresos por servicios adicionales y "upgrades" pueden incrementarse hasta en un **20%** en hoteles que implementan soluciones digitales de autoservicio para el huésped.
+* **Optimización de Recursos:** La integración con dispositivos **IoT** permite una reducción proyectada del **20-30%** en el consumo energético al monitorear habitaciones desocupadas o ajustar sistemas de climatización automáticamente.
+* **Impacto en Satisfacción:** El uso de herramientas digitales para el registro y solicitud de servicios reduce los tiempos de espera en recepción en un **15%**, impactando directamente en la fidelización y reseñas positivas.
+
+Esta segmentación confirma la existencia de una necesidad clara: el **Staff Operativo** requiere movilidad para coordinar el trabajo, mientras que los **Huéspedes** demandan una interfaz moderna para personalizar su estancia, validando el enfoque dual de la solución móvil de **Smart Stay**.
+
 ---
 
 ## Capítulo II: Requirements Development and Software Solution Design
