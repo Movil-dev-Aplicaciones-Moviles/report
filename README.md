@@ -706,6 +706,12 @@ El mercado de soluciones para gestión hotelera presenta diversos actores. Sin e
 #### 2.3.3. User Journey Mapping
 
 #### 2.3.4. Empathy Mapping
+# 1. Segmento Objetivo 1: STAFF OPERATIVO
+![Empathy Map - Staff Operativo](ruta/a/tu/imagen_staff.png)
+
+---
+
+
 
 #### 2.3.5. Ubiquitous Language
 
