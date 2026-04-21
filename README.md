@@ -707,9 +707,12 @@ El mercado de soluciones para gestión hotelera presenta diversos actores. Sin e
 
 #### 2.3.4. Empathy Mapping
 # 1. Segmento Objetivo 1: STAFF OPERATIVO
-![Empathy Map - Staff Operativo](ruta/a/tu/imagen_staff.png)
+![Empathy Map - Staff Operativo](ruta/a/tu/empathy-staff.png)
 
 ---
+
+# 2. Segmento Objetivo 2: HUÉSPEDES 
+![Empathy Map - Huéspedes](ruta/a/tu/empathy-guest.png)
 
 
 
