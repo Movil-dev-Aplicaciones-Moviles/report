@@ -689,6 +689,25 @@ El mercado de soluciones para gestión hotelera presenta diversos actores. Sin e
 
 #### 2.1.2. Estrategias y tácticas frente a competidores
 
+Para posicionarse de forma efectiva frente a la competencia, **Smart Stay** implementará las siguientes estrategias:
+
+#### Estrategias
+
+1. **Diferenciación Tecnológica**: Integrar la gestión hotelera con IoT de manera completa, algo que los competidores actuales aún no ofrecen de forma integral.
+2. **Enfoque en nicho**: Dirigirnos específicamente a hoteles boutique y pequeños (20-100 habitaciones), un segmento que los grandes como Oracle o Amadeus suelen dejar de lado.
+3. **Modelo de suscripción accesible**: Precios escalables según el número de habitaciones, lo que nos permite competir contra soluciones caras sin sacrificar ninguna funcionalidad.
+4. **Soporte local y en español**: Ofrecer un acompañamiento cercano y personalizado que facilita la adopción, marcando una gran diferencia frente a competidores extranjeros.
+5. **Valor medible**: Compromiso claro de reducir los costos operativos entre un 10-20%.
+
+#### Tácticas
+
+- **Programa piloto** con hoteles boutique de Lima para generar casos de éxito reales y testimonios auténticos.
+- **Alianzas estratégicas** con gremios turísticos (como FEDECATUR) para acelerar la adopción en el sector.
+- **Capacitación continua** para el personal hotelero, ayudando a reducir la resistencia al cambio.
+- **Marketing digital enfocado en ROI**: Mostrar comparativas claras de costos y beneficios frente a los sistemas tradicionales.
+- **Integraciones rápidas** con los PMS existentes para facilitar la migración y minimizar fricciones.
+- **Atención postventa 24/7** como una ventaja competitiva clave frente a otras startups con soporte limitado.
+
 ### 2.2. Entrevistas
 
 #### 2.2.1. Diseño de entrevistas
