@@ -712,6 +712,924 @@ El mercado de soluciones para gestión hotelera presenta diversos actores. Sin e
 ### 2.4. Requirements Specification
 
 #### 2.4.1. User Stories
+<table>
+  <tr>
+    <th>Epic / Story ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+    <th>Criterios de aceptación</th>
+    <th>Relacionado con (Epic ID)</th>
+  </tr>
+
+  <!-- EPICS -->
+  <tr class="epic-row">
+    <td><strong>EP-01</strong></td>
+    <td><strong>Autenticación y gestión de usuarios</strong></td>
+    <td>Épica que agrupa funcionalidades de registro, inicio de sesión, gestión de perfiles y control de acceso basado en roles para todos los tipos de usuario (administradores, personal y huéspedes).</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr class="epic-row">
+    <td><strong>EP-02</strong></td>
+    <td><strong>Gestión central del hotel</strong></td>
+    <td>Épica que incluye la administración de reservas, gestión de habitaciones, check-in/check-out digital, operación diaria y coordinación interna de servicios.</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr class="epic-row">
+    <td><strong>EP-03</strong></td>
+    <td><strong>Experiencia digital del huésped</strong></td>
+    <td>Épica enfocada en la experiencia del huésped: control ambiental IoT, servicios personalizados, comunicación digital y evaluación posterior a la estadía.</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr class="epic-row">
+    <td><strong>EP-04</strong></td>
+    <td><strong>Analítica y reportes</strong></td>
+    <td>Épica que cubre paneles de gestión, reportes de ocupación, KPIs operativos, análisis de satisfacción y métricas financieras.</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr class="epic-row">
+    <td><strong>EP-05</strong></td>
+    <td><strong>Integraciones y canales externos</strong></td>
+    <td>Épica para conexiones con OTAs, WhatsApp, sistemas de pago, reputación digital y webhooks de terceros.</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr class="epic-row">
+    <td><strong>EP-06</strong></td>
+    <td><strong>Landing page y marketing digital</strong></td>
+    <td>Épica para el sitio informativo con contenido segmentado, casos de éxito, simuladores y canales de contacto comercial.</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr class="epic-row">
+    <td><strong>EP-07</strong></td>
+    <td><strong>API RESTful y servicios técnicos</strong></td>
+    <td>Épica que incluye endpoints, autenticación de API, documentación técnica, monitoreo e integración con sistemas externos.</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr class="epic-row">
+    <td><strong>EP-08</strong></td>
+    <td><strong>Notificaciones y comunicación</strong></td>
+    <td>Épica para el sistema de notificaciones push, correo, SMS, alertas automáticas y comunicación entre personal y huéspedes.</td>
+    <td></td>
+    <td>-</td>
+  </tr>
+
+  <!-- USER STORIES -->
+  <tr>
+    <td>US-01</td>
+    <td>Registro de usuario con validación</td>
+    <td class="user-story-desc"><strong>Como</strong> nuevo usuario, <strong>quiero</strong> registrarme en Smart Stay validando mi correo desde la aplicación móvil <strong>para</strong> acceder a funcionalidades según mi rol.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Registro exitoso</strong><br>
+      <strong>Dado que</strong> soy un nuevo usuario con datos válidos, <strong>cuando</strong> completo el formulario de registro desde la app, <strong>entonces</strong> mi cuenta se crea correctamente y recibo una confirmación por correo.<br>
+      <strong>Escenario 2: Correo ya registrado</strong><br>
+      <strong>Dado que</strong> intento registrarme con un correo existente, <strong>cuando</strong> envío el formulario, <strong>entonces</strong> el sistema muestra el mensaje “Correo ya registrado” y me sugiere recuperar la contraseña.<br>
+      <strong>Escenario 3: Datos incompletos</strong><br>
+      <strong>Dado que</strong> dejo campos obligatorios vacíos, <strong>cuando</strong> intento continuar, <strong>entonces</strong> la aplicación resalta los campos faltantes y no permite completar el registro.<br>
+      <strong>Escenario 4: Validación de formato de correo</strong><br>
+      <strong>Dado que</strong> ingreso un correo con formato inválido, <strong>cuando</strong> envío el formulario, <strong>entonces</strong> la app muestra un error de formato.
+    </td>
+    <td>EP-01</td>
+  </tr>
+
+  <tr>
+    <td>US-02</td>
+    <td>Inicio de sesión seguro</td>
+    <td class="user-story-desc"><strong>Como</strong> usuario registrado, <strong>quiero</strong> iniciar sesión de forma segura desde la aplicación móvil <strong>para</strong> acceder a mi panel personalizado según mi rol.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Inicio de sesión correcto</strong><br>
+      <strong>Dado que</strong> tengo credenciales válidas, <strong>cuando</strong> inicio sesión desde la app, <strong>entonces</strong> accedo al panel correspondiente según mi rol.<br>
+      <strong>Escenario 2: Credenciales incorrectas</strong><br>
+      <strong>Dado que</strong> ingreso datos incorrectos, <strong>cuando</strong> intento acceder, <strong>entonces</strong> recibo un mensaje de error sin revelar si falló el correo o la contraseña.<br>
+      <strong>Escenario 3: Cuenta bloqueada</strong><br>
+      <strong>Dado que</strong> fallo 5 veces consecutivas al iniciar sesión, <strong>cuando</strong> vuelvo a intentarlo, <strong>entonces</strong> la cuenta se bloquea temporalmente y recibo una notificación.<br>
+      <strong>Escenario 4: Sesión persistente</strong><br>
+      <strong>Dado que</strong> activo la opción “recordarme”, <strong>cuando</strong> cierro y vuelvo a abrir la aplicación, <strong>entonces</strong> continúo con la sesión iniciada hasta cerrar sesión manualmente.
+    </td>
+    <td>EP-01</td>
+  </tr>
+
+  <tr>
+    <td>US-03</td>
+    <td>Gestión de perfiles y roles</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> gestionar usuarios, asignar roles y permisos desde la aplicación móvil <strong>para</strong> controlar el acceso a las diferentes funcionalidades del sistema.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Crear usuario del personal</strong><br>
+      <strong>Dado que</strong> soy administrador, <strong>cuando</strong> creo un usuario desde la app móvil, <strong>entonces</strong> puedo asignarle permisos específicos como limpieza, recepción o mantenimiento.<br>
+      <strong>Escenario 2: Modificar permisos</strong><br>
+      <strong>Dado que</strong> existe un usuario registrado, <strong>cuando</strong> actualizo sus permisos desde el celular, <strong>entonces</strong> sus accesos se modifican inmediatamente.<br>
+      <strong>Escenario 3: Desactivar usuario</strong><br>
+      <strong>Dado que</strong> necesito desactivar un usuario, <strong>cuando</strong> realizo la acción desde la app, <strong>entonces</strong> el usuario pierde acceso pero se conserva su historial.<br>
+      <strong>Escenario 4: Auditoría de accesos</strong><br>
+      <strong>Dado que</strong> quiero revisar actividad, <strong>cuando</strong> ingreso al historial desde la app, <strong>entonces</strong> visualizo fecha, hora, usuario y acción realizada.
+    </td>
+    <td>EP-01</td>
+  </tr>
+
+  <tr>
+    <td>US-04</td>
+    <td>Recuperación de contraseña</td>
+    <td class="user-story-desc"><strong>Como</strong> usuario, <strong>quiero</strong> recuperar mi contraseña desde la aplicación móvil mediante mi correo electrónico <strong>para</strong> volver a acceder a mi cuenta.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Solicitud válida</strong><br>
+      <strong>Dado que</strong> solicito recuperar mi contraseña con un correo registrado, <strong>cuando</strong> envío la solicitud, <strong>entonces</strong> recibo un enlace de restablecimiento por correo.<br>
+      <strong>Escenario 2: Correo no registrado</strong><br>
+      <strong>Dado que</strong> solicito la recuperación con un correo no registrado, <strong>cuando</strong> envío la solicitud, <strong>entonces</strong> recibo un mensaje genérico sin revelar si el correo existe o no.<br>
+      <strong>Escenario 3: Enlace expirado</strong><br>
+      <strong>Dado que</strong> el enlace de recuperación tiene más de 30 minutos, <strong>cuando</strong> intento usarlo, <strong>entonces</strong> el sistema indica que ha expirado y debo solicitar uno nuevo.<br>
+      <strong>Escenario 4: Cambio exitoso</strong><br>
+      <strong>Dado que</strong> tengo un enlace válido, <strong>cuando</strong> establezco una nueva contraseña, <strong>entonces</strong> esta se actualiza correctamente y recibo confirmación.
+    </td>
+    <td>EP-01</td>
+  </tr>
+
+  <tr>
+    <td>US-05</td>
+    <td>Panel administrativo móvil</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> acceder a un panel centralizado desde mi smartphone <strong>para</strong> visualizar información clave del hotel y tomar decisiones rápidamente.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Vista general</strong><br>
+      <strong>Dado que</strong> ingreso al panel desde la app móvil, <strong>cuando</strong> carga la pantalla principal, <strong>entonces</strong> veo ocupación actual, check-ins/check-outs del día, tareas pendientes y alertas importantes.<br>
+      <strong>Escenario 2: Filtros de fechas</strong><br>
+      <strong>Dado que</strong> deseo revisar un período específico, <strong>cuando</strong> selecciono un rango de fechas desde la app, <strong>entonces</strong> los indicadores se actualizan correctamente.<br>
+      <strong>Escenario 3: Acceso rápido</strong><br>
+      <strong>Dado que</strong> estoy en el panel móvil, <strong>cuando</strong> presiono una métrica, <strong>entonces</strong> soy redirigido a la sección detallada correspondiente.<br>
+      <strong>Escenario 4: Actualización en tiempo real</strong><br>
+      <strong>Dado que</strong> ocurren cambios operativos, <strong>cuando</strong> estos se registran, <strong>entonces</strong> el panel móvil se actualiza sin necesidad de recargar manualmente.
+    </td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr>
+    <td>US-06</td>
+    <td>Gestión de habitaciones y estados</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> gestionar el estado de las habitaciones desde la aplicación móvil <strong>para</strong> optimizar las operaciones diarias del hotel en tiempo real.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Cambiar estado de habitación</strong><br>
+      <strong>Dado que</strong> selecciono una habitación desde la app, <strong>cuando</strong> cambio su estado a disponible, ocupada, limpieza o mantenimiento, <strong>entonces</strong> el sistema lo actualiza de inmediato y notifica al personal correspondiente.<br>
+      <strong>Escenario 2: Vista móvil del mapa de habitaciones</strong><br>
+      <strong>Dado que</strong> accedo al mapa de habitaciones desde el celular, <strong>cuando</strong> carga la vista, <strong>entonces</strong> puedo ver todos los estados con códigos de color y hacer cambios rápidos.<br>
+      <strong>Escenario 3: Historial de cambios</strong><br>
+      <strong>Dado que</strong> necesito revisar modificaciones, <strong>cuando</strong> consulto el historial desde la app, <strong>entonces</strong> veo fecha, hora y usuario responsable de cada cambio.<br>
+      <strong>Escenario 4: Alertas automáticas</strong><br>
+      <strong>Dado que</strong> una habitación permanece en mantenimiento por más de 24 horas, <strong>cuando</strong> se cumple ese tiempo, <strong>entonces</strong> recibo una alerta automática en mi dispositivo móvil.
+    </td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr>
+    <td>US-07</td>
+    <td>Gestión centralizada de reservas</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> administrar todas las reservas desde la aplicación móvil <strong>para</strong> evitar sobreventas y optimizar la ocupación del hotel.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Vista de calendario móvil</strong><br>
+      <strong>Dado que</strong> ingreso a la sección de reservas desde la app, <strong>cuando</strong> selecciono la vista calendario, <strong>entonces</strong> puedo ver todas las reservas organizadas por fecha con información clave.<br>
+      <strong>Escenario 2: Crear reserva manual</strong><br>
+      <strong>Dado que</strong> recibo una reserva por teléfono, <strong>cuando</strong> la ingreso desde la app móvil, <strong>entonces</strong> el sistema valida la disponibilidad y la confirma.<br>
+      <strong>Escenario 3: Modificar reserva existente</strong><br>
+      <strong>Dado que</strong> necesito editar una reserva, <strong>cuando</strong> realizo cambios desde el celular, <strong>entonces</strong> el sistema valida disponibilidad y notifica al huésped.<br>
+      <strong>Escenario 4: Cancelación con políticas</strong><br>
+      <strong>Dado que</strong> una reserva es cancelada, <strong>cuando</strong> proceso la cancelación desde la app, <strong>entonces</strong> se aplican las políticas correspondientes y la habitación queda liberada.
+    </td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr>
+    <td>US-08</td>
+    <td>Check-in digital automatizado</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador y huésped, <strong>quiero</strong> que el check-in pueda realizarse digitalmente desde la aplicación móvil en menos de 3 minutos <strong>para</strong> mejorar la experiencia de llegada.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Check-in exitoso del huésped</strong><br>
+      <strong>Dado que</strong> el huésped inicia el check-in desde la app, <strong>cuando</strong> completa sus datos y confirma, <strong>entonces</strong> recibe acceso digital a su habitación y su código correspondiente.<br>
+      <strong>Escenario 2: Validación de documentos</strong><br>
+      <strong>Dado que</strong> el huésped sube sus documentos desde el celular, <strong>cuando</strong> el sistema los procesa, <strong>entonces</strong> los valida automáticamente y aprueba el check-in.<br>
+      <strong>Escenario 3: Check-in asistido</strong><br>
+      <strong>Dado que</strong> el huésped tiene dificultades, <strong>cuando</strong> solicita ayuda desde la aplicación, <strong>entonces</strong> el personal recibe una notificación para asistirlo.<br>
+      <strong>Escenario 4: Notificación automática</strong><br>
+      <strong>Dado que</strong> el check-in se completa, <strong>cuando</strong> se confirma, <strong>entonces</strong> el personal de limpieza recibe la notificación y el administrador visualiza el estado actualizado.
+    </td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr>
+    <td>US-09</td>
+    <td>Check-out digital y facturación</td>
+    <td class="user-story-desc"><strong>Como</strong> huésped, <strong>quiero</strong> realizar el check-out desde la aplicación móvil y recibir mi factura automáticamente <strong>para</strong> agilizar mi salida.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Check-out exitoso</strong><br>
+      <strong>Dado que</strong> inicio el check-out desde la app, <strong>cuando</strong> confirmo mi salida y reviso los cargos, <strong>entonces</strong> la habitación se libera y recibo la factura por correo.<br>
+      <strong>Escenario 2: Cargos adicionales</strong><br>
+      <strong>Dado que</strong> tengo consumos pendientes, <strong>cuando</strong> realizo el check-out, <strong>entonces</strong> visualizo el detalle de cargos y puedo aprobar el pago.<br>
+      <strong>Escenario 3: Check-out tardío</strong><br>
+      <strong>Dado que</strong> realizo mi salida fuera del horario establecido, <strong>cuando</strong> proceso el check-out, <strong>entonces</strong> se aplica el cargo correspondiente y se me notifica.<br>
+      <strong>Escenario 4: Notificación a limpieza</strong><br>
+      <strong>Dado que</strong> completo el check-out, <strong>cuando</strong> se confirma, <strong>entonces</strong> el personal de limpieza recibe automáticamente la tarea de acondicionar la habitación.
+    </td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr>
+    <td>US-10</td>
+    <td>Asignación y seguimiento de tareas del personal</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> asignar tareas y monitorear su avance desde la aplicación móvil <strong>para</strong> mejorar la coordinación operativa.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Asignar tarea de limpieza</strong><br>
+      <strong>Dado que</strong> una habitación necesita limpieza, <strong>cuando</strong> asigno la tarea desde la app, <strong>entonces</strong> el personal recibe una notificación con detalles y prioridad.<br>
+      <strong>Escenario 2: Actualizar progreso</strong><br>
+      <strong>Dado que</strong> el personal inicia una tarea, <strong>cuando</strong> marca “en progreso” desde su dispositivo móvil, <strong>entonces</strong> puedo ver la actualización en tiempo real.<br>
+      <strong>Escenario 3: Completar tarea</strong><br>
+      <strong>Dado que</strong> una tarea ha sido finalizada, <strong>cuando</strong> el trabajador la marca como completada en la app, <strong>entonces</strong> recibo una notificación para validar el trabajo.<br>
+      <strong>Escenario 4: Tareas vencidas</strong><br>
+      <strong>Dado que</strong> una tarea no se completa a tiempo, <strong>cuando</strong> vence el plazo, <strong>entonces</strong> la app genera una alerta automática.
+    </td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr>
+    <td>US-11</td>
+    <td>Control ambiental IoT desde la app móvil</td>
+    <td class="user-story-desc"><strong>Como</strong> huésped, <strong>quiero</strong> controlar la temperatura, iluminación y otros aspectos del ambiente desde mi smartphone <strong>para</strong> personalizar mi experiencia en la habitación.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Ajuste de temperatura</strong><br>
+      <strong>Dado que</strong> estoy en mi habitación, <strong>cuando</strong> cambio la temperatura desde la app, <strong>entonces</strong> el sistema IoT ajusta el clima en menos de 30 segundos.<br>
+      <strong>Escenario 2: Control de iluminación</strong><br>
+      <strong>Dado que</strong> quiero modificar las luces, <strong>cuando</strong> uso los controles de la app, <strong>entonces</strong> puedo cambiar intensidad, color y encender o apagar luces específicas.<br>
+      <strong>Escenario 3: Configuración de persianas</strong><br>
+      <strong>Dado que</strong> quiero controlar la entrada de luz natural, <strong>cuando</strong> ajusto las persianas desde la aplicación, <strong>entonces</strong> estas se abren o cierran según el porcentaje seleccionado.<br>
+      <strong>Escenario 4: Configuraciones personalizadas</strong><br>
+      <strong>Dado que</strong> quiero ajustes rápidos, <strong>cuando</strong> guardo una configuración como “descanso” o “trabajo”, <strong>entonces</strong> puedo activar varias preferencias con un solo toque.
+    </td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr>
+    <td>US-12</td>
+    <td>Solicitudes de servicios desde la app</td>
+    <td class="user-story-desc"><strong>Como</strong> huésped, <strong>quiero</strong> solicitar room service, limpieza adicional y otros servicios desde la aplicación móvil <strong>para</strong> acceder a ellos de manera cómoda y rápida.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Solicitar room service</strong><br>
+      <strong>Dado que</strong> quiero pedir comida, <strong>cuando</strong> accedo al menú desde la app, <strong>entonces</strong> puedo seleccionar productos, personalizarlos y confirmar el pedido con tiempo estimado.<br>
+      <strong>Escenario 2: Solicitar limpieza adicional</strong><br>
+      <strong>Dado que</strong> necesito limpieza extra, <strong>cuando</strong> realizo la solicitud desde la app, <strong>entonces</strong> puedo elegir la hora preferida y el personal recibe la solicitud inmediatamente.<br>
+      <strong>Escenario 3: Seguimiento de solicitud</strong><br>
+      <strong>Dado que</strong> ya hice un pedido, <strong>cuando</strong> reviso su estado en la app, <strong>entonces</strong> veo el progreso en tiempo real.<br>
+      <strong>Escenario 4: Servicios especiales</strong><br>
+      <strong>Dado que</strong> necesito servicios como transporte, tours o reservas, <strong>cuando</strong> los solicito desde la app, <strong>entonces</strong> el personal recibe una notificación para coordinar la atención.
+    </td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr>
+    <td>US-13</td>
+    <td>Comunicación digital entre huésped y personal</td>
+    <td class="user-story-desc"><strong>Como</strong> huésped, <strong>quiero</strong> comunicarme digitalmente con el personal del hotel desde la aplicación móvil <strong>para</strong> resolver dudas y solicitudes rápidamente.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Chat en tiempo real</strong><br>
+      <strong>Dado que</strong> tengo una consulta, <strong>cuando</strong> inicio un chat desde la app, <strong>entonces</strong> me conecto con personal disponible y recibo respuesta en menos de 5 minutos.<br>
+      <strong>Escenario 2: Solicitudes específicas</strong><br>
+      <strong>Dado que</strong> necesito algo puntual, <strong>cuando</strong> envío un mensaje detallado, <strong>entonces</strong> el área correspondiente recibe la solicitud.<br>
+      <strong>Escenario 3: Historial de conversaciones</strong><br>
+      <strong>Dado que</strong> tuve varias interacciones, <strong>cuando</strong> ingreso al historial desde la app, <strong>entonces</strong> puedo revisar todas las conversaciones de mi estadía.<br>
+      <strong>Escenario 4: Escalamiento automático</strong><br>
+      <strong>Dado que</strong> mi solicitud no se resuelve en el tiempo esperado, <strong>cuando</strong> se supera ese límite, <strong>entonces</strong> el sistema la escala automáticamente a un supervisor.
+    </td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr>
+    <td>US-14</td>
+    <td>Personalización de experiencia según preferencias</td>
+    <td class="user-story-desc"><strong>Como</strong> huésped, <strong>quiero</strong> que el sistema aprenda mis preferencias <strong>para</strong> ofrecerme experiencias y servicios personalizados desde la aplicación móvil.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Configuración inicial de preferencias</strong><br>
+      <strong>Dado que</strong> es mi primera estadía, <strong>cuando</strong> completo mi perfil de preferencias en la app, <strong>entonces</strong> el sistema configura la habitación según mis gustos antes de mi llegada.<br>
+      <strong>Escenario 2: Aprendizaje automático</strong><br>
+      <strong>Dado que</strong> ya he usado el sistema varias veces, <strong>cuando</strong> regreso, <strong>entonces</strong> la aplicación me sugiere configuraciones y servicios basados en mi historial.<br>
+      <strong>Escenario 3: Recomendaciones personalizadas</strong><br>
+      <strong>Dado que</strong> existe un perfil con mis gustos, <strong>cuando</strong> estoy en el hotel, <strong>entonces</strong> recibo recomendaciones de restaurantes, actividades y servicios acordes a mis intereses.<br>
+      <strong>Escenario 4: Ofertas exclusivas</strong><br>
+      <strong>Dado que</strong> soy huésped recurrente, <strong>cuando</strong> ingreso a la app, <strong>entonces</strong> veo ofertas personalizadas y mejoras basadas en mi historial.
+    </td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr>
+    <td>US-15</td>
+    <td>Evaluación y retroalimentación postestadía</td>
+    <td class="user-story-desc"><strong>Como</strong> huésped, <strong>quiero</strong> evaluar mi experiencia desde la aplicación móvil después de mi estadía <strong>para</strong> ayudar al hotel a mejorar sus servicios.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Evaluación automática</strong><br>
+      <strong>Dado que</strong> completé mi check-out, <strong>cuando</strong> pasan 2 horas, <strong>entonces</strong> recibo una invitación automática para evaluar mi experiencia mediante un formulario simple.<br>
+      <strong>Escenario 2: Retroalimentación detallada</strong><br>
+      <strong>Dado que</strong> quiero dar una opinión más completa, <strong>cuando</strong> accedo al formulario ampliado, <strong>entonces</strong> puedo calificar aspectos específicos y dejar comentarios.<br>
+      <strong>Escenario 3: Seguimiento de comentarios negativos</strong><br>
+      <strong>Dado que</strong> dejo una calificación baja, <strong>cuando</strong> envío la evaluación, <strong>entonces</strong> el hotel recibe una alerta inmediata para tomar acciones.<br>
+      <strong>Escenario 4: Incentivos por feedback</strong><br>
+      <strong>Dado que</strong> completo la evaluación, <strong>cuando</strong> la envío, <strong>entonces</strong> recibo un beneficio para mi próxima estadía.
+    </td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr>
+    <td>US-16</td>
+    <td>Panel de analítica y KPIs operativos</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> visualizar métricas clave y KPIs desde la aplicación móvil <strong>para</strong> tomar decisiones informadas sobre la operación del hotel.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Métricas en tiempo real</strong><br>
+      <strong>Dado que</strong> ingreso al panel de analítica desde la app, <strong>cuando</strong> carga la vista, <strong>entonces</strong> veo ocupación actual, ingresos diarios, tareas completadas y satisfacción promedio.<br>
+      <strong>Escenario 2: Comparaciones históricas</strong><br>
+      <strong>Dado que</strong> quiero analizar tendencias, <strong>cuando</strong> selecciono períodos comparativos desde el celular, <strong>entonces</strong> veo gráficos comparativos de ocupación, ingresos y operación.<br>
+      <strong>Escenario 3: Exploración de métricas</strong><br>
+      <strong>Dado que</strong> identifico una métrica importante, <strong>cuando</strong> la selecciono desde la app, <strong>entonces</strong> accedo a su detalle con filtros por fecha, habitación o servicio.<br>
+      <strong>Escenario 4: Alertas inteligentes</strong><br>
+      <strong>Dado que</strong> el sistema detecta tendencias negativas, <strong>cuando</strong> estas ocurren, <strong>entonces</strong> recibo alertas automáticas con sugerencias de acción.
+    </td>
+    <td>EP-04</td>
+  </tr>
+
+  <tr>
+    <td>US-17</td>
+    <td>Reportes financieros y de ocupación</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> generar y consultar reportes financieros y de ocupación desde la aplicación móvil <strong>para</strong> apoyar el análisis de gestión y la toma de decisiones.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Reporte diario automático</strong><br>
+      <strong>Dado que</strong> termina la jornada operativa, <strong>cuando</strong> llega la medianoche, <strong>entonces</strong> la app muestra el reporte diario con ingresos, ocupación e incidencias.<br>
+      <strong>Escenario 2: Reporte personalizado</strong><br>
+      <strong>Dado que</strong> necesito un análisis específico, <strong>cuando</strong> configuro fechas, métricas y filtros desde la app, <strong>entonces</strong> genero un reporte personalizado en PDF o Excel.<br>
+      <strong>Escenario 3: Proyecciones</strong><br>
+      <strong>Dado que</strong> existen datos históricos, <strong>cuando</strong> ingreso a la sección de proyecciones desde la app, <strong>entonces</strong> veo estimaciones de ocupación e ingresos.<br>
+      <strong>Escenario 4: Benchmarking</strong><br>
+      <strong>Dado que</strong> cuento con datos del mercado, <strong>cuando</strong> genero un reporte comparativo, <strong>entonces</strong> visualizo el rendimiento del hotel frente a la competencia local.
+    </td>
+    <td>EP-04</td>
+  </tr>
+
+  <tr>
+    <td>US-18</td>
+    <td>Análisis de satisfacción del huésped</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> analizar la satisfacción de los huéspedes desde la aplicación móvil <strong>para</strong> detectar oportunidades de mejora en el servicio.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Panel de satisfacción</strong><br>
+      <strong>Dado que</strong> ingreso a la sección de satisfacción en la app, <strong>cuando</strong> carga el panel, <strong>entonces</strong> veo NPS promedio, distribución de calificaciones y comentarios recientes.<br>
+      <strong>Escenario 2: Análisis por categoría</strong><br>
+      <strong>Dado que</strong> deseo entender problemas específicos, <strong>cuando</strong> filtro por limpieza, atención o comodidad, <strong>entonces</strong> veo calificaciones detalladas por área.<br>
+      <strong>Escenario 3: Tendencias temporales</strong><br>
+      <strong>Dado que</strong> quiero observar evolución, <strong>cuando</strong> selecciono una vista temporal desde la app, <strong>entonces</strong> visualizo cambios en la satisfacción a lo largo del tiempo.<br>
+      <strong>Escenario 4: Acciones correctivas</strong><br>
+      <strong>Dado que</strong> identifico un problema recurrente, <strong>cuando</strong> lo marco desde la app, <strong>entonces</strong> se crea una tarea automática para el área responsable.
+    </td>
+    <td>EP-04</td>
+  </tr>
+
+  <tr>
+    <td>US-19</td>
+    <td>Monitoreo del consumo energético IoT</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> monitorear el consumo energético desde la aplicación móvil <strong>para</strong> optimizar costos operativos y mejorar la eficiencia del hotel.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Panel de consumo en tiempo real</strong><br>
+      <strong>Dado que</strong> accedo al monitoreo desde la app, <strong>cuando</strong> carga la vista, <strong>entonces</strong> observo el consumo actual por habitación, zona común y equipo principal.<br>
+      <strong>Escenario 2: Alertas por consumo excesivo</strong><br>
+      <strong>Dado que</strong> una habitación supera el consumo normal, <strong>cuando</strong> se excede el umbral, <strong>entonces</strong> recibo una alerta inmediata en el celular.<br>
+      <strong>Escenario 3: Optimización automática</strong><br>
+      <strong>Dado que</strong> una habitación está desocupada, <strong>cuando</strong> pasan 30 minutos sin actividad, <strong>entonces</strong> el sistema ajusta automáticamente luces y temperatura a modo ahorro.<br>
+      <strong>Escenario 4: Reporte de ahorro</strong><br>
+      <strong>Dado que</strong> se implementaron optimizaciones, <strong>cuando</strong> genero el reporte mensual desde la app, <strong>entonces</strong> veo comparación de consumo y ahorro logrado.
+    </td>
+    <td>EP-04</td>
+  </tr>
+
+  <tr>
+    <td>US-20</td>
+    <td>Integración con OTAs y canales de reserva</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> integrar el inventario del hotel con Booking.com, Expedia y otras OTAs <strong>para</strong> maximizar la ocupación y evitar sobreventas, supervisando todo desde una interfaz móvil.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Sincronización automática de disponibilidad</strong><br>
+      <strong>Dado que</strong> cambio la disponibilidad en Smart Stay, <strong>cuando</strong> se actualiza, <strong>entonces</strong> todos los canales conectados se sincronizan en menos de 5 minutos.<br>
+      <strong>Escenario 2: Importación automática de reservas</strong><br>
+      <strong>Dado que</strong> recibo una reserva desde una OTA, <strong>cuando</strong> esta se confirma, <strong>entonces</strong> se importa automáticamente a Smart Stay con toda la información del huésped.<br>
+      <strong>Escenario 3: Gestión centralizada de tarifas</strong><br>
+      <strong>Dado que</strong> deseo cambiar precios, <strong>cuando</strong> los actualizo en Smart Stay, <strong>entonces</strong> estos se propagan automáticamente a todos los canales configurados.<br>
+      <strong>Escenario 4: Resolución de conflictos</strong><br>
+      <strong>Dado que</strong> existe una discrepancia entre canales, <strong>cuando</strong> el sistema la detecta, <strong>entonces</strong> me notifica de inmediato y sugiere acciones correctivas.
+    </td>
+    <td>EP-05</td>
+  </tr>
+
+  <tr>
+    <td>US-21</td>
+    <td>Integración con WhatsApp Business</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> usar WhatsApp Business integrado con la aplicación <strong>para</strong> comunicarme directamente con los huéspedes y gestionar consultas antes y después de la estadía.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Mensajes automáticos de bienvenida</strong><br>
+      <strong>Dado que</strong> un huésped confirma su reserva, <strong>cuando</strong> queda registrado, <strong>entonces</strong> recibe un mensaje automático por WhatsApp con información de llegada y contacto.<br>
+      <strong>Escenario 2: Consultas previas a la llegada</strong><br>
+      <strong>Dado que</strong> un huésped envía una consulta por WhatsApp, <strong>cuando</strong> llega el mensaje, <strong>entonces</strong> el personal recibe una notificación en Smart Stay y puede responder desde la plataforma.<br>
+      <strong>Escenario 3: Confirmación de servicios</strong><br>
+      <strong>Dado que</strong> el huésped solicita un servicio por WhatsApp, <strong>cuando</strong> este se procesa, <strong>entonces</strong> recibe una confirmación automática con detalles y tiempo estimado.<br>
+      <strong>Escenario 4: Seguimiento posterior a la estadía</strong><br>
+      <strong>Dado que</strong> el huésped ya hizo check-out, <strong>cuando</strong> pasa 1 día, <strong>entonces</strong> recibe un mensaje de agradecimiento e invitación para evaluar su experiencia.
+    </td>
+    <td>EP-05</td>
+  </tr>
+
+  <tr>
+    <td>US-22</td>
+    <td>Gestión de reputación digital</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> gestionar reseñas y reputación digital desde la aplicación móvil <strong>para</strong> responder con rapidez y mantener una buena imagen del hotel.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Consolidación de reseñas</strong><br>
+      <strong>Dado que</strong> ingreso a la sección de reputación desde la app, <strong>cuando</strong> carga, <strong>entonces</strong> veo reseñas de Google, TripAdvisor y OTAs en un solo lugar.<br>
+      <strong>Escenario 2: Respuesta centralizada</strong><br>
+      <strong>Dado que</strong> deseo responder una reseña, <strong>cuando</strong> escribo la respuesta desde la app, <strong>entonces</strong> esta se publica en la plataforma correspondiente.<br>
+      <strong>Escenario 3: Alertas por reseñas negativas</strong><br>
+      <strong>Dado que</strong> se publica una reseña de 3 estrellas o menos, <strong>cuando</strong> el sistema la detecta, <strong>entonces</strong> recibo una notificación inmediata.<br>
+      <strong>Escenario 4: Análisis de sentimiento</strong><br>
+      <strong>Dado que</strong> existen varias reseñas registradas, <strong>cuando</strong> accedo al análisis desde la app, <strong>entonces</strong> visualizo tendencias, palabras frecuentes y áreas de mejora.
+    </td>
+    <td>EP-05</td>
+  </tr>
+
+  <tr>
+    <td>US-23</td>
+    <td>Procesamiento de pagos digitales</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador y huésped, <strong>quiero</strong> procesar pagos digitales de manera segura desde la aplicación móvil mediante distintos métodos de pago <strong>para</strong> facilitar las transacciones.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Pago con tarjeta en check-in</strong><br>
+      <strong>Dado que</strong> el huésped realiza el check-in digital, <strong>cuando</strong> ingresa sus datos de tarjeta, <strong>entonces</strong> se procesa una preautorización segura y se confirma el registro.<br>
+      <strong>Escenario 2: Pago de servicios adicionales</strong><br>
+      <strong>Dado que</strong> el huésped solicita un servicio, <strong>cuando</strong> confirma el pedido, <strong>entonces</strong> puede pagar inmediatamente desde la app con un método guardado.<br>
+      <strong>Escenario 3: Cobro automático al hacer check-out</strong><br>
+      <strong>Dado que</strong> el huésped realiza el check-out, <strong>cuando</strong> confirma los cargos finales, <strong>entonces</strong> se procesa el pago y recibe su factura digital.<br>
+      <strong>Escenario 4: Manejo de pago fallido</strong><br>
+      <strong>Dado que</strong> un pago falla, <strong>cuando</strong> ocurre el error, <strong>entonces</strong> el huésped recibe una notificación inmediata con alternativas de pago.
+    </td>
+    <td>EP-05</td>
+  </tr>
+
+  <tr>
+    <td>US-24</td>
+    <td>Landing page segmentada</td>
+    <td class="user-story-desc"><strong>Como</strong> visitante, <strong>quiero</strong> acceder desde mi dispositivo móvil a una landing page segmentada según mi perfil <strong>para</strong> entender rápidamente el valor de Smart Stay.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Información para administradores</strong><br>
+      <strong>Dado que</strong> soy administrador hotelero, <strong>cuando</strong> ingreso desde mi smartphone, <strong>entonces</strong> veo beneficios operativos, ROI, casos de éxito y acceso a demo.<br>
+      <strong>Escenario 2: Información para huéspedes</strong><br>
+      <strong>Dado que</strong> soy viajero, <strong>cuando</strong> navego desde mi celular, <strong>entonces</strong> veo beneficios relacionados con comodidad, experiencia y tecnología.<br>
+      <strong>Escenario 3: Navegación intuitiva móvil</strong><br>
+      <strong>Dado que</strong> accedo a la landing page, <strong>cuando</strong> carga en mi teléfono, <strong>entonces</strong> identifico mi perfil y llego a la información relevante en menos de 3 clics.<br>
+      <strong>Escenario 4: Llamados a la acción claros</strong><br>
+      <strong>Dado que</strong> estoy interesado en continuar, <strong>cuando</strong> reviso la página desde el móvil, <strong>entonces</strong> encuentro botones claros para solicitar demo, contactar ventas o descargar la app.
+    </td>
+    <td>EP-06</td>
+  </tr>
+
+  <tr>
+    <td>US-25</td>
+    <td>Simulador de ROI para hoteles</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador hotelero interesado, <strong>quiero</strong> usar un simulador de ROI desde mi dispositivo móvil <strong>para</strong> estimar el retorno de inversión que obtendría con Smart Stay.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Cálculo básico de ROI</strong><br>
+      <strong>Dado que</strong> ingreso datos básicos como número de habitaciones y ocupación promedio, <strong>cuando</strong> ejecuto la simulación desde el celular, <strong>entonces</strong> obtengo ahorro anual estimado y tiempo de recuperación.<br>
+      <strong>Escenario 2: Personalización por tipo de hotel</strong><br>
+      <strong>Dado que</strong> selecciono el tipo de hotel, <strong>cuando</strong> uso el simulador móvil, <strong>entonces</strong> los cálculos se ajustan a mi segmento.<br>
+      <strong>Escenario 3: Comparación con situación actual</strong><br>
+      <strong>Dado que</strong> ingreso costos operativos actuales, <strong>cuando</strong> genero el resultado, <strong>entonces</strong> veo una comparación clara entre la operación actual y la proyectada.<br>
+      <strong>Escenario 4: Exportar resultados</strong><br>
+      <strong>Dado que</strong> finalizo la simulación, <strong>cuando</strong> deseo guardar los resultados, <strong>entonces</strong> puedo exportarlos en PDF desde el dispositivo móvil.
+    </td>
+    <td>EP-06</td>
+  </tr>
+
+  <tr>
+    <td>US-26</td>
+    <td>Casos de éxito y testimonios</td>
+    <td class="user-story-desc"><strong>Como</strong> visitante interesado, <strong>quiero</strong> ver casos de éxito y testimonios desde la aplicación móvil o sitio móvil <strong>para</strong> validar la efectividad de la solución.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Testimonios en video</strong><br>
+      <strong>Dado que</strong> accedo a la sección desde mi celular, <strong>cuando</strong> navego por ella, <strong>entonces</strong> puedo visualizar videos de administradores reales compartiendo su experiencia.<br>
+      <strong>Escenario 2: Métricas de mejora</strong><br>
+      <strong>Dado que</strong> reviso un caso de éxito, <strong>cuando</strong> abro su detalle, <strong>entonces</strong> veo datos concretos de reducción de costos, mejora de satisfacción y ahorro de tiempo.<br>
+      <strong>Escenario 3: Filtro por tipo de hotel</strong><br>
+      <strong>Dado que</strong> deseo referencias similares a mi negocio, <strong>cuando</strong> filtro los casos desde el móvil, <strong>entonces</strong> veo los más relevantes para mi perfil.<br>
+      <strong>Escenario 4: Solicitud de más información</strong><br>
+      <strong>Dado que</strong> me interesa un caso específico, <strong>cuando</strong> presiono la opción de contacto, <strong>entonces</strong> puedo solicitar información adicional directamente desde el celular.
+    </td>
+    <td>EP-06</td>
+  </tr>
+
+  <tr>
+    <td>US-27</td>
+    <td>Solicitud de demo y contacto comercial</td>
+    <td class="user-story-desc"><strong>Como</strong> visitante interesado, <strong>quiero</strong> solicitar una demostración y contactar al equipo comercial desde mi dispositivo móvil de manera simple y rápida <strong>para</strong> explorar Smart Stay.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Formulario de demo</strong><br>
+      <strong>Dado que</strong> quiero ver una demostración, <strong>cuando</strong> completo el formulario desde el móvil, <strong>entonces</strong> recibo confirmación inmediata.<br>
+      <strong>Escenario 2: Agendamiento automático</strong><br>
+      <strong>Dado que</strong> envío la solicitud, <strong>cuando</strong> finaliza el registro, <strong>entonces</strong> puedo agendar una cita en el calendario disponible.<br>
+      <strong>Escenario 3: Información de contacto accesible</strong><br>
+      <strong>Dado que</strong> prefiero contacto directo, <strong>cuando</strong> reviso la sección comercial desde el móvil, <strong>entonces</strong> encuentro teléfono, correo y WhatsApp del equipo.<br>
+      <strong>Escenario 4: Seguimiento automático</strong><br>
+      <strong>Dado que</strong> solicité información, <strong>cuando</strong> pasa un tiempo sin respuesta, <strong>entonces</strong> recibo un recordatorio o seguimiento automático.
+    </td>
+    <td>EP-06</td>
+  </tr>
+
+  <tr>
+    <td>US-28</td>
+    <td>Información corporativa y valores</td>
+    <td class="user-story-desc"><strong>Como</strong> visitante, <strong>quiero</strong> conocer la misión, visión y valores de Smart Stay desde una interfaz móvil <strong>para</strong> comprender la filosofía de la empresa.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Sección “Nosotros” completa</strong><br>
+      <strong>Dado que</strong> busco información institucional, <strong>cuando</strong> ingreso a la sección desde mi smartphone, <strong>entonces</strong> encuentro misión, visión, valores e historia de la empresa.<br>
+      <strong>Escenario 2: Equipo y liderazgo</strong><br>
+      <strong>Dado que</strong> deseo conocer al equipo, <strong>cuando</strong> navego en la app o sitio móvil, <strong>entonces</strong> visualizo información de fundadores y líderes clave.<br>
+      <strong>Escenario 3: Compromiso con sostenibilidad</strong><br>
+      <strong>Dado que</strong> me importa el impacto ambiental, <strong>cuando</strong> reviso la información, <strong>entonces</strong> encuentro el compromiso de la empresa con sostenibilidad y eficiencia energética.<br>
+      <strong>Escenario 4: Certificaciones y reconocimientos</strong><br>
+      <strong>Dado que</strong> quiero validar la calidad de la empresa, <strong>cuando</strong> reviso sus credenciales, <strong>entonces</strong> encuentro certificaciones y reconocimientos visibles desde el móvil.
+    </td>
+    <td>EP-06</td>
+  </tr>
+
+  <tr>
+    <td>US-29</td>
+    <td>API RESTful para gestión de habitaciones</td>
+    <td class="user-story-desc"><strong>Como</strong> desarrollador, <strong>quiero</strong> acceder desde un entorno móvil o de desarrollo a endpoints RESTful relacionados con habitaciones <strong>para</strong> integrar Smart Stay con otros sistemas.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Consultar habitaciones disponibles</strong><br>
+      <strong>Dado que</strong> realizo una solicitud GET al endpoint correspondiente, <strong>cuando</strong> el sistema la procesa, <strong>entonces</strong> recibo una lista de habitaciones con disponibilidad y precios.<br>
+      <strong>Escenario 2: Actualizar estado de habitación</strong><br>
+      <strong>Dado que</strong> realizo una solicitud PUT con un nuevo estado, <strong>cuando</strong> el sistema la procesa, <strong>entonces</strong> la habitación se actualiza correctamente.<br>
+      <strong>Escenario 3: Crear nueva reserva</strong><br>
+      <strong>Dado que</strong> realizo una solicitud POST con datos válidos, <strong>cuando</strong> el sistema la procesa, <strong>entonces</strong> se crea la reserva y se devuelve un identificador único.<br>
+      <strong>Escenario 4: Manejo de errores</strong><br>
+      <strong>Dado que</strong> envío datos inválidos, <strong>cuando</strong> el sistema los procesa, <strong>entonces</strong> recibo un error claro y descriptivo.
+    </td>
+    <td>EP-07</td>
+  </tr>
+
+  <tr>
+    <td>US-30</td>
+    <td>API para control de dispositivos IoT</td>
+    <td class="user-story-desc"><strong>Como</strong> desarrollador, <strong>quiero</strong> utilizar endpoints desde aplicaciones móviles o sistemas externos <strong>para</strong> controlar dispositivos IoT de las habitaciones.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Consultar estado actual de dispositivos</strong><br>
+      <strong>Dado que</strong> realizo una solicitud al endpoint correspondiente, <strong>cuando</strong> se procesa, <strong>entonces</strong> obtengo el estado actual de temperatura, luces y persianas.<br>
+      <strong>Escenario 2: Controlar temperatura</strong><br>
+      <strong>Dado que</strong> envío una temperatura deseada, <strong>cuando</strong> la solicitud es válida, <strong>entonces</strong> el sistema ajusta el clima de la habitación.<br>
+      <strong>Escenario 3: Controlar iluminación</strong><br>
+      <strong>Dado que</strong> envío una configuración de luces, <strong>cuando</strong> el sistema la procesa, <strong>entonces</strong> los dispositivos se actualizan según los parámetros enviados.<br>
+      <strong>Escenario 4: Consultar historial de cambios</strong><br>
+      <strong>Dado que</strong> solicito los registros del dispositivo, <strong>cuando</strong> la consulta se procesa, <strong>entonces</strong> recibo el historial de cambios realizados.
+    </td>
+    <td>EP-07</td>
+  </tr>
+
+  <tr>
+    <td>US-31</td>
+    <td>Autenticación y autorización de API</td>
+    <td class="user-story-desc"><strong>Como</strong> desarrollador, <strong>quiero</strong> un sistema seguro de autenticación y autorización <strong>para</strong> acceder a los servicios de Smart Stay desde aplicaciones móviles o integraciones externas.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Obtener token de acceso</strong><br>
+      <strong>Dado que</strong> envío credenciales válidas, <strong>cuando</strong> solicito autenticación, <strong>entonces</strong> recibo un token con tiempo de expiración.<br>
+      <strong>Escenario 2: Acceso con token válido</strong><br>
+      <strong>Dado que</strong> incluyo un token válido en la solicitud, <strong>cuando</strong> accedo a un endpoint protegido, <strong>entonces</strong> recibo respuesta exitosa.<br>
+      <strong>Escenario 3: Token expirado</strong><br>
+      <strong>Dado que</strong> el token ya expiró, <strong>cuando</strong> hago una solicitud, <strong>entonces</strong> recibo error 401 con un mensaje claro.<br>
+      <strong>Escenario 4: Diferentes niveles de acceso</strong><br>
+      <strong>Dado que</strong> tengo permisos limitados, <strong>cuando</strong> intento una acción no autorizada, <strong>entonces</strong> recibo error 403.
+    </td>
+    <td>EP-07</td>
+  </tr>
+
+  <tr>
+    <td>US-32</td>
+    <td>Documentación interactiva de API</td>
+    <td class="user-story-desc"><strong>Como</strong> desarrollador, <strong>quiero</strong> consultar documentación interactiva y accesible desde dispositivos móviles o escritorio <strong>para</strong> integrar fácilmente con Smart Stay.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Explorar endpoints disponibles</strong><br>
+      <strong>Dado que</strong> ingreso a la documentación, <strong>cuando</strong> navego por ella, <strong>entonces</strong> veo endpoints organizados por categoría.<br>
+      <strong>Escenario 2: Probar endpoints en vivo</strong><br>
+      <strong>Dado que</strong> uso la opción de prueba, <strong>cuando</strong> envío una solicitud, <strong>entonces</strong> puedo ver la respuesta directamente.<br>
+      <strong>Escenario 3: Ejemplos de código</strong><br>
+      <strong>Dado que</strong> reviso un endpoint, <strong>cuando</strong> accedo a su detalle, <strong>entonces</strong> encuentro ejemplos en varios lenguajes.<br>
+      <strong>Escenario 4: Esquemas de datos</strong><br>
+      <strong>Dado que</strong> necesito entender la estructura, <strong>cuando</strong> reviso la documentación, <strong>entonces</strong> veo esquemas completos de request y response.
+    </td>
+    <td>EP-07</td>
+  </tr>
+
+  <tr>
+    <td>US-33</td>
+    <td>Webhooks para eventos en tiempo real</td>
+    <td class="user-story-desc"><strong>Como</strong> desarrollador, <strong>quiero</strong> configurar webhooks <strong>para</strong> recibir notificaciones automáticas de eventos importantes y sincronizar aplicaciones móviles o sistemas externos.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Configurar webhook</strong><br>
+      <strong>Dado que</strong> registro una URL y eventos asociados, <strong>cuando</strong> guardo la configuración, <strong>entonces</strong> el sistema envía notificaciones a ese endpoint.<br>
+      <strong>Escenario 2: Notificación por nueva reserva</strong><br>
+      <strong>Dado que</strong> existe un webhook para reservas, <strong>cuando</strong> se crea una nueva, <strong>entonces</strong> el sistema envía automáticamente la información al endpoint registrado.<br>
+      <strong>Escenario 3: Reintentos automáticos</strong><br>
+      <strong>Dado que</strong> el endpoint no responde, <strong>cuando</strong> falla el envío, <strong>entonces</strong> el sistema reintenta automáticamente varias veces.<br>
+      <strong>Escenario 4: Verificación de seguridad</strong><br>
+      <strong>Dado que</strong> recibo el webhook, <strong>cuando</strong> verifico la firma, <strong>entonces</strong> puedo confirmar que el evento proviene realmente de Smart Stay.
+    </td>
+    <td>EP-07</td>
+  </tr>
+
+  <tr>
+    <td>US-34</td>
+    <td>Sistema de notificaciones push móviles</td>
+    <td class="user-story-desc"><strong>Como</strong> huésped, <strong>quiero</strong> recibir notificaciones push en mi smartphone sobre reservas, solicitudes y estados de servicios <strong>para</strong> mantenerme informado en tiempo real.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Confirmación de reserva</strong><br>
+      <strong>Dado que</strong> realizo una reserva, <strong>cuando</strong> se confirma, <strong>entonces</strong> recibo una notificación push inmediata con detalles y próximos pasos.<br>
+      <strong>Escenario 2: Recordatorio de check-in</strong><br>
+      <strong>Dado que</strong> mi llegada es en 24 horas, <strong>cuando</strong> llega ese momento, <strong>entonces</strong> recibo una notificación con un enlace directo para iniciar el check-in digital.<br>
+      <strong>Escenario 3: Actualizaciones de servicios</strong><br>
+      <strong>Dado que</strong> solicité room service, <strong>cuando</strong> cambia su estado, <strong>entonces</strong> recibo una notificación con el avance actualizado.<br>
+      <strong>Escenario 4: Configuración de preferencias</strong><br>
+      <strong>Dado que</strong> quiero controlar mis notificaciones, <strong>cuando</strong> accedo a la configuración, <strong>entonces</strong> puedo elegir qué tipos de avisos recibir y en qué horarios.
+    </td>
+    <td>EP-08</td>
+  </tr>
+
+  <tr>
+    <td>US-35</td>
+    <td>Notificaciones automáticas para el personal</td>
+    <td class="user-story-desc"><strong>Como</strong> miembro del personal del hotel, <strong>quiero</strong> recibir notificaciones automáticas en mi dispositivo móvil sobre tareas asignadas y cambios operativos importantes <strong>para</strong> responder con rapidez.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Nueva tarea asignada</strong><br>
+      <strong>Dado que</strong> el administrador me asigna una tarea, <strong>cuando</strong> esta se crea, <strong>entonces</strong> recibo una notificación inmediata con detalles, prioridad y plazo.<br>
+      <strong>Escenario 2: Cambio de prioridad</strong><br>
+      <strong>Dado que</strong> una tarea pasa a prioridad alta, <strong>cuando</strong> se actualiza, <strong>entonces</strong> recibo una notificación especial que requiere confirmación de lectura.<br>
+      <strong>Escenario 3: Recordatorios de vencimiento</strong><br>
+      <strong>Dado que</strong> tengo una tarea pendiente, <strong>cuando</strong> se acerca la hora límite, <strong>entonces</strong> recibo un recordatorio 2 horas antes.<br>
+      <strong>Escenario 4: Emergencias operativas</strong><br>
+      <strong>Dado que</strong> ocurre una emergencia, <strong>cuando</strong> se reporta, <strong>entonces</strong> el personal correspondiente recibe una alerta inmediata.
+    </td>
+    <td>EP-08</td>
+  </tr>
+
+  <tr>
+    <td>US-36</td>
+    <td>Correos automatizados y personalizados</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> enviar correos automatizados y personalizados a los huéspedes en distintas etapas de su experiencia <strong>para</strong> mejorar la comunicación y la fidelización.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Correo de bienvenida previo a la llegada</strong><br>
+      <strong>Dado que</strong> un huésped confirma su reserva, <strong>cuando</strong> transcurren 24 horas, <strong>entonces</strong> recibe un correo con información del hotel, servicios disponibles y guía de llegada.<br>
+      <strong>Escenario 2: Correo durante la estadía</strong><br>
+      <strong>Dado que</strong> el huésped lleva 2 o más días en el hotel, <strong>cuando</strong> llega el segundo día, <strong>entonces</strong> recibe un correo con recomendaciones locales y servicios especiales.<br>
+      <strong>Escenario 3: Correo postestadía y fidelización</strong><br>
+      <strong>Dado que</strong> el huésped ya hizo check-out, <strong>cuando</strong> pasa una semana, <strong>entonces</strong> recibe un correo de agradecimiento con una oferta especial para su próxima visita.<br>
+      <strong>Escenario 4: Campañas segmentadas</strong><br>
+      <strong>Dado que</strong> deseo ejecutar una campaña específica, <strong>cuando</strong> selecciono criterios como huéspedes VIP o temporada, <strong>entonces</strong> puedo enviar correos personalizados a ese segmento.
+    </td>
+    <td>EP-08</td>
+  </tr>
+
+  <tr>
+    <td>US-37</td>
+    <td>Alertas inteligentes y escalamiento</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> recibir alertas inteligentes sobre problemas operativos y que estas se escalen automáticamente si no se atienden a tiempo <strong>para</strong> asegurar una respuesta oportuna.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Alerta por baja satisfacción</strong><br>
+      <strong>Dado que</strong> un huésped califica con 2 estrellas o menos, <strong>cuando</strong> envía la evaluación, <strong>entonces</strong> recibo una alerta inmediata para tomar acciones.<br>
+      <strong>Escenario 2: Problema técnico crítico</strong><br>
+      <strong>Dado que</strong> un dispositivo IoT deja de responder por más de 10 minutos, <strong>cuando</strong> el sistema lo detecta, <strong>entonces</strong> recibo una alerta con información del problema y la habitación afectada.<br>
+      <strong>Escenario 3: Escalamiento automático</strong><br>
+      <strong>Dado que</strong> una alerta no es atendida dentro del tiempo definido, <strong>cuando</strong> se supera ese límite, <strong>entonces</strong> se escala automáticamente al supervisor o gerente.<br>
+      <strong>Escenario 4: Alertas de ingresos y ocupación</strong><br>
+      <strong>Dado que</strong> la ocupación se encuentra por debajo de lo esperado, <strong>cuando</strong> el sistema detecta esa tendencia, <strong>entonces</strong> recibo una alerta con sugerencias de ajuste.
+    </td>
+    <td>EP-08</td>
+  </tr>
+
+  <tr>
+    <td>US-38</td>
+    <td>Panel unificado de comunicación</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> tener un panel centralizado de comunicación accesible desde la aplicación móvil <strong>para</strong> gestionar todas las interacciones con huéspedes desde un solo lugar.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Vista unificada de conversaciones</strong><br>
+      <strong>Dado que</strong> ingreso al panel de comunicación, <strong>cuando</strong> carga, <strong>entonces</strong> veo todas las conversaciones activas de distintos canales en una sola interfaz.<br>
+      <strong>Escenario 2: Respuesta desde el panel central</strong><br>
+      <strong>Dado que</strong> un huésped envía un mensaje por WhatsApp, <strong>cuando</strong> respondo desde el panel, <strong>entonces</strong> la respuesta se envía por el canal original automáticamente.<br>
+      <strong>Escenario 3: Historial unificado del huésped</strong><br>
+      <strong>Dado que</strong> selecciono a un huésped, <strong>cuando</strong> abro su perfil de comunicación, <strong>entonces</strong> veo el historial completo de interacciones sin importar el canal.<br>
+      <strong>Escenario 4: Asignación de conversaciones</strong><br>
+      <strong>Dado que</strong> llega una consulta compleja, <strong>cuando</strong> decido derivarla, <strong>entonces</strong> puedo asignarla a personal especializado que recibe la notificación correspondiente.
+    </td>
+    <td>EP-08</td>
+  </tr>
+
+  <tr>
+    <td>US-39</td>
+    <td>Aplicación móvil nativa para el personal</td>
+    <td class="user-story-desc"><strong>Como</strong> miembro del personal del hotel, <strong>quiero</strong> una aplicación móvil nativa <strong>para</strong> gestionar mis tareas y comunicaciones mientras me desplazo dentro del hotel.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Lista de tareas móvil</strong><br>
+      <strong>Dado que</strong> abro la aplicación del personal, <strong>cuando</strong> carga, <strong>entonces</strong> veo mis tareas pendientes organizadas por prioridad.<br>
+      <strong>Escenario 2: Actualización de estado</strong><br>
+      <strong>Dado que</strong> termino una tarea, <strong>cuando</strong> la marco como finalizada desde la app, <strong>entonces</strong> el cambio se sincroniza inmediatamente con el sistema central.<br>
+      <strong>Escenario 3: Comunicación con administración</strong><br>
+      <strong>Dado que</strong> tengo una duda o problema, <strong>cuando</strong> uso el chat de la aplicación, <strong>entonces</strong> puedo comunicarme en tiempo real con la administración.<br>
+      <strong>Escenario 4: Reporte de incidencias</strong><br>
+      <strong>Dado que</strong> encuentro un problema, <strong>cuando</strong> lo reporto desde la app con foto y ubicación, <strong>entonces</strong> se crea automáticamente un ticket de incidencia.
+    </td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr>
+    <td>US-40</td>
+    <td>Respaldo y recuperación de datos</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador técnico, <strong>quiero</strong> que el sistema permita monitorear respaldos y recuperación desde una interfaz móvil <strong>para</strong> garantizar continuidad operativa.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Respaldo automático diario</strong><br>
+      <strong>Dado que</strong> termina la jornada operativa, <strong>cuando</strong> llega la medianoche, <strong>entonces</strong> el sistema crea una copia de seguridad automática.<br>
+      <strong>Escenario 2: Verificación de integridad</strong><br>
+      <strong>Dado que</strong> se genera un respaldo, <strong>cuando</strong> el proceso finaliza, <strong>entonces</strong> el sistema valida la integridad de la información.<br>
+      <strong>Escenario 3: Recuperación ante fallos</strong><br>
+      <strong>Dado que</strong> ocurre una falla crítica, <strong>cuando</strong> inicio el proceso de recuperación, <strong>entonces</strong> el sistema restablece la operación con el respaldo más reciente.<br>
+      <strong>Escenario 4: Notificación de error</strong><br>
+      <strong>Dado que</strong> el proceso de respaldo falla, <strong>cuando</strong> el sistema detecta el problema, <strong>entonces</strong> los administradores reciben una alerta en la app móvil.
+    </td>
+    <td>EP-07</td>
+  </tr>
+
+  <tr>
+    <td>US-41</td>
+    <td>Monitoreo del sistema y logs</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador técnico, <strong>quiero</strong> monitorear el rendimiento del sistema y revisar registros desde una aplicación móvil <strong>para</strong> detectar y resolver problemas rápidamente.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Panel de rendimiento</strong><br>
+      <strong>Dado que</strong> accedo a la sección de monitoreo desde la app, <strong>cuando</strong> carga, <strong>entonces</strong> veo métricas como tiempo de respuesta, uso de CPU, memoria y errores.<br>
+      <strong>Escenario 2: Alertas de desempeño</strong><br>
+      <strong>Dado que</strong> el tiempo de respuesta supera el límite definido, <strong>cuando</strong> el sistema lo detecta, <strong>entonces</strong> recibo una alerta automática.<br>
+      <strong>Escenario 3: Logs centralizados</strong><br>
+      <strong>Dado que</strong> necesito investigar un problema, <strong>cuando</strong> entro al historial de logs desde el móvil, <strong>entonces</strong> puedo filtrar por fecha, usuario, acción o nivel de error.<br>
+      <strong>Escenario 4: Análisis de tendencias</strong><br>
+      <strong>Dado que</strong> quiero optimizar rendimiento, <strong>cuando</strong> reviso métricas históricas, <strong>entonces</strong> puedo identificar patrones y cuellos de botella.
+    </td>
+    <td>EP-07</td>
+  </tr>
+
+  <tr>
+    <td>US-42</td>
+    <td>Configuración multi-hotel para cadenas</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador de una cadena hotelera, <strong>quiero</strong> gestionar múltiples propiedades desde una aplicación móvil <strong>para</strong> centralizar operaciones con configuraciones independientes.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Vista consolidada de cadena</strong><br>
+      <strong>Dado que</strong> administro varios hoteles, <strong>cuando</strong> accedo al panel maestro desde la app, <strong>entonces</strong> veo KPIs consolidados con detalle por propiedad.<br>
+      <strong>Escenario 2: Configuración por hotel</strong><br>
+      <strong>Dado que</strong> cada hotel tiene necesidades distintas, <strong>cuando</strong> configuro uno desde la app, <strong>entonces</strong> puedo personalizar servicios, precios y operación sin afectar a los demás.<br>
+      <strong>Escenario 3: Personal compartido</strong><br>
+      <strong>Dado que</strong> hay colaboradores que trabajan en varios hoteles, <strong>cuando</strong> los asigno desde la app, <strong>entonces</strong> pueden acceder solo a las propiedades autorizadas.<br>
+      <strong>Escenario 4: Reportes consolidados</strong><br>
+      <strong>Dado que</strong> necesito análisis global, <strong>cuando</strong> genero reportes desde el móvil, <strong>entonces</strong> obtengo métricas individuales y comparativas entre hoteles.
+    </td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr>
+    <td>US-43</td>
+    <td>Integración con sistemas PMS existentes</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> integrar Smart Stay con mi PMS actual <strong>para</strong> migrar progresivamente sin interrumpir la operación, pudiendo supervisar esta integración desde la app móvil.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Sincronización bidireccional</strong><br>
+      <strong>Dado que</strong> tengo un PMS existente, <strong>cuando</strong> configuro la integración, <strong>entonces</strong> las reservas se sincronizan automáticamente en ambos sentidos.<br>
+      <strong>Escenario 2: Migración gradual de funcionalidades</strong><br>
+      <strong>Dado que</strong> quiero adoptar Smart Stay progresivamente, <strong>cuando</strong> activo módulos específicos, <strong>entonces</strong> estos pueden coexistir con mi PMS actual.<br>
+      <strong>Escenario 3: Validación de consistencia</strong><br>
+      <strong>Dado que</strong> existen datos en ambos sistemas, <strong>cuando</strong> se sincronizan, <strong>entonces</strong> recibo alertas si se detectan discrepancias.<br>
+      <strong>Escenario 4: Acceso al sistema anterior</strong><br>
+      <strong>Dado que</strong> estoy en proceso de transición, <strong>cuando</strong> finalizo la migración, <strong>entonces</strong> mantengo acceso de solo lectura al PMS previo por un tiempo determinado.
+    </td>
+    <td>EP-05</td>
+  </tr>
+
+  <tr>
+    <td>US-44</td>
+    <td>Personalización de marca por hotel</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> personalizar la interfaz y las comunicaciones de la aplicación con la marca de mi hotel <strong>para</strong> mantener coherencia visual y de identidad.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Personalización de colores y logo</strong><br>
+      <strong>Dado que</strong> quiero adaptar la apariencia, <strong>cuando</strong> cargo mi logo y defino colores, <strong>entonces</strong> toda la interfaz web y móvil se actualiza con la identidad visual de mi hotel.<br>
+      <strong>Escenario 2: Correos personalizados con marca</strong><br>
+      <strong>Dado que</strong> se envían comunicaciones automáticas, <strong>cuando</strong> llegan al huésped, <strong>entonces</strong> incluyen logo, colores y mensaje personalizado del hotel.<br>
+      <strong>Escenario 3: Landing page personalizada</strong><br>
+      <strong>Dado que</strong> los huéspedes acceden a servicios digitales, <strong>cuando</strong> ingresan, <strong>entonces</strong> visualizan una interfaz completamente alineada con la marca del hotel.<br>
+      <strong>Escenario 4: Configuración de mensajes</strong><br>
+      <strong>Dado que</strong> deseo adaptar la comunicación, <strong>cuando</strong> configuro plantillas, <strong>entonces</strong> puedo ajustar el tono y contenido de los mensajes automáticos.
+    </td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr>
+    <td>US-45</td>
+    <td>Programa de fidelización integrado</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> gestionar un programa de fidelización para huéspedes recurrentes desde la aplicación y el sistema <strong>para</strong> ofrecer beneficios automáticos y aumentar la retención.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Acumulación automática de puntos</strong><br>
+      <strong>Dado que</strong> el huésped completa una estadía, <strong>cuando</strong> hace check-out, <strong>entonces</strong> acumula puntos automáticamente según su gasto total y duración.<br>
+      <strong>Escenario 2: Beneficios por nivel</strong><br>
+      <strong>Dado que</strong> el huésped alcanza un nivel VIP, <strong>cuando</strong> realiza una nueva reserva, <strong>entonces</strong> recibe beneficios automáticos como upgrade, late check-out o amenities.<br>
+      <strong>Escenario 3: Ofertas personalizadas</strong><br>
+      <strong>Dado que</strong> existe historial del huésped, <strong>cuando</strong> se aproxima una fecha probable de viaje, <strong>entonces</strong> recibe ofertas especiales basadas en sus preferencias.<br>
+      <strong>Escenario 4: Canje de beneficios</strong><br>
+      <strong>Dado que</strong> el huésped tiene suficientes puntos, <strong>cuando</strong> quiere usarlos desde la app, <strong>entonces</strong> puede canjearlos por servicios, mejoras o noches gratis.
+    </td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr>
+    <td>US-46</td>
+    <td>Gestión de eventos y conferencias</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> gestionar eventos y conferencias desde la aplicación móvil <strong>para</strong> ofrecer funcionalidades específicas a grupos y organizadores.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Crear evento grupal</strong><br>
+      <strong>Dado que</strong> recibo una solicitud de evento, <strong>cuando</strong> lo registro desde la app, <strong>entonces</strong> puedo definir tarifas especiales, bloquear habitaciones y asignar servicios.<br>
+      <strong>Escenario 2: Check-in masivo</strong><br>
+      <strong>Dado que</strong> llegan participantes de un evento, <strong>cuando</strong> inician check-in desde la app, <strong>entonces</strong> pueden usar un código especial para agilizar el proceso.<br>
+      <strong>Escenario 3: Comunicación grupal</strong><br>
+      <strong>Dado que</strong> existe un evento activo, <strong>cuando</strong> necesito enviar información, <strong>entonces</strong> puedo mandar mensajes masivos solo a sus participantes.<br>
+      <strong>Escenario 4: Facturación consolidada</strong><br>
+      <strong>Dado que</strong> el evento termina, <strong>cuando</strong> genero la facturación desde la app, <strong>entonces</strong> puedo emitir una factura maestra o facturas individuales según la configuración.
+    </td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr>
+    <td>US-47</td>
+    <td>Mantenimiento predictivo IoT</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> recibir alertas y recomendaciones de mantenimiento predictivo en la aplicación móvil <strong>para</strong> reducir fallas y tiempos de inactividad.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Monitoreo continuo</strong><br>
+      <strong>Dado que</strong> existen dispositivos IoT instalados, <strong>cuando</strong> están en funcionamiento, <strong>entonces</strong> el sistema supervisa continuamente su rendimiento, consumo y uso.<br>
+      <strong>Escenario 2: Alertas predictivas</strong><br>
+      <strong>Dado que</strong> un equipo presenta señales de desgaste, <strong>cuando</strong> el sistema detecta una anomalía, <strong>entonces</strong> recibo una alerta con recomendación preventiva.<br>
+      <strong>Escenario 3: Programación automática</strong><br>
+      <strong>Dado que</strong> se requiere mantenimiento, <strong>cuando</strong> acepto la recomendación desde la app, <strong>entonces</strong> se agenda automáticamente la intervención.<br>
+      <strong>Escenario 4: Historial de rendimiento</strong><br>
+      <strong>Dado que</strong> quiero revisar el comportamiento del equipo, <strong>cuando</strong> consulto la sección desde el móvil, <strong>entonces</strong> veo historial completo y mantenimientos realizados.
+    </td>
+    <td>EP-04</td>
+  </tr>
+
+  <tr>
+    <td>US-48</td>
+    <td>Análisis de competencia y precios dinámicos</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> analizar precios de la competencia y ajustar tarifas desde la aplicación móvil <strong>para</strong> optimizar ingresos y ocupación.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Monitoreo de precios de competidores</strong><br>
+      <strong>Dado que</strong> configuro hoteles competidores, <strong>cuando</strong> el sistema analiza sus precios, <strong>entonces</strong> veo comparaciones diarias desde la app.<br>
+      <strong>Escenario 2: Sugerencias de precios</strong><br>
+      <strong>Dado que</strong> cambian las condiciones del mercado, <strong>cuando</strong> el sistema detecta variaciones, <strong>entonces</strong> recibo recomendaciones de ajuste tarifario.<br>
+      <strong>Escenario 3: Ajuste automático de tarifas</strong><br>
+      <strong>Dado que</strong> activo precios dinámicos, <strong>cuando</strong> se cumplen ciertas condiciones, <strong>entonces</strong> el sistema actualiza las tarifas dentro de los rangos permitidos.<br>
+      <strong>Escenario 4: Análisis de elasticidad</strong><br>
+      <strong>Dado que</strong> existen cambios de precio registrados, <strong>cuando</strong> genero el análisis desde la app, <strong>entonces</strong> veo el impacto sobre ocupación e ingresos.
+    </td>
+    <td>EP-04</td>
+  </tr>
+
+  <tr>
+    <td>US-49</td>
+    <td>Cumplimiento normativo y auditoría automatizada</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> consultar reportes de cumplimiento y auditoría desde la aplicación móvil <strong>para</strong> facilitar revisiones regulatorias y asegurar trazabilidad.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Reportes regulatorios automáticos</strong><br>
+      <strong>Dado que</strong> existen obligaciones legales, <strong>cuando</strong> finaliza el período correspondiente, <strong>entonces</strong> el sistema genera automáticamente los reportes exigidos.<br>
+      <strong>Escenario 2: Trazabilidad completa</strong><br>
+      <strong>Dado que</strong> necesito una auditoría, <strong>cuando</strong> exporto información desde la app, <strong>entonces</strong> obtengo el historial de transacciones y cambios con marcas de tiempo.<br>
+      <strong>Escenario 3: Validación tributaria</strong><br>
+      <strong>Dado que</strong> se registran pagos, <strong>cuando</strong> estos se procesan, <strong>entonces</strong> el sistema valida que cumplan con requisitos tributarios.<br>
+      <strong>Escenario 4: Archivo digital organizado</strong><br>
+      <strong>Dado que</strong> debo revisar documentos para auditoría, <strong>cuando</strong> accedo desde la app, <strong>entonces</strong> encuentro archivos organizados por período, tipo y huésped.
+    </td>
+    <td>EP-04</td>
+  </tr>
+
+  <tr>
+    <td>US-50</td>
+    <td>Integración con sistemas de seguridad</td>
+    <td class="user-story-desc"><strong>Como</strong> administrador, <strong>quiero</strong> integrar Smart Stay con los sistemas de seguridad del hotel <strong>para</strong> automatizar la gestión de accesos y mejorar el control operativo.</td>
+    <td class="acceptance-criteria">
+      <strong>Escenario 1: Generación automática de código de acceso</strong><br>
+      <strong>Dado que</strong> el huésped completa el check-in digital, <strong>cuando</strong> este se confirma, <strong>entonces</strong> el sistema genera automáticamente un código único para su habitación con vigencia definida.<br>
+      <strong>Escenario 2: Revocación automática tras el check-out</strong><br>
+      <strong>Dado que</strong> el huésped completa el check-out, <strong>cuando</strong> se confirma la salida, <strong>entonces</strong> todos sus códigos de acceso quedan revocados automáticamente.<br>
+      <strong>Escenario 3: Acceso temporal para personal</strong><br>
+      <strong>Dado que</strong> un trabajador necesita entrar a una habitación por limpieza o mantenimiento, <strong>cuando</strong> se le asigna la tarea, <strong>entonces</strong> recibe un código temporal válido solo durante su turno.<br>
+      <strong>Escenario 4: Registro y alertas de accesos</strong><br>
+      <strong>Dado que</strong> se utiliza cualquier código de acceso, <strong>cuando</strong> ocurre el ingreso, <strong>entonces</strong> queda registrado en un log central y se generan alertas por accesos fuera de horario.
+    </td>
+    <td>EP-05</td>
+  </tr>
+</table>
 
 #### 2.4.2. Impact Mapping
 
