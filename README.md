@@ -747,6 +747,14 @@ En la etapa de People & Systems, se asoció cada evento con los actores y sistem
 
 ![step3.jpg](assets/Chapter-II/PeopleSystems.jpg)
 
+**Problems & Opportunities:**
+
+En la etapa de Problems & Opportunities, se analizaron los eventos para identificar problemas y oportunidades de mejora. Se detectó que el check-in presencial genera largas filas y tiempos de espera, sumado a ello reservas duplicadas, ingreso manual de datos y errores en facturación, lo que afecta la satisfacción del huésped. La oportunidad identificada es implementar un check-in digital a través de una aplicación móvil, permitiendo a los huéspedes registrarse de forma autónoma y rápida, mejorando la experiencia general y reduciendo la carga operativa del personal de recepción.
+
+![step4.jpg](assets/Chapter-II/ProblemsOpportunities.jpg) 
+
+
+
 #### 2.3.6. Ubiquitous Language
 
 
