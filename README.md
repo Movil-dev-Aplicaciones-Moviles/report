@@ -725,6 +725,15 @@ Para posicionarse de forma efectiva frente a la competencia, **Smart Stay** impl
 #### 2.3.3. User Journey Mapping
 
 #### 2.3.4. Empathy Mapping
+#### 1. Segmento Objetivo 1: STAFF OPERATIVO
+![Empathy Map - Staff Operativo](./assets/empathy-staff.png)
+
+---
+
+#### 2. Segmento Objetivo 2: HUÉSPEDES 
+![Empathy Map - Huéspedes](./assets/empathy-guest.png)
+
+
 
 #### 2.3.5. Ubiquitous Language
 
