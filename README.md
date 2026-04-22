@@ -726,7 +726,7 @@ Para posicionarse de forma efectiva frente a la competencia, **Smart Stay** impl
 
 #### 2.3.4. Empathy Mapping
 
-#### 2.3.5. Ubiquitous Language
+#### 2.3.6. Ubiquitous Language
 
 
 | **Término en Inglés**        | **Término en Español**             | **Definición**                                                                                                                                      |
