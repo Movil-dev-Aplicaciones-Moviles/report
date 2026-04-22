@@ -735,7 +735,11 @@ Los eventos capturados cubren el ciclo completo de la experiencia de un huésped
 
 ![step1.jpg](assets/Chapter-II/chaoticexploration.jpg)
 
+**Timeline:**
 
+En la etapa de Timeline, los eventos de la exploración caótica fueron organizados cronológicamente siguiendo el flujo real del negocio hotelero. Se identificó un punto de dolor en el largo tiempo de espera durante el check-in presencial (rosado), y como solución se propone el check-in digital vía móvil (verde). El flujo concluye con el check-out digital, la facturación automática y la publicación de reseñas en plataformas externas.
+
+![step2.jpg](assets/Chapter-II/Timeline.jpg)
 
 #### 2.3.6. Ubiquitous Language
 
