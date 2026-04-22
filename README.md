@@ -735,7 +735,40 @@ Para posicionarse de forma efectiva frente a la competencia, **Smart Stay** impl
 
 
 
-#### 2.3.5. Ubiquitous Language
+### 2.3.5. Big Picture EventStorming
+
+**Chaotic Exploration:**
+
+En la primera etapa del Big Picture Event Storming hicimos una Exploración Caótica (Chaotic Exploration), donde se identificaron libremente todos los eventos de dominio relevantes del sistema hotelero sin imponer un orden previo.
+Los eventos capturados cubren el ciclo completo de la experiencia de un huésped: desde la reserva realizada por app/web y su confirmación con pago, pasando por la publicación en plataformas externas (Booking/Google), la llegada del huésped, el check-in (tanto presencial como digital), la asignación de habitación, la provisión de servicios adicionales como Wi-Fi, hasta la generación automática de facturas y el check-out digital. También se identificaron eventos de gestión interna, como la corrección de reservas duplicadas y la generación de reportes de ocupación por parte del manager.
+
+![step1.jpg](assets/Chapter-II/chaoticexploration.jpg)
+
+**Timeline:**
+
+En la etapa de Timeline, los eventos de la exploración caótica fueron organizados cronológicamente siguiendo el flujo real del negocio hotelero. Se identificó un punto de dolor en el largo tiempo de espera durante el check-in presencial (rosado), y como solución se propone el check-in digital vía móvil (verde). El flujo concluye con el check-out digital, la facturación automática y la publicación de reseñas en plataformas externas.
+
+![step2.jpg](assets/Chapter-II/Timeline.jpg)
+
+**People & Systems:**
+
+En la etapa de People & Systems, se asoció cada evento con los actores y sistemas involucrados. Los actores principales son Valeria (Guest) y Adrián (Manager), acompañados por el Reception Staff y Cleaning Staff. Como sistemas externos (rosado) se identificaron las plataformas OTA (Booking, Expedia, WhatsApp), el Payment Gateway, y SUNAT/Accounting System para la facturación electrónica.
+
+![step3.jpg](assets/Chapter-II/PeopleSystems.jpg)
+
+**Problems & Opportunities:**
+
+En la etapa de Problems & Opportunities, se analizaron los eventos para identificar problemas y oportunidades de mejora. Se detectó que el check-in presencial genera largas filas y tiempos de espera, sumado a ello reservas duplicadas, ingreso manual de datos y errores en facturación, lo que afecta la satisfacción del huésped. La oportunidad identificada es implementar un check-in digital a través de una aplicación móvil, permitiendo a los huéspedes registrarse de forma autónoma y rápida, mejorando la experiencia general y reduciendo la carga operativa del personal de recepción.
+
+![step4.jpg](assets/Chapter-II/ProblemsOpportunities.jpg) 
+
+**Prioritization:**
+
+En la etapa de Prioritization, se priorizaron los problemas más críticos del flujo hotelero usando una escala de estrellas. El riesgo de overbooking resultó el de mayor prioridad, con sincronización automática de reservas como solución; seguido de los retrasos por ingreso manual en el check-in, resueltos con check-in digital; y finalmente el Wi-Fi inestable, con menor prioridad relativa.
+
+![step5.jpg](assets/Chapter-II/Prioritization.jpg)
+
+#### 2.3.6. Ubiquitous Language
 
 
 | **Término en Inglés**        | **Término en Español**             | **Definición**                                                                                                                                      |
