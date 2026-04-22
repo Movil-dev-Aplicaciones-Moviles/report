@@ -726,6 +726,17 @@ Para posicionarse de forma efectiva frente a la competencia, **Smart Stay** impl
 
 #### 2.3.4. Empathy Mapping
 
+### 2.3.5. Big Picture EventStorming
+
+**Chaotic Exploration:**
+
+En la primera etapa del Big Picture Event Storming hicimos una Exploración Caótica (Chaotic Exploration), donde se identificaron libremente todos los eventos de dominio relevantes del sistema hotelero sin imponer un orden previo.
+Los eventos capturados cubren el ciclo completo de la experiencia de un huésped: desde la reserva realizada por app/web y su confirmación con pago, pasando por la publicación en plataformas externas (Booking/Google), la llegada del huésped, el check-in (tanto presencial como digital), la asignación de habitación, la provisión de servicios adicionales como Wi-Fi, hasta la generación automática de facturas y el check-out digital. También se identificaron eventos de gestión interna, como la corrección de reservas duplicadas y la generación de reportes de ocupación por parte del manager.
+
+![step1.jpg](assets/Chapter-II/chaoticexploration.jpg)
+
+
+
 #### 2.3.6. Ubiquitous Language
 
 
