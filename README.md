@@ -753,7 +753,11 @@ En la etapa de Problems & Opportunities, se analizaron los eventos para identifi
 
 ![step4.jpg](assets/Chapter-II/ProblemsOpportunities.jpg) 
 
+**Prioritization:**
 
+En la etapa de Prioritization, se priorizaron los problemas más críticos del flujo hotelero usando una escala de estrellas. El riesgo de overbooking resultó el de mayor prioridad, con sincronización automática de reservas como solución; seguido de los retrasos por ingreso manual en el check-in, resueltos con check-in digital; y finalmente el Wi-Fi inestable, con menor prioridad relativa.
+
+![step5.jpg](assets/Chapter-II/Prioritization.jpg)
 
 #### 2.3.6. Ubiquitous Language
 
