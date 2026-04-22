@@ -741,6 +741,12 @@ En la etapa de Timeline, los eventos de la exploración caótica fueron organiza
 
 ![step2.jpg](assets/Chapter-II/Timeline.jpg)
 
+**People & Systems:**
+
+En la etapa de People & Systems, se asoció cada evento con los actores y sistemas involucrados. Los actores principales son Valeria (Guest) y Adrián (Manager), acompañados por el Reception Staff y Cleaning Staff. Como sistemas externos (rosado) se identificaron las plataformas OTA (Booking, Expedia, WhatsApp), el Payment Gateway, y SUNAT/Accounting System para la facturación electrónica.
+
+![step3.jpg](assets/Chapter-II/PeopleSystems.jpg)
+
 #### 2.3.6. Ubiquitous Language
 
 
