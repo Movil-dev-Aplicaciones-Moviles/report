@@ -2627,6 +2627,10 @@ El siguiente diagrama de contenedores representa los principales componentes del
 ![Container Level Diagram](./assets/Chapter-II/container-level-diagrams.png)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
+El siguiente diagrama de despliegue describe la infraestructura física y lógica en la que se ejecutan los principales componentes del sistema **Smart Stay**. En este caso, se representa la **aplicación móvil**, desarrollada para huéspedes y staff operativo, el **API Backend**, encargado de centralizar la lógica de negocio y la comunicación entre servicios, y el **esquema de base de datos**, donde se almacena la información relacionada con usuarios, reservas, habitaciones, tareas operativas y servicios del hotel. Asimismo, se incluyen los servicios de despliegue en la nube que soportan el funcionamiento del sistema, permitiendo la conexión entre la aplicación móvil, el backend y la base de datos de forma segura y escalable.
+![Container Level Diagram](./assets/Chapter-II/deployment-diagrams.png)
+
+
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
