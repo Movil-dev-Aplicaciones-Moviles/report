@@ -844,7 +844,12 @@ El Booking Management Component gestiona el ciclo completo de una reserva hotele
 
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
 
+El modelo físico de base de datos organiza el sistema en torno a la entidad central users, vinculada a profiles para información personal y a roles mediante la tabla intermedia user_roles para la gestión de permisos. 
+Los usuarios registrados como customers pueden suscribirse a diferentes plans, generando subscriptions que producen invoices por ciclo de facturación. 
+El módulo de cuidado gira en torno a residents, quienes se relacionan con appointments para citas médicas, daily_logs para el seguimiento diario de estado de ánimo y actividades, medical_records para el historial clínico, y notifications para alertas y recordatorios. 
+El módulo de comunicación se completa con conversation_threads, thread_participants y messages para gestionar el intercambio de mensajes entre usuarios.
 
+![MovilDev-Aplicaciones-moviles-Physical_Export.png](assets/Chapter-II/MovilDev-Aplicaciones-moviles-Physical_Export.png)
 
 ## Capítulo III: Solution UI/UX Design
 
