@@ -2611,15 +2611,15 @@ A partir de estos eventos, agrupamos los comandos, agregados y sistemas externos
 El **Domain Message Flow Modeling** es una técnica que permite representar cómo fluyen los mensajes de dominio (**commands, events y queries**) entre los distintos **bounded contexts** del sistema. Su propósito es clarificar las interacciones, dependencias y responsabilidades de cada contexto dentro de la solución.
 
 En el caso de **Smart Stay**, esta técnica permite modelar cómo se comunican contextos como **Reservation Management**, **Check-In/Check-Out**, **Housekeeping**, **Maintenance**, **Guest Services**, **IAM** e **IoT Room Control**, mostrando cómo los usuarios y el sistema generan solicitudes, actualizaciones y eventos en tiempo real. De esta manera, se puede visualizar cómo una acción realizada por el huésped o el staff operativo desencadena mensajes de dominio que impactan en otros contextos, asegurando coordinación, trazabilidad y una gestión hotelera más eficiente.
-![contextmap.png](assets/Chapter-II/dm-flow-modeling01.png)
+![dm-flow-modeling01.png](assets/dm-flow-modeling01.png)
 
-![contextmap.png](assets/Chapter-II/dm-flow-modeling02.png)
+![dm-flow-modeling02.png](assets/dm-flow-modeling02.png)
 
-![contextmap.png](assets/Chapter-II/dm-flow-modeling03.png)
+![dm-flow-modeling03.png](assets/dm-flow-modeling03.png)
 
-![contextmap.png](assets/Chapter-II/dm-flow-modeling04.png)
+![dm-flow-modeling04.png](assets/dm-flow-modeling04.png)
 
-![contextmap.png](assets/Chapter-II/dm-flow-modeling05.png)
+![dm-flow-modeling05.png](assets/dm-flow-modeling05.png)
 
 
 ##### 2.5.1.3. Bounded Context Canvases
