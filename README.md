@@ -841,6 +841,18 @@ El Booking Management Component gestiona el ciclo completo de una reserva hotele
 
 ![BookingComponentClassDiagram.png](assets/Chapter-II/BookingComponentClassDiagram.png)
 
+* Diagrama de Clases: Componente de Facturación
+
+El Billing Component gestiona el procesamiento de pagos y la emisión de facturas del sistema. La clase BillingService orquesta el flujo mediante processPayment e issueInvoice, integrando IPaymentGatewayAdapter para la ejecución del pago externo e IAuthServiceAdapter para la verificación de permisos. La entidad Payment genera una Invoice al completarse, y el enum PaymentStatus define los estados PENDING, COMPLETED, FAILED y REFUNDED.
+
+![BillingComponentClassDiagram.png](assets/Chapter-II/BillingComponentClassDiagram.png)
+
+* Diagrama de Clases: Componente Gateway IoT
+
+El IoT Gateway Component gestiona la recepción y ejecución de comandos hacia dispositivos inteligentes del hotel. El MessageListener escucha mensajes desde la cola de mensajería y los delega al RulesEngine, que determina el controlador adecuado según el tipo de dispositivo. La interfaz IDeviceController es implementada por SmartLockController y SmartLightController, ambos integrando ICloudApiClient para la comunicación con los dispositivos físicos.
+
+![IotGatewayComponentClassDiagram.png](assets/Chapter-II/IotGatewayComponentClassDiagram.png)
+
 
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
 
