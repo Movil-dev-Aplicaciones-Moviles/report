@@ -731,21 +731,27 @@ El **User Journey Mapping** permite visualizar las etapas que recorren los usuar
 En el caso de **Smart Stay**, se elaboraron dos mapas diferenciados según los segmentos objetivos:
 
 - **Segmento 1:** enfocado en la gestión operativa y la centralización de reservas.
-![User Journey Map - Staff](./assets/user-journey-staff.png)
+![User Journey Map - Staff](./assets/Chapter-II/user-journey-staff.png)
 
 - **Segmento 2:** centrado en la experiencia de estadía y la digitalización de servicios.
-![User Journey Map - Huéspedes](./assets/user-journey-guest.png)
+![User Journey Map - Huéspedes](./assets/Chapter-II/user-journey-guest.png)
 
 Estos recorridos permiten detectar fricciones, validar expectativas y proponer mejoras orientadas a optimizar tanto la gestión hotelera como la satisfacción de los huéspedes.
 
 #### 2.3.4. Empathy Mapping
+El Empathy Mapping permite comprender en profundidad las emociones, pensamientos y comportamientos de los usuarios, facilitando una conexión más humana con sus necesidades reales. A través de esta herramienta, se identifican los dolores, motivaciones y expectativas de los distintos perfiles, lo que contribuye al diseño de soluciones más relevantes y personalizadas.
+
+En el caso de Smart Stay, se elaboraron dos mapas de empatía diferenciados según los segmentos objetivos:
+
+
+Estos mapas permiten visualizar cómo cada tipo de usuario piensa, siente y actúa frente al servicio, además de reconocer los puntos de dolor (pains) y las ganancias esperadas (gains). El análisis conjunto de ambos segmentos brinda una visión integral para mejorar la eficiencia operativa del hotel y elevar la satisfacción del huésped, alineando tecnología y experiencia humana.
 #### 1. Segmento Objetivo 1: STAFF OPERATIVO
-![Empathy Map - Staff Operativo](./assets/empathy-staff.png)
+![Empathy Map - Staff Operativo](./assets/Chapter-II/empathy-staff.png)
 
 ---
 
 #### 2. Segmento Objetivo 2: HUÉSPEDES 
-![Empathy Map - Huéspedes](./assets/empathy-guest.png)
+![Empathy Map - Huéspedes](./assets/Chapter-II/empathy-guest.png)
 
 
 
