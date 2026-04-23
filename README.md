@@ -779,7 +779,7 @@ Datos del entrevistado:
 
 **Duración:** 8:07 minutos
 
-**Evidencia:** ![adrian entrevistado](assets/Chapter-02/adrian_entrevistado.jpg)
+**Evidencia:** ![adrian entrevistado](assets/Chapter-II/adrian_entrevistado.jpg)
 
 **Resumen de la entrevista**
 
@@ -803,7 +803,7 @@ Datos del entrevistado:
 
 **Duración:** 5:53 minutos
 
-**Evidencia:** ![monica entrevistada](assets/Chapter-02/monica_entrevistada.jpg)
+**Evidencia:** ![monica entrevistada](assets/Chapter-II/monica_entrevistada.jpg)
 
 **URL del video:** https://tinyurl.com/59zmmrjb
 **Resumen de la entrevista**
@@ -824,7 +824,7 @@ Datos del entrevistado:
 
 **Duración:** 4:11 minutos
 
-**Evidencia:** ![entrevista alejandra](assets/Chapter-02/alejandra_entrevistada.jpg)
+**Evidencia:** ![entrevista alejandra](assets/Chapter-II/alejandra_entrevistada.jpg)
 
 
 **URL del video:** https://tinyurl.com/2p9n2kmb
@@ -851,7 +851,7 @@ Datos del entrevistado:
 
 **Duración:** 5:34 minutos
 
-**Evidencia:** ![entrevista_alexander](assets/Chapter-02/entrevista_alexander.png)
+**Evidencia:** ![entrevista_alexander](assets/Chapter-II/entrevista_alexander.png)
 
 **URL del video:** https://tinyurl.com/me55rvnx
 
@@ -882,7 +882,7 @@ Datos del entrevistado:
 **Distrito:** San Borja
 
 
-**Evidencia:** ![Screenshot](assets/Chapter-02/JuanSalcedo.png)
+**Evidencia:** ![Screenshot](assets/Chapter-II/JuanSalcedo.png)
 
 **URL del video:** https://tinyurl.com/3mv3ytt5
 
@@ -904,7 +904,7 @@ Datos del entrevistado:
 
 **Duración:** 7:21 minutos
 
-**Evidencia:** ![Screenshot](assets/Chapter-02/EntrevistaTadeoLoja.png)
+**Evidencia:** ![Screenshot](assets/Chapter-II/EntrevistaTadeoLoja.png)
 
 **URL del video:** https://tinyurl.com/3ztyph92
 
@@ -928,13 +928,13 @@ En esta sección se presenta un análisis detallado por cada segmento objetivo, 
 
 **Perfil de Edad y Ubicación**
 Los administradores entrevistados presentan una edad promedio de **30.0 años**, con un rango que va desde los 23 hasta los 34 años.
-![Perfil de edad de administradores — boxplot](assets/Chapter-02/S1_01_perfil_edad_boxplot.png)
+![Perfil de edad de administradores — boxplot](assets/Chapter-II/S1_01_perfil_edad_boxplot.png)
 El **100%** de los entrevistados se ubican en Tarapoto, lo que indica una concentración geográfica específica en esta región turística del Perú. Este hallazgo se alinea con las tendencias nacionales, ya que según *Statista Market Forecast (2025)*, Peru ha experimentado un crecimiento significativo en el mercado hotelero, posicionándose como un actor clave en la industria hotelera latinoamericana.
-![Concentración geográfica: 100% en Tarapoto](assets/Chapter-02/S1_02_concentracion_tarapoto.png)
+![Concentración geográfica: 100% en Tarapoto](assets/Chapter-II/S1_02_concentracion_tarapoto.png)
 
 **Características del Negocio**
 Los hoteles administrados por este segmento tienen un tamaño promedio de **14.3 habitaciones**, con un rango que va desde 12 hasta 19 habitaciones, confirmando que se trata efectivamente de establecimientos boutique y pequeños. El equipo de trabajo promedio es de **5.0 personas**, variando entre 4 y 6 empleados, lo que refleja operaciones de escala reducida pero con estructura organizacional definida. Estas características coinciden con las tendencias identificadas por *Statista*, donde los viajeros en Perú buscan cada vez más experiencias únicas y auténticas, impulsando la demanda de hoteles boutique.
-![Tamaño de hoteles (habitaciones) y equipo (empleados)](assets/Chapter-02/S1_03_tamano_hoteles_equipo_boxplots.png)
+![Tamaño de hoteles (habitaciones) y equipo (empleados)](assets/Chapter-II/S1_03_tamano_hoteles_equipo_boxplots.png)
 
 **Herramientas Tecnológicas Actuales**
 
@@ -943,7 +943,7 @@ El análisis revela una heterogeneidad en los sistemas utilizados:
 - **66.7%** (2 de 3 administradores) utilizan sistemas propios desarrollados para sus hoteles.
 - **33.3%** (1 de 3 administradores) depende de herramientas básicas como Excel y WhatsApp.
 
-![Nivel de digitalización de herramientas actuales](assets/Chapter-02/S1_04_nivel_digitalizacion.png)
+![Nivel de digitalización de herramientas actuales](assets/Chapter-II/S1_04_nivel_digitalizacion.png)
 
 Esta distribución indica que, aunque la mayoría cuenta con algún nivel de digitalización, existe una brecha significativa en la sofisticación de las herramientas empleadas. Este panorama refleja los hallazgos de un estudio académico sobre barreras de adopción tecnológica en hoteles pequeños y medianos, donde se identificó que la falta de recursos financieros, conocimiento de TI y resistencia al cambio son las principales limitaciones.
 
@@ -955,7 +955,7 @@ Cada administrador enfrenta diferentes tipos de desafíos, con una distribución
 - **Dificultades operativas:** Mónica tiene complicaciones con el uso de su sistema actual.
 - **Pérdida de información:** Alejandra sufre pérdidas de reservas por las limitaciones de sus herramientas básicas.
 
-![Distribución de problemas](assets/Chapter-02/S1_05_distribucion_problemas.png)
+![Distribución de problemas](assets/Chapter-II/S1_05_distribucion_problemas.png)
 
 Estas problemáticas están documentadas en la literatura académica, donde se ha identificado que las organizaciones hoteleras pequeñas y medianas son más reluctantes a adoptar nuevas tecnologías de información que las más grandes, debido a la falta de entrenamiento, recursos financieros limitados y percepción de costos elevados.
 
@@ -968,7 +968,7 @@ Los resultados muestran una receptividad completa hacia soluciones tecnológicas
 
 Esta disposición positiva contrasta con estudios previos pero se alinea con las tendencias post-pandemia. Según *Oracle Hospitality & Skift (2022)*, el **89%** de los ejecutivos hoteleros latinoamericanos afirmaron que la pandemia aceleró su adopción de tecnología hotelera, comparado con el 76% globalmente.
 
-![Actitud hacia nueva tecnología](assets/Chapter-02/S1_06_actitud_nuevas_tecnologias.png)
+![Actitud hacia nueva tecnología](assets/Chapter-II/S1_06_actitud_nuevas_tecnologias.png)
 
 ---
 
@@ -978,7 +978,7 @@ Esta disposición positiva contrasta con estudios previos pero se alinea con las
 
 **Perfil Generacional**
 Los huéspedes entrevistados tienen una edad promedio de **28.0 años**, con un rango de 21 a 44 años. El **75%** pertenece a la generación Millennial/Gen Z (menores de 26 años), lo que sugiere un segmento predominantemente joven y digitalmente nativo. Esta composición demográfica es especialmente relevante, ya que según *Hotel Tech Report (2025)*, los millennials son **57% más propensos** a ser influenciados por la tecnología hotelera.
-![Composición generacional de huéspedes](assets/Chapter-02/S2_07a_boxplot_edades_huespedes.png)
+![Composición generacional de huéspedes](assets/Chapter-II/S2_07a_boxplot_edades_huespedes.png)
 
 **Patrones de Viaje y Preferencias Tecnológicas**
 
@@ -988,7 +988,7 @@ El análisis de los patrones de viaje revela:
 - **25%** viaja por trabajo (Juan).
 - **100%** mantiene una frecuencia regular de viaje (anual o cada 1-2 meses).
 
-![Propósito de viaje](assets/Chapter-02/S2_08a_proposito_viaje.png)
+![Propósito de viaje](assets/Chapter-II/S2_08a_proposito_viaje.png)
 
 Las preferencias de esta generación están bien documentadas en la investigación de *Mews (2025)*, que indica que las estimaciones sugieren que los millennials representarán el **50%** de los huéspedes hoteleros en los próximos años, convirtiéndolos en críticos para los ingresos y el crecimiento de marca de los hoteles.
 
@@ -999,7 +999,7 @@ Los problemas identificados muestran patrones claros:
 - **75%** experimenta esperas prolongadas en recepción como principal frustración.
 - **25%** señala problemas con horarios estrictos de check-in/check-out.
 
-![Puntos de dolor](assets/Chapter-02/S2_09_puntos_dolor.png)
+![Puntos de dolor](assets/Chapter-II/S2_09_puntos_dolor.png)
 
 Estos hallazgos se correlacionan directamente con estudios globales de la industria. Según *Oracle Hospitality & Skift (2022)*, el **65%** de los huéspedes desean que los hoteles ofrezcan tecnologías que minimicen el contacto con el personal y otros huéspedes. Además, el **43%** de los huéspedes de lujo esperan no hacer filas, según *Hotel Tech Report (2025)*.
 
@@ -1012,7 +1012,7 @@ Los resultados demuestran una fuerte inclinación hacia soluciones digitales:
 - **100%** considera las reseñas digitales como factor influyente en sus decisiones.
 
 
-![S2_10_receptividad_digitalizacion.png](assets/Chapter-02/S2_10_receptividad_digitalizacion.png)
+![S2_10_receptividad_digitalizacion.png](assets/Chapter-II/S2_10_receptividad_digitalizacion.png)
 
 - Estos datos se alinean con investigaciones globales que indican que el **74%** de los huéspedes esperan poder hacer en línea cualquier cosa que ya pueden hacer en persona o por teléfono. Además, el **48%** de los huéspedes considera las reseñas en línea como el factor principal para elegir un hotel.
 
@@ -1021,7 +1021,7 @@ Los resultados demuestran una fuerte inclinación hacia soluciones digitales:
 - **50%** pagaría entre 5-10% adicional.
 - **25%** no pagaría sobrecosto adicional.
 
-![S2_11_disposicion_pagar.png](assets/Chapter-02/S2_11_disposicion_pagar.png)
+![S2_11_disposicion_pagar.png](assets/Chapter-II/S2_11_disposicion_pagar.png)
 
 La disposición a pagar por tecnología varía según la generación. Mientras que el **35%** de la Gen Z considera que la velocidad del Wi-Fi es más importante que la comodidad de la cama, los usuarios de mayor edad muestran menos disposición a pagar extra por funciones digitales avanzadas.
 
@@ -1029,30 +1029,9 @@ La disposición a pagar por tecnología varía según la generación. Mientras q
 - **50%** reporta alta influencia de reseñas (70% o más en su decisión).
 - **100%** considera las reseñas como factor relevante en su proceso de selección.
 
-![S2_12_influencia_resenas.png](assets/Chapter-02/S2_12_influencia_resenas.png)
+![S2_12_influencia_resenas.png](assets/Chapter-II/S2_12_influencia_resenas.png)
 
 Esta tendencia refleja datos globales donde las reseñas en línea han reemplazado el boca a boca tradicional, con los millennials consultando plataformas como TripAdvisor, Google y redes sociales antes de reservar.
-
-
-**Chaotic Exploration:**
-
-![step1.jpg](assets/Chapter-02/chaoticexploration.jpg)
-
-**Timeline:**
-
-![step2.jpg](assets/Chapter-02/Timeline.jpg)
-
-**People & Systems:**
-
-![step3.jpg](assets/Chapter-02/PeopleSystems.jpg)
-
-**Problems & Opportunities:**
-
-![step4.jpg](assets/Chapter-02/ProblemsOpportunities.jpg)
-
-**Prioritization:**
-
-![step5.jpg](assets/Chapter-02/Prioritization.jpg)
 
 ### 2.3. Needfinding
 
