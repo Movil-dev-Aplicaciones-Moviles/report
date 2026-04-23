@@ -1038,9 +1038,106 @@ Esta tendencia refleja datos globales donde las reseñas en línea han reemplaza
 
 #### 2.3.1. User Personas
 
-### 2.3.1. User Personas.
+**Segmento 1 – Administradores de Hoteles Boutique y Pequeños en Lima**
+
+![user-person1.jpg](assets/Chapter-II/UserPerson1.png)
+
+**Segmento 2 – Huéspedes de Hoteles**
+
+![user-person2.jpg](assets/Chapter-II/UserPerson2.png)
+
 
 #### 2.3.2. User Task Matrix
+
+En esta sección se presenta el **User Task Matrix**, que concentra las tareas que los User Persona realizan para cumplir sus objetivos en la gestión hotelera y la experiencia de estadía. Las tareas descritas existen independientemente de cualquier solución de software, pero se analizan considerando el contexto de digitalización, movilidad e integración con tecnologías IoT.
+
+Se consideran dos segmentos con sus respectivos User Persona:
+
+- **Administradores de Hoteles Boutique y Pequeños en Lima** (User Persona: Administrador)  
+- **Huéspedes de Hoteles Boutique** (User Persona: Huésped)  
+
+---
+
+### Matriz de Tareas
+
+| Tarea / Task | Administradores Frecuencia | Administradores Importancia | Huéspedes Frecuencia | Huéspedes Importancia |
+|-------------|--------------------------|-----------------------------|----------------------|-----------------------|
+| Centralizar reservas, housekeeping y mantenimiento en un solo sistema | Alta | Alta | Media | Alta |
+| Evitar sobreventa mediante sincronización en tiempo real | Media | Alta | Baja | Media |
+| Gestionar check-in/check-out digital (sin contacto) | Alta | Alta | Alta | Alta |
+| Monitorear ocupación, disponibilidad y estado de habitaciones en tiempo real | Alta | Alta | Media | Media |
+| Generar reportes operativos y métricas (KPIs) | Media | Alta | Baja | Media |
+| Gestionar pagos y facturación digital | Media | Alta | Media | Alta |
+| Coordinar housekeeping y mantenimiento con notificaciones en tiempo real | Alta | Alta | Baja | Media |
+| Capacitar al personal en el uso de aplicaciones móviles | Media | Media | Baja | Media |
+| Controlar costos operativos y consumo energético (IoT) | Media | Alta | Baja | Media |
+| Integrar canales digitales (OTAs, apps, plataformas online) | Media | Alta | Media | Alta |
+| Gestionar reseñas y reputación digital | Media | Alta | Alta | Alta |
+| Personalizar servicios y comunicación con el huésped | Media | Media | Media | Alta |
+| Realizar reservas y pagos desde el móvil | — | — | Alta | Alta |
+| Realizar check-in/check-out sin contacto | — | — | Alta | Alta |
+| Controlar la habitación mediante app (luces, temperatura, servicios IoT) | — | — | Media | Alta |
+| Solicitar servicios del hotel desde la app (room service, soporte) | — | — | Alta | Alta |
+| Acceder a información del hotel y recomendaciones digitales | — | — | Media | Media |
+| Evaluar experiencia y dejar reseñas post-estadía | — | — | Media | Alta |
+
+---
+
+### Análisis
+
+#### Tareas de mayor frecuencia e importancia compartidas
+
+- **Gestión de check-in/check-out digital:** Alta/Alta en ambos perfiles, siendo un punto crítico que impacta directamente en la experiencia del huésped y la eficiencia operativa.  
+- **Gestión de reseñas y reputación digital:** Alta importancia en ambos segmentos, ya que influye en la decisión de futuros clientes y en los ingresos del hotel.  
+
+---
+
+#### Tareas críticas para Administradores
+
+Las tareas más relevantes están orientadas a la **optimización operativa mediante digitalización y tiempo real**, entre ellas:
+
+- Centralizar reservas, housekeeping y mantenimiento  
+- Monitorear ocupación y estado de habitaciones en tiempo real  
+- Evitar sobreventa mediante sincronización de datos  
+- Integrar múltiples canales digitales  
+- Gestionar pagos, facturación y reportes  
+
+Además, destaca el:
+
+- **Control de costos operativos y consumo energético (IoT)**  
+  → Alta importancia por su impacto financiero y eficiencia del hotel  
+
+---
+
+#### Tareas críticas para Huéspedes
+
+El huésped presenta un enfoque **mobile-first**, priorizando:
+
+- Reservas y pagos desde el smartphone  
+- Check-in/check-out sin contacto  
+- Solicitud de servicios mediante apps  
+- Experiencia personalizada dentro de la habitación  
+
+También destacan:
+
+- **Control del entorno mediante IoT (luces, temperatura, servicios)**  
+- Acceso rápido a información y servicios digitales  
+
+---
+
+#### Diferencias clave
+
+- **Administradores:** Enfocados en eficiencia operativa, coordinación interna y control de recursos.  
+- **Huéspedes:** Enfocados en rapidez, autonomía, comodidad y experiencia digital personalizada.  
+
+---
+
+#### Coincidencias
+
+- Ambos segmentos valoran procesos rápidos y eficientes.  
+- Ambos dependen de una **correcta gestión de información en tiempo real**.  
+- Existe una alineación clara hacia la **digitalización, automatización y autoservicio**.  
+
 
 #### 2.3.3. User Journey Mapping
 
