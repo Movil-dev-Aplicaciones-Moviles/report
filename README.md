@@ -167,8 +167,8 @@ Los gráficos muestran la distribución del trabajo del equipo durante esta fase
       - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
       - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
   - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-    - [2.6.1. Bounded Context: \[Nombre del Bounded Context\]](#261-bounded-context-nombre-del-bounded-context)
-      - [2.6.1.1. Domain Layer](#2611-domain-layer)
+  - [2.6.1. Bounded Context: Bookings \& Payments](#261-bounded-context-bookings--payments)
+    - [2.6.1.1. Domain Layer](#2611-domain-layer)
       - [2.6.1.2. Interface Layer](#2612-interface-layer)
       - [2.6.1.3. Application Layer](#2613-application-layer)
       - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
@@ -2526,15 +2526,138 @@ A partir de estos eventos, agrupamos los comandos, agregados y sistemas externos
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
-#### 2.6.1. Bounded Context: [Nombre del Bounded Context]
+### 2.6.1. Bounded Context: Bookings & Payments
 
-##### 2.6.1.1. Domain Layer
+Siguiendo el modelo de arquitectura "Clean Architecture", a continuación se detallan las capas del dominio para la gestión de reservas y pagos.
+
+#### 2.6.1.1. Domain Layer
+
+En esta capa se definen las reglas de negocio fundamentales y los objetos que representan la lógica comercial de la estancia.
+
+**Sub-capa Model - Aggregates:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Aggregate | **Booking** | Entidad raíz que representa una reserva en el sistema. | Mantener la integridad de la reserva, validar periodos de estancia y gestionar la transición de estados. | Relacionado con IAM (vía UserId) y Properties (vía RoomId). |
+
+**Sub-capa Model - Commands:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Command | **PlaceBookingCommand** | Comando para la creación de una reserva. | Transportar la intención del usuario de reservar una habitación o servicio. | Usado en la implementación del servicio de aplicación de reservas. |
+| Command | **ConfirmPaymentCommand** | Comando para validar el pago. | Representar la intención de procesar la transacción financiera. | Interactúa con servicios externos de pasarelas de pago. |
+| Command | **CancelBookingCommand** | Comando para anular una reserva. | Representar la intención de cancelar una reserva activa. | Cambia el estado del agregado Booking. |
+
+**Sub-capa Model - Queries:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Query | **GetBookingByIdQuery** | Consulta de reserva por ID. | Recuperar la información detallada de una reserva específica. | Usado para la vista de detalle en la aplicación móvil. |
+| Query | **GetBookingsByGuestIdQuery** | Consulta de reservas por huésped. | Obtener el listado completo de reservas asociadas a un identificador de usuario. | Esencial para el historial de usuario en la aplicación móvil. |
+
+**Sub-capa Model - Value Objects:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Value Object | **BookingPeriod** | Rango de fechas de la estancia. | Validar que la fecha de check-in sea anterior a la de check-out. | Atributo de la clase Booking. |
+| Value Object | **Money** | Estructura para montos y divisas. | Asegurar el manejo correcto de valores monetarios y tipos de moneda. | Usado en el agregado Booking y comandos de pago. |
+| Value Object | **BookingStatus** | Estado de la reserva. | Definir los estados válidos (Pendiente, Confirmado, Cancelado, Completado). | Usado en el control de flujo de Booking. |
+
+**Sub-capa Services:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | **IBookingCommandService** | Servicio para métodos de creación y modificación de reservas. | Estipular una estructura clara para el procesamiento de transacciones. | Uso en la capa "Application" para implementar la lógica de negocio. |
+| Interface | **IBookingQueryService** | Servicio para métodos de consulta de datos de reservas. | Estipular la estructura para la recuperación de información. | Uso en la capa "Application" e interactúa con la capa de infraestructura. |
+
+**Sub-capa Repositories:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | **IBookingRepository** | Contrato para la persistencia del modelo Booking. | Definir métodos para el almacenamiento y recuperación de datos de reservas. | Implementado en la capa de Infrastructure. |
 
 ##### 2.6.1.2. Interface Layer
 
+En esta capa se gestiona la comunicación con el exterior, transformando las peticiones HTTP en comandos o consultas del dominio y viceversa.
+
+**Sub-capa REST - Resources:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Resource | **BookingResource** | Estructura de respuesta con datos de la reserva. | Representar y exponer los datos de una reserva de forma estructurada para el cliente móvil. | Usado en `BookingsController` para emitir datos sobre reservas. |
+| Resource | **CreateBookingResource** | Estructura para la petición de creación de reserva. | Representar los datos necesarios (fechas, habitación, etc.) para iniciar el proceso de reserva. | Uso en el `BookingsController` para recibir datos de creación. |
+| Resource | **ConfirmPaymentResource** | Estructura para la confirmación de pago. | Representar los datos de la transacción financiera enviada por la aplicación. | Uso en el `PaymentsController` para procesar pagos. |
+
+**Sub-capa REST - Transform:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Assembler | **BookingResourceFromEntityAssembler** | Transformador de entidad `Booking` a `BookingResource`. | Convertir la entidad del dominio a su representación REST para el cliente. | Usado en controladores para transformar respuestas. |
+| Assembler | **PlaceBookingCommandFromResourceAssembler** | Transformador de `CreateBookingResource` a `PlaceBookingCommand`. | Convertir la petición REST en un comando de dominio para crear la reserva. | Usado en `BookingsController`. |
+| Assembler | **ConfirmPaymentCommandFromResourceAssembler** | Transformador de `ConfirmPaymentResource` a `ConfirmPaymentCommand`. | Convertir la petición de pago en un comando de validación financiera. | Usado en `PaymentsController`. |
+
+**Sub-capa REST - Controllers:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Controller | **BookingsController** | Controlador para operaciones de reserva. | Manejar las peticiones HTTP relacionadas con el ciclo de vida de una reserva (crear, buscar, cancelar). | Usa `IBookingCommandService`, `IBookingQueryService` y assemblers. |
+| Controller | **PaymentsController** | Controlador para operaciones de pago. | Manejar las peticiones HTTP relacionadas con la validación de pagos y transacciones. | Usa los command services y outbound services de pago. |
+
+**Sub-capa ACL (Anti-Corruption Layer):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Service | **BookingContextFacade** | Servicio de fachada para el contexto de reservas. | Proporcionar una interfaz simplificada para interactuar con el contexto de reservas desde otros bounded contexts. | Relacionado con `Operational Tasks` y `Analytics`. |
+
+---
+
 ##### 2.6.1.3. Application Layer
 
+Capa encargada de orquestar los flujos de trabajo del negocio y dirigir el uso de los objetos del dominio.
+
+**Sub-capa Internal - CommandServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| CommandHandler | **BookingCommandService** | Implementación de los comandos de reserva. | Implementar la lógica para crear, confirmar y cancelar reservas siguiendo las reglas del dominio. | Implementa `IBookingCommandService` de la capa de Domain. |
+
+**Sub-capa Internal - OutboundServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | **IPaymentGatewayService** | Interfaz para la pasarela de pagos. | Definir contratos para operaciones de procesamiento de pagos con servicios externos (Stripe/PayPal). | Implementado en la capa de Infrastructure. |
+| Interface | **IExternalPropertyService** | Interfaz para comunicación con el contexto de propiedades. | Definir el contrato para validar la disponibilidad de habitaciones y recursos del hotel. | Implementado vía ACL o Infrastructure. |
+
+**Sub-capa Internal - QueryServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| QueryHandler | **BookingQueryService** | Implementación de las consultas de reservas. | Implementar los métodos para recuperar información de reservas desde la persistencia. | Implementa `IBookingQueryService` de la capa de Domain. |
+
+---
+
 ##### 2.6.1.4. Infrastructure Layer
+
+Esta capa contiene las implementaciones técnicas y el soporte de herramientas externas.
+
+**Sub-capa Persistence (EFC):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Repository | **BookingRepository** | Repositorio para el modelo `Booking` con Entity Framework Core. | Acceder, persistir y manipular los datos de reservas en la base de datos SQL. | Usado en la capa `Application` para gestionar el estado de las reservas. |
+
+**Sub-capa External Gateways (Stripe/PayPal):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Service | **PaymentGatewayService** | Servicio para el procesamiento de pagos. | Implementar la integración técnica con la API de la pasarela de pagos seleccionada. | Implementa `IPaymentGatewayService` de la capa Application. |
+
+**Sub-capa Pipeline (Middleware):**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Middleware | **BookingValidationMiddleware** | Interceptor de validación de negocio. | Validar que las fechas de reserva sean coherentes y los datos sean válidos antes de llegar al controlador. | Relacionado con el pipeline de la aplicación web API. |
+| Extension | **BookingMiddlewareExtensions** | Extensiones para la configuración del pipeline. | Proporcionar métodos de extensión para configurar e inyectar el middleware de validación. | Usado en la configuración de `Program.cs` o `Startup.cs`. |
 
 ##### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
