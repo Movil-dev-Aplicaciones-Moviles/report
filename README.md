@@ -822,7 +822,29 @@ En la etapa de Prioritization, se priorizaron los problemas más críticos del f
 
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+ * Diagrama de Clases: Componente de Autenticación
+
+El Auth Component define la estructura del módulo de autenticación del sistema. La clase AuthService gestiona el registro, login (retornando JWT), validación de tokens y verificación de permisos por rol, apoyándose en la interfaz IUserRepository para el acceso a datos. La entidad abstracta User centraliza los atributos comunes, de la cual heredan las clases concretas Guest, Host y HotelStaff, mientras que el enum Role establece los cuatro tipos de usuario del sistema.
+
+![AuthComponentClassDiagram.png](assets/Chapter-II/AuthComponentClassDiagram.png) 
+
+
+* Diagrama de Clases: Componente de Gestión de Propiedades y Operaciones
+
+El Properties & Operations Component gestiona las propiedades y habitaciones del sistema hotelero. La clase PropertyService centraliza el registro de propiedades, actualización de estados de habitaciones y verificación de disponibilidad, apoyándose en IPropertyRepository para la persistencia. Adicionalmente, integra la interfaz IIoTCommandPublisher como abstracción para el envío de comandos IoT vía AMQP/MQTT, mientras que el enum RoomStatus define los estados posibles de cada habitación.
+
+![PropertyComponentClassDiagram.png](assets/Chapter-II/PropertyComponentClassDiagram.png)
+
+* Diagrama de Clases: Componente de Gestión de Reservas
+
+El Booking Management Component gestiona el ciclo completo de una reserva hotelera. La clase BookingService orquesta la creación y cancelación de reservas y el registro de reseñas, coordinando tres adaptadores: IPropertyServiceAdapter para disponibilidad, IBillingServiceAdapter para pagos e INotificationServiceAdapter para confirmaciones. La entidad Booking define el estado del proceso mediante el enum BookingStatus (PENDING, CONFIRMED, CANCELLED, COMPLETED) y puede asociarse opcionalmente a una Review.
+
+![BookingComponentClassDiagram.png](assets/Chapter-II/BookingComponentClassDiagram.png)
+
+
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+
 
 ## Capítulo III: Solution UI/UX Design
 
