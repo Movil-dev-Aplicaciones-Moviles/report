@@ -2616,6 +2616,10 @@ A partir de estos eventos, agrupamos los comandos, agregados y sistemas externos
 #### 2.5.3. Software Architecture
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
+Para el siguiente diagrama de contexto, se muestra la relación entre el sistema **Smart Stay** y los actores que interactúan con él, destacando a los **Huéspedes**, quienes realizan reservas, check-in/check-out y solicitan servicios desde su dispositivo móvil, y al **Staff Operativo / Administrador**, que gestiona habitaciones, coordina tareas y supervisa las operaciones en tiempo real; además, se incluyen los servicios externos como el **servicio de pagos** para procesar transacciones, las **plataformas OTA** para sincronizar reservas, el **servicio de notificaciones** para la comunicación con usuarios, y los **dispositivos IoT** para el monitoreo y control de las condiciones de las habitaciones.
+### Smart Stay – Context Level Diagram
+![Context Level Diagram](./assets/Chapter-II/context-level-diagrams.png)
+
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
 
