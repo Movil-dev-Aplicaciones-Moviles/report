@@ -742,7 +742,8 @@ Estos recorridos permiten detectar fricciones, validar expectativas y proponer m
 El Empathy Mapping permite comprender en profundidad las emociones, pensamientos y comportamientos de los usuarios, facilitando una conexión más humana con sus necesidades reales. A través de esta herramienta, se identifican los dolores, motivaciones y expectativas de los distintos perfiles, lo que contribuye al diseño de soluciones más relevantes y personalizadas.
 
 En el caso de Smart Stay, se elaboraron dos mapas de empatía diferenciados según los segmentos objetivos:
-
+##### 1. Segmento Objetivo 1: STAFF OPERATIVO
+##### 2. Segmento Objetivo 2: HUÉSPEDES 
 
 Estos mapas permiten visualizar cómo cada tipo de usuario piensa, siente y actúa frente al servicio, además de reconocer los puntos de dolor (pains) y las ganancias esperadas (gains). El análisis conjunto de ambos segmentos brinda una visión integral para mejorar la eficiencia operativa del hotel y elevar la satisfacción del huésped, alineando tecnología y experiencia humana.
 #### 1. Segmento Objetivo 1: STAFF OPERATIVO
