@@ -2847,7 +2847,46 @@ Esta capa contiene las implementaciones técnicas y el soporte de herramientas e
 
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+ * Diagrama de Clases: Componente de Autenticación
+
+El Auth Component define la estructura del módulo de autenticación del sistema. La clase AuthService gestiona el registro, login (retornando JWT), validación de tokens y verificación de permisos por rol, apoyándose en la interfaz IUserRepository para el acceso a datos. La entidad abstracta User centraliza los atributos comunes, de la cual heredan las clases concretas Guest, Host y HotelStaff, mientras que el enum Role establece los cuatro tipos de usuario del sistema.
+
+![AuthComponentClassDiagram.png](assets/Chapter-II/AuthComponentClassDiagram.png) 
+
+
+* Diagrama de Clases: Componente de Gestión de Propiedades y Operaciones
+
+El Properties & Operations Component gestiona las propiedades y habitaciones del sistema hotelero. La clase PropertyService centraliza el registro de propiedades, actualización de estados de habitaciones y verificación de disponibilidad, apoyándose en IPropertyRepository para la persistencia. Adicionalmente, integra la interfaz IIoTCommandPublisher como abstracción para el envío de comandos IoT vía AMQP/MQTT, mientras que el enum RoomStatus define los estados posibles de cada habitación.
+
+![PropertyComponentClassDiagram.png](assets/Chapter-II/PropertyComponentClassDiagram.png)
+
+* Diagrama de Clases: Componente de Gestión de Reservas
+
+El Booking Management Component gestiona el ciclo completo de una reserva hotelera. La clase BookingService orquesta la creación y cancelación de reservas y el registro de reseñas, coordinando tres adaptadores: IPropertyServiceAdapter para disponibilidad, IBillingServiceAdapter para pagos e INotificationServiceAdapter para confirmaciones. La entidad Booking define el estado del proceso mediante el enum BookingStatus (PENDING, CONFIRMED, CANCELLED, COMPLETED) y puede asociarse opcionalmente a una Review.
+
+![BookingComponentClassDiagram.png](assets/Chapter-II/BookingComponentClassDiagram.png)
+
+* Diagrama de Clases: Componente de Facturación
+
+El Billing Component gestiona el procesamiento de pagos y la emisión de facturas del sistema. La clase BillingService orquesta el flujo mediante processPayment e issueInvoice, integrando IPaymentGatewayAdapter para la ejecución del pago externo e IAuthServiceAdapter para la verificación de permisos. La entidad Payment genera una Invoice al completarse, y el enum PaymentStatus define los estados PENDING, COMPLETED, FAILED y REFUNDED.
+
+![BillingComponentClassDiagram.png](assets/Chapter-II/BillingComponentClassDiagram.png)
+
+* Diagrama de Clases: Componente Gateway IoT
+
+El IoT Gateway Component gestiona la recepción y ejecución de comandos hacia dispositivos inteligentes del hotel. El MessageListener escucha mensajes desde la cola de mensajería y los delega al RulesEngine, que determina el controlador adecuado según el tipo de dispositivo. La interfaz IDeviceController es implementada por SmartLockController y SmartLightController, ambos integrando ICloudApiClient para la comunicación con los dispositivos físicos.
+
+![IotGatewayComponentClassDiagram.png](assets/Chapter-II/IotGatewayComponentClassDiagram.png)
+
+
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+El modelo físico de base de datos organiza el sistema en torno a la entidad central users, vinculada a profiles para información personal y a roles mediante la tabla intermedia user_roles para la gestión de permisos. 
+Los usuarios registrados como customers pueden suscribirse a diferentes plans, generando subscriptions que producen invoices por ciclo de facturación. 
+El módulo de cuidado gira en torno a residents, quienes se relacionan con appointments para citas médicas, daily_logs para el seguimiento diario de estado de ánimo y actividades, medical_records para el historial clínico, y notifications para alertas y recordatorios. 
+El módulo de comunicación se completa con conversation_threads, thread_participants y messages para gestionar el intercambio de mensajes entre usuarios.
+
+![MovilDev-Aplicaciones-moviles-Physical_Export.png](assets/Chapter-II/MovilDev-Aplicaciones-moviles-Physical_Export.png)
 
 ## Capítulo III: Solution UI/UX Design
 
