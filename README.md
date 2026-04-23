@@ -263,8 +263,8 @@ En esta sección, cada miembro del equipo formula un plan que incluye al menos d
 
 ### 4. Marcoandres Herrera Albites
 
-- **Objetivo 1:** [Redactar aquí]
-- **Objetivo 2:** [Redactar aquí]
+- **Objetivo 1:** Convertirme en desarrollador full stack profesional en los próximos 2 años, dominando tecnologías modernas como React, Node.js y arquitecturas backend, para poder trabajar de forma remota y generar ingresos estables en el mercado internacional.
+- **Objetivo 2:** Desarrollar proyectos propios que generen ingresos (SaaS o apps), aplicando mis conocimientos en desarrollo web y software, con el objetivo de alcanzar independencia económica y experiencia práctica real en el mundo tecnológico.
 
 ### 5. July Paico
 
