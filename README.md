@@ -2624,6 +2624,18 @@ En el caso de **Smart Stay**, esta técnica permite modelar cómo se comunican c
 
 ##### 2.5.1.3. Bounded Context Canvases
 
+El **Bounded Context Canvas** es una herramienta visual aplicada en el marco del **Domain-Driven Design (DDD)** que permite representar de manera clara los límites, responsabilidades e interacciones de cada contexto dentro de un sistema complejo. Su propósito es facilitar que los equipos construyan una visión compartida sobre el nombre y objetivo de cada contexto, las entidades y agregados que lo conforman, así como las reglas de negocio que gobiernan su funcionamiento.
+
+En el caso de **Smart Stay**, los bounded contexts permiten estructurar la solución en dominios bien definidos como **Reservation Management**, **Check-In/Check-Out**, **Housekeeping**, **Maintenance**, **Guest Services**, **IAM** e **IoT Room Control**, los cuales trabajan de manera coordinada para garantizar la gestión eficiente de las operaciones hoteleras y la experiencia del huésped.
+
+En esta sección se presentan los **Bounded Context Canvases** correspondientes a los contextos identificados en el proyecto, donde se detallan sus comunicaciones de entrada y salida, lenguaje ubicuo, decisiones de negocio y responsabilidades dentro del sistema.
+
+![bounded01.png](assets/Chapter-II/bounded01.png)
+![bounded02.png](assets/Chapter-II/bounded02.png)
+![bounded03.png](assets/Chapter-II/bounded03.png)
+![bounded04.png](assets/Chapter-II/bounded04.png)
+![bounded05.png](assets/Chapter-II/bounded05.png)
+
 #### 2.5.2. Context Mapping
 
 ![contextmap.png](assets/Chapter-II/contextmap.png)
