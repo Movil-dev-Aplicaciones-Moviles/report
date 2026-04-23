@@ -2622,6 +2622,9 @@ Para el siguiente diagrama de contexto, se muestra la relación entre el sistema
 
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
+El siguiente diagrama de contenedores representa los principales componentes del sistema Smart Stay y su interacción, incluyendo la aplicación móvil para huéspedes y la aplicación para el staff operativo, que permiten gestionar la experiencia y las operaciones del hotel, así como un backend que centraliza la lógica de negocio, reservas, housekeeping, mantenimiento y comunicación en tiempo real; además, se consideran los bounded contexts como gestión de usuarios, reservas, servicios e integración con IoT, junto con la base de datos y los servicios externos como plataformas OTA, sistemas de pago y notificaciones, que complementan el funcionamiento de la plataforma.
+### Smart Stay – Container Level Diagram
+![Container Level Diagram](./assets/Chapter-II/container-level-diagrams.png)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
 
