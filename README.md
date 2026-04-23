@@ -139,6 +139,7 @@ Los gráficos muestran la distribución del trabajo del equipo durante esta fase
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
+  - [2.3.1. User Personas.](#231-user-personas-1)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
 - [User Journey Mapping](#user-journey-mapping)
@@ -1036,6 +1037,8 @@ Esta tendencia refleja datos globales donde las reseñas en línea han reemplaza
 ### 2.3. Needfinding
 
 #### 2.3.1. User Personas
+
+### 2.3.1. User Personas.
 
 #### 2.3.2. User Task Matrix
 
@@ -2426,7 +2429,86 @@ En la etapa de Prioritization, se priorizaron los problemas más críticos del f
 
 #### 2.5.1. EventStorming
 
+**Legend of terminologies:**
+
+![terminology.jpg](assets/Chapter-II/terminology.png)
+
+**Step 1: Unstructured Exploration:**
+
+![step1.jpg](assets/Chapter-II/step1.png)
+
+**Step 2: Timelines:**
+
+![step2.jpg](assets/Chapter-II/step2.png)
+
+**Step 3: Paint Points:**
+
+![step3.jpg](assets/Chapter-II/step3.png)
+
+**Step 4: Pivotal Points:**
+
+![step4.jpg](assets/Chapter-II/step4.png)
+
+**Step 5: Commands:**
+
+![step5.jpg](assets/Chapter-II/step5.png)
+
+**Step 6: Policies:**
+
+![step6.jpg](assets/Chapter-II/step6.png)
+
+**Step 7: Read models:**
+
+![step7.jpg](assets/Chapter-II/step7.png)
+
+**Step 8: External Systems:**
+
+![step8.jpg](assets/Chapter-II/step8.png)
+
+**Step 9: Aggregates:**
+
+![step9.jpg](assets/Chapter-II/step9.png)
+
+**Step 10: Bounded Contexts:**
+
+![step10.jpg](assets/Chapter-II/step10.png)
+
+**Link para visualizar mejor:** https://tinyurl.com/8529395x
+
 ##### 2.5.1.1. Candidate Context Discovery
+
+En esta sesión, el equipo aplicó la técnica de **Candidate Context Discovery** con el objetivo de descomponer el dominio general en subconjuntos con límites naturales o **Bounded Contexts**. Para lograrlo, se utilizó principalmente la técnica **Look-for-pivotal-events**, la cual consiste en identificar aquellos eventos clave que marcan un cambio de estado significativo en el proceso de negocio o un cambio de lenguaje dentro del dominio.
+
+La sesión se dividió en fases progresivas para garantizar que los límites (*Boundaries*) de cada contexto estuvieran alineados con las reglas de negocio y las responsabilidades técnicas del sistema de gestión hotelera **Smart Stay**.
+
+---
+
+**Paso 1: Identificación de Pivotal Events**
+
+Analizando la línea de tiempo del EventStorming, identificamos los eventos que actúan como "puentes" o puntos de quiebre entre las diferentes fases del servicio. Estos eventos clave son:
+
+* **User mode selected:** Punto de quiebre entre la exploración general del servicio y el inicio de flujos específicos por rol.
+* **Administrator registered / Staff registered / Guest registered:** Eventos que cierran la fase de gestión de identidad e inician la operatividad.
+* **Hotel created in the system:** Marca el inicio de la configuración de infraestructura del hotel.
+* **Reservation completed:** Finaliza el proceso comercial e inicia el flujo de servicios al huésped.
+* **Digital check-in completed:** Activa las capacidades **IoT** de la habitación para el usuario.
+* **Tasks marked as completed:** Marca el fin de una iteración operativa del personal de limpieza o mantenimiento.
+
+---
+
+**Paso 2: Agrupación de Bounded Contexts (Candidate Contexts)**
+
+A partir de estos eventos, agrupamos los comandos, agregados y sistemas externos en contextos específicos. A continuación, se detalla la propuesta de Bounded Contexts para **Smart Stay**:
+
+| Bounded Context | Descripción | Eventos Clave |
+| :--- | :--- | :--- |
+| **IAM (Identity & Access Management)** | Gestiona la seguridad, autenticación y autorización de todos los usuarios (Admin, Staff, Huésped). | Administrator registered, Secure authentication completed, Personal data encrypted. |
+| **Profiles** | Administra la información detallada de los perfiles de usuario y el procesamiento de sus datos personales. | Data processing permitted, Staff/Guest registered. |
+| **Properties Management** | Encargado de la gestión de la infraestructura física: creación de hoteles, configuración de habitaciones, tarifas y asignación de personal. | Hotel created, Rooms/Staff added, Available rooms checked. |
+| **Bookings & Payments** | Controla el flujo comercial, desde el contacto inicial en la Landing Page hasta la gestión de pagos y cálculo de ganancias. | SmartStay service contracted, Payment cards saved, Profits and losses calculated. |
+| **Operational Tasks** | Gestiona las actividades diarias del staff del hotel, como reportes de incidentes y gestión de tareas asignadas. | Assigned tasks viewed, Tasks marked as completed, Incidents reported. |
+| **IoT Stay & Experience** | El **Core** de la solución. Gestiona la interacción digital del huésped con la habitación a través de **IoT**. | Digital check-in completed, Hotel digital key activated, Service review submitted. |
+| **Analytics** | Recopila datos de uso y desempeño para generar reportes estratégicos para el administrador. | Reports reviewed, Hotel events viewed. |
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
