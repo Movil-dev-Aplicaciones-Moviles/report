@@ -2690,10 +2690,21 @@ A partir de estos eventos, agrupamos los comandos, agregados y sistemas externos
 #### 2.5.3. Software Architecture
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
+Para el siguiente diagrama de contexto, se muestra la relación entre el sistema **Smart Stay** y los actores que interactúan con él, destacando a los **Huéspedes**, quienes realizan reservas, check-in/check-out y solicitan servicios desde su dispositivo móvil, y al **Staff Operativo / Administrador**, que gestiona habitaciones, coordina tareas y supervisa las operaciones en tiempo real; además, se incluyen los servicios externos como el **servicio de pagos** para procesar transacciones, las **plataformas OTA** para sincronizar reservas, el **servicio de notificaciones** para la comunicación con usuarios, y los **dispositivos IoT** para el monitoreo y control de las condiciones de las habitaciones.
+### Smart Stay – Context Level Diagram
+![Context Level Diagram](./assets/Chapter-II/context-level-diagrams.png)
+
 
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
+El siguiente diagrama de contenedores representa los principales componentes del sistema Smart Stay y su interacción, incluyendo la aplicación móvil para huéspedes y la aplicación para el staff operativo, que permiten gestionar la experiencia y las operaciones del hotel, así como un backend que centraliza la lógica de negocio, reservas, housekeeping, mantenimiento y comunicación en tiempo real; además, se consideran los bounded contexts como gestión de usuarios, reservas, servicios e integración con IoT, junto con la base de datos y los servicios externos como plataformas OTA, sistemas de pago y notificaciones, que complementan el funcionamiento de la plataforma.
+### Smart Stay – Container Level Diagram
+![Container Level Diagram](./assets/Chapter-II/container-level-diagrams.png)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
+El siguiente diagrama de despliegue describe la infraestructura física y lógica en la que se ejecutan los principales componentes del sistema **Smart Stay**. En este caso, se representa la **aplicación móvil**, desarrollada para huéspedes y staff operativo, el **API Backend**, encargado de centralizar la lógica de negocio y la comunicación entre servicios, y el **esquema de base de datos**, donde se almacena la información relacionada con usuarios, reservas, habitaciones, tareas operativas y servicios del hotel. Asimismo, se incluyen los servicios de despliegue en la nube que soportan el funcionamiento del sistema, permitiendo la conexión entre la aplicación móvil, el backend y la base de datos de forma segura y escalable.
+![Container Level Diagram](./assets/Chapter-II/deployment-diagrams.png)
+
+
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
