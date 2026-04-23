@@ -9,7 +9,7 @@
 <strong>Período 202610 </strong><br>
 <strong>1ACC0238</strong><br>
 <strong>Aplicaciones para Dispositivos Móviles</strong><br>
-<strong>NRC: 3821<br>
+<strong>NRC: 3821</strong><br>
 
 <strong>Nombre del profesor: Jorge Luis Mayta Guillermo</strong><br>
 
@@ -121,6 +121,8 @@ Los gráficos muestran la distribución del trabajo del equipo durante esta fase
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+    - [Estrategias](#estrategias)
+    - [Tácticas](#tácticas)
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
@@ -130,8 +132,11 @@ Los gráficos muestran la distribución del trabajo del equipo durante esta fase
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-    - [2.3.5. Ubiquitous Language](#235-ubiquitous-language)
-  - [2.4. Requirements Specification](#24-requirements-specification)
+    - [1. Segmento Objetivo 1: STAFF OPERATIVO](#1-segmento-objetivo-1-staff-operativo)
+    - [2. Segmento Objetivo 2: HUÉSPEDES](#2-segmento-objetivo-2-huéspedes)
+  - [2.3.5. Big Picture EventStorming](#235-big-picture-eventstorming)
+    - [2.3.6. Ubiquitous Language](#236-ubiquitous-language)
+  - [2.4. Requirements specification](#24-requirements-specification)
     - [2.4.1. User Stories](#241-user-stories)
     - [2.4.2. Impact Mapping](#242-impact-mapping)
     - [2.4.3. Product Backlog](#243-product-backlog)
@@ -201,8 +206,6 @@ Los gráficos muestran la distribución del trabajo del equipo durante esta fase
 - [Glosario](#glosario)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
-
-<div style="page-break-after: always;"></div>
 
 <div style="page-break-after: always;"></div>
 
@@ -785,7 +788,7 @@ En la etapa de Prioritization, se priorizaron los problemas más críticos del f
 | Guest Feedback               | Retroalimentación del huésped      | Opiniones y calificaciones que los huéspedes comparten sobre su estadía, utilizadas para mejorar los servicios.                                     |
 
 
-### 2.4. Requirements Specification
+### 2.4. Requirements specification
 
 #### 2.4.1. User Stories
 <table>
