@@ -724,6 +724,20 @@ Para posicionarse de forma efectiva frente a la competencia, **Smart Stay** impl
 
 #### 2.3.3. User Journey Mapping
 
+## User Journey Mapping
+
+El **User Journey Mapping** permite visualizar las etapas que recorren los usuarios desde el descubrimiento de la solución hasta la evaluación final de su experiencia. A través de este recurso se identifican los objetivos de los usuarios, los puntos de contacto con el servicio, sus pensamientos, percepciones y oportunidades de mejora en cada fase del proceso.
+
+En el caso de **Smart Stay**, se elaboraron dos mapas diferenciados según los segmentos objetivos:
+
+- **Segmento 1:** enfocado en la gestión operativa y la centralización de reservas.
+![User Journey Map - Staff](./assets/user-journey-staff.png)
+
+- **Segmento 2:** centrado en la experiencia de estadía y la digitalización de servicios.
+![User Journey Map - Huéspedes](./assets/user-journey-guest.png)
+
+Estos recorridos permiten detectar fricciones, validar expectativas y proponer mejoras orientadas a optimizar tanto la gestión hotelera como la satisfacción de los huéspedes.
+
 #### 2.3.4. Empathy Mapping
 #### 1. Segmento Objetivo 1: STAFF OPERATIVO
 ![Empathy Map - Staff Operativo](./assets/empathy-staff.png)
