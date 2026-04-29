@@ -270,8 +270,9 @@ En esta sección, cada miembro del equipo formula un plan que incluye al menos d
 
 ### 4. Marcoandres Herrera Albites
 
-- **Objetivo 1:** Obtener la certificación Microsoft Azure Fundamentals en un plazo de 10 meses tras la graduación, para ampliar mis competencias en servicios en la nube y acceder a roles de desarrollo en empresas que utilicen tecnologías Microsoft.
-- **Objetivo 2:**  Liderar el desarrollo de un proyecto de innovación tecnológica (propio o en colaboración) que utilice IoT y lograr su implementación piloto en una empresa real en un plazo de 3 años, con el fin de validar mis capacidades de gestión y aplicación de nuevas tecnologías.
+- **Objetivo 1:** Convertirme en desarrollador full stack profesional en los próximos 2 años, dominando tecnologías modernas como React, Node.js y arquitecturas backend, para poder trabajar de forma remota y generar ingresos estables en el mercado internacional.
+- **Objetivo 2:** Desarrollar proyectos propios que generen ingresos (SaaS o apps), aplicando mis conocimientos en desarrollo web y software, con el objetivo de alcanzar independencia económica y experiencia práctica real en el mundo tecnológico.
+
 ### 5. July Paico
 
 - **Objetivo 1:** Realizar y aprobar un curso avanzado de UX/UI Design certificado internacionalmente en los próximos 12 meses, para especializarme en la creación de interfaces accesibles y atractivas para aplicaciones móviles.
@@ -2629,6 +2630,18 @@ En el caso de **Smart Stay**, esta técnica permite modelar cómo se comunican c
 
 
 ##### 2.5.1.3. Bounded Context Canvases
+
+El **Bounded Context Canvas** es una herramienta visual aplicada en el marco del **Domain-Driven Design (DDD)** que permite representar de manera clara los límites, responsabilidades e interacciones de cada contexto dentro de un sistema complejo. Su propósito es facilitar que los equipos construyan una visión compartida sobre el nombre y objetivo de cada contexto, las entidades y agregados que lo conforman, así como las reglas de negocio que gobiernan su funcionamiento.
+
+En el caso de **Smart Stay**, los bounded contexts permiten estructurar la solución en dominios bien definidos como **Reservation Management**, **Check-In/Check-Out**, **Housekeeping**, **Maintenance**, **Guest Services**, **IAM** e **IoT Room Control**, los cuales trabajan de manera coordinada para garantizar la gestión eficiente de las operaciones hoteleras y la experiencia del huésped.
+
+En esta sección se presentan los **Bounded Context Canvases** correspondientes a los contextos identificados en el proyecto, donde se detallan sus comunicaciones de entrada y salida, lenguaje ubicuo, decisiones de negocio y responsabilidades dentro del sistema.
+
+![bounded01.png](assets/Chapter-II/bounded01.png)
+![bounded02.png](assets/Chapter-II/bounded02.png)
+![bounded03.png](assets/Chapter-II/bounded03.png)
+![bounded04.png](assets/Chapter-II/bounded04.png)
+![bounded05.png](assets/Chapter-II/bounded05.png)
 
 #### 2.5.2. Context Mapping
 
