@@ -48,7 +48,7 @@ Esta sección inicia en una página nueva e incluye un cuadro con la siguiente e
 
 ## Project Report Collaboration Insights
 
-- **URL del repositorio para el Project Report:** https://github.com/Movil-dev-Aplicaciones-Moviles
+- **URL del repositorio para el Project Report:** <https://github.com/Movil-dev-Aplicaciones-Moviles>
 
 El desarrollo del presente informe de trabajo final se realizó de manera colaborativa utilizando las herramientas de control de versiones de GitHub. A continuación se presenta la evidencia de la participación y contribuciones de cada miembro del equipo:
 
@@ -221,7 +221,15 @@ En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo 
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
-    - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
+    - [4.3.3. Evaluaciones según Heurísticas](#433-evaluaciones-según-heurísticas)
+  - [Tareas a Evaluar](#tareas-a-evaluar)
+  - [Tabla Resumen](#tabla-resumen)
+  - [Fichas Detalladas (Problemas de severidad 3)](#fichas-detalladas-problemas-de-severidad-3)
+    - [PROBLEMA #1: Ausencia de Control y Libertad en el Flujo de Check-in](#problema-1-ausencia-de-control-y-libertad-en-el-flujo-de-check-in)
+    - [PROBLEMA #2: Iconografía Inconsistente y Poco Intuitiva en Indicadores de Estado](#problema-2-iconografía-inconsistente-y-poco-intuitiva-en-indicadores-de-estado)
+    - [PROBLEMA #3: Falta de Texto Alternativo y Etiquetas de Accesibilidad en Controles IoT](#problema-3-falta-de-texto-alternativo-y-etiquetas-de-accesibilidad-en-controles-iot)
+  - [Observaciones adicionales (Problemas menores)](#observaciones-adicionales-problemas-menores)
+  - [Validación y Seguimiento](#validación-y-seguimiento)
 - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Video App Validation](#video-app-validation)
   - [Video About the product](#video-about-the-product)
@@ -584,7 +592,7 @@ Este segmento abarca a los usuarios finales que buscan una estancia moderna y au
 **Uso de Tecnología durante la Estancia:**
 
 - **Dispositivo Principal:** Smartphone personal como herramienta única para gestionar toda la experiencia de viaje.
-- **Expectativas de Conectividad:** Requerimiento de WiFi de alta velocidad e integración con servicios digitales para solicitudes de asistencia inmediata.
+- **Expectativas de Conectividad:** Requisito de WiFi de alta velocidad e integración con servicios digitales para solicitudes de asistencia inmediata.
 
 ---
 
@@ -794,8 +802,7 @@ Datos del entrevistado:
 Adrián administra un hotel de 12 habitaciones en Tarapoto con un equipo de 6 personas. Su rutina diaria incluye revisar reservas, coordinar limpieza, organizar recojos y responder a nuevas solicitudes. Los procesos de reservas y facturación son constantes por el alto movimiento del negocio.
 Aunque cuentan con un sistema propio, han tenido problemas de sobreventa porque no se sincroniza con todas las plataformas, lo que obliga a actualizaciones manuales y genera errores. Adrián estaría motivado a usar una herramienta que centralice la gestión y se integre con plataformas externas, siempre que el costo de suscripción sea razonable.
 
-
-**URL del video:** https://tinyurl.com/ywcf7dpk
+**URL del video:** <https://tinyurl.com/ywcf7dpk>
 
 ---
 
@@ -813,7 +820,7 @@ Datos del entrevistado:
 
 **Evidencia:** ![monica entrevistada](assets/Chapter-II/monica_entrevistada.jpg)
 
-**URL del video:** https://tinyurl.com/59zmmrjb
+**URL del video:** <https://tinyurl.com/59zmmrjb>
 **Resumen de la entrevista**
 
 Mónica administra un hotel de 12 habitaciones en Tarapoto con un equipo de 4 personas. Su rutina diaria incluye organizar los desayunos, coordinar la limpieza, asignar habitaciones, atender a los turistas y revisar constantemente las reservas. Utiliza un sistema propio a través de la página web del hotel, gestionado principalmente desde laptops y computadoras, y se comunica con su personal mediante WhatsApp.
@@ -834,8 +841,7 @@ Datos del entrevistado:
 
 **Evidencia:** ![entrevista alejandra](assets/Chapter-II/alejandra_entrevistada.jpg)
 
-
-**URL del video:** https://tinyurl.com/2p9n2kmb
+**URL del video:** <https://tinyurl.com/2p9n2kmb>
 
 **Resumen de la entrevista**
 
@@ -845,7 +851,6 @@ También ha tenido experiencias negativas con WhatsApp, ya que a veces resulta d
 ---
 
 ### Entrevista – Segmento 2: Huéspedes de Hoteles Boutique
-
 
 #### Entrevista 1
 
@@ -861,7 +866,7 @@ Datos del entrevistado:
 
 **Evidencia:** ![entrevista_alexander](assets/Chapter-II/entrevista_alexander.png)
 
-**URL del video:** https://tinyurl.com/me55rvnx
+**URL del video:** <https://tinyurl.com/me55rvnx>
 
 **Resumen de la entrevista**
 
@@ -884,15 +889,13 @@ Datos del entrevistado:
 
 **Duración:** 6:11 minutos
 
-
 **Nombre:** Juan Salcedo  
 **Edad:** 44 años  
 **Distrito:** San Borja
 
-
 **Evidencia:** ![Screenshot](assets/Chapter-II/JuanSalcedo.png)
 
-**URL del video:** https://tinyurl.com/3mv3ytt5
+**URL del video:** <https://tinyurl.com/3mv3ytt5>
 
 **Resumen de la entrevista**
 
@@ -914,7 +917,7 @@ Datos del entrevistado:
 
 **Evidencia:** ![Screenshot](assets/Chapter-II/EntrevistaTadeoLoja.png)
 
-**URL del video:** https://tinyurl.com/3ztyph92
+**URL del video:** <https://tinyurl.com/3ztyph92>
 
 **Resumen de la entrevista**
 
@@ -937,17 +940,18 @@ En esta sección se presenta un análisis detallado por cada segmento objetivo, 
 **Perfil de Edad y Ubicación**
 Los administradores entrevistados presentan una edad promedio de **30.0 años**, con un rango que va desde los 23 hasta los 34 años.
 ![Perfil de edad de administradores — boxplot](assets/Chapter-II/S1_01_perfil_edad_boxplot.png)
-El **100%** de los entrevistados se ubican en Tarapoto, lo que indica una concentración geográfica específica en esta región turística del Perú. Este hallazgo se alinea con las tendencias nacionales, ya que según *Statista Market Forecast (2025)*, Peru ha experimentado un crecimiento significativo en el mercado hotelero, posicionándose como un actor clave en la industria hotelera latinoamericana.
+El **100%** de los entrevistados se ubican en Tarapoto, lo que indica una concentración geográfica específica en esta región turística del Perú. Este hallazgo se alinea con las tendencias nacionales, ya que según _Statista Market Forecast (2025)_, Peru ha experimentado un crecimiento significativo en el mercado hotelero, posicionándose como un actor clave en la industria hotelera latinoamericana.
 ![Concentración geográfica: 100% en Tarapoto](assets/Chapter-II/S1_02_concentracion_tarapoto.png)
 
 **Características del Negocio**
-Los hoteles administrados por este segmento tienen un tamaño promedio de **14.3 habitaciones**, con un rango que va desde 12 hasta 19 habitaciones, confirmando que se trata efectivamente de establecimientos boutique y pequeños. El equipo de trabajo promedio es de **5.0 personas**, variando entre 4 y 6 empleados, lo que refleja operaciones de escala reducida pero con estructura organizacional definida. Estas características coinciden con las tendencias identificadas por *Statista*, donde los viajeros en Perú buscan cada vez más experiencias únicas y auténticas, impulsando la demanda de hoteles boutique.
+Los hoteles administrados por este segmento tienen un tamaño promedio de **14.3 habitaciones**, con un rango que va desde 12 hasta 19 habitaciones, confirmando que se trata efectivamente de establecimientos boutique y pequeños. El equipo de trabajo promedio es de **5.0 personas**, variando entre 4 y 6 empleados, lo que refleja operaciones de escala reducida pero con estructura organizacional definida. Estas características coinciden con las tendencias identificadas por _Statista_, donde los viajeros en Perú buscan cada vez más experiencias únicas y auténticas, impulsando la demanda de hoteles boutique.
 ![Tamaño de hoteles (habitaciones) y equipo (empleados)](assets/Chapter-II/S1_03_tamano_hoteles_equipo_boxplots.png)
 
 **Herramientas Tecnológicas Actuales**
 
 **Diversidad de Sistemas**
 El análisis revela una heterogeneidad en los sistemas utilizados:
+
 - **66.7%** (2 de 3 administradores) utilizan sistemas propios desarrollados para sus hoteles.
 - **33.3%** (1 de 3 administradores) depende de herramientas básicas como Excel y WhatsApp.
 
@@ -959,6 +963,7 @@ Esta distribución indica que, aunque la mayoría cuenta con algún nivel de dig
 
 **Distribución Equitativa de Problemas**
 Cada administrador enfrenta diferentes tipos de desafíos, con una distribución del **33.3%** para cada categoría:
+
 - **Problemas de sincronización:** Adrián experimenta sobreventa debido a la falta de sincronización entre plataformas.
 - **Dificultades operativas:** Mónica tiene complicaciones con el uso de su sistema actual.
 - **Pérdida de información:** Alejandra sufre pérdidas de reservas por las limitaciones de sus herramientas básicas.
@@ -971,10 +976,11 @@ Estas problemáticas están documentadas en la literatura académica, donde se h
 
 **Unanimidad en la Aceptación**
 Los resultados muestran una receptividad completa hacia soluciones tecnológicas mejoradas:
+
 - **100%** de los administradores expresan motivación para adoptar una nueva herramienta de gestión.
 - **100%** están dispuestos a pagar una suscripción mensual, siempre que el costo sea razonable y justifique la mejora en la eficiencia operativa.
 
-Esta disposición positiva contrasta con estudios previos pero se alinea con las tendencias post-pandemia. Según *Oracle Hospitality & Skift (2022)*, el **89%** de los ejecutivos hoteleros latinoamericanos afirmaron que la pandemia aceleró su adopción de tecnología hotelera, comparado con el 76% globalmente.
+Esta disposición positiva contrasta con estudios previos pero se alinea con las tendencias post-pandemia. Según _Oracle Hospitality & Skift (2022)_, el **89%** de los ejecutivos hoteleros latinoamericanos afirmaron que la pandemia aceleró su adopción de tecnología hotelera, comparado con el 76% globalmente.
 
 ![Actitud hacia nueva tecnología](assets/Chapter-II/S1_06_actitud_nuevas_tecnologias.png)
 
@@ -985,46 +991,49 @@ Esta disposición positiva contrasta con estudios previos pero se alinea con las
 **Características Demográficas**
 
 **Perfil Generacional**
-Los huéspedes entrevistados tienen una edad promedio de **28.0 años**, con un rango de 21 a 44 años. El **75%** pertenece a la generación Millennial/Gen Z (menores de 26 años), lo que sugiere un segmento predominantemente joven y digitalmente nativo. Esta composición demográfica es especialmente relevante, ya que según *Hotel Tech Report (2025)*, los millennials son **57% más propensos** a ser influenciados por la tecnología hotelera.
+Los huéspedes entrevistados tienen una edad promedio de **28.0 años**, con un rango de 21 a 44 años. El **75%** pertenece a la generación Millennial/Gen Z (menores de 26 años), lo que sugiere un segmento predominantemente joven y digitalmente nativo. Esta composición demográfica es especialmente relevante, ya que según _Hotel Tech Report (2025)_, los millennials son **57% más propensos** a ser influenciados por la tecnología hotelera.
 ![Composición generacional de huéspedes](assets/Chapter-II/S2_07a_boxplot_edades_huespedes.png)
 
 **Patrones de Viaje y Preferencias Tecnológicas**
 
 **Propósito y Frecuencia**
 El análisis de los patrones de viaje revela:
+
 - **75%** viaja por turismo (Diego, Tadeo, Joaquín).
 - **25%** viaja por trabajo (Juan).
 - **100%** mantiene una frecuencia regular de viaje (anual o cada 1-2 meses).
 
 ![Propósito de viaje](assets/Chapter-II/S2_08a_proposito_viaje.png)
 
-Las preferencias de esta generación están bien documentadas en la investigación de *Mews (2025)*, que indica que las estimaciones sugieren que los millennials representarán el **50%** de los huéspedes hoteleros en los próximos años, convirtiéndolos en críticos para los ingresos y el crecimiento de marca de los hoteles.
+Las preferencias de esta generación están bien documentadas en la investigación de _Mews (2025)_, que indica que las estimaciones sugieren que los millennials representarán el **50%** de los huéspedes hoteleros en los próximos años, convirtiéndolos en críticos para los ingresos y el crecimiento de marca de los hoteles.
 
 **Problemas Más Frecuentes y Expectativas Digitales**
 
 **Consenso en Puntos de Dolor**
 Los problemas identificados muestran patrones claros:
+
 - **75%** experimenta esperas prolongadas en recepción como principal frustración.
 - **25%** señala problemas con horarios estrictos de check-in/check-out.
 
 ![Puntos de dolor](assets/Chapter-II/S2_09_puntos_dolor.png)
 
-Estos hallazgos se correlacionan directamente con estudios globales de la industria. Según *Oracle Hospitality & Skift (2022)*, el **65%** de los huéspedes desean que los hoteles ofrezcan tecnologías que minimicen el contacto con el personal y otros huéspedes. Además, el **43%** de los huéspedes de lujo esperan no hacer filas, según *Hotel Tech Report (2025)*.
+Estos hallazgos se correlacionan directamente con estudios globales de la industria. Según _Oracle Hospitality & Skift (2022)_, el **65%** de los huéspedes desean que los hoteles ofrezcan tecnologías que minimicen el contacto con el personal y otros huéspedes. Además, el **43%** de los huéspedes de lujo esperan no hacer filas, según _Hotel Tech Report (2025)_.
 
 **Actitud hacia la Digitalización**
 
 **Alta Receptividad Tecnológica**
 Los resultados demuestran una fuerte inclinación hacia soluciones digitales:
+
 - **75%** muestra alto interés en digitalización de servicios hoteleros.
 - **75%** está dispuesto a pagar un sobrecosto por experiencias digitales mejoradas.
 - **100%** considera las reseñas digitales como factor influyente en sus decisiones.
-
 
 ![S2_10_receptividad_digitalizacion.png](assets/Chapter-II/S2_10_receptividad_digitalizacion.png)
 
 - Estos datos se alinean con investigaciones globales que indican que el **74%** de los huéspedes esperan poder hacer en línea cualquier cosa que ya pueden hacer en persona o por teléfono. Además, el **48%** de los huéspedes considera las reseñas en línea como el factor principal para elegir un hotel.
 
 **Disposición de Pago por Digitalización**
+
 - **25%** pagaría entre 10-15% adicional.
 - **50%** pagaría entre 5-10% adicional.
 - **25%** no pagaría sobrecosto adicional.
@@ -1034,6 +1043,7 @@ Los resultados demuestran una fuerte inclinación hacia soluciones digitales:
 La disposición a pagar por tecnología varía según la generación. Mientras que el **35%** de la Gen Z considera que la velocidad del Wi-Fi es más importante que la comodidad de la cama, los usuarios de mayor edad muestran menos disposición a pagar extra por funciones digitales avanzadas.
 
 **Influencia de Reseñas Digitales**
+
 - **50%** reporta alta influencia de reseñas (70% o más en su decisión).
 - **100%** considera las reseñas como factor relevante en su proceso de selección.
 
@@ -1052,7 +1062,6 @@ Esta tendencia refleja datos globales donde las reseñas en línea han reemplaza
 **Segmento 2 – Huéspedes de Hoteles**
 
 ![user-person2.jpg](assets/Chapter-II/UserPerson2.png)
-
 
 #### 2.3.2. User Task Matrix
 
@@ -1145,7 +1154,6 @@ También destacan:
 - Ambos dependen de una **correcta gestión de información en tiempo real**.  
 - Existe una alineación clara hacia la **digitalización, automatización y autoservicio**.  
 
-
 #### 2.3.3. User Journey Mapping
 
 ## User Journey Mapping
@@ -1163,22 +1171,26 @@ En el caso de **Smart Stay**, se elaboraron dos mapas diferenciados según los s
 Estos recorridos permiten detectar fricciones, validar expectativas y proponer mejoras orientadas a optimizar tanto la gestión hotelera como la satisfacción de los huéspedes.
 
 #### 2.3.4. Empathy Mapping
+
 El Empathy Mapping permite comprender en profundidad las emociones, pensamientos y comportamientos de los usuarios, facilitando una conexión más humana con sus necesidades reales. A través de esta herramienta, se identifican los dolores, motivaciones y expectativas de los distintos perfiles, lo que contribuye al diseño de soluciones más relevantes y personalizadas.
 
 En el caso de Smart Stay, se elaboraron dos mapas de empatía diferenciados según los segmentos objetivos:
+
 ##### 1. Segmento Objetivo 1: STAFF OPERATIVO
-##### 2. Segmento Objetivo 2: HUÉSPEDES 
+
+##### 2. Segmento Objetivo 2: HUÉSPEDES
 
 Estos mapas permiten visualizar cómo cada tipo de usuario piensa, siente y actúa frente al servicio, además de reconocer los puntos de dolor (pains) y las ganancias esperadas (gains). El análisis conjunto de ambos segmentos brinda una visión integral para mejorar la eficiencia operativa del hotel y elevar la satisfacción del huésped, alineando tecnología y experiencia humana.
+
 #### 1. Segmento Objetivo 1: STAFF OPERATIVO
+
 ![Empathy Map - Staff Operativo](./assets/Chapter-II/empathy-staff.png)
 
 ---
 
-#### 2. Segmento Objetivo 2: HUÉSPEDES 
+#### 2. Segmento Objetivo 2: HUÉSPEDES
+
 ![Empathy Map - Huéspedes](./assets/Chapter-II/empathy-guest.png)
-
-
 
 ### 2.3.5. Big Picture EventStorming
 
@@ -1205,7 +1217,7 @@ En la etapa de People & Systems, se asoció cada evento con los actores y sistem
 
 En la etapa de Problems & Opportunities, se analizaron los eventos para identificar problemas y oportunidades de mejora. Se detectó que el check-in presencial genera largas filas y tiempos de espera, sumado a ello reservas duplicadas, ingreso manual de datos y errores en facturación, lo que afecta la satisfacción del huésped. La oportunidad identificada es implementar un check-in digital a través de una aplicación móvil, permitiendo a los huéspedes registrarse de forma autónoma y rápida, mejorando la experiencia general y reduciendo la carga operativa del personal de recepción.
 
-![step4.jpg](assets/Chapter-II/ProblemsOpportunities.jpg) 
+![step4.jpg](assets/Chapter-II/ProblemsOpportunities.jpg)
 
 **Prioritization:**
 
@@ -1214,7 +1226,6 @@ En la etapa de Prioritization, se priorizaron los problemas más críticos del f
 ![step5.jpg](assets/Chapter-II/Prioritization.jpg)
 
 #### 2.3.6. Ubiquitous Language
-
 
 | **Término en Inglés**        | **Término en Español**             | **Definición**                                                                                                                                      |
 |------------------------------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1229,10 +1240,10 @@ En la etapa de Prioritization, se priorizaron los problemas más críticos del f
 | Financial Report             | Reporte financiero                 | Documento digital generado por el sistema que resume ingresos, gastos y métricas clave para evaluar la rentabilidad del hotel.                      |
 | Guest Feedback               | Retroalimentación del huésped      | Opiniones y calificaciones que los huéspedes comparten sobre su estadía, utilizadas para mejorar los servicios.                                     |
 
-
 ### 2.4. Requirements specification
 
 #### 2.4.1. User Stories
+
 <table>
   <tr>
     <th>Epic / Story ID</th>
@@ -2162,7 +2173,6 @@ En la etapa de Prioritization, se priorizaron los problemas más críticos del f
 
 ![impactmaptraveler.png](assets/Chapter-II/impactmaptraveler.png)
 
-
 ### 2.4.3. Product Backlog
 
 <table border="1" cellpadding="8" cellspacing="0">
@@ -2577,13 +2587,13 @@ En la etapa de Prioritization, se priorizaron los problemas más críticos del f
 
 ![step10.jpg](assets/Chapter-II/step10.png)
 
-**Link para visualizar mejor:** https://tinyurl.com/8529395x
+**Link para visualizar mejor:** <https://tinyurl.com/8529395x>
 
 ##### 2.5.1.1. Candidate Context Discovery
 
 En esta sesión, el equipo aplicó la técnica de **Candidate Context Discovery** con el objetivo de descomponer el dominio general en subconjuntos con límites naturales o **Bounded Contexts**. Para lograrlo, se utilizó principalmente la técnica **Look-for-pivotal-events**, la cual consiste en identificar aquellos eventos clave que marcan un cambio de estado significativo en el proceso de negocio o un cambio de lenguaje dentro del dominio.
 
-La sesión se dividió en fases progresivas para garantizar que los límites (*Boundaries*) de cada contexto estuvieran alineados con las reglas de negocio y las responsabilidades técnicas del sistema de gestión hotelera **Smart Stay**.
+La sesión se dividió en fases progresivas para garantizar que los límites (_Boundaries_) de cada contexto estuvieran alineados con las reglas de negocio y las responsabilidades técnicas del sistema de gestión hotelera **Smart Stay**.
 
 ---
 
@@ -2591,12 +2601,12 @@ La sesión se dividió en fases progresivas para garantizar que los límites (*B
 
 Analizando la línea de tiempo del EventStorming, identificamos los eventos que actúan como "puentes" o puntos de quiebre entre las diferentes fases del servicio. Estos eventos clave son:
 
-* **User mode selected:** Punto de quiebre entre la exploración general del servicio y el inicio de flujos específicos por rol.
-* **Administrator registered / Staff registered / Guest registered:** Eventos que cierran la fase de gestión de identidad e inician la operatividad.
-* **Hotel created in the system:** Marca el inicio de la configuración de infraestructura del hotel.
-* **Reservation completed:** Finaliza el proceso comercial e inicia el flujo de servicios al huésped.
-* **Digital check-in completed:** Activa las capacidades **IoT** de la habitación para el usuario.
-* **Tasks marked as completed:** Marca el fin de una iteración operativa del personal de limpieza o mantenimiento.
+- **User mode selected:** Punto de quiebre entre la exploración general del servicio y el inicio de flujos específicos por rol.
+- **Administrator registered / Staff registered / Guest registered:** Eventos que cierran la fase de gestión de identidad e inician la operatividad.
+- **Hotel created in the system:** Marca el inicio de la configuración de infraestructura del hotel.
+- **Reservation completed:** Finaliza el proceso comercial e inicia el flujo de servicios al huésped.
+- **Digital check-in completed:** Activa las capacidades **IoT** de la habitación para el usuario.
+- **Tasks marked as completed:** Marca el fin de una iteración operativa del personal de limpieza o mantenimiento.
 
 ---
 
@@ -2615,6 +2625,7 @@ A partir de estos eventos, agrupamos los comandos, agregados y sistemas externos
 | **Analytics** | Recopila datos de uso y desempeño para generar reportes estratégicos para el administrador. | Reports reviewed, Hotel events viewed. |
 
 ##### 2.5.1.2. Domain Message Flows Modeling
+
 El **Domain Message Flow Modeling** es una técnica que permite representar cómo fluyen los mensajes de dominio (**commands, events y queries**) entre los distintos **bounded contexts** del sistema. Su propósito es clarificar las interacciones, dependencias y responsabilidades de cada contexto dentro de la solución.
 
 En el caso de **Smart Stay**, esta técnica permite modelar cómo se comunican contextos como **Reservation Management**, **Check-In/Check-Out**, **Housekeeping**, **Maintenance**, **Guest Services**, **IAM** e **IoT Room Control**, mostrando cómo los usuarios y el sistema generan solicitudes, actualizaciones y eventos en tiempo real. De esta manera, se puede visualizar cómo una acción realizada por el huésped o el staff operativo desencadena mensajes de dominio que impactan en otros contextos, asegurando coordinación, trazabilidad y una gestión hotelera más eficiente.
@@ -2627,7 +2638,6 @@ En el caso de **Smart Stay**, esta técnica permite modelar cómo se comunican c
 ![dm-flow-modeling04.png](assets/dm-flow-modeling04.png)
 
 ![dm-flow-modeling05.png](assets/dm-flow-modeling05.png)
-
 
 ##### 2.5.1.3. Bounded Context Canvases
 
@@ -2722,21 +2732,25 @@ En esta sección se presentan los **Bounded Context Canvases** correspondientes 
 #### 2.5.3. Software Architecture
 
 ##### 2.5.3.1. Software Architecture Context Level Diagrams
+
 Para el siguiente diagrama de contexto, se muestra la relación entre el sistema **Smart Stay** y los actores que interactúan con él, destacando a los **Huéspedes**, quienes realizan reservas, check-in/check-out y solicitan servicios desde su dispositivo móvil, y al **Staff Operativo / Administrador**, que gestiona habitaciones, coordina tareas y supervisa las operaciones en tiempo real; además, se incluyen los servicios externos como el **servicio de pagos** para procesar transacciones, las **plataformas OTA** para sincronizar reservas, el **servicio de notificaciones** para la comunicación con usuarios, y los **dispositivos IoT** para el monitoreo y control de las condiciones de las habitaciones.
+
 ### Smart Stay – Context Level Diagram
+
 ![Context Level Diagram](./assets/Chapter-II/context-level-diagrams.png)
 
-
 ##### 2.5.3.2. Software Architecture Container Level Diagrams
+
 El siguiente diagrama de contenedores representa los principales componentes del sistema Smart Stay y su interacción, incluyendo la aplicación móvil para huéspedes y la aplicación para el staff operativo, que permiten gestionar la experiencia y las operaciones del hotel, así como un backend que centraliza la lógica de negocio, reservas, housekeeping, mantenimiento y comunicación en tiempo real; además, se consideran los bounded contexts como gestión de usuarios, reservas, servicios e integración con IoT, junto con la base de datos y los servicios externos como plataformas OTA, sistemas de pago y notificaciones, que complementan el funcionamiento de la plataforma.
+
 ### Smart Stay – Container Level Diagram
+
 ![Container Level Diagram](./assets/Chapter-II/container-level-diagrams.png)
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
+
 El siguiente diagrama de despliegue describe la infraestructura física y lógica en la que se ejecutan los principales componentes del sistema **Smart Stay**. En este caso, se representa la **aplicación móvil**, desarrollada para huéspedes y staff operativo, el **API Backend**, encargado de centralizar la lógica de negocio y la comunicación entre servicios, y el **esquema de base de datos**, donde se almacena la información relacionada con usuarios, reservas, habitaciones, tareas operativas y servicios del hotel. Asimismo, se incluyen los servicios de despliegue en la nube que soportan el funcionamiento del sistema, permitiendo la conexión entre la aplicación móvil, el backend y la base de datos de forma segura y escalable.
 ![Container Level Diagram](./assets/Chapter-II/deployment-diagrams.png)
-
-
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
@@ -2879,43 +2893,41 @@ Esta capa contiene las implementaciones técnicas y el soporte de herramientas e
 
 ###### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
- * Diagrama de Clases: Componente de Autenticación
+- Diagrama de Clases: Componente de Autenticación
 
 El Auth Component define la estructura del módulo de autenticación del sistema. La clase AuthService gestiona el registro, login (retornando JWT), validación de tokens y verificación de permisos por rol, apoyándose en la interfaz IUserRepository para el acceso a datos. La entidad abstracta User centraliza los atributos comunes, de la cual heredan las clases concretas Guest, Host y HotelStaff, mientras que el enum Role establece los cuatro tipos de usuario del sistema.
 
-![AuthComponentClassDiagram.png](assets/Chapter-II/AuthComponentClassDiagram.png) 
+![AuthComponentClassDiagram.png](assets/Chapter-II/AuthComponentClassDiagram.png)
 
-
-* Diagrama de Clases: Componente de Gestión de Propiedades y Operaciones
+- Diagrama de Clases: Componente de Gestión de Propiedades y Operaciones
 
 El Properties & Operations Component gestiona las propiedades y habitaciones del sistema hotelero. La clase PropertyService centraliza el registro de propiedades, actualización de estados de habitaciones y verificación de disponibilidad, apoyándose en IPropertyRepository para la persistencia. Adicionalmente, integra la interfaz IIoTCommandPublisher como abstracción para el envío de comandos IoT vía AMQP/MQTT, mientras que el enum RoomStatus define los estados posibles de cada habitación.
 
 ![PropertyComponentClassDiagram.png](assets/Chapter-II/PropertyComponentClassDiagram.png)
 
-* Diagrama de Clases: Componente de Gestión de Reservas
+- Diagrama de Clases: Componente de Gestión de Reservas
 
 El Booking Management Component gestiona el ciclo completo de una reserva hotelera. La clase BookingService orquesta la creación y cancelación de reservas y el registro de reseñas, coordinando tres adaptadores: IPropertyServiceAdapter para disponibilidad, IBillingServiceAdapter para pagos e INotificationServiceAdapter para confirmaciones. La entidad Booking define el estado del proceso mediante el enum BookingStatus (PENDING, CONFIRMED, CANCELLED, COMPLETED) y puede asociarse opcionalmente a una Review.
 
 ![BookingComponentClassDiagram.png](assets/Chapter-II/BookingComponentClassDiagram.png)
 
-* Diagrama de Clases: Componente de Facturación
+- Diagrama de Clases: Componente de Facturación
 
 El Billing Component gestiona el procesamiento de pagos y la emisión de facturas del sistema. La clase BillingService orquesta el flujo mediante processPayment e issueInvoice, integrando IPaymentGatewayAdapter para la ejecución del pago externo e IAuthServiceAdapter para la verificación de permisos. La entidad Payment genera una Invoice al completarse, y el enum PaymentStatus define los estados PENDING, COMPLETED, FAILED y REFUNDED.
 
 ![BillingComponentClassDiagram.png](assets/Chapter-II/BillingComponentClassDiagram.png)
 
-* Diagrama de Clases: Componente Gateway IoT
+- Diagrama de Clases: Componente Gateway IoT
 
 El IoT Gateway Component gestiona la recepción y ejecución de comandos hacia dispositivos inteligentes del hotel. El MessageListener escucha mensajes desde la cola de mensajería y los delega al RulesEngine, que determina el controlador adecuado según el tipo de dispositivo. La interfaz IDeviceController es implementada por SmartLockController y SmartLightController, ambos integrando ICloudApiClient para la comunicación con los dispositivos físicos.
 
 ![IotGatewayComponentClassDiagram.png](assets/Chapter-II/IotGatewayComponentClassDiagram.png)
 
-
 ###### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-El modelo físico de base de datos organiza el sistema en torno a la entidad central users, vinculada a profiles para información personal y a roles mediante la tabla intermedia user_roles para la gestión de permisos. 
-Los usuarios registrados como customers pueden suscribirse a diferentes plans, generando subscriptions que producen invoices por ciclo de facturación. 
-El módulo de cuidado gira en torno a residents, quienes se relacionan con appointments para citas médicas, daily_logs para el seguimiento diario de estado de ánimo y actividades, medical_records para el historial clínico, y notifications para alertas y recordatorios. 
+El modelo físico de base de datos organiza el sistema en torno a la entidad central users, vinculada a profiles para información personal y a roles mediante la tabla intermedia user_roles para la gestión de permisos.
+Los usuarios registrados como customers pueden suscribirse a diferentes plans, generando subscriptions que producen invoices por ciclo de facturación.
+El módulo de cuidado gira en torno a residents, quienes se relacionan con appointments para citas médicas, daily_logs para el seguimiento diario de estado de ánimo y actividades, medical_records para el historial clínico, y notifications para alertas y recordatorios.
 El módulo de comunicación se completa con conversation_threads, thread_participants y messages para gestionar el intercambio de mensajes entre usuarios.
 
 ![MovilDev-Aplicaciones-moviles-Physical_Export.png](assets/Chapter-II/MovilDev-Aplicaciones-moviles-Physical_Export.png)
@@ -2996,11 +3008,137 @@ El módulo de comunicación se completa con conversation_threads, thread_partici
 
 #### 4.3.1. Diseño de Entrevistas
 
+**Objetivo:** Validar utilidad, control y claridad de los flujos clave de SmartStay (check-in/check-out digital, housekeeping, notifications y service requests).
+
+**Preguntas clave - Staff Operativo**
+
+1. ¿En qué pasos del flujo de check-in/check-out necesitas más control desde la app y por qué?
+2. ¿Qué información mínima requiere una service request para que puedas actuar sin llamadas o WhatsApp?
+3. ¿Qué tipos de notifications consideras críticas y cuáles deberían ser silenciosas?
+4. ¿Qué latencia toleras para ver cambios de room status en tiempo real antes de tomar decisiones operativas?
+5. ¿Qué indicadores en el dashboard te ayudan a priorizar tareas de housekeeping y mantenimiento?
+
+**Preguntas clave - Huéspedes**
+
+1. ¿Qué parte del check-in digital te genera más incertidumbre (identidad, pago, asignación de habitación) y por qué?
+2. ¿Qué funciones de control de la habitación usarías desde la app y con qué frecuencia?
+3. ¿Qué información necesitas ver para confiar en los cargos y la reserva (fees, timestamps, policy)?
+4. ¿En qué situaciones preferirías contactar al staff en lugar de usar la app?
+5. ¿Cómo evaluarías la claridad de la navegación en tu primera sesión sin ayuda del staff?
+
 #### 4.3.2. Registro de Entrevistas
 
-#### 4.3.3. Evaluaciones según heurísticas
+#### 4.3.3. Evaluaciones según Heurísticas
+
+**CARRERA:** Ingeniería de Software  
+**CURSO:** 1ACC0238 Aplicaciones para Dispositivos Móviles  
+**SECCIÓN:** 3821  
+**PROFESORES:** Jorge Luis Mayta Guillermo  
+**AUDITOR:** MovilDev Team  
+**CLIENTE(S):** Staff operativo de Hoteles Boutique / Huéspedes
+**SITE/APP EVALUADA:** Smart Stay
 
 ---
+
+### Tareas a Evaluar
+
+**Tareas incluidas:**
+1. Registro de usuario y flujo de check-in/check-out  
+2. Uso de llave digital / acceso a habitación  
+3. Control IoT: ajuste de temperatura e iluminación  
+4. Reporte y confirmación de limpieza (housekeeping)  
+5. Solicitud de servicio (room service / mantenimiento)
+
+**Tareas NO incluidas en esta evaluación:**
+1. Pago de reserva y procesamiento de facturación  
+2. Gestión de puntos / programa de fidelización  
+3. Chat en vivo con atención (soporte en tiempo real)
+
+---
+
+### Tabla Resumen
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|---|---:|---|
+| 1 | Ausencia de botón "Atrás" o "Cancelar" en el flujo de check-in | 3 | Usability: Control y libertad del usuario |
+| 2 | Iconos de estado de habitación poco intuitivos y sin etiquetas | 3 | Usability: Reconocimiento antes que recuerdo |
+| 3 | Controles de IoT sin texto alternativo ni etiquetas accesibles | 3 | Inclusive Design: Proporciona experiencias comparables |
+| 4 | Menú de "Solicitudes de Servicio" desordenado y sin jerarquía | 2 | Usability: Cumplimiento de estándares y convenciones |
+| 5 | Falta de confirmación visual al enviar una solicitud de servicio | 3 | Usability: Visibilidad del estado del sistema |
+
+---
+
+### Fichas Detalladas (Problemas de severidad 3)
+
+#### PROBLEMA #1: Ausencia de Control y Libertad en el Flujo de Check-in
+
+**Severidad:** 3
+
+**Heurística violada:** Usability - Control y libertad del usuario
+
+**Problema:**
+Durante el proceso de check-in digital, no hay opción para retroceder o cancelar sin perder todo el progreso. Si el huésped necesita corregir datos (fecha, número de documento, selección de habitación) debe cerrar la aplicación y reiniciar el flujo, aumentando la frustración y el riesgo de abandono. Para el Staff Operativo, la imposibilidad de cancelar o devolver un paso en procesos administrativos también provoca errores en la asignación de tareas.
+
+**Captura de pantalla:** [AQUÍ INSERTAR CAPTURA]
+
+**Recomendación:**
+- Agregar un botón "Atrás" en la esquina superior izquierda y un botón "Cancelar" en pasos críticos, siguiendo convenciones de Material Design.  
+- Implementar guardado en sesión local (persistencia temporal) para que los datos no se pierdan si el usuario sale y vuelve al flujo.  
+- Mostrar diálogo de confirmación al intentar salir mid-flow con opciones: "Continuar registro", "Guardar y salir" y "Cancelar registro".
+
+---
+
+#### PROBLEMA #2: Iconografía Inconsistente y Poco Intuitiva en Indicadores de Estado
+
+**Severidad:** 3
+
+**Heurística violada:** Usability - Reconocimiento antes que recuerdo
+
+**Problema:**
+Los estados de habitación se representan con símbolos no estándares y sin etiquetas textuales (ej: círculo con patrón, punto, triángulo). El Staff Operativo debe memorizar su significado, aumentando errores en la asignación de tareas y tiempos de respuesta. Durante las pruebas, varios usuarios confundieron iconos y asignaron housekeeping a habitaciones ocupadas.
+
+**Captura de pantalla:** [AQUÍ INSERTAR CAPTURA]
+
+**Recomendación:**
+- Rediseñar iconos usando convenciones universales: `check` verde para "Limpia", `candado` rojo para "Ocupada", `herramientas` amarillo para "Mantenimiento".  
+- Añadir etiqueta de texto bajo el icono en la vista compacta (ej: "Limpia") y permitir vista compacta sin texto como preferencia de usuario.  
+- Acompañar con colores accesibles y patrones para soportar daltonismo (ej: icon + color + patrón).  
+- Actualizar la biblioteca de componentes accesibles con patrones y ejemplos.
+
+---
+
+#### PROBLEMA #3: Falta de Texto Alternativo y Etiquetas de Accesibilidad en Controles IoT
+
+**Severidad:** 3
+
+**Heurística violada:** Inclusive Design - Proporciona experiencias comparables
+
+**Problema:**
+Los controles de iluminación y temperatura no incluyen descripciones accesibles (aria-label / accessibilityLabel) ni equivalentes textuales. Usuarios que dependen de lectores de pantalla (TalkBack, VoiceOver) no pueden identificar ni operar estos controles, lo que excluye a personas con discapacidad visual y viola recomendaciones WCAG.
+
+**Captura de pantalla:** [AQUÍ INSERTAR CAPTURA]
+
+**Recomendación:**
+- Para web/Angular: agregar `aria-label` y `aria-describedby` en todos los controles interactivos; ejemplo: `<mat-slider aria-label="Ajuste de temperatura en °C" aria-describedby="temp-help"></mat-slider>`.  
+- Para Flutter: envolver controles con `Semantics(label: 'Ajuste de temperatura en grados Celsius', value: '22')` y usar `excludeSemantics` donde aplique.  
+- Incluir descripciones sonoras opcionales y probar con lectores de pantalla reales durante QA (probar con TalkBack/VoiceOver).  
+- Actualizar la biblioteca de componentes accesibles con patrones y ejemplos.
+
+---
+
+### Observaciones adicionales (Problemas menores)
+
+- PROBLEMA #4 (Sev.2): Reorganizar el menú de "Solicitudes de Servicio" por frecuencia o categoría y añadir un buscador rápido.  
+- PROBLEMA #5 (Sev.3): Implementar pantalla/modal de confirmación tras envío de solicitud con número de ticket, hora y tiempo estimado; en caso de fallo, explicar la causa y ofrecer reintento automático.
+
+---
+
+### Validación y Seguimiento
+
+- Registrar cada corrección como un requisito en el backlog (EPIC/US) e incluir criterios de aceptación claros para QA.  
+- Priorizar las fichas de severidad 3 para el próximo sprint de refinamiento.  
+- Incluir pruebas de accesibilidad y pruebas en dispositivos reales distribuidos vía Firebase App Distribution como parte del plan de validación.
+
 
 ## Conclusiones y recomendaciones
 
