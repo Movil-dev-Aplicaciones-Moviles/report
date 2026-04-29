@@ -52,10 +52,6 @@ Esta sección inicia en una página nueva e incluye un cuadro con la siguiente e
 
 El desarrollo del presente informe de trabajo final se realizó de manera colaborativa utilizando las herramientas de control de versiones de GitHub. A continuación se presenta la evidencia de la participación y contribuciones de cada miembro del equipo:
 
-El trabajo en el repositorio del informe demuestra la participación activa de todos los miembros del equipo por cada entrega.
-
-_Primer Avance_
-
 En el Primer Avance el objetivo principal fue la construcción completa del informe base del proyecto. El equipo trabajó en:
 
 - Estructura del documento (portada, índice, organización de capítulos).
@@ -76,11 +72,7 @@ En el Primer Avance el objetivo principal fue la construcción completa del info
 
 - Revisión colaborativa del contenido, ajustando redacción, coherencia y estilo.
 
-![commits_team1](assets/commits_team1.png) aqui van las evidencias de los commits del primer avance
-
-![commits_team2](assets/commits_team2.png) !aqui van las evidencias de los commits del segundo avance
-
-Los gráficos muestran la distribución del trabajo del equipo durante esta fase, donde todos los miembros aportaron contenido significativo al informe base.
+En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo en la elaboración del documento base del informe.
 
 ### Metodología de Trabajo Colaborativo
 
@@ -139,8 +131,14 @@ Los gráficos muestran la distribución del trabajo del equipo durante esta fase
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
-  - [2.3.1. User Personas.](#231-user-personas-1)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
+  - [Matriz de Tareas](#matriz-de-tareas)
+  - [Análisis](#análisis)
+    - [Tareas de mayor frecuencia e importancia compartidas](#tareas-de-mayor-frecuencia-e-importancia-compartidas)
+    - [Tareas críticas para Administradores](#tareas-críticas-para-administradores)
+    - [Tareas críticas para Huéspedes](#tareas-críticas-para-huéspedes)
+    - [Diferencias clave](#diferencias-clave)
+    - [Coincidencias](#coincidencias)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
 - [User Journey Mapping](#user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
@@ -162,9 +160,18 @@ Los gráficos muestran la distribución del trabajo del equipo durante esta fase
       - [2.5.1.2. Domain Message Flows Modeling](#2512-domain-message-flows-modeling)
       - [2.5.1.3. Bounded Context Canvases](#2513-bounded-context-canvases)
     - [2.5.2. Context Mapping](#252-context-mapping)
+- [IAM – Profiles (ACL)](#iam--profiles-acl)
+- [Profiles – Bookings \& Payments (Conformist)](#profiles--bookings--payments-conformist)
+- [Properties Management – Bookings \& Payments (Customer/Supplier)](#properties-management--bookings--payments-customersupplier)
+- [Properties Management – Operational Tasks (Customer/Supplier)](#properties-management--operational-tasks-customersupplier)
+- [Bookings \& Payments – Operational Tasks (Customer/Supplier)](#bookings--payments--operational-tasks-customersupplier)
+- [Bookings \& Payments – IoT Stay \& Experience (Customer/Supplier)](#bookings--payments--iot-stay--experience-customersupplier)
+- [Bookings \& Payments – Analytics (ACL)](#bookings--payments--analytics-acl)
     - [2.5.3. Software Architecture](#253-software-architecture)
       - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
+  - [Smart Stay – Context Level Diagram](#smart-stay--context-level-diagram)
       - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
+  - [Smart Stay – Container Level Diagram](#smart-stay--container-level-diagram)
       - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
   - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
   - [2.6.1. Bounded Context: Bookings \& Payments](#261-bounded-context-bookings--payments)
@@ -253,23 +260,22 @@ En esta sección, cada miembro del equipo formula un plan que incluye al menos d
 
 ### 2. Carlo Patricio Ramirez Escalante
 
-- **Objetivo 1:** [Redactar aquí]
-- **Objetivo 2:** [Redactar aquí]
+- **Objetivo 1:** Obtener la certificación Google Associate Android Developer en un plazo de 12 meses tras la graduación, para fortalecer mi perfil como desarrollador móvil y acceder a oportunidades laborales en empresas tecnológicas internacionales.
+- **Objetivo 2:** Desarrollar y publicar al menos dos aplicaciones móviles en Google Play Store dentro de los 18 meses posteriores a la graduación, con el objetivo de construir un portafolio sólido que demuestre mis habilidades técnicas y creatividad, facilitando así mi inserción en el mercado laboral global.
 
 ### 3. Henry Jaredt Montes Ramos
 
-- **Objetivo 1:** [Redactar aquí]
-- **Objetivo 2:** [Redactar aquí]
+- **Objetivo 1:** Completar una especialización en arquitectura de software (presencial o virtual) en un plazo de 18 meses tras la graduación, para aplicar principios avanzados de diseño en proyectos empresariales y mejorar la calidad de las soluciones desarrolladas.
+- **Objetivo 2:** Participar como ponente en al menos 2 eventos o conferencias tecnológicas sobre desarrollo de software o arquitectura en los próximos 3 años, con el objetivo de fortalecer habilidades de comunicación y posicionarme como referente en la comunidad profesional.
 
 ### 4. Marcoandres Herrera Albites
 
-- **Objetivo 1:** [Redactar aquí]
-- **Objetivo 2:** [Redactar aquí]
-
+- **Objetivo 1:** Obtener la certificación Microsoft Azure Fundamentals en un plazo de 10 meses tras la graduación, para ampliar mis competencias en servicios en la nube y acceder a roles de desarrollo en empresas que utilicen tecnologías Microsoft.
+- **Objetivo 2:**  Liderar el desarrollo de un proyecto de innovación tecnológica (propio o en colaboración) que utilice IoT y lograr su implementación piloto en una empresa real en un plazo de 3 años, con el fin de validar mis capacidades de gestión y aplicación de nuevas tecnologías.
 ### 5. July Paico
 
-- **Objetivo 1:** [Redactar aquí]
-- **Objetivo 2:** [Redactar aquí]
+- **Objetivo 1:** Realizar y aprobar un curso avanzado de UX/UI Design certificado internacionalmente en los próximos 12 meses, para especializarme en la creación de interfaces accesibles y atractivas para aplicaciones móviles.
+- **Objetivo 2:**  Diseñar y lanzar un portafolio digital profesional con al menos 5 proyectos de UX/UI en los próximos 18 meses, logrando recibir feedback positivo de al menos 3 expertos del sector y aumentar mi visibilidad en plataformas como Behance o Dribbble.
 
 <div style="page-break-after: always;"></div>
 
