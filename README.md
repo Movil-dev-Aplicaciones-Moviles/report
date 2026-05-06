@@ -3130,6 +3130,148 @@ Asimismo, las aplicaciones móviles fueron ejecutadas y validadas utilizando **A
 
 #### 4.1.2. Source Code Management
 
+### Repositorios del proyecto
+El proyecto está organizado dentro de una **organización en GitHub**, donde cada módulo cuenta con su propio repositorio según su propósito y tecnología.
+
+**Repositorios individuales de control de versiones:**
+
+- **Mobile Application – Smart Stay App:**  
+  - **Tecnología:** Kotlin (Android Native)
+  - **IDE:** Android Studio
+  - **URL del repositorio:** https://github.com/Movil-dev-Aplicaciones-Moviles/smartstay-mobile-app
+  - **Plataforma de despliegue:** Android Studio Emulator / APK Testing
+  - **Funcionalidades:** Check-in/check-out digital, control IoT, solicitudes de servicios, housekeeping y gestión operativa.
+
+- **Web Services (Backend):**  
+  - **Tecnología:** ASP.NET Core (C#)
+  - **URL del repositorio:** https://github.com/Movil-dev-Aplicaciones-Moviles/smartstay-backend
+  - **Arquitectura:** RESTful API
+  - **Plataforma de despliegue:** Microsoft Azure
+
+Todos los repositorios implementan el modelo **GitFlow** como flujo de trabajo de colaboración y branching, garantizando un desarrollo ordenado y trazable.
+
+---
+
+### Flujo de trabajo de GitFlow
+El flujo de trabajo del proyecto se basa en el modelo **“A Successful Git Branching Model”**, el cual organiza el proceso de desarrollo mediante ramas específicas para cada funcionalidad o corrección.  
+Este enfoque permite un control de versiones ordenado y un desarrollo paralelo seguro.
+
+**Diagrama del flujo GitFlow implementado:**
+
+main (producción)
+ |
+ |---- release/v1.0.0
+ |          |
+develop    |
+ |         |
+ |---- feature/mobile-authentication
+ |         |
+ |         (desarrollo)
+ |         |
+ |<-------- (merge)
+ |
+ |---- feature/iot-room-control
+ |         |
+ |         (desarrollo)
+ |         |
+ |<-------- (merge)
+ |
+ |---- hotfix/checkin-error
+ |         |
+ |         (corrección)
+ |         |
+ |<-------- (merge a develop)
+ |         |
+main <---- (merge a main) 
+
+
+---
+
+### Proceso de trabajo con GitFlow
+
+1. **Desarrollo de nuevas funcionalidades:**
+   - Se crea una rama `feature/<nombre-funcionalidad>` desde `develop`
+   - Se desarrolla y prueba la funcionalidad
+   - Se realiza merge a `develop` mediante Pull Request con revisión de código
+   - Se elimina la rama feature tras la integración exitosa
+
+2. **Preparación de versiones:**
+   - Se crea una rama `release/<version>` desde `develop`
+   - Se realizan ajustes finales y correcciones menores
+   - Se realiza merge a `main` y se etiqueta la versión
+   - Se realiza merge de vuelta a `develop` para mantener sincronización
+
+3. **Correcciones críticas en producción:**
+   - Se crea una rama `hotfix/<descripcion>` desde `main`
+   - Se corrige el problema de forma urgente
+   - Se realiza merge a `main` y `develop`
+   - Se etiqueta la nueva versión de corrección
+
+---
+
+### Estructura de branches (Ramas)
+
+#### Main branch (Rama principal)
+
+Es la rama principal del proyecto, donde se almacena el código estable y listo para producción.  
+Solo se integran cambios que hayan sido probados y validados previamente en las ramas de desarrollo (`develop`) y funcionalidad (`feature/*`).  
+Esta rama representa el estado más confiable del proyecto y se encuentra protegida con reglas de revisión obligatoria.
+
+#### Develop branch (Rama de desarrollo)
+
+Actúa como un espacio de integración para el trabajo en equipo.  
+Aquí se combinan, prueban y ajustan las nuevas funcionalidades antes de ser fusionadas con la rama principal (`main`).  
+Su propósito es garantizar que el código integrado sea funcional y estable antes del despliegue.
+
+#### Feature branches (Ramas de funcionalidad)
+
+Cada nueva funcionalidad o tarea específica se desarrolla en su propia rama independiente.  
+Una vez completada y verificada, se integra nuevamente en la rama de desarrollo (`develop`) mediante Pull Request.
+
+Las ramas de funcionalidad siguen un esquema de nombres descriptivos, como por ejemplo:
+
+- `feature/chapter-01` - Documentación del Capítulo I
+- `feature/chapter-02` - Documentación del Capítulo II
+- `feature/chapter-03` - Documentación del Capítulo III
+- `feature/chapter-04` - Documentación del Capítulo IV
+- `feature/mobile-authentication` - Sistema de autenticación móvil
+- `feature/checkin-checkout` - Gestión de check-in/check-out digital
+- `feature/room-service` - Solicitud de servicios desde la app
+- `feature/iot-room-control` - Control inteligente de habitación
+- `feature/housekeeping-management` - Gestión de housekeeping
+- `feature/maintenance-management` - Gestión de incidencias y mantenimiento
+
+#### Release branches (Ramas de versión)
+
+Se crean para preparar una nueva versión de producción desde `develop`.
+
+- `release/v1.0.0` - Primera versión estable
+- `release/v1.1.0` - Versión con nuevas funcionalidades
+
+#### Hotfix branches (Ramas de corrección urgente)
+
+Se crean desde `main` para corregir problemas críticos en producción.
+
+- `hotfix/checkin-error` - Corrección de errores en check-in
+- `hotfix/iot-connection` - Corrección de conexión IoT
+
+---
+
+### Evidencia de aplicación de GitFlow
+
+#### Repositorio Mobile App
+
+- Ramas activas: `main`, `develop`, `feature/checkin-checkout`, `feature/iot-room-control`
+- Commits con convenciones: `feat:`, `fix:`, `docs:`
+- Pull Requests con revisiones de código
+- Validación mediante Android Emulator y dispositivos físicos
+
+#### Repositorio Backend
+
+- Ramas activas: `main`, `develop`, `feature/api-bookings`, `feature/api-room-status`
+- Versionado semántico aplicado
+- Tags: `v1.0.0`, `v1.1.0`
+
 #### 4.1.3. Source Code Style Guide & Conventions
 
 #### 4.1.4. Software Deployment Configuration
