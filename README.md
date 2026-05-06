@@ -3390,6 +3390,15 @@ El proyecto implementa un flujo automatizado de **Integración Continua y Despli
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
+En este Sprint 1, los miembros del equipo lograron completar las tareas asociadas al desarrollo inicial de la aplicación móvil SmartStay.
+
+El trabajo incluyó la configuración del entorno de desarrollo en Android Studio, la implementación de las primeras interfaces móviles y la integración de componentes principales como la pantalla de inicio de sesión, navegación entre vistas y estructura base de la aplicación.
+
+La aplicación móvil cumple el rol de plataforma principal de interacción para huéspedes y personal operativo, permitiendo centralizar funcionalidades relacionadas con reservas, gestión hotelera y servicios digitales dentro del ecosistema SmartStay.
+
+Una aplicación móvil es fundamental en proyectos modernos orientados a la experiencia del usuario, ya que permite ofrecer accesibilidad, rapidez e interacción en tiempo real desde dispositivos Android. En el caso de SmartStay, la aplicación busca optimizar la experiencia hotelera mediante procesos digitales y una gestión más eficiente de los servicios.
+
+
 ##### 4.2.1.8. Team Collaboration Insights during Sprint
 
 ### 4.3. Validation Interviews
