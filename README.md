@@ -3128,7 +3128,7 @@ Asimismo, las aplicaciones móviles fueron ejecutadas y validadas utilizando **A
 - **Android Studio:** [Android Studio](https://developer.android.com/studio)
 
 
-#### 4.1.2. Source Code Management
+### 4.1.2. Source Code Management
 
 ### Repositorios del proyecto
 El proyecto está organizado dentro de una **organización en GitHub**, donde cada módulo cuenta con su propio repositorio según su propósito y tecnología.
@@ -3258,7 +3258,7 @@ Se crean desde `main` para corregir problemas críticos en producción.
 - Versionado semántico aplicado
 - Tags: `v1.0.0`, `v1.1.0`
 
-#### 4.1.3. Source Code Style Guide & Conventions
+### 4.1.3. Source Code Style Guide & Conventions
 
 El equipo adopta **convenciones de nomenclatura y guías de estilo estandarizadas** para mantener la coherencia, legibilidad y escalabilidad del código fuente a lo largo del proyecto.  
 Todas las variables, funciones, clases y archivos se nombran en **inglés**, siguiendo las convenciones propias de cada lenguaje y entorno de desarrollo utilizado.
@@ -3315,7 +3315,62 @@ En todo el código del proyecto se aplican principios de ingeniería de software
 
 ---
 
+
 #### 4.1.4. Software Deployment Configuration
+
+El despliegue de la solución considera los siguientes aspectos generales, los cuales garantizan la disponibilidad y correcta operación de los distintos componentes del sistema.
+
+### Mobile Application Deployment
+
+La aplicación móvil fue desarrollada utilizando **Kotlin** en **Android Studio**, siguiendo una arquitectura orientada al desarrollo de aplicaciones Android nativas.  
+
+Para la ejecución y validación de la aplicación, se utilizaron las siguientes herramientas y configuraciones:
+
+1. **Preparación del entorno:**  
+   Se configuró el entorno de desarrollo mediante **Android Studio**, incluyendo el SDK de Android, emuladores y dependencias necesarias para la compilación de la aplicación.
+
+2. **Estructura del proyecto:**  
+   El proyecto móvil se organiza siguiendo buenas prácticas de Android Development:
+   - `activities/` → pantallas principales de la aplicación.
+   - `adapters/` → manejo de listas dinámicas y RecyclerViews.
+   - `models/` → clases de entidades y estructuras de datos.
+   - `services/` → conexión con APIs REST y servicios externos.
+   - `res/layout/` → archivos XML de las interfaces visuales.
+   - `assets/` → recursos gráficos e imágenes utilizadas en la aplicación.
+
+3. **Compilación y ejecución:**
+   - La aplicación se ejecuta mediante **Android Emulator** y dispositivos físicos Android.
+   - Android Studio genera automáticamente los archivos APK necesarios para pruebas e instalación.
+   - Las versiones de prueba son administradas mediante GitHub y control de versiones GitFlow.
+
+4. **Servicios integrados:**
+   - Integración con APIs RESTful desarrolladas en ASP.NET Core.
+   - Uso de Firebase para autenticación y notificaciones móviles.
+   - Comunicación con servicios backend para reservas, habitaciones y gestión operativa.
+
+### Backend (Web Services)
+
+El backend fue desarrollado en **ASP.NET Core con C#**, siguiendo el estilo arquitectónico **RESTful**.  
+Su despliegue se realizó en la plataforma **Render**, configurada como un servicio cloud para ejecutar la API de forma continua.  
+
+Esto permite mantener el servicio activo, escalable y sincronizado con el repositorio de GitHub.
+
+### Integración Continua / Despliegue Continuo (CI/CD)
+
+El proyecto implementa un flujo automatizado de **Integración Continua y Despliegue Continuo (CI/CD)**, con el objetivo de mantener la coherencia entre los entornos de desarrollo y prueba.
+
+- Todos los repositorios están conectados directamente a **GitHub**.
+- Render ejecuta el despliegue automático al detectarse merges en la rama `main`.
+- El control de versiones se realiza utilizando Git y GitFlow.
+- Las versiones móviles son compiladas y probadas desde Android Studio antes de cada entrega.
+
+### Android Studio Emulator
+
+![Android Studio Emulator](assets/android-studio-emulator.jpg)
+
+**El emulador de Android Studio permite validar el funcionamiento de la aplicación móvil en distintos dispositivos y versiones de Android antes de su despliegue final.**
+
+---
 
 ### 4.2. Landing Page & Mobile Application Implementation
 
