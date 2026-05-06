@@ -3135,18 +3135,17 @@ El proyecto está organizado dentro de una **organización en GitHub**, donde ca
 
 **Repositorios individuales de control de versiones:**
 
-- **Mobile Application – Smart Stay App:**  
+- **Aplicación Móvil:**  
   - **Tecnología:** Kotlin (Android Native)
   - **IDE:** Android Studio
-  - **URL del repositorio:** https://github.com/Movil-dev-Aplicaciones-Moviles/smartstay-mobile-app
+  - **URL del repositorio:** https://github.com/Edgerunners-Aplicaciones-Moviles/mobile-smartstay
   - **Plataforma de despliegue:** Android Studio Emulator / APK Testing
-  - **Funcionalidades:** Check-in/check-out digital, control IoT, solicitudes de servicios, housekeeping y gestión operativa.
 
 - **Web Services (Backend):**  
   - **Tecnología:** ASP.NET Core (C#)
-  - **URL del repositorio:** https://github.com/Movil-dev-Aplicaciones-Moviles/smartstay-backend
+  - **URL del repositorio:** https://github.com/Edgerunners-Aplicaciones-Moviles/backend-smartstay
   - **Arquitectura:** RESTful API
-  - **Plataforma de despliegue:** Microsoft Azure
+  - **Plataforma de despliegue:** Render
 
 Todos los repositorios implementan el modelo **GitFlow** como flujo de trabajo de colaboración y branching, garantizando un desarrollo ordenado y trazable.
 
@@ -3158,35 +3157,34 @@ Este enfoque permite un control de versiones ordenado y un desarrollo paralelo s
 
 **Diagrama del flujo GitFlow implementado:**
 
+```text
 main (producción)
  |
  |---- release/v1.0.0
  |          |
 develop    |
  |         |
- |---- feature/mobile-authentication
+ |---- feature/user-authentication
  |         |
  |         (desarrollo)
  |         |
  |<-------- (merge)
  |
- |---- feature/iot-room-control
+ |---- feature/room-management
  |         |
  |         (desarrollo)
  |         |
  |<-------- (merge)
  |
- |---- hotfix/checkin-error
+ |---- hotfix/critical-bug
  |         |
  |         (corrección)
  |         |
  |<-------- (merge a develop)
  |         |
-main <---- (merge a main) 
-
-
+main <---- (merge a main)
+```
 ---
-
 ### Proceso de trabajo con GitFlow
 
 1. **Desarrollo de nuevas funcionalidades:**
@@ -3207,26 +3205,21 @@ main <---- (merge a main)
    - Se realiza merge a `main` y `develop`
    - Se etiqueta la nueva versión de corrección
 
----
-
 ### Estructura de branches (Ramas)
 
-#### Main branch (Rama principal)
-
+**Main branch (Rama principal):**  
 Es la rama principal del proyecto, donde se almacena el código estable y listo para producción.  
-Solo se integran cambios que hayan sido probados y validados previamente en las ramas de desarrollo (`develop`) y funcionalidad (`feature/*`).  
+Solo se integran cambios que hayan sido probados y validados previamente en las ramas de desarrollo (*develop*) y funcionalidad (*feature/*).  
 Esta rama representa el estado más confiable del proyecto y se encuentra protegida con reglas de revisión obligatoria.
 
-#### Develop branch (Rama de desarrollo)
-
+**Develop branch (Rama de desarrollo):**  
 Actúa como un espacio de integración para el trabajo en equipo.  
-Aquí se combinan, prueban y ajustan las nuevas funcionalidades antes de ser fusionadas con la rama principal (`main`).  
+Aquí se combinan, prueban y ajustan las nuevas funcionalidades antes de ser fusionadas con la rama principal (*main*).  
 Su propósito es garantizar que el código integrado sea funcional y estable antes del despliegue.
 
-#### Feature branches (Ramas de funcionalidad)
-
+**Feature branches (Ramas de funcionalidad):**  
 Cada nueva funcionalidad o tarea específica se desarrolla en su propia rama independiente.  
-Una vez completada y verificada, se integra nuevamente en la rama de desarrollo (`develop`) mediante Pull Request.
+Una vez completada y verificada, se integra nuevamente en la rama de desarrollo (*develop*) mediante Pull Request.
 
 Las ramas de funcionalidad siguen un esquema de nombres descriptivos, como por ejemplo:
 
@@ -3234,45 +3227,93 @@ Las ramas de funcionalidad siguen un esquema de nombres descriptivos, como por e
 - `feature/chapter-02` - Documentación del Capítulo II
 - `feature/chapter-03` - Documentación del Capítulo III
 - `feature/chapter-04` - Documentación del Capítulo IV
-- `feature/mobile-authentication` - Sistema de autenticación móvil
-- `feature/checkin-checkout` - Gestión de check-in/check-out digital
-- `feature/room-service` - Solicitud de servicios desde la app
-- `feature/iot-room-control` - Control inteligente de habitación
-- `feature/housekeeping-management` - Gestión de housekeeping
-- `feature/maintenance-management` - Gestión de incidencias y mantenimiento
+- `feature/chapter-05` - Documentación del Capítulo V
+- `feature/user-authentication` - Sistema de autenticación
+- `feature/room-management` - Gestión de habitaciones
+- `feature/booking-system` - Sistema de reservas
 
-#### Release branches (Ramas de versión)
-
+**Release branches (Ramas de versión):**  
 Se crean para preparar una nueva versión de producción desde `develop`.
 
 - `release/v1.0.0` - Primera versión estable
 - `release/v1.1.0` - Versión con nuevas funcionalidades
 
-#### Hotfix branches (Ramas de corrección urgente)
-
+**Hotfix branches (Ramas de corrección urgente):**  
 Se crean desde `main` para corregir problemas críticos en producción.
 
-- `hotfix/checkin-error` - Corrección de errores en check-in
-- `hotfix/iot-connection` - Corrección de conexión IoT
-
----
+- `hotfix/login-security` - Corrección de seguridad en login
+- `hotfix/payment-error` - Corrección de error en pagos
 
 ### Evidencia de aplicación de GitFlow
 
-#### Repositorio Mobile App
+**Repositorio Mobile App:**
 
-- Ramas activas: `main`, `develop`, `feature/checkin-checkout`, `feature/iot-room-control`
+- Ramas activas: `main`, `develop`, `feature/responsive-design`, `feature/multilanguage`
 - Commits con convenciones: `feat:`, `fix:`, `docs:`
 - Pull Requests con revisiones de código
-- Validación mediante Android Emulator y dispositivos físicos
 
-#### Repositorio Backend
+**Repositorio Backend:**
 
-- Ramas activas: `main`, `develop`, `feature/api-bookings`, `feature/api-room-status`
+- Ramas activas: `main`, `develop`, `feature/api-rooms`, `feature/api-bookings`
 - Versionado semántico aplicado
 - Tags: `v1.0.0`, `v1.1.0`
 
 #### 4.1.3. Source Code Style Guide & Conventions
+
+El equipo adopta **convenciones de nomenclatura y guías de estilo estandarizadas** para mantener la coherencia, legibilidad y escalabilidad del código fuente a lo largo del proyecto.  
+Todas las variables, funciones, clases y archivos se nombran en **inglés**, siguiendo las convenciones propias de cada lenguaje y entorno de desarrollo utilizado.
+
+### Kotlin (Android Studio)
+
+Se siguen las recomendaciones oficiales para el desarrollo de aplicaciones móviles Android:
+
+- [Kotlin Coding Conventions](https://kotlinlang.org/docs/coding-conventions.html)
+- [Android Developers Guidelines](https://developer.android.com/kotlin/style-guide)
+
+**Convenciones aplicadas:**
+
+- Uso de **PascalCase** para clases y actividades (`LoginActivity`, `RoomManagementActivity`).
+- Uso de **camelCase** para variables, funciones y parámetros (`guestName`, `validateLogin()`).
+- Organización modular del código por paquetes (`activities`, `services`, `models`, `adapters`).
+- Uso de nombres descriptivos y consistentes para layouts XML y recursos visuales.
+- Implementación de buenas prácticas de desarrollo Android para mejorar mantenibilidad y escalabilidad.
+
+**Componentes utilizados en la aplicación móvil:**
+
+- `Activity`: Maneja las pantallas principales de la aplicación.
+- `Fragment`: Permite reutilizar componentes visuales dentro de distintas vistas.
+- `RecyclerView`: Muestra listas dinámicas de habitaciones, reservas o servicios.
+- `Intent`: Gestiona la navegación entre pantallas.
+- `ViewModel`: Administra el estado y la lógica de presentación.
+- `Firebase`: Gestiona autenticación y notificaciones móviles.
+- `XML Layouts`: Define la estructura visual de las interfaces móviles.
+
+### C# y ASP.NET Core
+
+Las convenciones del código backend siguen los lineamientos oficiales de Microsoft:
+
+- [C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+- [Microsoft ASP.NET Core Coding Guidelines](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0)
+
+**Convenciones aplicadas:**
+
+- Uso de **PascalCase** para clases, interfaces y métodos públicos.
+- Uso de **camelCase** para variables locales y parámetros.
+- Organización del código en **namespaces** coherentes con la arquitectura del proyecto.
+- Comentarios XML para documentación interna de métodos y controladores.
+- Desarrollo de APIs RESTful estructuradas y desacopladas.
+
+### Buenas prácticas comunes
+
+En todo el código del proyecto se aplican principios de ingeniería de software orientados a la calidad y mantenibilidad:
+
+- Nomenclatura en inglés.
+- Principio **DRY (Don’t Repeat Yourself)**: evitar duplicación de código.
+- Principio **KISS (Keep It Simple, Stupid)**: priorizar soluciones simples y claras.
+- Código documentado y con convenciones homogéneas entre aplicación móvil y backend.
+- Control de formato automatizado mediante *linters* y herramientas de formateo en cada entorno de desarrollo.
+
+---
 
 #### 4.1.4. Software Deployment Configuration
 
