@@ -2976,7 +2976,157 @@ El módulo de comunicación se completa con conversation_threads, thread_partici
 
 ### 4.1. Software Configuration Management
 
+En esta sección el equipo establece las decisiones, herramientas y convenciones que permiten mantener la consistencia durante el ciclo de vida del proyecto. Se incluyen aspectos de configuración del entorno de desarrollo, gestión del código fuente, guías de estilo y configuración de despliegue de la solución.
+
+---
+
 #### 4.1.1. Software Development Environment Configuration
+
+### Project Management
+Para la gestión del proyecto se emplearon diversas herramientas de comunicación, planificación y control de versiones. Se creó una organización en GitHub para centralizar el repositorio del código fuente y coordinar el trabajo colaborativo del equipo. La comunicación interna se realizó mediante Discord y WhatsApp, mientras que la planificación ágil de tareas se gestionó a través de Trello.
+
+- **Organización del trabajo:** GitHub
+- **Reuniones:** Discord
+- **Comunicación:** WhatsApp
+- **Planificación y asignación de tareas:** Trello
+- **Control de versiones:** Git con GitFlow workflow
+- **Gestión de Product Backlog y Sprint Backlog:** Trello
+
+**Enlaces**  
+-**GitHub:** [GitHub](https://github.com/)  
+-**Discord:** [Discord](https://discord.com/)  
+-**Trello:** [Trello](https://trello.com/)
+
+### Herramienta de soporte a Agile Development - Trello
+
+**Trello** se utiliza como la herramienta principal para la gestión ágil del proyecto, soportando la metodología Scrum mediante tableros Kanban personalizados.
+
+**Configuración del tablero Trello para Smart Stay:**
+
+**Estructura de listas (columnas):**
+1. **Product Backlog:** User Stories priorizadas pendientes de asignación
+2. **Sprint Backlog:** User Stories seleccionadas para el Sprint actual
+3. **To Do:** Engineering Tasks listas para comenzar
+4. **In Process:** Tasks en desarrollo activo
+5. **To Review:** Tasks completadas pendientes de revisión
+6. **Done:** Tasks completadas y revisadas
+
+**Elementos de las tarjetas (cards):**
+- **Título:** Identificador de la User Story o Engineering Task (ej: US-24, UT-01)
+- **Descripción:** Detalle completo de la funcionalidad o tarea
+- **Labels (etiquetas):**
+  - `Frontend` - Tareas de desarrollo frontend
+  - `Backend` - Tareas de desarrollo backend
+  - `Documentation` - Tareas de documentación
+  - `Bug` - Correcciones de errores
+  - `Enhancement` - Mejoras de funcionalidades existentes
+  - `High Priority` - Tareas de alta prioridad
+- **Miembros asignados:** Responsables de la tarea
+- **Checklist:** Subtareas o criterios de aceptación
+- **Estimación:** Horas estimadas (4-8 horas por Engineering Task)
+- **Due date:** Fecha límite de entrega
+- **Attachments:** Mockups, diagramas, enlaces relacionados
+
+**Workflow de gestión:**
+
+1. **Sprint Planning:**
+   - Se mueven User Stories del Product Backlog al Sprint Backlog
+   - Se descomponen en Engineering Tasks específicas
+   - Se asignan responsables y se estiman en horas (4-8 horas máximo)
+
+2. **Daily Development:**
+   - Los miembros mueven sus tasks de To Do → In Process al comenzar
+   - Actualizan el progreso mediante comentarios
+   - Marcan subtareas completadas en checklists
+
+3. **Code Review:**
+   - Al completar, se mueve a To Review
+   - Otro miembro del equipo revisa y valida
+   - Si aprueba, se mueve a Done
+   - Si requiere cambios, regresa a In Process
+
+4. **Sprint Review:**
+   - Se verifica que todas las tasks del Sprint estén en Done
+   - Se documenta el resultado del Sprint
+   - Se prepara el siguiente Sprint Backlog
+
+**Integración con GitHub:**
+- Enlaces en tarjetas Trello hacia Pull Requests relacionados
+- Referencia de números de issue en descripciones
+- Sincronización manual de estados entre Trello y GitHub Projects
+
+**Métricas de seguimiento:**
+- **Burndown chart:** Seguimiento manual del progreso del Sprint
+- **Velocity:** Calculado al finalizar cada Sprint
+- **Task completion rate:** Porcentaje de tasks completadas vs planificadas
+
+**Evidencia de uso:**
+![sprint_trello](assets/trello.jpg)
+*Tablero Trello del Sprint 1 mostrando la organización de tareas*
+
+![sprint_trello](assets/trello2.jpg)
+*Tablero Trello del Sprint 2 con Engineering Tasks en progreso*
+
+
+### Requirement Management
+Para la fase de levantamiento y priorización de requisitos, se implementaron herramientas que facilitaron la recolección, análisis y documentación de información. Trello fue empleado para la gestión visual de tareas mediante tableros personalizados.  
+Además, se utilizó **UXPressia** para el desarrollo de *User Personas*, *Empathy Maps*, *Journey Maps* y *Lean UX Canvas*, mientras que **Miro** sirvió para construir los escenarios *As-Is* y *To-Be* de los procesos del sistema.
+
+**Enlaces**  
+-**Trello:** [Trello](https://trello.com/)  
+-**UXPressia:** [UXPressia](https://uxpressia.com/)  
+-**Miro:** [Miro](https://miro.com/es/)
+
+
+
+### Product UX/UI Design
+Durante el diseño de la experiencia e interfaz de usuario, el equipo utilizó **Figma** para crear *wireframes*, *mockups* y *prototipos interactivos*, lo cual permitió validar las propuestas de diseño antes de su implementación final.  
+Asimismo, se aplicaron principios de usabilidad y diseño centrado en el usuario para garantizar una navegación fluida y consistente.
+
+**Enlaces**  
+-**Figma:** [Figma](https://www.figma.com/)
+
+
+
+### Software Development
+Para el desarrollo de la aplicación se utilizaron distintas herramientas y entornos de programación enfocados en el desarrollo backend y móvil.  
+
+El backend fue implementado con **ASP.NET Core (C#)** empleando el IDE **JetBrains Rider**, permitiendo gestionar la lógica de negocio y los servicios del sistema mediante APIs REST.  
+
+Por otro lado, el desarrollo móvil se realizó utilizando **Android Studio**, **Kotlin** y **Flutter**, tecnologías empleadas para implementar las aplicaciones dirigidas al huésped y al staff operativo. Asimismo, se utilizó **Firebase** para servicios de autenticación y notificaciones móviles.  
+
+Adicionalmente, se empleó **MySQL** como sistema de gestión de base de datos y **Azure** para el despliegue y administración de los servicios backend.  
+
+Finalmente, el proyecto se apoyó en herramientas de control de versiones como **Git y GitHub**, mientras que la instalación y mantenimiento de las IDEs se realizó mediante **JetBrains ToolBox**.
+
+**Enlaces**  
+- **JetBrains ToolBox:** [JetBrains ToolBox](https://www.jetbrains.com/toolbox-app/)  
+- **JetBrains Rider:** [JetBrains Rider](https://www.jetbrains.com/rider/)  
+- **Android Studio:** [Android Studio](https://developer.android.com/studio)  
+- **Flutter:** [Flutter](https://flutter.dev/)  
+- **Kotlin:** [Kotlin](https://kotlinlang.org/)  
+- **Firebase:** [Firebase](https://firebase.google.com/)  
+- **MySQL:** [MySQL](https://www.mysql.com/)  
+- **Azure:** [Azure](https://azure.microsoft.com/)  
+- **GitHub:** [GitHub](https://github.com/)
+
+
+### Software Documentation
+Para la documentación técnica y la gestión del repositorio, se utilizó **GitHub** siguiendo la metodología de trabajo **GitFlow**.  
+Esta estrategia permitió un control de versiones eficiente mediante el uso de ramas específicas para funcionalidades, correcciones y despliegues del proyecto.  
+Toda la documentación se redactó en formato **Markdown (.md)**, debido a su legibilidad, simplicidad y compatibilidad con GitHub.
+
+**Enlaces**  
+- **GitHub:** [GitHub](https://github.com/)
+
+### Software Deployment
+El despliegue de los servicios backend se realizó mediante **Microsoft Azure**, permitiendo alojar las APIs REST y garantizar la comunicación entre las aplicaciones móviles, la base de datos y los servicios IoT del sistema Smart Stay.  
+Asimismo, las aplicaciones móviles fueron ejecutadas y validadas utilizando **Android Studio Emulator** y dispositivos físicos Android para verificar el correcto funcionamiento de las funcionalidades desarrolladas.
+
+**Enlaces**  
+- **Azure:** [Azure](https://azure.microsoft.com/)  
+- **Android Studio:** [Android Studio](https://developer.android.com/studio)
+
 
 #### 4.1.2. Source Code Management
 
