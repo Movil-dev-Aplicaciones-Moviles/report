@@ -2976,13 +2976,401 @@ El módulo de comunicación se completa con conversation_threads, thread_partici
 
 ### 4.1. Software Configuration Management
 
+En esta sección el equipo establece las decisiones, herramientas y convenciones que permiten mantener la consistencia durante el ciclo de vida del proyecto. Se incluyen aspectos de configuración del entorno de desarrollo, gestión del código fuente, guías de estilo y configuración de despliegue de la solución.
+
+---
+
 #### 4.1.1. Software Development Environment Configuration
 
-#### 4.1.2. Source Code Management
+### Project Management
+Para la gestión del proyecto se emplearon diversas herramientas de comunicación, planificación y control de versiones. Se creó una organización en GitHub para centralizar el repositorio del código fuente y coordinar el trabajo colaborativo del equipo. La comunicación interna se realizó mediante Discord y WhatsApp, mientras que la planificación ágil de tareas se gestionó a través de Trello.
 
-#### 4.1.3. Source Code Style Guide & Conventions
+- **Organización del trabajo:** GitHub
+- **Reuniones:** Discord
+- **Comunicación:** WhatsApp
+- **Planificación y asignación de tareas:** Trello
+- **Control de versiones:** Git con GitFlow workflow
+- **Gestión de Product Backlog y Sprint Backlog:** Trello
+
+**Enlaces**  
+-**GitHub:** [GitHub](https://github.com/)  
+-**Discord:** [Discord](https://discord.com/)  
+-**Trello:** [Trello](https://trello.com/)
+
+### Herramienta de soporte a Agile Development - Trello
+
+**Trello** se utiliza como la herramienta principal para la gestión ágil del proyecto, soportando la metodología Scrum mediante tableros Kanban personalizados.
+
+**Configuración del tablero Trello para Smart Stay:**
+
+**Estructura de listas (columnas):**
+1. **Product Backlog:** User Stories priorizadas pendientes de asignación
+2. **Sprint Backlog:** User Stories seleccionadas para el Sprint actual
+3. **To Do:** Engineering Tasks listas para comenzar
+4. **In Process:** Tasks en desarrollo activo
+5. **To Review:** Tasks completadas pendientes de revisión
+6. **Done:** Tasks completadas y revisadas
+
+**Elementos de las tarjetas (cards):**
+- **Título:** Identificador de la User Story o Engineering Task (ej: US-24, UT-01)
+- **Descripción:** Detalle completo de la funcionalidad o tarea
+- **Labels (etiquetas):**
+  - `Frontend` - Tareas de desarrollo frontend
+  - `Backend` - Tareas de desarrollo backend
+  - `Documentation` - Tareas de documentación
+  - `Bug` - Correcciones de errores
+  - `Enhancement` - Mejoras de funcionalidades existentes
+  - `High Priority` - Tareas de alta prioridad
+- **Miembros asignados:** Responsables de la tarea
+- **Checklist:** Subtareas o criterios de aceptación
+- **Estimación:** Horas estimadas (4-8 horas por Engineering Task)
+- **Due date:** Fecha límite de entrega
+- **Attachments:** Mockups, diagramas, enlaces relacionados
+
+**Workflow de gestión:**
+
+1. **Sprint Planning:**
+   - Se mueven User Stories del Product Backlog al Sprint Backlog
+   - Se descomponen en Engineering Tasks específicas
+   - Se asignan responsables y se estiman en horas (4-8 horas máximo)
+
+2. **Daily Development:**
+   - Los miembros mueven sus tasks de To Do → In Process al comenzar
+   - Actualizan el progreso mediante comentarios
+   - Marcan subtareas completadas en checklists
+
+3. **Code Review:**
+   - Al completar, se mueve a To Review
+   - Otro miembro del equipo revisa y valida
+   - Si aprueba, se mueve a Done
+   - Si requiere cambios, regresa a In Process
+
+4. **Sprint Review:**
+   - Se verifica que todas las tasks del Sprint estén en Done
+   - Se documenta el resultado del Sprint
+   - Se prepara el siguiente Sprint Backlog
+
+**Integración con GitHub:**
+- Enlaces en tarjetas Trello hacia Pull Requests relacionados
+- Referencia de números de issue en descripciones
+- Sincronización manual de estados entre Trello y GitHub Projects
+
+**Métricas de seguimiento:**
+- **Burndown chart:** Seguimiento manual del progreso del Sprint
+- **Velocity:** Calculado al finalizar cada Sprint
+- **Task completion rate:** Porcentaje de tasks completadas vs planificadas
+
+**Evidencia de uso:**
+![sprint_trello](assets/trello.jpg)
+*Tablero Trello del Sprint 1 mostrando la organización de tareas*
+
+![sprint_trello](assets/trello2.jpg)
+*Tablero Trello del Sprint 2 con Engineering Tasks en progreso*
+
+
+### Requirement Management
+Para la fase de levantamiento y priorización de requisitos, se implementaron herramientas que facilitaron la recolección, análisis y documentación de información. Trello fue empleado para la gestión visual de tareas mediante tableros personalizados.  
+Además, se utilizó **UXPressia** para el desarrollo de *User Personas*, *Empathy Maps*, *Journey Maps* y *Lean UX Canvas*, mientras que **Miro** sirvió para construir los escenarios *As-Is* y *To-Be* de los procesos del sistema.
+
+**Enlaces**  
+-**Trello:** [Trello](https://trello.com/)  
+-**UXPressia:** [UXPressia](https://uxpressia.com/)  
+-**Miro:** [Miro](https://miro.com/es/)
+
+
+
+### Product UX/UI Design
+Durante el diseño de la experiencia e interfaz de usuario, el equipo utilizó **Figma** para crear *wireframes*, *mockups* y *prototipos interactivos*, lo cual permitió validar las propuestas de diseño antes de su implementación final.  
+Asimismo, se aplicaron principios de usabilidad y diseño centrado en el usuario para garantizar una navegación fluida y consistente.
+
+**Enlaces**  
+-**Figma:** [Figma](https://www.figma.com/)
+
+
+
+### Software Development
+Para el desarrollo de la aplicación se utilizaron distintas herramientas y entornos de programación enfocados en el desarrollo backend y móvil.  
+
+El backend fue implementado con **ASP.NET Core (C#)** empleando el IDE **JetBrains Rider**, permitiendo gestionar la lógica de negocio y los servicios del sistema mediante APIs REST.  
+
+Por otro lado, el desarrollo móvil se realizó utilizando **Android Studio**, **Kotlin** y **Flutter**, tecnologías empleadas para implementar las aplicaciones dirigidas al huésped y al staff operativo. Asimismo, se utilizó **Firebase** para servicios de autenticación y notificaciones móviles.  
+
+Adicionalmente, se empleó **MySQL** como sistema de gestión de base de datos y **Azure** para el despliegue y administración de los servicios backend.  
+
+Finalmente, el proyecto se apoyó en herramientas de control de versiones como **Git y GitHub**, mientras que la instalación y mantenimiento de las IDEs se realizó mediante **JetBrains ToolBox**.
+
+**Enlaces**  
+- **JetBrains ToolBox:** [JetBrains ToolBox](https://www.jetbrains.com/toolbox-app/)  
+- **JetBrains Rider:** [JetBrains Rider](https://www.jetbrains.com/rider/)  
+- **Android Studio:** [Android Studio](https://developer.android.com/studio)  
+- **Flutter:** [Flutter](https://flutter.dev/)  
+- **Kotlin:** [Kotlin](https://kotlinlang.org/)  
+- **Firebase:** [Firebase](https://firebase.google.com/)  
+- **MySQL:** [MySQL](https://www.mysql.com/)  
+- **Azure:** [Azure](https://azure.microsoft.com/)  
+- **GitHub:** [GitHub](https://github.com/)
+
+
+### Software Documentation
+Para la documentación técnica y la gestión del repositorio, se utilizó **GitHub** siguiendo la metodología de trabajo **GitFlow**.  
+Esta estrategia permitió un control de versiones eficiente mediante el uso de ramas específicas para funcionalidades, correcciones y despliegues del proyecto.  
+Toda la documentación se redactó en formato **Markdown (.md)**, debido a su legibilidad, simplicidad y compatibilidad con GitHub.
+
+**Enlaces**  
+- **GitHub:** [GitHub](https://github.com/)
+
+### Software Deployment
+El despliegue de los servicios backend se realizó mediante **Microsoft Azure**, permitiendo alojar las APIs REST y garantizar la comunicación entre las aplicaciones móviles, la base de datos y los servicios IoT del sistema Smart Stay.  
+Asimismo, las aplicaciones móviles fueron ejecutadas y validadas utilizando **Android Studio Emulator** y dispositivos físicos Android para verificar el correcto funcionamiento de las funcionalidades desarrolladas.
+
+**Enlaces**  
+- **Azure:** [Azure](https://azure.microsoft.com/)  
+- **Android Studio:** [Android Studio](https://developer.android.com/studio)
+
+
+### 4.1.2. Source Code Management
+
+### Repositorios del proyecto
+El proyecto está organizado dentro de una **organización en GitHub**, donde cada módulo cuenta con su propio repositorio según su propósito y tecnología.
+
+**Repositorios individuales de control de versiones:**
+
+- **Aplicación Móvil:**  
+  - **Tecnología:** Kotlin (Android Native)
+  - **IDE:** Android Studio
+  - **URL del repositorio:** https://github.com/Edgerunners-Aplicaciones-Moviles/mobile-smartstay
+  - **Plataforma de despliegue:** Android Studio Emulator / APK Testing
+
+- **Web Services (Backend):**  
+  - **Tecnología:** ASP.NET Core (C#)
+  - **URL del repositorio:** https://github.com/Edgerunners-Aplicaciones-Moviles/backend-smartstay
+  - **Arquitectura:** RESTful API
+  - **Plataforma de despliegue:** Render
+
+Todos los repositorios implementan el modelo **GitFlow** como flujo de trabajo de colaboración y branching, garantizando un desarrollo ordenado y trazable.
+
+---
+
+### Flujo de trabajo de GitFlow
+El flujo de trabajo del proyecto se basa en el modelo **“A Successful Git Branching Model”**, el cual organiza el proceso de desarrollo mediante ramas específicas para cada funcionalidad o corrección.  
+Este enfoque permite un control de versiones ordenado y un desarrollo paralelo seguro.
+
+**Diagrama del flujo GitFlow implementado:**
+
+```text
+main (producción)
+ |
+ |---- release/v1.0.0
+ |          |
+develop    |
+ |         |
+ |---- feature/user-authentication
+ |         |
+ |         (desarrollo)
+ |         |
+ |<-------- (merge)
+ |
+ |---- feature/room-management
+ |         |
+ |         (desarrollo)
+ |         |
+ |<-------- (merge)
+ |
+ |---- hotfix/critical-bug
+ |         |
+ |         (corrección)
+ |         |
+ |<-------- (merge a develop)
+ |         |
+main <---- (merge a main)
+```
+---
+### Proceso de trabajo con GitFlow
+
+1. **Desarrollo de nuevas funcionalidades:**
+   - Se crea una rama `feature/<nombre-funcionalidad>` desde `develop`
+   - Se desarrolla y prueba la funcionalidad
+   - Se realiza merge a `develop` mediante Pull Request con revisión de código
+   - Se elimina la rama feature tras la integración exitosa
+
+2. **Preparación de versiones:**
+   - Se crea una rama `release/<version>` desde `develop`
+   - Se realizan ajustes finales y correcciones menores
+   - Se realiza merge a `main` y se etiqueta la versión
+   - Se realiza merge de vuelta a `develop` para mantener sincronización
+
+3. **Correcciones críticas en producción:**
+   - Se crea una rama `hotfix/<descripcion>` desde `main`
+   - Se corrige el problema de forma urgente
+   - Se realiza merge a `main` y `develop`
+   - Se etiqueta la nueva versión de corrección
+
+### Estructura de branches (Ramas)
+
+**Main branch (Rama principal):**  
+Es la rama principal del proyecto, donde se almacena el código estable y listo para producción.  
+Solo se integran cambios que hayan sido probados y validados previamente en las ramas de desarrollo (*develop*) y funcionalidad (*feature/*).  
+Esta rama representa el estado más confiable del proyecto y se encuentra protegida con reglas de revisión obligatoria.
+
+**Develop branch (Rama de desarrollo):**  
+Actúa como un espacio de integración para el trabajo en equipo.  
+Aquí se combinan, prueban y ajustan las nuevas funcionalidades antes de ser fusionadas con la rama principal (*main*).  
+Su propósito es garantizar que el código integrado sea funcional y estable antes del despliegue.
+
+**Feature branches (Ramas de funcionalidad):**  
+Cada nueva funcionalidad o tarea específica se desarrolla en su propia rama independiente.  
+Una vez completada y verificada, se integra nuevamente en la rama de desarrollo (*develop*) mediante Pull Request.
+
+Las ramas de funcionalidad siguen un esquema de nombres descriptivos, como por ejemplo:
+
+- `feature/chapter-01` - Documentación del Capítulo I
+- `feature/chapter-02` - Documentación del Capítulo II
+- `feature/chapter-03` - Documentación del Capítulo III
+- `feature/chapter-04` - Documentación del Capítulo IV
+- `feature/chapter-05` - Documentación del Capítulo V
+- `feature/user-authentication` - Sistema de autenticación
+- `feature/room-management` - Gestión de habitaciones
+- `feature/booking-system` - Sistema de reservas
+
+**Release branches (Ramas de versión):**  
+Se crean para preparar una nueva versión de producción desde `develop`.
+
+- `release/v1.0.0` - Primera versión estable
+- `release/v1.1.0` - Versión con nuevas funcionalidades
+
+**Hotfix branches (Ramas de corrección urgente):**  
+Se crean desde `main` para corregir problemas críticos en producción.
+
+- `hotfix/login-security` - Corrección de seguridad en login
+- `hotfix/payment-error` - Corrección de error en pagos
+
+### Evidencia de aplicación de GitFlow
+
+**Repositorio Mobile App:**
+
+- Ramas activas: `main`, `develop`, `feature/responsive-design`, `feature/multilanguage`
+- Commits con convenciones: `feat:`, `fix:`, `docs:`
+- Pull Requests con revisiones de código
+
+**Repositorio Backend:**
+
+- Ramas activas: `main`, `develop`, `feature/api-rooms`, `feature/api-bookings`
+- Versionado semántico aplicado
+- Tags: `v1.0.0`, `v1.1.0`
+
+### 4.1.3. Source Code Style Guide & Conventions
+
+El equipo adopta **convenciones de nomenclatura y guías de estilo estandarizadas** para mantener la coherencia, legibilidad y escalabilidad del código fuente a lo largo del proyecto.  
+Todas las variables, funciones, clases y archivos se nombran en **inglés**, siguiendo las convenciones propias de cada lenguaje y entorno de desarrollo utilizado.
+
+### Kotlin (Android Studio)
+
+Se siguen las recomendaciones oficiales para el desarrollo de aplicaciones móviles Android:
+
+- [Kotlin Coding Conventions](https://kotlinlang.org/docs/coding-conventions.html)
+- [Android Developers Guidelines](https://developer.android.com/kotlin/style-guide)
+
+**Convenciones aplicadas:**
+
+- Uso de **PascalCase** para clases y actividades (`LoginActivity`, `RoomManagementActivity`).
+- Uso de **camelCase** para variables, funciones y parámetros (`guestName`, `validateLogin()`).
+- Organización modular del código por paquetes (`activities`, `services`, `models`, `adapters`).
+- Uso de nombres descriptivos y consistentes para layouts XML y recursos visuales.
+- Implementación de buenas prácticas de desarrollo Android para mejorar mantenibilidad y escalabilidad.
+
+**Componentes utilizados en la aplicación móvil:**
+
+- `Activity`: Maneja las pantallas principales de la aplicación.
+- `Fragment`: Permite reutilizar componentes visuales dentro de distintas vistas.
+- `RecyclerView`: Muestra listas dinámicas de habitaciones, reservas o servicios.
+- `Intent`: Gestiona la navegación entre pantallas.
+- `ViewModel`: Administra el estado y la lógica de presentación.
+- `Firebase`: Gestiona autenticación y notificaciones móviles.
+- `XML Layouts`: Define la estructura visual de las interfaces móviles.
+
+### C# y ASP.NET Core
+
+Las convenciones del código backend siguen los lineamientos oficiales de Microsoft:
+
+- [C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+- [Microsoft ASP.NET Core Coding Guidelines](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0)
+
+**Convenciones aplicadas:**
+
+- Uso de **PascalCase** para clases, interfaces y métodos públicos.
+- Uso de **camelCase** para variables locales y parámetros.
+- Organización del código en **namespaces** coherentes con la arquitectura del proyecto.
+- Comentarios XML para documentación interna de métodos y controladores.
+- Desarrollo de APIs RESTful estructuradas y desacopladas.
+
+### Buenas prácticas comunes
+
+En todo el código del proyecto se aplican principios de ingeniería de software orientados a la calidad y mantenibilidad:
+
+- Nomenclatura en inglés.
+- Principio **DRY (Don’t Repeat Yourself)**: evitar duplicación de código.
+- Principio **KISS (Keep It Simple, Stupid)**: priorizar soluciones simples y claras.
+- Código documentado y con convenciones homogéneas entre aplicación móvil y backend.
+- Control de formato automatizado mediante *linters* y herramientas de formateo en cada entorno de desarrollo.
+
+---
+
 
 #### 4.1.4. Software Deployment Configuration
+
+El despliegue de la solución considera los siguientes aspectos generales, los cuales garantizan la disponibilidad y correcta operación de los distintos componentes del sistema.
+
+### Mobile Application Deployment
+
+La aplicación móvil fue desarrollada utilizando **Kotlin** en **Android Studio**, siguiendo una arquitectura orientada al desarrollo de aplicaciones Android nativas.  
+
+Para la ejecución y validación de la aplicación, se utilizaron las siguientes herramientas y configuraciones:
+
+1. **Preparación del entorno:**  
+   Se configuró el entorno de desarrollo mediante **Android Studio**, incluyendo el SDK de Android, emuladores y dependencias necesarias para la compilación de la aplicación.
+
+2. **Estructura del proyecto:**  
+   El proyecto móvil se organiza siguiendo buenas prácticas de Android Development:
+   - `activities/` → pantallas principales de la aplicación.
+   - `adapters/` → manejo de listas dinámicas y RecyclerViews.
+   - `models/` → clases de entidades y estructuras de datos.
+   - `services/` → conexión con APIs REST y servicios externos.
+   - `res/layout/` → archivos XML de las interfaces visuales.
+   - `assets/` → recursos gráficos e imágenes utilizadas en la aplicación.
+
+3. **Compilación y ejecución:**
+   - La aplicación se ejecuta mediante **Android Emulator** y dispositivos físicos Android.
+   - Android Studio genera automáticamente los archivos APK necesarios para pruebas e instalación.
+   - Las versiones de prueba son administradas mediante GitHub y control de versiones GitFlow.
+
+4. **Servicios integrados:**
+   - Integración con APIs RESTful desarrolladas en ASP.NET Core.
+   - Uso de Firebase para autenticación y notificaciones móviles.
+   - Comunicación con servicios backend para reservas, habitaciones y gestión operativa.
+
+### Backend (Web Services)
+
+El backend fue desarrollado en **ASP.NET Core con C#**, siguiendo el estilo arquitectónico **RESTful**.  
+Su despliegue se realizó en la plataforma **Render**, configurada como un servicio cloud para ejecutar la API de forma continua.  
+
+Esto permite mantener el servicio activo, escalable y sincronizado con el repositorio de GitHub.
+
+### Integración Continua / Despliegue Continuo (CI/CD)
+
+El proyecto implementa un flujo automatizado de **Integración Continua y Despliegue Continuo (CI/CD)**, con el objetivo de mantener la coherencia entre los entornos de desarrollo y prueba.
+
+- Todos los repositorios están conectados directamente a **GitHub**.
+- Render ejecuta el despliegue automático al detectarse merges en la rama `main`.
+- El control de versiones se realiza utilizando Git y GitFlow.
+- Las versiones móviles son compiladas y probadas desde Android Studio antes de cada entrega.
+
+### Android Studio Emulator
+
+![Android Studio Emulator](assets/android-studio-emulator.jpg)
+
+**El emulador de Android Studio permite validar el funcionamiento de la aplicación móvil en distintos dispositivos y versiones de Android antes de su despliegue final.**
+
+---
 
 ### 4.2. Landing Page & Mobile Application Implementation
 
@@ -3001,6 +3389,15 @@ El módulo de comunicación se completa con conversation_threads, thread_partici
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
+En este Sprint 1, los miembros del equipo lograron completar las tareas asociadas al desarrollo inicial de la aplicación móvil SmartStay.
+
+El trabajo incluyó la configuración del entorno de desarrollo en Android Studio, la implementación de las primeras interfaces móviles y la integración de componentes principales como la pantalla de inicio de sesión, navegación entre vistas y estructura base de la aplicación.
+
+La aplicación móvil cumple el rol de plataforma principal de interacción para huéspedes y personal operativo, permitiendo centralizar funcionalidades relacionadas con reservas, gestión hotelera y servicios digitales dentro del ecosistema SmartStay.
+
+Una aplicación móvil es fundamental en proyectos modernos orientados a la experiencia del usuario, ya que permite ofrecer accesibilidad, rapidez e interacción en tiempo real desde dispositivos Android. En el caso de SmartStay, la aplicación busca optimizar la experiencia hotelera mediante procesos digitales y una gestión más eficiente de los servicios.
+
 
 ##### 4.2.1.8. Team Collaboration Insights during Sprint
 
