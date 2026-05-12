@@ -3475,7 +3475,7 @@ Datos del entrevistado:
 
 **Duración:**  5:24 minutos
 
-**Evidencia:** ![entrevista-1-admin.png](assets/chapter-IIII/entrevista-1-admin.png)
+**Evidencia:** ![entrevista-1-admin.png](assets/Chapter-IIII/entrevista-1-admin.png)
 
 **URL del video:**
 https://tinyurl.com/y85aj7s4
