@@ -205,9 +205,28 @@ En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo 
 - [Capítulo IV: Product Implementation \& Validation](#capítulo-iv-product-implementation--validation)
   - [4.1. Software Configuration Management](#41-software-configuration-management)
     - [4.1.1. Software Development Environment Configuration](#411-software-development-environment-configuration)
-    - [4.1.2. Source Code Management](#412-source-code-management)
-    - [4.1.3. Source Code Style Guide \& Conventions](#413-source-code-style-guide--conventions)
+  - [Project Management](#project-management)
+  - [Herramienta de soporte a Agile Development - Trello](#herramienta-de-soporte-a-agile-development---trello)
+  - [Requirement Management](#requirement-management)
+  - [Product UX/UI Design](#product-uxui-design)
+  - [Software Development](#software-development)
+  - [Software Documentation](#software-documentation)
+  - [Software Deployment](#software-deployment)
+  - [4.1.2. Source Code Management](#412-source-code-management)
+  - [Repositorios del proyecto](#repositorios-del-proyecto)
+  - [Flujo de trabajo de GitFlow](#flujo-de-trabajo-de-gitflow)
+  - [Proceso de trabajo con GitFlow](#proceso-de-trabajo-con-gitflow)
+  - [Estructura de branches (Ramas)](#estructura-de-branches-ramas)
+  - [Evidencia de aplicación de GitFlow](#evidencia-de-aplicación-de-gitflow)
+  - [4.1.3. Source Code Style Guide \& Conventions](#413-source-code-style-guide--conventions)
+  - [Kotlin (Android Studio)](#kotlin-android-studio)
+  - [C# y ASP.NET Core](#c-y-aspnet-core)
+  - [Buenas prácticas comunes](#buenas-prácticas-comunes)
     - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
+  - [Mobile Application Deployment](#mobile-application-deployment)
+  - [Backend (Web Services)](#backend-web-services)
+  - [Integración Continua / Despliegue Continuo (CI/CD)](#integración-continua--despliegue-continuo-cicd)
+  - [Android Studio Emulator](#android-studio-emulator)
   - [4.2. Landing Page \& Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
     - [4.2.1. Sprint 1](#421-sprint-1)
       - [4.2.1.1. Sprint Planning 1](#4211-sprint-planning-1)
@@ -221,6 +240,11 @@ En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo 
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+  - [Entrevista – Segmento 1: Administradores de Hoteles Boutique y Pequeños](#entrevista--segmento-1-administradores-de-hoteles-boutique-y-pequeños-1)
+    - [Entrevista 1](#entrevista-1-2)
+    - [Entrevista 2](#entrevista-2-2)
+  - [Entrevista – Segmento 2: Huéspedes de Hoteles Boutique](#entrevista--segmento-2-huéspedes-de-hoteles-boutique-1)
+    - [Entrevista 1](#entrevista-1-3)
     - [4.3.3. Evaluaciones según Heurísticas](#433-evaluaciones-según-heurísticas)
   - [Tareas a Evaluar](#tareas-a-evaluar)
   - [Tabla Resumen](#tabla-resumen)
@@ -235,7 +259,19 @@ En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo 
   - [Video About the product](#video-about-the-product)
   - [Video About the team](#video-about-the-team)
 - [Glosario](#glosario)
+  - [Términos Técnicos de Arquitectura y Patrones de Diseño](#términos-técnicos-de-arquitectura-y-patrones-de-diseño)
+  - [Términos de Desarrollo Móvil y Plataformas](#términos-de-desarrollo-móvil-y-plataformas)
+  - [Términos de Internet de las Cosas (IoT) y Sistemas Embebidos](#términos-de-internet-de-las-cosas-iot-y-sistemas-embebidos)
+  - [Términos de Ingeniería de Software y Metodologías](#términos-de-ingeniería-de-software-y-metodologías)
+  - [Términos de Diseño de Interfaz de Usuario (UI/UX)](#términos-de-diseño-de-interfaz-de-usuario-uiux)
+  - [Términos del Dominio Hotelero y Negocio](#términos-del-dominio-hotelero-y-negocio)
+  - [Términos Diversos y Acrónimos](#términos-diversos-y-acrónimos)
 - [Bibliografía](#bibliografía)
+  - [Documentación Técnica](#documentación-técnica)
+  - [Arquitectura y Diseño](#arquitectura-y-diseño)
+  - [Metodologías Ágiles](#metodologías-ágiles)
+  - [Usabilidad y Experiencia de Usuario](#usabilidad-y-experiencia-de-usuario)
+  - [Herramientas y Plataformas](#herramientas-y-plataformas)
 - [Anexos](#anexos)
 
 <div style="page-break-after: always;"></div>
@@ -3425,6 +3461,76 @@ Una aplicación móvil es fundamental en proyectos modernos orientados a la expe
 
 #### 4.3.2. Registro de Entrevistas
 
+### Entrevista – Segmento 1: Administradores de Hoteles Boutique y Pequeños
+
+#### Entrevista 1
+
+Datos del entrevistado:
+
+**Nombre completo:** Alessandro Daniel Bravo Castillo
+
+**Edad:** 27
+
+**Ciudad:** Lima
+
+**Duración:**  5:24 minutos
+
+**Evidencia:** ![entrevista-1-admin.png](assets/chapter-IIII/entrevista-1-admin.png)
+
+**URL del video:**
+https://tinyurl.com/y85aj7s4
+
+**Resumen de la entrevista**
+
+Alessandro Bravo calificó la herramienta como bastante eficiente, destacando su interfaz sencilla e intuitiva, con diseño claro y acciones bien ubicadas; valoró especialmente la gestión de staff por ofrecer mayor control sobre los empleados, la gestión de habitaciones por su claridad en disponibilidad y servicios, y la mejora de procesos clave como reservas y reportes al reemplazar métodos engorrosos como Excel; sugirió añadir un dashboard específico para habitaciones en promoción; afirmó que la app encajaría muy bien en su hotel, ayudaría a prevenir errores como la sobre-reserva, y que el equipo podría adaptarse fácilmente con buena capacitación, mostrando confianza en su implementación por considerarla confiable y fácil de usar
+
+---
+
+#### Entrevista 2
+
+Datos del entrevistado:
+
+**Nombre completo:** Jorge Linares
+
+**Edad:** 29
+
+**Ciudad:** Lima
+
+**Duración:**  8:39 minutos
+
+**Evidencia:** ![entrevista-2-admin.png](assets/Chapter-IIII/entrevista-2-admin.png)
+
+**URL del video:**
+https://tinyurl.com/4k3kr4mv
+
+**Resumen de la entrevista**
+
+Jorge Linares tuvo una impresión muy positiva de la aplicación de gestión hotelera, destacando su interfaz intuitiva y ordenada con nombres descriptivos que facilitan el uso; valoró especialmente la agilidad, automatización y el módulo de reservas por su vista detallada, además de la capacidad del sistema para prevenir errores como la sobre-reserva y centralizar información dispersa; sugirió mejoras como un módulo de pagos, exportación de reportes en PDF y funciones para coordinar al personal, además de asegurar la escalabilidad para hoteles grandes; consideró que su equipo podría adaptarse fácilmente con una breve capacitación y estaría dispuesto a pagar una suscripción mensual si el precio es razonable y la herramienta se mantiene estable.
+
+---
+
+### Entrevista – Segmento 2: Huéspedes de Hoteles Boutique
+
+#### Entrevista 1
+
+Datos del entrevistado:
+
+**Nombre completo:** Nicole Yamile Avila Ayquipa
+
+**Edad:** 25 años
+
+**Distrito:** Lima, centro de Lima
+
+**Duración:** 03:51 minutos
+
+**Evidencia:** ![entrevista-1-cliente.png](assets/Chapter-IIII/entrevista-1-cliente.png)
+
+**URL del video:** https://tinyurl.com/bdd2t8cu
+
+**Resumen de la entrevista**
+
+Nicole Ávila tuvo una buena impresión de la aplicación, destacando su practicidad al centralizar información de varios hoteles y su interfaz intuitiva con ventanas rotativas que facilitan la exploración; valoró especialmente la agenda de reservas por su orden y claridad, así como la posibilidad de tomar decisiones más informadas gracias a las reseñas de otros huéspedes, sin encontrar funciones innecesarias; aunque considera el sistema confiable, sugirió incorporar una ventana de asistencia virtual para mantener interacción humana; afirmó que preferiría hoteles con esta experiencia digital y estaría dispuesta a pagar más por la seguridad que le brinda al elegir con mayor información.
+
 #### 4.3.3. Evaluaciones según Heurísticas
 
 **CARRERA:** Ingeniería de Software  
@@ -3539,6 +3645,18 @@ Los controles de iluminación y temperatura no incluyen descripciones accesibles
 
 ## Conclusiones y recomendaciones
 
+En conclusión, el trabajo en equipo representó un factor fundamental para el avance y cumplimiento de los objetivos del proyecto. La concentración de commits en determinados periodos evidenció que, aunque existió una coordinación efectiva en etapas clave, aún es posible optimizar la organización mediante un flujo de trabajo más constante y equilibrado entre los integrantes. Esto permitiría distribuir mejor las responsabilidades, fortalecer la comunicación continua y mantener una mayor estabilidad durante el desarrollo.
+
+También se ha podido concluir, el proyecto funcionó como un espacio de crecimiento y aprendizaje colaborativo para todos los integrantes del equipo. A lo largo del proceso, se observó una integración progresiva de habilidades, conocimientos y perspectivas, permitiendo que cada miembro aportara desde su experiencia individual mientras fortalecía sus capacidades mediante el intercambio de ideas y soluciones. Como resultado, se logró una mayor cohesión grupal reflejada en la calidad y profundidad de los avances obtenidos.
+
+Por último, el desarrollo del proyecto contribuyó significativamente al fortalecimiento tanto de habilidades técnicas como de competencias interpersonales. La resolución de problemas, la adaptación a diferentes retos y la gestión de las distintas etapas del trabajo permitieron mejorar la capacidad de análisis, colaboración y toma de decisiones dentro del equipo. Estas experiencias adquiridas representan una base importante para afrontar de manera más eficiente futuros proyectos académicos y profesionales.
+
+Como recomendación, se sugiere mejorar la planificación y distribución de tareas mediante una organización más equilibrada de los tiempos de entrega y responsabilidades asignadas a cada integrante. Establecer cronogramas escalonados permitirá reducir la acumulación de trabajo en fechas cercanas a los cierres, optimizando así la calidad, estabilidad y eficiencia del desarrollo del proyecto.
+
+En segundo lugar, sería beneficioso implementar revisiones periódicas y espacios de retroalimentación continua dentro del equipo. La realización de reuniones de seguimiento o retrospectivas facilitará la identificación temprana de errores, oportunidades de mejora y posibles retrasos, promoviendo además un proceso de aprendizaje constante y una mejor coordinación grupal durante el desarrollo del proyecto.
+
+En tercer y último lugar, se considera importante fortalecer la documentación y el intercambio de conocimientos generados en cada etapa del proyecto. Mantener registros claros sobre procesos, decisiones y aprendizajes permitirá mejorar la continuidad del trabajo, facilitar la incorporación de nuevos integrantes y consolidar una base de conocimiento útil para futuros proyectos colaborativos.
+
 ## Video App Validation
 
 ### Video About the product
@@ -3547,6 +3665,285 @@ Los controles de iluminación y temperatura no incluyen descripciones accesibles
 
 ## Glosario
 
+En esta sección se definen los términos clave utilizados en el documento, proporcionando una comprensión clara de los conceptos técnicos, metodológicos y arquitectónicos empleados en el desarrollo de **Smart Stay**. El glosario está organizado alfabéticamente e incluye tanto conceptos fundamentales de ingeniería de software como terminología específica del dominio hotelero y tecnologías de Internet de las Cosas (IoT).
+
+### Términos Técnicos de Arquitectura y Patrones de Diseño
+
+**ACL (Anti-Corruption Layer)**
+Patrón de diseño empleado en Domain-Driven Design que actúa como una capa aislante entre dos bounded contexts, traduciendo y transformando los modelos de datos para evitar que cambios en un contexto afecten directamente a otro, manteniendo la integridad semántica de cada dominio.
+
+**Aggregate**
+Agrupación de objetos de dominio (entidades y value objects) que se tratan como una unidad única en la lógica de negocio. En el contexto de Smart Stay, **Booking** es un agregado que encapsula la reserva, el período de estancia y los detalles asociados del huésped.
+
+**Bounded Context**
+Límite explícito dentro de un modelo de Domain-Driven Design que define una área de responsabilidad clara. En Smart Stay, los principales bounded contexts son: **IAM (Identity & Access Management)**, **Profiles (Gestión de Perfiles)**, **Properties Management (Gestión de Propiedades)**, **Bookings & Payments (Reservas y Pagos)**, **Operational Tasks (Tareas Operativas)** e **IoT Stay & Experience (Control IoT y Experiencia)**.
+
+**Command**
+Objeto que encapsula una solicitud u orden para realizar una acción que modifica el estado del sistema. En la capa de aplicación, los comandos como **PlaceBookingCommand** representan intenciones de negocio que son procesadas por servicios de aplicación.
+
+**Component Level Diagram**
+Diagrama de arquitectura de software que visualiza los componentes internos de un bounded context, mostrando las interfaces, dependencias y relaciones entre módulos. Utilizado en el modelo C4 para descomponer contenedores en sus partes constitutivas.
+
+**Container Level Diagram**
+Diagrama de arquitectura que representa los principales contenedores de software (aplicaciones, bases de datos, servicios) y su interacción en el sistema Smart Stay. Es el segundo nivel del modelo C4.
+
+**Context Level Diagram**
+Diagrama de arquitectura que muestra el contexto global del sistema, incluyendo actores externos, sistemas adyacentes e integraciones. Representa el nivel superior del modelo C4 utilizado en Smart Stay para visualizar interacciones con OTA, servicios de pago e IoT.
+
+**Clean Architecture**
+Arquitectura de software propuesta por Robert C. Martin que organiza el código en capas concéntricas (Domain, Application, Interface, Infrastructure) con independencia de frameworks y tecnologías, priorizando la lógica de negocio sobre detalles técnicos.
+
+**Entity**
+Objeto de dominio que posee identidad única y su ciclo de vida es relevante para el negocio. A diferencia de Value Objects, las entidades se distinguen por su identificador único. En Smart Stay, **Booking** y **Room** son entidades.
+
+**Query**
+Objeto que encapsula una solicitud de lectura o consulta sin efectos secundarios sobre el estado del sistema. Las queries como **GetBookingsByGuestIdQuery** siguen el patrón CQRS para separar la lectura de datos de su modificación.
+
+**Repository**
+Patrón que actúa como intermediario entre la lógica de negocio (domain layer) y la capa de persistencia, proporcionando métodos para almacenar y recuperar agregados del dominio sin exponer los detalles de la base de datos.
+
+**Value Object**
+Objeto de dominio que no posee identidad única; se define por sus atributos. Son inmutables y se utilizan para modelar conceptos como **Money**, **BookingPeriod** y **BookingStatus** en el bounded context de Reservas y Pagos.
+
+### Términos de Desarrollo Móvil y Plataformas
+
+**Android**
+Sistema operativo basado en Linux desarrollado por Google. En Smart Stay, se utiliza **Kotlin** como lenguaje de programación para desarrollar la aplicación nativa de staff operativo, aprovechando las ventajas de compatibilidad con el ecosistema Android.
+
+**Flutter**
+Framework multiplataforma de código abierto desarrollado por Google que permite crear aplicaciones nativas para iOS, Android y web con una única base de código. En Smart Stay, Flutter se utiliza para la aplicación del huésped, permitiendo despliegue en múltiples plataformas.
+
+**Kotlin**
+Lenguaje de programación moderno que se ejecuta en la Java Virtual Machine (JVM) y es el lenguaje recomendado por Google para desarrollo Android. Smart Stay utiliza Kotlin para la aplicación de staff operativo, proporcionando sintaxis concisa, seguridad de tipos y características de programación funcional.
+
+**MVC (Model-View-Controller)**
+Patrón de arquitectura que separa una aplicación en tres componentes: Model (lógica de negocio), View (interfaz de usuario) e Controller (coordinador de interacciones). Utilizado en la capa de Interface Layer de Smart Stay para organizar las aplicaciones móviles.
+
+**MVVM (Model-View-ViewModel)**
+Patrón de arquitectura que facilita la separación entre la interfaz de usuario y la lógica de presentación. ViewModel expone los datos y comandos que la View necesita, permitiendo testing independiente de la UI. Aplicable en Flutter para la gestión del estado en la aplicación del huésped.
+
+**Native Application**
+Aplicación desarrollada específicamente para una plataforma usando las APIs y lenguajes nativos. La aplicación de staff operativo de Smart Stay es una aplicación nativa Android en Kotlin, optimizada para el hardware y sistema operativo específico.
+
+### Términos de Internet de las Cosas (IoT) y Sistemas Embebidos
+
+**Actuator**
+Dispositivo físico que realiza acciones en el mundo real en respuesta a comandos del sistema. En Smart Stay, actuadores incluyen cerraduras de puertas digitales, termostatos inteligentes e iluminación automatizada controlados remotamente desde la aplicación móvil.
+
+**Device**
+Equipamiento físico conectado a la red que captura datos (sensor) o ejecuta acciones (actuador). Smart Stay integra múltiples dispositivos IoT para monitoreo ambiental y control de habitaciones.
+
+**Internet of Things (IoT)**
+Red de dispositivos físicos interconectados que capturan, intercambian y procesan datos a través de internet sin intervención humana directa. Es fundamental en Smart Stay para automatizar el control ambiental, monitoreo de recursos y personalización de la experiencia del huésped.
+
+**Sensor**
+Dispositivo que captura datos del entorno físico (temperatura, humedad, ocupación, consumo energético) y los transmite al sistema. En Smart Stay, sensores de temperatura, humedad y proximidad monitorean las condiciones de las habitaciones en tiempo real.
+
+**MQTT (Message Queuing Telemetry Transport)**
+Protocolo de comunicación ligero basado en publish-subscribe, optimizado para dispositivos IoT con baja capacidad de cómputo y conectividad limitada. Potencialmente utilizado en Smart Stay para la comunicación entre sensores y el backend.
+
+**Real-Time Processing**
+Procesamiento inmediato de datos conforme se generan, sin demoras significativas. En Smart Stay, es crítico para notificaciones instantáneas, control de IoT reactivo y actualizaciones de estado en las aplicaciones móviles.
+
+### Términos de Ingeniería de Software y Metodologías
+
+**Conventional Commits**
+Especificación para estructurar mensajes de commits de forma legible, permitiendo automatización y generación de changelogs. El equipo de Smart Stay utiliza conventional commits para mantener un historial claro de cambios.
+
+**CI/CD (Continuous Integration/Continuous Deployment)**
+Prácticas que automatizan la compilación, testing y despliegue de código. Smart Stay implementa pipelines de CI/CD en GitHub Actions para validar cambios antes de integración y despliegue automático.
+
+**DDD (Domain-Driven Design)**
+Enfoque metodológico que coloca el modelo del dominio de negocio en el centro del diseño de software. Smart Stay adopta DDD estratégico (strategic-level) con bounded contexts y DDD táctico (tactical-level) con agregados, entities, value objects y servicios de dominio.
+
+**Definition of Done (DoD)**
+Criterios claros que deben cumplirse para que una tarea, historia de usuario o incremento de funcionalidad se considere completado. Establece estándares de calidad antes de marcar tareas como finalizadas.
+
+**Design Thinking**
+Metodología centrada en el usuario que enfatiza la empatía, ideación y prototipado iterativo. Smart Stay utiliza Design Thinking en sus procesos de UX/UI, desde Empathy Mapping hasta wireframing y validación con usuarios.
+
+**Git / GitFlow**
+Sistema de control de versiones distribuido. GitFlow es un modelo de branching que facilita la colaboración estructurada mediante ramas de feature, release y hotfix. Smart Stay utiliza Git en GitHub con GitFlow para gestionar el desarrollo colaborativo.
+
+**Gherkin**
+Lenguaje de especificación para escribir historias de usuario en formato estructurado (Given-When-Then) que pueden ser ejecutadas como tests. Smart Stay utiliza Gherkin para escribir historias de usuario con criterios de aceptación validables.
+
+**Kanban**
+Metodología visual de gestión de flujo de trabajo que limita el trabajo en progreso (WIP) para mejorar eficiencia. Aplicable en Smart Stay para la coordinación del equipo y seguimiento de tareas diarias.
+
+**Microservices**
+Estilo arquitectónico que divide una aplicación en pequeños servicios independientes, cada uno responsable de un aspecto específico del negocio. Smart Stay adopta microservicios en su backend para separar concerns como reservas, housekeeping, mantenimiento e IoT.
+
+**RESTful Web Service**
+Servicio web implementado siguiendo los principios REST, utilizando recursos identificados por URLs y operaciones HTTP (GET, POST, PUT, DELETE). El backend de Smart Stay expone un API RESTful para las operaciones CRUD de su modelo de datos.
+
+**Scrum**
+Framework ágil de gestión de proyectos que organiza el trabajo en sprints iterativos, con roles definidos (Product Owner, Scrum Master, Development Team) y artefactos (Product Backlog, Sprint Backlog, Increment). Smart Stay utiliza Scrum para coordinar el desarrollo.
+
+**Semantic Versioning (SemVer)**
+Esquema de versionado que utiliza tres números (major.minor.patch) para comunicar cambios de compatibilidad. Smart Stay adopta Semantic Versioning para versionar releases y gestionar dependencias de forma clara.
+
+**Sprint**
+Iteración temporal (típicamente 1-4 semanas) en la que el equipo trabaja en un conjunto definido de tareas con el objetivo de producir un incremento de producto potencialmente entregable.
+
+**User Story**
+Descripción concisa de una funcionalidad desde la perspectiva del usuario, típicamente en formato: "As a [role], I want to [action], so that [benefit]". Smart Stay utiliza User Stories en formato Gherkin con criterios de aceptación explícitos.
+
+### Términos de Diseño de Interfaz de Usuario (UI/UX)
+
+**Accessibility (A11y)**
+Práctica de diseñar interfaces que sean usables por personas con diversas capacidades, incluyendo discapacidades visuales, auditivas o motoras. Smart Stay implementa guías de accesibilidad WCAG 2.1 en sus interfaces móviles.
+
+**Empathy Mapping**
+Técnica de Design Thinking que documenta lo que un usuario específico piensa, siente, dice, hace, sus pains (problemas) y gains (beneficios). Smart Stay realizó Empathy Mapping para los dos segmentos principales: Staff Operativo y Huéspedes.
+
+**Information Architecture (IA)**
+Disciplina de organización y estructura de contenido en sistemas de información, definiendo cómo usuarios navegan y acceden a funcionalidades. Smart Stay diseña su IA con sistemas de organización, etiquetado y navegación claros.
+
+**Interaction Design**
+Disciplina que define cómo un usuario interactúa con el sistema, incluyendo respuestas visuales, feedback y flujos de tareas. En Smart Stay, el Interaction Design asegura que las aplicaciones móviles proporcionen feedback inmediato y guía clara.
+
+**Material Design**
+Sistema de diseño desarrollado por Google que proporciona guías para crear interfaces visuales coherentes, responsivas y accesibles. Smart Stay adopta Material Design para su aplicación Android nativa en Kotlin.
+
+**Mockup**
+Representación detallada de la interfaz de usuario (alta fidelidad) que simula la apariencia final del producto. Smart Stay utiliza mockups para validar diseños visuales antes del desarrollo.
+
+**Usability Testing**
+Método de evaluación que involucra a usuarios reales interactuando con el producto para identificar problemas de usabilidad. Smart Stay realiza testing heurístico y usability validation en sus aplicaciones móviles.
+
+**User Interface (UI)**
+Conjunto de elementos visuales, controles e información presentada al usuario para interactuar con el sistema. La UI de Smart Stay incluye botones, formularios, iconografía y notificaciones diseñadas bajo principios de Material Design.
+
+**User Experience (UX)**
+Disciplina holística que abarca cómo un usuario percibe, experimenta e interactúa con un producto, considerando funcionalidad, diseño, accesibilidad y satisfacción general. Smart Stay prioriza UX mediante iteración constante basada en feedback de usuarios.
+
+**Wireframe**
+Representación esquemática de baja fidelidad de la estructura de una interfaz, mostrando layout, jerarquía de contenido y flujos sin detalles visuales. Smart Stay utiliza wireframes para validar arquitectura de información.
+
+### Términos del Dominio Hotelero y Negocio
+
+**Check-in**
+Proceso mediante el cual un huésped se registra en el hotel al momento de su llegada, confirmando su identidad y datos de reserva. En Smart Stay, el check-in es digital y puede realizarse desde la aplicación móvil del huésped.
+
+**Check-out**
+Proceso de finalización de la estancia del huésped, incluyendo confirmación de cargos finales y liberación de la habitación. Smart Stay automatiza el check-out permitiendo que el huésped lo complete desde su dispositivo móvil.
+
+**Housekeeping**
+Área operativa del hotel responsable de la limpieza, mantenimiento y abastecimiento de habitaciones. En Smart Stay, el staff de housekeeping utiliza la aplicación Android para recibir y gestionar asignaciones de limpieza.
+
+**OTA (Online Travel Agency)**
+Plataforma digital de terceros (como Booking.com, Expedia, Airbnb) que gestiona reservas de viajes. Smart Stay se integra con OTAs mediante APIs para sincronizar disponibilidad de habitaciones y reservas.
+
+**Property Management System (PMS)**
+Sistema de software que gestiona las operaciones centrales del hotel: reservas, check-in/check-out, facturación e inventario de habitaciones. Smart Stay es una solución moderna de hotel-tech que complementa un PMS tradicional.
+
+**Room Service**
+Servicio de habitación que permite a los huéspedes solicitar alimentos, bebidas u otros amenities directamente a su cuarto. En Smart Stay, los huéspedes solicitan room service a través de la aplicación móvil.
+
+**Staff Operativo**
+Personal del hotel responsable de operaciones diarias, incluyendo limpieza (housekeeping), mantenimiento, recepción y administración. Smart Stay proporciona herramientas móviles para coordinar este personal.
+
+### Términos Diversos y Acrónimos
+
+**ABET**
+Acreditadora Americana que certifica programas de ingeniería. El proyecto Smart Stay está alineado con los ABET Student Outcomes, particularmente el **ABET – EAC - Student Outcome 7** sobre aprendizaje continuo.
+
+**C4 Model**
+Modelo jerárquico de visualización de arquitectura de software compuesto por cuatro niveles: Context (contexto global), Container (contenedores principales), Component (componentes internos) y Code (código detallado).
+
+**Class Diagram**
+Diagrama UML que visualiza las clases, atributos, métodos y relaciones en el diseño de software orientado a objetos. Smart Stay utiliza class diagrams para documentar el modelo de datos táctico en bounded contexts.
+
+**Database Design Diagram**
+Diagrama que visualiza la estructura de la base de datos, incluyendo tablas, columnas, tipos de datos y relaciones (foreign keys). Utilizado en Smart Stay para documentar el esquema de persistencia.
+
+**Deployment Diagram**
+Diagrama de arquitectura que muestra la infraestructura física y lógica donde se ejecutan los componentes del sistema, incluyendo servidores, contenedores y configuraciones de red.
+
+**Diagram**
+Representación gráfica estructurada de conceptos, procesos o arquitecturas. Smart Stay utiliza múltiples tipos de diagramas (C4, UML, EventStorming, DFD) para documentar su diseño.
+
+**DFD (Data Flow Diagram)**
+Diagrama que visualiza cómo los datos fluyen entre procesos, almacenes de datos y actores externos. Utilizado en análisis de requerimientos para entender el flujo de información en Smart Stay.
+
+**EventStorming**
+Taller colaborativo de Domain-Driven Design donde el equipo visualiza eventos de dominio, procesos y decisiones mediante notas adhesivas para descubrir bounded contexts y flujos de dominio.
+
+**GUI (Graphical User Interface)**
+Interfaz de usuario basada en elementos gráficos (ventanas, botones, iconos). Las aplicaciones móviles de Smart Stay son GUIs desarrolladas en Flutter y Kotlin.
+
+**IaaS (Infrastructure as a Service)**
+Modelo de computación en nube que proporciona infraestructura de TI virtualizada (servidores, almacenamiento, redes) como servicio. Potencialmente utilizado en Smart Stay para hosting del backend.
+
+**ID (Identifier)**
+Identificador único que distingue una entidad de otras. En Smart Stay, cada usuario, reserva y habitación tiene un ID único.
+
+**HTTP (HyperText Transfer Protocol)**
+Protocolo de comunicación utilizado para transferir datos en la web, base de los servicios REST. Smart Stay utiliza HTTP/HTTPS para la comunicación entre aplicaciones móviles y backend.
+
+**JSON (JavaScript Object Notation)**
+Formato estándar ligero de intercambio de datos basado en texto. Las APIs REST de Smart Stay utilizan JSON para serializar y deserializar datos.
+
+**JSON Schema**
+Especificación que valida la estructura y tipos de datos en archivos JSON. Utilizado en Smart Stay para documentar y validar contratos de API.
+
+**NPS (Net Promoter Score)**
+Métrica de satisfacción del cliente que pregunta qué tan probable es que un usuario recomiende el servicio. Smart Stay utilizó NPS en su Lean UX Hypothesis Statements como métrica de éxito.
+
+**OAuth 2.0**
+Protocolo estándar de autorización que permite a usuarios autenticar su identidad de forma segura sin compartir contraseñas directamente. Potencialmente utilizado en Smart Stay para autenticación de terceros.
+
+**PaaS (Platform as a Service)**
+Modelo de computación en nube que proporciona una plataforma de desarrollo y ejecución. Potencialmente utilizado en Smart Stay para despliegue del backend.
+
+**SaaS (Software as a Service)**
+Modelo de software entregado como servicio accesible vía internet, típicamente con suscripción. Smart Stay adopta un modelo de negocio SaaS con suscripción mensual basada en número de habitaciones.
+
+**SQL**
+Lenguaje estándar para consultar y manipular bases de datos relacionales. Smart Stay utiliza SQL en su capa de infraestructura para persistencia de datos.
+
+**Token**
+Componente criptográfico que autentica y autoriza a un usuario en un sistema. Los tokens JWT pueden utilizarse en Smart Stay para sesiones seguras en las aplicaciones móviles.
+
+**UUID (Universally Unique Identifier)**
+Identificador estándar de 128 bits que es único en cualquier contexto sin coordinación central. Potencialmente utilizado en Smart Stay para identificadores distribuidos de entidades.
+
+---
+
 ## Bibliografía
+
+### Documentación Técnica
+
+- Microsoft. (2024). *ASP.NET Core Documentation* https://learn.microsoft.com/en-us/aspnet/core/
+
+- Microsoft. (2024). *Entity Framework Core Documentation*. https://learn.microsoft.com/en-us/ef/core/
+
+- Oracle Corporation. (2024). *MySQL Documentation*. https://dev.mysql.com/doc/
+
+- Swagger. (2024). *OpenAPI Specification*. https://swagger.io/specification/
+
+### Arquitectura y Diseño
+
+- Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
+
+- Martin, R. C. (2017). *Clean Architecture: A Craftsman's Guide to Software Structure and Design*. Prentice Hall.
+
+### Metodologías Ágiles
+
+- Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide*. https://scrumguides.org/
+
+- Cohn, M. (2004). *User Stories Applied: For Agile Software Development*. Addison-Wesley Professional.
+
+### Usabilidad y Experiencia de Usuario
+
+
+- W3C. (2021). *Web Content Accessibility Guidelines (WCAG) 2.1*. https://www.w3.org/WAI/WCAG21/quickref/
+
+### Herramientas y Plataformas
+
+- GitHub. (2024). *GitHub Documentation*. https://docs.github.com/
+
+- Render. (2024). *Render Documentation*. https://render.com/docs
 
 ## Anexos
