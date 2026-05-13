@@ -3418,11 +3418,77 @@ El proyecto implementa un flujo automatizado de **Integración Continua y Despli
 
 ##### 4.2.1.3. Development Evidence for Sprint Review
 
+
+| Commit | Autor | Fecha | Rama/Referencia | Mensaje |
+|---|---|---|---|---|
+| b810a7a | JulyP | 2026-05-11 |  (origin/section_2) | feat: update team member files. |
+| 0c5d93a | JulyP | 2026-05-11 |  | feat: update team member details and add project configuration files. |
+| a87eacb | Italo Sebastian Verona Flores | 2026-05-08 |  (origin/main, origin/feat/succes-stories, origin/HEAD) | feat: add success stories section with metrics and testimonials |
+| 258c71d | Carlo211 | 2026-05-06 |  (HEAD -> feature/resources-cleanup, origin/feature/resources-cleanup) | feat: clean up resources seccion  and add name |
+| 711f5c8 | Italo Sebastian Verona Flores | 2026-05-06 |  (main) | fix: remove nickname from team member name for consistency |
+| dee64e0 | Italo Sebastian Verona Flores | 2026-05-06 |  (origin/ui/optimize-ctas) | feat(translator): enhance translation loading and application logic |
+| 1253f31 | Okami | 2026-05-04 |  | fix: hide scrollbar in carousel track for cleaner appearance |
+| f29f340 | Okami | 2026-05-04 |  | feat: add image to member, delete video about the team |
+| 32e2e01 | Italo Sebastian Verona Flores | 2026-05-04 |  | chore: add initial files and landing page |
+
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
+
+###### 4.2.1.4. Evidencia de la Suite de Pruebas para la Revisión del Sprint
+
+Durante este sprint, el equipo realizó actividades de prueba para verificar que las funcionalidades implementadas en el landing page funcionaran correctamente. El proceso de pruebas se enfocó en comprobar la correcta visualización de las secciones principales, el comportamiento de la navegación, el diseño responsive y la funcionalidad de traducción.
+
+| Elemento evaluado | Tipo de prueba | Resultado esperado | Estado |
+|---|---|---|---|
+| Renderizado del landing page | Prueba unitaria | El landing page carga correctamente y sin errores | Aprobado |
+| Navegación entre secciones | Prueba de integración | El usuario puede desplazarse correctamente por las secciones principales | Aprobado |
+| Funcionalidad de traducción | Prueba de integración | Los textos cambian correctamente según el idioma seleccionado | Aprobado |
+| Diseño responsive | Validación de interfaz | El landing page se adapta correctamente a diferentes tamaños de pantalla | Aprobado |
+
+
 
 ##### 4.2.1.5. Execution Evidence for Sprint Review
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
+
+**Profiles**: Este bounded context maneja la información de los perfiles de los usuarios dentro de la plataforma. Proporciona funcionalidades para crear perfiles, consultar su información y obtener el detalle de un perfil específico. Es esencial para almacenar y gestionar los datos personales asociados a cada usuario del sistema.
+
+![swagerperfiles.png](assets/Chapter-IV/swagerperfiles.png)
+
+**Payments**: Este bounded context administra el procesamiento y la consulta de pagos dentro de la plataforma. Proporciona funcionalidades para registrar nuevos pagos y consultar los pagos asociados a una reserva específica. Es fundamental para garantizar la gestión financiera de las transacciones realizadas por los huéspedes.
+
+![swagerpagos.png](assets/Chapter-IV/swagerpagos.png)
+
+**Authentication**: Este bounded context se encarga de la autenticación y el acceso de los usuarios al sistema. Proporciona funcionalidades para el registro de nuevos usuarios y el inicio de sesión seguro. Es esencial para validar credenciales, controlar el acceso a la plataforma y proteger la información de los distintos actores del sistema.
+
+![swagerautenticacion.png](assets/Chapter-IV/swagerautenticacion.png)
+
+**Users**: Este bounded context maneja la información general de los usuarios registrados en la plataforma. Proporciona funcionalidades para consultar todos los usuarios y obtener la información de un usuario específico por su identificador. Es importante para la administración y supervisión de las cuentas existentes en el sistema.
+
+![swagerusuarios.png](assets/Chapter-IV/swagerusuarios.png)
+
+**Bookings**: Este bounded context gestiona todo el ciclo de vida de las reservas. Proporciona funcionalidades para crear reservas, consultar reservas por identificador, listar todas las reservas, obtener reservas por habitación y ejecutar acciones como confirmar o cancelar una reserva. Es uno de los núcleos funcionales de la plataforma, ya que articula la relación entre huéspedes, habitaciones y disponibilidad.
+
+![swagerbooking.png](assets/Chapter-IV/swagerbooking.png)
+
+**Analytics**: Este bounded context administra la generación y consulta de métricas analíticas del sistema. Proporciona funcionalidades para obtener indicadores de desempeño, como métricas mensuales de reservas. Es clave para apoyar la toma de decisiones mediante el análisis del rendimiento operativo de la plataforma.
+
+![swageranaliticas.png](assets/Chapter-IV/swageranaliticas.png)
+
+**AccommodationOptions**: Este bounded context maneja las opciones complementarias relacionadas con los alojamientos. Proporciona funcionalidades para consultar y registrar categorías de hoteles, así como consultar y crear amenidades. Es importante para estructurar la información maestra del sistema y enriquecer la oferta disponible para hoteles y habitaciones.
+
+![swageracopmodation.png](assets/Chapter-IV/swageracomodation.png)
+
+**Hotels**: Este bounded context administra la información de los hoteles registrados en la plataforma. Proporciona funcionalidades para crear nuevos hoteles, listar todos los hoteles, consultar un hotel por identificador, actualizar su información y eliminarlo. Es esencial para gestionar las propiedades que forman parte del ecosistema SmartStay.
+
+![swagerhoteles.png](assets/Chapter-IV/swagerhoteles.png)
+
+**Rooms**: Este bounded context maneja la información de las habitaciones asociadas a los hoteles. Proporciona funcionalidades para crear habitaciones, listar todas las habitaciones, consultar una habitación por identificador, actualizarlas, eliminarlas y filtrarlas por tipo. Es fundamental para la operación del sistema, ya que conecta directamente la capacidad de alojamiento con las reservas.
+
+![swagercuarto.png](assets/Chapter-IV/swagercuartos.png)
+
+**RoomTypes**: Este bounded context administra los tipos de habitación disponibles en la plataforma. Proporciona funcionalidades para crear tipos de habitación, listarlos y consultar un tipo específico por identificador. Es importante para clasificar la oferta de habitaciones y mantener consistencia en la estructura del catálogo.
+
+![swagercuartostipos.png](assets/Chapter-IV/swagercuartostipo.png)
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
