@@ -49,6 +49,7 @@ Esta sección inicia en una página nueva e incluye un cuadro con la siguiente e
 ## Project Report Collaboration Insights
 
 - **URL del repositorio para el Project Report:** <https://github.com/Movil-dev-Aplicaciones-Moviles>
+- **URL del repositorio del APK:** <https://github.com/Movil-dev-Aplicaciones-Moviles/APK.git>
 
 El desarrollo del presente informe de trabajo final se realizó de manera colaborativa utilizando las herramientas de control de versiones de GitHub. A continuación se presenta la evidencia de la participación y contribuciones de cada miembro del equipo:
 
