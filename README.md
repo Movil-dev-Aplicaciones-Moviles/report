@@ -188,20 +188,60 @@ En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo 
     - [3.1.1. Style Guidelines](#311-style-guidelines)
       - [3.1.1.1. General Style Guidelines](#3111-general-style-guidelines)
     - [3.1.2. Information Architecture](#312-information-architecture)
+  - [UX Heuristics \& Principles Evaluation](#ux-heuristics--principles-evaluation)
+  - [Usability – Inclusive Design – Information Architecture](#usability--inclusive-design--information-architecture)
+  - [TAREAS A EVALUAR](#tareas-a-evaluar)
+    - [Segmento Objetivo #1: Staff Operativo de Hoteles (Administradores y Personal)](#segmento-objetivo-1-staff-operativo-de-hoteles-administradores-y-personal)
+    - [Segmento Objetivo #2: Huéspedes de Hoteles](#segmento-objetivo-2-huéspedes-de-hoteles)
+  - [No incluidas en esta versión de la evaluación:](#no-incluidas-en-esta-versión-de-la-evaluación)
+  - [ESCALA DE SEVERIDAD](#escala-de-severidad)
+  - [TABLA RESUMEN](#tabla-resumen)
+  - [ANÁLISIS GENERAL](#análisis-general)
       - [3.1.2.1. Organization Systems](#3121-organization-systems)
       - [3.1.2.2. Labelling Systems](#3122-labelling-systems)
       - [3.1.2.3. SEO Tags and Meta Tags](#3123-seo-tags-and-meta-tags)
+  - [Meta charset](#meta-charset)
+  - [Meta viewport](#meta-viewport)
+  - [Title](#title)
+  - [1. Meta Tags principales](#1-meta-tags-principales)
+  - [2. Meta Tags para Redes Sociales (Open Graph)](#2-meta-tags-para-redes-sociales-open-graph)
+  - [3. Otros elementos importantes](#3-otros-elementos-importantes)
       - [3.1.2.4. Searching Systems](#3124-searching-systems)
       - [3.1.2.5. Navigation Systems](#3125-navigation-systems)
+  - [Landing Page Navigation](#landing-page-navigation)
+  - [Mobile Application Navigation](#mobile-application-navigation)
     - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
       - [3.1.3.1. Landing Page Wireframe](#3131-landing-page-wireframe)
+  - [1. Home](#1-home)
+  - [2. Products](#2-products)
+  - [3. Solutions](#3-solutions)
+  - [4. Prices](#4-prices)
+- [](#)
+  - [5. Success Stories](#5-success-stories)
+  - [6. Resources](#6-resources)
+  - [7. Register](#7-register)
+  - [8. Login](#8-login)
       - [3.1.3.2. Landing Page Mock-up](#3132-landing-page-mock-up)
     - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-uxui-design)
       - [3.1.4.1. Mobile Applications Wireframes](#3141-mobile-applications-wireframes)
+  - [Aplicación Móvil – Huésped](#aplicación-móvil--huésped)
+  - [Aplicación Móvil – Staff](#aplicación-móvil--staff)
+  - [Consideraciones de Diseño UX/UI](#consideraciones-de-diseño-uxui)
       - [3.1.4.2. Mobile Applications Wireflow Diagrams](#3142-mobile-applications-wireflow-diagrams)
+  - [Aplicación Móvil – Huésped](#aplicación-móvil--huésped-1)
+  - [Aplicación Móvil – Staff](#aplicación-móvil--staff-1)
       - [3.1.4.3. Mobile Applications Mock-ups](#3143-mobile-applications-mock-ups)
+  - [Aplicación Móvil – Huésped](#aplicación-móvil--huésped-2)
+  - [Aplicación Móvil – Staff](#aplicación-móvil--staff-2)
       - [3.1.4.4. Mobile Applications User Flow Diagrams](#3144-mobile-applications-user-flow-diagrams)
+  - [Usuario: Huésped (Guest)](#usuario-huésped-guest)
+  - [Usuario: Staff](#usuario-staff)
+  - [Usuario: Administrador](#usuario-administrador)
       - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-applications-prototyping)
+  - [Características del Prototipo](#características-del-prototipo)
+  - [Flujo del Prototipo](#flujo-del-prototipo)
+  - [Objetivos del Prototipo](#objetivos-del-prototipo)
+  - [Herramienta Utilizada](#herramienta-utilizada)
 - [Capítulo IV: Product Implementation \& Validation](#capítulo-iv-product-implementation--validation)
   - [4.1. Software Configuration Management](#41-software-configuration-management)
     - [4.1.1. Software Development Environment Configuration](#411-software-development-environment-configuration)
@@ -246,8 +286,8 @@ En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo 
   - [Entrevista – Segmento 2: Huéspedes de Hoteles Boutique](#entrevista--segmento-2-huéspedes-de-hoteles-boutique-1)
     - [Entrevista 1](#entrevista-1-3)
     - [4.3.3. Evaluaciones según Heurísticas](#433-evaluaciones-según-heurísticas)
-  - [Tareas a Evaluar](#tareas-a-evaluar)
-  - [Tabla Resumen](#tabla-resumen)
+  - [Tareas a Evaluar](#tareas-a-evaluar-1)
+  - [Tabla Resumen](#tabla-resumen-1)
   - [Fichas Detalladas (Problemas de severidad 3)](#fichas-detalladas-problemas-de-severidad-3)
     - [PROBLEMA #1: Ausencia de Control y Libertad en el Flujo de Check-in](#problema-1-ausencia-de-control-y-libertad-en-el-flujo-de-check-in)
     - [PROBLEMA #2: Iconografía Inconsistente y Poco Intuitiva en Indicadores de Estado](#problema-2-iconografía-inconsistente-y-poco-intuitiva-en-indicadores-de-estado)
@@ -2969,42 +3009,999 @@ El módulo de comunicación se completa con conversation_threads, thread_partici
 ![MovilDev-Aplicaciones-moviles-Physical_Export.png](assets/Chapter-II/MovilDev-Aplicaciones-moviles-Physical_Export.png)
 
 ## Capítulo III: Solution UI/UX Design
-
 ### 3.1. Product design
-
 #### 3.1.1. Style Guidelines
+
+La base de esta sección es definir la identidad visual y de diseño de Smart Stay, con el fin de asegurar consistencia, claridad y facilidad de uso en todos los puntos de contacto de la marca, tanto en medios digitales como en la experiencia general del usuario. 
+
+**Objetivo:**
+- Alinear la comunicación visual y la propuesta del producto con la misión de la startup.
+- Garantizar una experiencia de usuario comprensible, accesible y visualmente atractiva.
+- Permitir que el diseño pueda integrarse de manera coherente tanto en la web como en aplicaciones móviles mediante un lenguaje visual unificado.
 
 ##### 3.1.1.1. General Style Guidelines
 
+**Branding**
+
+- **Logo Smart Stay:** Corresponde al logotipo principal con el que la startup se presenta frente al público y construye reconocimiento de marca.
+
+![alt text](assets/logo.png)
+
+- **Logo Modo Oscuro:** Se trata de una variante diseñada para utilizarse sobre fondos oscuros, favoreciendo el contraste visual, el descanso de la vista y, además, el ahorro de batería en ciertos dispositivos.
+
+![alt text](assets/logo-modo-oscuro.png)
+
+- **Logo Plus:** Es una versión del logotipo con una tonalidad que transmite mayor sofisticación y se utiliza para identificar a los usuarios que optan por la suscripción plus del servicio.
+
+![alt text](assets/logo-plus.png)
+
+- **Logo Plus Modo Oscuro:** Mantiene la misma finalidad del logo en modo oscuro, pero adaptado específicamente para la versión plus del servicio.
+
+![alt text](assets/logo-plus-modo-oscuro.png)
+
+- **Logos Monocromáticos:** Son versiones en blanco y negro pensadas para usos especiales, como impresiones o documentación formal.
+
+![alt text](assets/logo-monocromatico-1.png)
+![alt text](assets/logo-monocromatico-2.png)
+
+**Tipografía**
+
+- **Fuente principal (Brand & Titles):**  
+  **Cocomat Pro**  
+  **Uso:** Logo, encabezados y títulos principales dentro de la app o la web.  
+  **Razón:** Aporta una apariencia moderna y premium, con una estética limpia que fortalece la identidad visual de la marca.
+
+- **Fuente secundaria (Text & Paragraphs):**  
+  **Open Sans o Lato**  
+  **Uso:** Textos descriptivos, botones, menús, correos y cualquier bloque de contenido extenso.  
+  **Razón:** Son fuentes muy legibles en pantalla, versátiles y complementan la elegancia de Cocomat Pro sin restarle protagonismo.
+
+- **Jerarquía de uso**
+1. Títulos (H1, H2): Cocomat Pro Bold.
+2. Subtítulos / énfasis: Cocomat Pro Medium.
+3. Texto general / párrafos: Open Sans Regular.
+4. Botones y menús: Open Sans SemiBold. 
+
+- **Sistema Tipográfico**
+  - **H1 (Títulos principales):** Cocomat Pro Bold – 32px  
+  - **H2 (Subtítulos / secciones):** Cocomat Pro Medium – 24px  
+  - **H3 (Bloques / cards):** Cocomat Pro Medium – 20px  
+  - **Texto cuerpo (párrafos):** Open Sans Regular – 16px  
+  - **Texto secundario / notas:** Open Sans Regular – 14px  
+  - **Botones primarios:** Open Sans SemiBold – 16px (MAYÚSCULAS)
+
+![alt text](assets/fuentes-imagen.png)
+
 #### 3.1.2. Information Architecture
+### UX Heuristics & Principles Evaluation
+
+### Usability – Inclusive Design – Information Architecture
+
+- **CARRERA:** Ingeniería de Software  
+- **CURSO:** Aplicaciones para Dispositivos Móviles  
+- **SECCIÓN:** 7454  
+- **PROFESOR:** Jorge Luis Mayta Guillermo  
+- **AUDITOR:** Equipo Smart Stay  
+- **CLIENTE(S):** Administradores de Hoteles Boutique y Huéspedes de Hoteles  
+- **SITE o APP A EVALUAR:** Smart Stay Mobile Application  
+
+---
+
+### TAREAS A EVALUAR
+
+#### Segmento Objetivo #1: Staff Operativo de Hoteles (Administradores y Personal)
+
+- Gestión de habitaciones: visualización en tiempo real del estado (disponible, ocupado, mantenimiento).
+- Coordinación de tareas de limpieza: asignación rápida y seguimiento de housekeeping.
+- Notificaciones operativas: alertas sobre incidencias, check-in/check-out y solicitudes de huéspedes.
+- Reportes operativos: acceso a métricas de ocupación y estado del hotel.
+- Control de incidencias: registro y seguimiento de problemas técnicos en habitaciones.
+
+---
+
+#### Segmento Objetivo #2: Huéspedes de Hoteles
+
+- Check-in / Check-out digital: proceso rápido y sin contacto desde la aplicación.
+- Control de habitación: manejo de dispositivos IoT (iluminación, temperatura, Wi-Fi).
+- Solicitud de servicios: acceso a room service, limpieza y soporte técnico.
+- Personalización de la experiencia: configuración de preferencias durante la estancia.
+- Comunicación con el hotel: contacto directo mediante canales digitales.
+
+---
+
+### No incluidas en esta versión de la evaluación:
+
+- Integración con sistemas financieros avanzados (facturación completa).
+- Conexión con plataformas externas (marketplaces o agencias de viaje).
+- Funcionalidades de marketing interno del hotel.
+
+---
+
+### ESCALA DE SEVERIDAD
+
+| Nivel | Descripción |
+|------|------------|
+| 1 | Problema leve: no afecta significativamente la experiencia. |
+| 2 | Problema moderado: genera fricción ocasional en el uso. |
+| 3 | Problema grave: afecta la eficiencia del usuario de forma recurrente. |
+| 4 | Problema crítico: impide completar tareas principales dentro de la app. |
+
+---
+
+### TABLA RESUMEN
+
+| # | Problema | Escala de severidad | Heurística/Principio violado |
+|--|----------|---------------------|-----------------------------|
+| 1 | Dificultad para visualizar el estado de habitaciones en tiempo real | 3 | Visibilidad del estado del sistema |
+| 2 | Notificaciones poco configurables para el staff | 2 | Flexibilidad y eficiencia de uso |
+| 3 | Navegación poco clara entre módulos principales | 3 | Consistencia y estándares |
+| 4 | Exceso de pasos en el proceso de check-in digital | 2 | Minimizar carga cognitiva |
+| 5 | Falta de retroalimentación inmediata en acciones del usuario | 3 | Feedback del sistema |
+| 6 | Opciones de personalización poco visibles para huéspedes | 2 | Reconocimiento antes que recuerdo |
+
+---
+
+### ANÁLISIS GENERAL
+
+La arquitectura de información de Smart Stay presenta una estructura basada en tareas y roles, lo que facilita la segmentación entre usuarios internos (staff) y externos (huéspedes). Sin embargo, se identifican oportunidades de mejora en la claridad de navegación, visibilidad del estado del sistema y optimización de flujos críticos como el check-in digital.
+
+Se concluye que una correcta reorganización de la jerarquía de información y mejora en la retroalimentación visual permitirá reducir la carga cognitiva del usuario y mejorar la eficiencia operativa del sistema.
+
 
 ##### 3.1.2.1. Organization Systems
 
+En el diseño de interfaces digitales centradas en el usuario, el Sistema de Organización es el componente de la arquitectura de información encargado de definir cómo se agrupan, clasifican y presentan los contenidos dentro de la plataforma. Su objetivo principal es permitir que los usuarios puedan explorar, comprender y acceder a la información de forma rápida e intuitiva, reduciendo la carga cognitiva y mejorando la usabilidad del sistema.
+
+Para la solución Smart Stay, se ha implementado un sistema de organización híbrido que combina estructuras jerárquicas, funcionales y orientadas a tareas. Esta decisión responde a la necesidad de gestionar dos tipos de usuarios principales: el Staff Operativo y los Huéspedes, cada uno con objetivos y flujos de interacción distintos dentro de la aplicación móvil.
+
+En la Landing Page, el contenido se organiza en bloques priorizados que siguen una lógica de captación y conversión. En primer lugar, se destacan las llamadas a la acción principales, como “Probar Demo” o “Explorar Funcionalidades”, seguidas por la propuesta de valor del sistema, donde se explica el uso de tecnologías móviles e IoT para la gestión hotelera. El encabezado (header) y el pie de página (footer) estructuran la navegación mediante accesos directos a secciones clave como beneficios, características, planes y contacto.
+
+Esta organización permite que los usuarios comprendan rápidamente qué ofrece Smart Stay y cómo interactuar con la plataforma, aplicando principios de jerarquía visual, progressive disclosure y adaptabilidad a dispositivos móviles.
+
+![alt text](assets/organizationsystems.png)
+
+En la Aplicación Móvil, la organización del contenido está orientada a tareas y roles. El acceso inicial se realiza mediante autenticación (login), donde el usuario es redirigido automáticamente según su perfil (Staff o Huésped).
+
+Una vez dentro del sistema, la estructura se organiza en módulos principales accesibles desde la navegación inferior o menú principal:
+
+- Dashboard: vista general del estado del sistema.
+- Habitaciones: gestión de disponibilidad y estado.
+- Servicios: solicitudes y gestión de requerimientos.
+- Perfil: configuración del usuario.
+
+Cada módulo se desglosa en subniveles donde se presentan funcionalidades específicas, manteniendo una estructura jerárquica clara:
+
+- Nivel 1: módulos principales
+- Nivel 2: submódulos (ej. tareas de limpieza, incidencias)
+- Nivel 3: acciones específicas (ej. marcar habitación como limpia)
+
+Adicionalmente, se aplica una organización contextual, donde la información cambia según la acción del usuario. Por ejemplo:
+
+- Durante el check-in: se priorizan datos del huésped.
+- Durante operaciones del staff: se priorizan tareas y estados en tiempo real.
+- Durante la estancia: se destacan servicios y control de habitación.
+
+Asimismo, algunos procesos siguen una organización secuencial, como el check-in digital o la solicitud de servicios, guiando al usuario paso a paso para evitar errores.
+
+![alt text](assets/organizationsystems2.png)
+
 ##### 3.1.2.2. Labelling Systems
+
+El sistema de etiquetado define cómo se nombran las secciones, botones y funcionalidades dentro de la aplicación, permitiendo que el usuario comprenda rápidamente el propósito de cada elemento. En Smart Stay, las etiquetas se diseñan bajo principios de claridad, consistencia y orientación al usuario, adaptándose tanto al Staff Operativo como a los Huéspedes.
+
+---
+
+| Etiqueta | Ubicación / Componente | Función |
+|----------|------------------------|--------|
+| Home | Header / Navegación principal | Redirige a la pantalla principal o dashboard. Permite acceso rápido al inicio. |
+| Rooms | Menú principal / App | Acceso a la gestión de habitaciones (estado, disponibilidad, mantenimiento). |
+| Services | Menú principal | Muestra los servicios disponibles (limpieza, room service, soporte). |
+| Dashboard | Pantalla principal | Vista general del estado del sistema y resumen de operaciones. |
+| Bookings | Módulo de reservas | Permite gestionar reservas activas y futuras. |
+| Check-in | Flujo principal | Permite registrar la entrada del huésped de forma digital. |
+| Check-out | Flujo principal | Permite finalizar la estancia del huésped de forma rápida. |
+| Login | Pantalla de acceso | Inicio de sesión del usuario. Término estándar y reconocido. |
+| Sign Up | Pantalla de acceso | Registro de nuevos usuarios. Corto, claro y amigable. |
+| Try Demo | Landing Page (CTA) | Llamada a la acción principal para probar la aplicación. |
+| My Room | App Huésped | Acceso al control de la habitación (IoT, temperatura, iluminación). |
+| Requests | App Huésped | Permite solicitar servicios del hotel desde el móvil. |
+| Tasks | App Staff | Gestión de tareas operativas (limpieza, mantenimiento). |
+| Notifications | Icono / App | Muestra alertas en tiempo real sobre eventos importantes. |
+| Profile | Menú usuario | Configuración de cuenta y preferencias del usuario. |
+| Settings | Menú secundario | Ajustes generales del sistema. |
+| Reports | App Staff | Acceso a métricas y reportes operativos del hotel. |
+| Contact | Landing / App | Permite comunicación con el hotel o soporte técnico. |
+
+---
 
 ##### 3.1.2.3. SEO Tags and Meta Tags
 
+Los SEO tags y meta tags son elementos fundamentales dentro de la Landing Page de Smart Stay, ya que permiten mejorar la visibilidad del sistema en motores de búsqueda, facilitar su indexación y optimizar la forma en que se presenta tanto en resultados de búsqueda como en redes sociales.
+
+Además, estos elementos son clave para garantizar una correcta visualización en dispositivos móviles, mejorar la experiencia del usuario y aumentar la tasa de interacción (CTR).
+
+La Landing Page de Smart Stay implementa etiquetas esenciales como: charset, viewport, title, description, keywords y favicon, las cuales permiten estructurar correctamente la información del sitio.
+
+---
+
+### Meta charset
+
+```html
+<meta charset="UTF-8">
+```
+
+- Define la codificación de caracteres de la página.
+- Permite que el contenido se muestre correctamente, incluyendo tildes, símbolos y caracteres especiales.
+- Es fundamental para evitar errores de visualización en distintos navegadores.
+
+---
+
+### Meta viewport
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+- Permite que la página sea responsive.
+- Ajusta automáticamente el contenido al tamaño de la pantalla del dispositivo.
+- Mejora la experiencia de usuario en smartphones y tablets.
+
+---
+
+### Title
+
+```html
+<title>Smart Stay</title>
+```
+
+- Define el título de la página que aparece en la pestaña del navegador.
+- Es uno de los factores más importantes para SEO.
+- Se muestra como encabezado principal en los resultados de búsqueda.
+
+---
+
+### 1. Meta Tags principales
+
+- **charset:** Define la codificación del documento. UTF-8 es el estándar actual.
+- **viewport:** Permite adaptar la página a diferentes dispositivos y resoluciones.
+- **description:** Proporciona un resumen del contenido de la página. Es el texto que aparece debajo del título en los resultados de búsqueda.
+- **keywords:** Lista de palabras clave relacionadas con el sistema (ej. hotel management, mobile app, IoT hotel).
+- **author:** Identifica al creador del contenido (Smart Stay Team).
+
+---
+
+### 2. Meta Tags para Redes Sociales (Open Graph)
+
+```html
+<meta property="og:title" content="Smart Stay">
+<meta property="og:description" content="Solución móvil para gestión hotelera con IoT">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:url" content="https://smartstay.com">
+```
+
+- Permiten controlar cómo se muestra la página al compartirla en redes sociales.
+- Mejoran la apariencia visual del enlace (imagen, título y descripción).
+- Aumentan la probabilidad de interacción del usuario.
+
+---
+
+### 3. Otros elementos importantes
+
+**Favicon:**
+
+```html
+<link rel="icon" href="assets/favicon.png">
+```
+
+- Representa el icono del sitio en la pestaña del navegador.
+- Refuerza la identidad visual de la marca.
+
+**Canonical URL:**
+
+```html
+<link rel="canonical" href="https://smartstay.com">
+```
+
+- Evita problemas de contenido duplicado en buscadores.
+
+---
+
 ##### 3.1.2.4. Searching Systems
+
+El sistema de búsqueda de Smart Stay permite a los usuarios localizar información, reservas, servicios y funcionalidades de manera rápida y eficiente. En la Landing Page, la búsqueda está orientada a descubrir contenido general sobre la plataforma, utilizando accesos directos, enlaces destacados y navegación guiada hacia secciones clave como “Try Demo” o “Benefits”.
+
+En la aplicación móvil, el sistema de búsqueda es más funcional y está enfocado en la gestión de información específica. Permite a los usuarios filtrar y ordenar datos como habitaciones, reservas, servicios o tareas operativas, utilizando autocompletado, filtros dinámicos y persistencia de resultados. El diseño se basa en principios de usabilidad, consistencia y eficiencia, asegurando que el usuario encuentre lo que necesita sin dificultad.
+
+---
+
+| Search Type | Location / Component | Function |
+|-------------|---------------------|----------|
+| General Search | Landing Page / Header | Permite buscar información general sobre la plataforma y sus servicios (ej. "servicios", "demo", "beneficios"). Incluye autocompletado básico. |
+| Try Demo / Benefits Links | Landing Page / Hero & Value Sections | Funciona como búsqueda indirecta, guiando al usuario hacia contenido relevante sin necesidad de ingresar texto. |
+| Rooms Search | Mobile App / Rooms Section | Permite buscar habitaciones por número, estado (disponible, ocupado, mantenimiento) o tipo. |
+| Bookings Search | Mobile App / Bookings Section | Filtrado por fechas, estado de reserva (pendiente, confirmada, cancelada) y tipo de cliente. |
+| Services Search | Mobile App / Services Section | Permite buscar servicios disponibles (limpieza, room service, soporte técnico) mediante filtros y categorías. |
+| Tasks Search | Mobile App / Staff Module | Permite al staff localizar tareas asignadas por prioridad, estado o tipo de actividad. |
+| Notifications Search | Mobile App / Notifications Panel | Permite revisar alertas y eventos importantes mediante filtrado por tipo o fecha. |
+
+---
 
 ##### 3.1.2.5. Navigation Systems
 
+El sistema de navegación de Smart Stay define cómo los usuarios se desplazan dentro de la plataforma, permitiendo acceder a las distintas secciones de forma clara, rápida e intuitiva. Este sistema está diseñado bajo principios de consistencia, accesibilidad y eficiencia, adaptándose tanto a la Landing Page como a la aplicación móvil.
+
+---
+
+### Landing Page Navigation
+
+| Navigation Item | Location / Component | Function |
+|-----------------|----------------------|----------|
+| Home | Header | Enlace a la página principal. Permite regresar al inicio desde cualquier sección. |
+| Services | Header | Acceso directo a la sección de servicios ofrecidos por la plataforma. |
+| Benefits | Header / Value Section | Redirige a la sección donde se explican las ventajas del sistema. |
+| Contact | Header | Permite acceder al formulario de contacto o soporte. |
+| Sign Up | Header (button) | Registro de nuevos usuarios. Botón destacado visualmente. |
+| Login | Header (button) | Acceso a la cuenta del usuario. Fácil de localizar. |
+| Try Demo | Hero Section (CTA principal) | Llamada a la acción principal para probar la plataforma. |
+| About | Footer / Company | Información institucional de Smart Stay. |
+| Privacy Policy | Footer / Legal | Acceso a políticas de privacidad del sistema. |
+| Terms & Conditions | Footer / Legal | Información sobre condiciones de uso de la plataforma. |
+
+---
+
+### Mobile Application Navigation
+
+| Navigation Item | Location / Component | Function |
+|-----------------|----------------------|----------|
+| Dashboard | Bottom Navigation | Vista general del sistema con información resumida. |
+| Rooms | Bottom Navigation | Acceso a la gestión y estado de habitaciones. |
+| Services | Bottom Navigation | Permite visualizar y solicitar servicios disponibles. |
+| Profile | Bottom Navigation | Configuración del usuario y preferencias personales. |
+| Notifications | Top Bar / Icon | Acceso a alertas y eventos importantes en tiempo real. |
+| Tasks | Staff Module | Permite gestionar tareas operativas asignadas al personal. |
+| Bookings | App Module | Acceso a reservas activas, historial y gestión de huéspedes. |
+| Back Navigation | App Screens | Permite regresar a la pantalla anterior de forma intuitiva. |
+
+---
+
 #### 3.1.3. Landing Page UI Design
+
+El diseño de la interfaz de la Landing Page de Smart Stay tiene como objetivo principal presentar de manera clara y atractiva la propuesta de valor del sistema, captando la atención del usuario desde el primer contacto. Esta página funciona como el punto de entrada al producto, por lo que su diseño está orientado a la conversión, usabilidad y comprensión inmediata del servicio.
+
+Se aplican principios de diseño centrado en el usuario, jerarquía visual y accesibilidad, permitiendo que tanto potenciales clientes (hoteles) como usuarios finales (huéspedes) comprendan rápidamente los beneficios de la solución.
+
+--- 
 
 ##### 3.1.3.1. Landing Page Wireframe
 
+Los wireframes de la Landing Page de Smart Stay definen la estructura base de navegación, asegurando que cada sección tenga un propósito claro dentro de la experiencia del usuario. Cada pantalla está diseñada para guiar al usuario desde el descubrimiento hasta la acción (registro o uso del sistema).
+
+---
+
+### 1. Home
+
+- **Propósito:** Página principal de presentación de Smart Stay.
+
+- **Elementos clave:**
+  - Encabezado con menú de navegación.
+  - Hero con nombre de la plataforma y botón de llamada a la acción (CTA: Try Demo).
+  - Sección “¿Quiénes somos?” con breve descripción.
+  - Bloques de beneficios y características principales.
+  - Footer con enlaces de contacto, políticas y redes sociales.
+
+![alt text](assets/whome.png)
+
+---
+
+### 2. Products
+
+- **Propósito:** Mostrar los productos principales que ofrece Smart Stay.
+
+- **Elementos clave:**
+  - Listado de productos o módulos del sistema.
+  - Descripción breve de cada funcionalidad.
+  - Íconos o ilustraciones representativas.
+  - Enlaces para explorar cada producto.
+
+![alt text](assets/wproductos.png)
+
+---
+
+### 3. Solutions
+
+- **Propósito:** Explicar cómo la plataforma resuelve problemas específicos del sector hotelero.
+
+- **Elementos clave:**
+  - Casos de uso del sistema.
+  - Beneficios aplicados a situaciones reales.
+  - Explicación de soluciones para gestión, automatización e IoT.
+
+![alt text](assets/wsoluciones.png)
+
+---
+
+### 4. Prices
+
+- **Propósito:** Presentar los planes o modelos de precios del sistema.
+
+- **Elementos clave:**
+  - Tabla de precios o planes.
+  - Comparación de funcionalidades.
+  - Botones de acción para suscripción.
+
+![alt text](assets/wsprecios.png)
+---
+
+### 5. Success Stories
+
+- **Propósito:** Generar confianza mediante casos reales o testimonios.
+
+- **Elementos clave:**
+  - Opiniones de clientes.
+  - Resultados obtenidos.
+  - Fotografías o elementos visuales de respaldo.
+
+![alt text](assets/wreseñas.png)
+
+---
+
+### 6. Resources
+
+- **Propósito:** Proporcionar contenido de apoyo para el usuario.
+
+- **Elementos clave:**
+  - Guías o documentación.
+  - Artículos o blogs.
+  - Material informativo sobre el sistema.
+
+![alt text](assets/wrecurso.png)
+
+---
+
+### 7. Register
+
+- **Propósito:** Permitir el registro de nuevos usuarios.
+
+- **Elementos clave:**
+  - Formulario de registro.
+  - Campos básicos (nombre, correo, contraseña).
+  - Botón de creación de cuenta.
+
+![alt text](assets/wregister.png)
+
+---
+
+### 8. Login
+
+- **Propósito:** Permitir el acceso a usuarios registrados.
+
+- **Elementos clave:**
+  - Formulario de inicio de sesión.
+  - Campos de usuario y contraseña.
+  - Opción de recuperación de contraseña.
+
+![alt text](assets/wlogin.png)
+
+Los wireframes definen la base de navegación de Smart Stay, asegurando que cada sección tenga un propósito claro:
+
+  - Home: captar atención y presentar la plataforma.
+  - Productos, Soluciones, Precios: comunicar valor y opciones.
+  - Casos de Éxito, Recursos: generar confianza y soporte.
+  - Registro y Login: habilitar el acceso a la app.
+---
+
 ##### 3.1.3.2. Landing Page Mock-up
+
+1. Landing Page
+
+- **Cambios respecto al wireframe:**
+  - Se añadió el logotipo de Smart Stay en el header.
+  - Paleta de colores aplicada (azul corporativo + tonos complementarios).
+  - Imagen de fondo en el Hero con llamada a la acción resaltada (“Try demo”).
+  - Iconografía personalizada para los beneficios.
+
+![alt text](assets/home.png)
+
+---
+
+2. Product
+
+- **Cambios respecto al wireframe:**
+  - Se añadieron tarjetas visuales para cada producto.
+  - Uso de iconos representativos para mejorar la comprensión.
+  - Aplicación de colores para diferenciar funcionalidades.
+  - Mejor organización del contenido en bloques visuales.
+
+![alt text](assets/producto.png)
+
+---
+
+3. Solutions
+
+- **Cambios respecto al wireframe:**
+  - Se incorporaron secciones visuales para explicar soluciones específicas.
+  - Uso de imágenes e iconografía para reforzar el contenido.
+  - Reducción de texto y enfoque en contenido visual.
+  - Mejora en la jerarquía de información.
+
+![alt text](assets/soluciones.png)
+
+---
+
+4. Prices
+
+- **Cambios respecto al wireframe:**
+  - Se implementaron tarjetas de precios con diseño diferenciado.
+  - Inclusión de botones de acción para suscripción.
+  - Mejora en la comparación entre planes.
+  - Uso de colores para destacar el plan principal.
+
+![alt text](assets/precio.png)
+
+---
+
+5. Success Stories
+
+- **Cambios respecto al wireframe:**
+  - Se añadieron testimonios con diseño visual.
+  - Inclusión de imágenes o avatares de usuarios.
+  - Mejora en la presentación para generar confianza.
+  - Organización en bloques claros y legibles.
+
+![alt text](assets/reseña.png)
+
+---
+
+6. Resources
+
+- **Cambios respecto al wireframe:**
+  - Se estructuraron los recursos en tarjetas visuales.
+  - Inclusión de iconos para cada tipo de contenido.
+  - Mejora en la accesibilidad a la información.
+  - Optimización del diseño para navegación rápida.
+
+![alt text](assets/recursos.png)
+
+---
+
+7. Register
+
+- **Cambios respecto al wireframe:**
+  - Mejora en el diseño del formulario de registro.
+  - Aplicación de estilos a los campos de entrada.
+  - Botón de registro visualmente destacado.
+  - Optimización para dispositivos móviles.
+
+![alt text](assets/register.png)
+
+---
+
+8. Login
+
+- **Cambios respecto al wireframe:**
+  - Simplificación del formulario de inicio de sesión.
+  - Mejora en la visibilidad de los campos.
+  - Inclusión de opción de recuperación de contraseña.
+  - Diseño optimizado para acceso rápido.
+
+![alt text](assets/login.png)
 
 #### 3.1.4. Mobile Applications UX/UI Design
 
+El diseño UX/UI de las aplicaciones móviles de Smart Stay tiene como objetivo principal ofrecer una experiencia intuitiva, eficiente y adaptada a dispositivos móviles, tanto para huéspedes como para el personal del hotel (staff). A diferencia de la Landing Page, estas aplicaciones están orientadas a la interacción constante del usuario, por lo que su diseño prioriza la usabilidad, accesibilidad y rapidez en la ejecución de tareas.
+
+
+
 ##### 3.1.4.1. Mobile Applications Wireframes
+
+La solución móvil se divide en dos tipos de aplicaciones:
+
+- **Aplicación para Huéspedes:** enfocada en mejorar la experiencia del usuario durante su estadía, permitiendo el control de la habitación, solicitud de servicios y acceso a información relevante.
+- **Aplicación para Staff:** orientada a la gestión operativa del hotel, incluyendo tareas, reservas, servicios y control de incidencias.
+
+Ambas aplicaciones comparten principios de diseño consistentes, tales como:
+
+- Uso de navegación inferior (bottom navigation) para acceso rápido a módulos principales.
+- Interfaz limpia y minimalista para reducir la carga cognitiva.
+- Uso de iconografía clara para facilitar la comprensión.
+- Adaptabilidad a diferentes tamaños de pantalla (responsive design).
+- Retroalimentación visual mediante notificaciones y estados.
+
+
+---
+
+### Aplicación Móvil – Huésped
+
+Las pantallas principales de la aplicación para huéspedes incluyen:
+
+- **IntroApp (Bienvenida):**
+  - Pantalla inicial que da la bienvenida al usuario.
+  - Refuerza la identidad de Smart Stay.
+
+- **Home:**
+  - Panel principal con opciones de búsqueda, promociones y acceso rápido a funcionalidades.
+  - Incluye acceso a servicios y asistencia.
+
+- **Habitación:**
+  - Control de dispositivos IoT (temperatura, luces, cortinas, TV).
+  - Información del estado de la habitación.
+
+- **Servicios:**
+  - Visualización y solicitud de servicios disponibles (restaurantes, limpieza, amenities).
+
+- **Mapa:**
+  - Ubicación de servicios dentro o cerca del hotel.
+  - Interfaz de búsqueda y filtros.
+
+- **Perfil:**
+  - Información personal del usuario.
+  - Gestión de métodos de pago.
+
+- **Notificaciones:**
+  - Alertas y mensajes importantes durante la estadía.
+
+
+---
+
+### Aplicación Móvil – Staff
+
+Las pantallas principales de la aplicación para el personal incluyen:
+
+- **IntroApp Staff:**
+  - Pantalla de bienvenida para el personal del hotel.
+
+- **Login:**
+  - Acceso seguro mediante credenciales.
+
+- **Home Staff:**
+  - Panel con resumen de actividades del día.
+  - Acceso a historial y registros.
+
+- **Tareas:**
+  - Gestión de tareas asignadas (limpieza, mantenimiento).
+  - Visualización de estado de cada actividad.
+
+- **Servicios:**
+  - Registro y seguimiento de servicios solicitados por huéspedes.
+
+- **Reservas:**
+  - Gestión de check-in y check-out.
+  - Visualización de reservas activas.
+
+- **Perfil:**
+  - Información del trabajador.
+  - Opciones de configuración.
+
+- **Notificaciones:**
+  - Alertas sobre cambios, incidencias o nuevas tareas.
+
+![alt text](assets/wapphuesped1.png)
+![alt text](assets/wapphuesped2.png)
+
+---
+
+### Consideraciones de Diseño UX/UI
+
+El diseño de ambas aplicaciones se basa en los siguientes principios:
+
+- **Usabilidad:** interfaces fáciles de entender y utilizar.
+- **Eficiencia:** reducción de pasos para completar tareas.
+- **Consistencia:** uso de patrones de diseño similares en ambas apps.
+- **Visibilidad del estado:** información clara sobre acciones y resultados.
+- **Accesibilidad:** elementos interactivos visibles y fáciles de usar.
+
+---
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
+Los wireflow diagrams de las aplicaciones móviles de Smart Stay representan el flujo de navegación entre pantallas, combinando la estructura de los wireframes con las interacciones del usuario dentro del sistema.
+
+Estos diagramas permiten visualizar cómo los usuarios se desplazan entre las distintas funcionalidades de la aplicación, facilitando la comprensión del comportamiento del sistema tanto para huéspedes como para el personal del hotel.
+
+---
+
+### Aplicación Móvil – Huésped
+
+El flujo de navegación para el huésped inicia desde la pantalla de bienvenida (Intro), desde donde el usuario accede al Home, que actúa como punto central de la aplicación.
+
+Desde el Home, el usuario puede navegar hacia:
+
+- **Notificaciones:** para visualizar alertas relacionadas a su estadía.
+- **My Room (Habitación):** para controlar dispositivos IoT como luces, temperatura y cortinas.
+- **Services:** para explorar y solicitar servicios disponibles.
+- **Map:** para ubicar servicios dentro o fuera del hotel.
+- **Profile:** para gestionar su información personal y métodos de pago.
+
+Este flujo permite una navegación clara y directa, utilizando una barra de navegación inferior que facilita el acceso rápido a cada módulo.
+
+---
+
+![alt text](assets/webwireflowhuesped.png)
+
+---
+
+### Aplicación Móvil – Staff
+
+El flujo del personal inicia en la pantalla de bienvenida (Intro Staff), seguida del Login, donde el usuario ingresa sus credenciales para acceder al sistema.
+
+Una vez autenticado, el usuario accede al Home Staff, desde donde puede navegar hacia:
+
+- **Notificaciones:** para revisar alertas operativas.
+- **Tasks:** para gestionar tareas asignadas (limpieza, mantenimiento, etc.).
+- **Services:** para administrar servicios solicitados.
+- **Booking (Reservas):** para gestionar check-in y check-out.
+- **Profile:** para visualizar y editar su información personal.
+
+Este flujo está diseñado para optimizar la eficiencia operativa del personal, permitiendo acceder rápidamente a las funciones más importantes del sistema.
+
+---
+
+![alt text](assets/webwireflowstaff.png)
+
+---
+
 ##### 3.1.4.3. Mobile Applications Mock-ups
+
+Los mock-ups de las aplicaciones móviles de Smart Stay representan el diseño visual final del sistema, incorporando la identidad gráfica definida, incluyendo colores, tipografía, iconografía e imágenes. A diferencia de los wireframes, estos diseños permiten visualizar cómo interactuará el usuario con una interfaz cercana al producto real.
+
+Se desarrollaron mock-ups para dos tipos de usuarios: huéspedes y personal del hotel (staff), considerando sus necesidades específicas dentro del sistema.
+
+---
+
+### Aplicación Móvil – Huésped
+
+Los mock-ups del módulo de huésped muestran una interfaz moderna, intuitiva y orientada a mejorar la experiencia durante la estadía.
+
+**Pantallas principales:**
+
+- **Intro (Bienvenida):**
+  - Pantalla inicial con identidad visual de Smart Stay.
+  - Uso de colores corporativos para reforzar branding.
+
+- **Home:**
+  - Panel principal con opciones de búsqueda y acceso a funcionalidades.
+  - Integración de promociones y accesos rápidos.
+
+- **Habitación:**
+  - Interfaz para control de dispositivos IoT (temperatura, luces, cortinas, TV).
+  - Diseño centrado en facilidad de uso.
+
+- **Servicios:**
+  - Presentación visual de servicios en tarjetas con iconos.
+  - Organización clara por categorías.
+
+- **Mapa:**
+  - Integración de mapa interactivo.
+  - Visualización de ubicaciones con información contextual.
+
+- **Perfil:**
+  - Información del usuario con diseño limpio.
+  - Gestión de métodos de pago con interfaz visual.
+
+- **Notificaciones:**
+  - Alertas visuales organizadas en tarjetas.
+  - Fácil lectura e interacción.
+
+---
+
+![alt text](assets/mockuphuesped1.png)
+
+---
+
+![alt text](assets/mockuphuesped2.png)
+
+---
+
+### Aplicación Móvil – Staff
+
+Los mock-ups del módulo de staff están diseñados para optimizar la gestión operativa del hotel, priorizando claridad y eficiencia.
+
+**Pantallas principales:**
+
+- **Intro Staff:**
+  - Identificación del modo de uso del sistema.
+  - Diseño alineado con la identidad visual.
+
+- **Login:**
+  - Formulario de acceso claro y sencillo.
+  - Campos bien definidos y accesibles.
+
+- **Home Staff:**
+  - Panel con resumen de actividades y registros.
+  - Acceso a historial y notificaciones.
+
+- **Tareas:**
+  - Listado de tareas del día con estado (pendiente, completado).
+  - Diseño enfocado en lectura rápida.
+
+- **Servicios:**
+  - Registro y seguimiento de servicios.
+  - Información organizada en tablas.
+
+- **Reservas:**
+  - Gestión de check-in y check-out.
+  - Visualización clara de datos.
+
+- **Perfil:**
+  - Información del trabajador.
+  - Opciones de configuración.
+
+- **Notificaciones:**
+  - Alertas visuales para eventos importantes.
+
+---
+
+![alt text](assets/mockupstaff1.png)
+
+---
+
+![alt text](assets/mockupstaff2.png)
+
+---
 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams
 
+Los User Flow Diagrams de Smart Stay representan de manera detallada el recorrido que realizan los usuarios dentro de la aplicación móvil, desde el ingreso hasta la finalización de sus tareas. Estos diagramas permiten visualizar tanto los flujos ideales (Happy Path) como los escenarios alternativos o de error (Unhappy Path), mejorando el análisis de la experiencia de usuario.
+
+Se desarrollaron flujos para tres tipos de usuarios: huésped, personal (staff) y administrador, considerando sus interacciones específicas con el sistema.
+
+---
+
+### Usuario: Huésped (Guest)
+
+**Happy Path:**
+El flujo ideal del huésped inicia al abrir la aplicación, seguido del login o registro. Una vez autenticado, accede al Home, desde donde puede:
+
+- Realizar check-in digital.
+- Consultar información de su habitación.
+- Solicitar servicios adicionales.
+- Visualizar el mapa del hotel.
+- Registrar métodos de pago.
+- Realizar check-out digital.
+- Dejar reseñas de su experiencia.
+
+---
+
+![alt text](assets/happypathhuesped.png)
+
+---
+
+**Unhappy Path:**
+Incluye escenarios donde:
+
+- El código de acceso es inválido o expirado.
+- El check-in aún no está habilitado.
+- Un servicio solicitado no está disponible.
+- El usuario debe esperar disponibilidad.
+
+---
+
+![alt text](assets/happypathstaff.png)
+
+---
+
+### Usuario: Staff
+
+**Happy Path:**
+El flujo del personal inicia con login, seguido del acceso al panel principal donde puede:
+
+- Visualizar tareas asignadas.
+- Marcar tareas como completadas.
+- Gestionar check-in y check-out.
+- Consultar historial de actividades.
+- Administrar servicios solicitados.
+
+---
+
+![alt text](assets/happypathadmi.png)
+
+---
+
+**Unhappy Path:**
+Se contemplan situaciones como:
+
+- Credenciales incorrectas.
+- Falta de conexión a internet.
+- Fallo al actualizar estados de tareas.
+
+---
+
+![alt text](assets/unhappypathhuesped.png)
+
+---
+
+### Usuario: Administrador
+
+**Happy Path:**
+El flujo del administrador incluye:
+
+- Registro o login.
+- Creación de perfil del hotel.
+- Gestión de habitaciones, servicios y tarifas.
+- Supervisión de reservas, pagos y reportes.
+- Monitoreo de actividad y generación de códigos de acceso.
+
+---
+
+![alt text](assets/unhappypathstaff.png)
+
+---
+
+**Unhappy Path:**
+Incluye casos como:
+
+- Datos incompletos en el registro.
+- Duplicación de información.
+- Errores en la creación de servicios o habitaciones.
+
+---
+
+![alt text](assets/unhappypathadmi.png)
+
+---
+
 ##### 3.1.4.5. Mobile Applications Prototyping
+
+El prototipo de la aplicación móvil de Smart Stay fue desarrollado con el objetivo de simular la interacción real del usuario con el sistema, permitiendo validar la navegación, usabilidad y flujo de las funcionalidades principales antes de su implementación.
+
+Para la construcción del prototipo se utilizaron herramientas de diseño como Figma, integrando los mock-ups previamente desarrollados y conectándolos mediante interacciones que representan el comportamiento real de la aplicación.
+
+---
+
+### Características del Prototipo
+
+- Navegación interactiva entre pantallas principales.
+- Simulación de acciones del usuario (clicks, transiciones).
+- Flujo completo desde el ingreso hasta la finalización de tareas.
+- Representación de diferentes tipos de usuario: huésped, staff y administrador.
+
+---
+
+### Flujo del Prototipo
+
+El prototipo incluye los siguientes recorridos principales:
+
+**Huésped:**
+- Pantalla de bienvenida (Intro)
+- Login / Registro
+- Home
+- Habitación (control IoT)
+- Servicios
+- Mapa
+- Perfil
+- Notificaciones
+
+**Staff:**
+- Login
+- Home Staff
+- Gestión de tareas
+- Servicios
+- Reservas
+- Perfil
+
+**Administrador:**
+- Login / Registro
+- Panel de administración
+- Gestión de habitaciones y servicios
+- Supervisión de reservas
+
+---
+
+### Objetivos del Prototipo
+
+- Validar la experiencia de usuario antes del desarrollo.
+- Detectar posibles errores en la navegación.
+- Evaluar la claridad de las interfaces.
+- Mejorar la interacción entre usuario y sistema.
+
+---
+
+### Herramienta Utilizada
+
+El prototipo fue desarrollado en Figma, permitiendo la creación de un entorno interactivo donde se simulan las funcionalidades clave del sistema.
+
+**Prototipo en Figma:**
+https://www.figma.com/make/lML4HR5vLsAGMUq3CoqvcS/Minimalist-Photo-Portfolio?t=7b0vXYUcbQwt6eOT-1&preview-route=%2Fguest%2Flogin
 
 ---
 
@@ -3402,7 +4399,7 @@ El proyecto implementa un flujo automatizado de **Integración Continua y Despli
 
 ### Android Studio Emulator
 
-![Android Studio Emulator](assets/android-studio-emulator.jpg)
+![Android Studio Emulator](assets/Chapter-IIII//android-studio-emulator.jpg)
 
 **El emulador de Android Studio permite validar el funcionamiento de la aplicación móvil en distintos dispositivos y versiones de Android antes de su despliegue final.**
 
