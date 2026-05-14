@@ -50,6 +50,7 @@ Esta sección inicia en una página nueva e incluye un cuadro con la siguiente e
 
 - **URL del repositorio para el Project Report:** <https://github.com/Movil-dev-Aplicaciones-Moviles>
 - **URL del repositorio del APK:** <https://github.com/Movil-dev-Aplicaciones-Moviles/APK.git>
+- **URL del repositorio de la landing page:** <https://github.com/Movil-dev-Aplicaciones-Moviles/landing-page>
 
 El desarrollo del presente informe de trabajo final se realizó de manera colaborativa utilizando las herramientas de control de versiones de GitHub. A continuación se presenta la evidencia de la participación y contribuciones de cada miembro del equipo:
 
