@@ -275,6 +275,7 @@ En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo 
       - [4.2.1.2. Sprint Backlog 1](#4212-sprint-backlog-1)
       - [4.2.1.3. Development Evidence for Sprint Review](#4213-development-evidence-for-sprint-review)
       - [4.2.1.4. Testing Suite Evidence for Sprint Review](#4214-testing-suite-evidence-for-sprint-review)
+        - [4.2.1.4. Evidencia de la Suite de Pruebas para la Revisión del Sprint](#4214-evidencia-de-la-suite-de-pruebas-para-la-revisión-del-sprint)
       - [4.2.1.5. Execution Evidence for Sprint Review](#4215-execution-evidence-for-sprint-review)
       - [4.2.1.6. Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
       - [4.2.1.7. Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
@@ -620,6 +621,8 @@ Para abordar esta problemática, la solución se centrará en las siguientes fun
 **We will know we are successful when we see** that pilot hotels report specific operational improvements and express a preference for our mobile solution over traditional manual management.
 
 ##### 1.2.2.4. Lean UX Canvas
+
+![Lean ux canvas](./assets/Chapter-II/Lean_UX_Canvas.png)
 
 ### 1.3. Segmentos objetivo
 
