@@ -4172,14 +4172,20 @@ El proyecto está organizado dentro de una **organización en GitHub**, donde ca
 - **Aplicación Móvil:**  
   - **Tecnología:** Kotlin (Android Native)
   - **IDE:** Android Studio
-  - **URL del repositorio:** https://github.com/Edgerunners-Aplicaciones-Moviles/mobile-smartstay
+  - **URL del repositorio:** https://github.com/Movil-dev-Aplicaciones-Moviles/smartstay-application-mobile
   - **Plataforma de despliegue:** Android Studio Emulator / APK Testing
 
 - **Web Services (Backend):**  
   - **Tecnología:** ASP.NET Core (C#)
-  - **URL del repositorio:** https://github.com/Edgerunners-Aplicaciones-Moviles/backend-smartstay
+  - **URL del repositorio:** https://github.com/Movil-dev-Aplicaciones-Moviles/application-mobile-backend
   - **Arquitectura:** RESTful API
   - **Plataforma de despliegue:** Render
+
+- **Landing Page**
+  - **Tecnología:** HTML, CSS, JavaScript
+  - **URL del repositorio:** https://github.com/Movil-dev-Aplicaciones-Moviles/landing-page
+  - **IDE:** WebStorm
+  - **Plataforma de despliegue:** GitHub Actions
 
 Todos los repositorios implementan el modelo **GitFlow** como flujo de trabajo de colaboración y branching, garantizando un desarrollo ordenado y trazable.
 
