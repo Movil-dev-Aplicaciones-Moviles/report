@@ -4418,7 +4418,16 @@ El proyecto implementa un flujo automatizado de **Integración Continua y Despli
 
 ### 4.2. Landing Page & Mobile Application Implementation
 
-#### 4.2.1. Sprint 1
+El despliegue de nuestra landing la puede encontrar en el siguiente url: https://movil-dev-aplicaciones-moviles.github.io/landing-page/#
+
+![landingpage.png](assets/Chapter-IV/landingpage.png) 
+
+![landingpage2.png](assets/Chapter-IV/landingpage2.png)  
+
+![landingpage3.png](assets/Chapter-IV/landingpage3.png)  
+
+
+#### 4.2.1. Sprint 1 
 
 ##### 4.2.1.1. Sprint Planning 1
 
