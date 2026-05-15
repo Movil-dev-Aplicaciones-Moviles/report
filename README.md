@@ -4429,7 +4429,27 @@ El despliegue de nuestra landing la puede encontrar en el siguiente url: https:/
 
 #### 4.2.1. Sprint 1 
 
+A continuación, se presenta el Sprint Planning 1, en el que se incluyen las evidencias de la planificación y desarrollo del Landing Page. Asimismo, se documentan los avances del proyecto y los insights de colaboración del equipo registrados a través de GitHub.
+
 ##### 4.2.1.1. Sprint Planning 1
+
+
+| **Sprint #**                           | Sprint 1                                                                                                                                                                                                                                                      |
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**         | Reunión inicial de planificación del proyecto **SmartStay**, orientada a establecer los objetivos del primer sprint y asignar las tareas relacionadas con el diseño, desarrollo y despliegue de la Landing Page.                                              |
+| **Date**                               | 2026-04-30                                                                                                                                                                                                                                                    |
+| **Time**                               | 05:00 PM (GMT -5)                                                                                                                                                                                                                                             |
+| **Location**                           | Modalidad remota mediante **Discord**                                                                                                                                                                                                                         |
+| **Prepared By**                        | Equipo **SmartStay**                                                                                                                                                                                                                                          |
+| **Attendees (to planning meeting)**    | Verona Flores, Italo Sebastián / Paico Calderon, July Zelmira / Herrera Albites, Marcoandres / Montes Ramos, Henry Jaredt / Ramirez Escalante, Carlo Patricio                                                                                                 |
+| **Sprint n – 1 Review Summary**        | Este es el primer sprint del proyecto, por lo tanto, no existe una revisión de sprint anterior.                                                                                                                                                               |
+| **Sprint n – 1 Retrospective Summary** | Al ser la primera iteración, no se registran retrospectivas previas. No obstante, se acordó la importancia de establecer lineamientos claros de trabajo colaborativo, mantener una comunicación efectiva y un uso disciplinado de las herramientas definidas. |
+| **Sprint Goal & User Stories**         | —                                                                                                                                                                                                                                                             |
+| **Sprint n Goal**                      | Publicar una **Landing Page funcional** para SmartStay, con diseño responsive, estructura clara y accesible desde GitHub Pages, así como la versión inicial de nuestra APK funcional.                             |
+| **Sprint n Velocity**                  | 2                                                                                                                                                                                                                                                             |
+| **Sum of Story Points**                | 2                                                                                                                                                                                                                                                             |
+
+
 
 ##### 4.2.1.2. Sprint Backlog 1
 
