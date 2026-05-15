@@ -4508,6 +4508,11 @@ Durante este sprint, el equipo realizó actividades de prueba para verificar que
 Durante el Sprint 1, se logró ejecutar y validar la aplicación móvil en el entorno de desarrollo de Android Studio, utilizando tanto el emulador como dispositivos físicos para asegurar la correcta funcionalidad de las características implementadas. Así mismo, el despliegue del backend y landing page.
 
 
+![App Execution 1](./assets/appexecution1.jpeg)
+
+![App Execution 2](./assets/appexecution2.jpg)
+
+![App Execution 3](./assets/appexecution3.jpg)
 
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
