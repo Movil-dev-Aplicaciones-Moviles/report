@@ -4570,6 +4570,19 @@ Una aplicación móvil es fundamental en proyectos modernos orientados a la expe
 
 ##### 4.2.1.8. Team Collaboration Insights during Sprint
 
+Las actividades de desarrollo de este Sprint 1 se realizaron de forma colaborativa, distribuyendo las tareas entre todos los miembros del equipo.
+Acciones de colaboración destacadas:
+
+Se utilizó GitHub como plataforma central para la coordinación, control de versiones y seguimiento del proyecto.
+Uno de los integrantes configuró el repositorio inicial, creó la estructura de ramas y estableció las normas de trabajo.
+Cada miembro del equipo realizó commits claros y documentados con los cambios implementados.
+Se trabajó mediante pull requests para integrar las contribuciones al repositorio principal.
+Se realizaron revisiones de código en equipo para garantizar la coherencia visual, técnica y funcional de la Landing Page.
+
+Gracias a este flujo de trabajo organizado, el equipo logró avanzar de manera paralela y eficiente, minimizando conflictos en el código y obteniendo un resultado coherente y de calidad.
+
+![insights.png](assets/Chapter-IV/insights.png)
+
 ### 4.3. Validation Interviews
 
 #### 4.3.1. Diseño de Entrevistas
