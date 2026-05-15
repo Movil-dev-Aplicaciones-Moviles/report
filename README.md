@@ -21,10 +21,10 @@
 ### Relación de Integrantes
 
 |   Código   | Apellidos y Nombres               |
-| :--------: | :-------------------------------- |
+| :--------: |:----------------------------------|
 | U202518934 | Herrera Albites, Marcoandres      |
 | U20231D343 | Montes Ramos, Henry Jaredt        |
-| U20211D760 | Paico, July                       |
+| U20211D760 | Paico Calderon, July Zelmira      |
 | U202210787 | Ramirez Escalante, Carlo Patricio |
 | U20221E617 | Verona Flores, Ítalo Sebastián    |
 
