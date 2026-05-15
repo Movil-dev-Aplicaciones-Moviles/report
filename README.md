@@ -4445,7 +4445,7 @@ A continuación, se presenta el Sprint Planning 1, en el que se incluyen las evi
 | **Sprint n – 1 Review Summary**        | Este es el primer sprint del proyecto, por lo tanto, no existe una revisión de sprint anterior.                                                                                                                                                               |
 | **Sprint n – 1 Retrospective Summary** | Al ser la primera iteración, no se registran retrospectivas previas. No obstante, se acordó la importancia de establecer lineamientos claros de trabajo colaborativo, mantener una comunicación efectiva y un uso disciplinado de las herramientas definidas. |
 | **Sprint Goal & User Stories**         | —                                                                                                                                                                                                                                                             |
-| **Sprint n Goal**                      | Publicar una **Landing Page funcional** para SmartStay, con diseño responsive, estructura clara y accesible desde GitHub Pages, así como la versión inicial de nuestra APK funcional.                             |
+| **Sprint n Goal**                      | Publicar una **Landing Page funcional** para SmartStay, con diseño responsive, estructura clara y accesible desde GitHub Pages. A ello le sumamos el despliegue de nuestro backend así como la versión inicial de nuestra APK funcional.                     |
 | **Sprint n Velocity**                  | 2                                                                                                                                                                                                                                                             |
 | **Sum of Story Points**                | 2                                                                                                                                                                                                                                                             |
 
@@ -4503,7 +4503,12 @@ Durante este sprint, el equipo realizó actividades de prueba para verificar que
 
 
 
-##### 4.2.1.5. Execution Evidence for Sprint Review
+##### 4.2.1.5. Execution Evidence for Sprint Review 
+
+Durante el Sprint 1, se logró ejecutar y validar la aplicación móvil en el entorno de desarrollo de Android Studio, utilizando tanto el emulador como dispositivos físicos para asegurar la correcta funcionalidad de las características implementadas. Así mismo, el despliegue del backend y landing page.
+
+
+
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
 
