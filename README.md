@@ -4451,7 +4451,27 @@ A continuación, se presenta el Sprint Planning 1, en el que se incluyen las evi
 
 
 
-##### 4.2.1.2. Sprint Backlog 1
+##### 4.2.1.2. Sprint Backlog 1 
+
+###### Introduccion
+
+El objetivo principal del Sprint 1 es publicar una Landing Page funcional para SmartStay, con diseño responsive, estructura clara y accesible desde GitHub Pages, junto con la versión inicial de nuestra APK funcional.
+Este Sprint está enfocado en establecer la presencia digital oficial del proyecto, ofreciendo a los visitantes una primera experiencia atractiva, profesional e intuitiva que les permita conocer el producto, sus beneficios y facilidades de acceso, mientras se avanza paralelamente en la aplicación móvil.
+
+### Sprint #1 – Sprint Backlog
+
+| **Sprint #** | **User Story**                             | **Work-Item/Task**       | **Id**                              | **Title**                                                                                                    | **Description**          | **Estimation (Hours)** | **Assigned To** | **Status**    |
+|--------------|--------------------------------------------|--------------------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------|------------------------|-----------------|---------------|
+| Sprint 1     | US-24 – Segmented landing page             | UT-01                    | Diseñar estructura visual           | Crear la estructura general de la Landing Page con secciones diferenciadas para administradores y huéspedes. | 6                        | Italo Sebastián        | Done            |
+| Sprint 1     | US-24 – Segmented landing page             | UT-02                    | Maquetar Landing Page               | Implementar el diseño HTML y CSS del prototipo base.                                                         | 5                        | Italo Sebastián        | In Process      |
+| Sprint 1     | US-24 – Segmented landing page             | UT-03                    | Navegación y enlaces internos       | Configurar navegación entre secciones con enlaces y smooth scroll.                                           | 3                        | July Zelmira           | Done            |
+| Sprint 1     | US-26 – Success stories and testimonials   | UT-04                    | Crear sección de testimonios        | Diseñar carrusel con testimonios de usuarios y animaciones simples.                                          | 4                        | Marcoandres            | To Review       |
+| Sprint 1     | US-27 – Demo request and contact           | UT-05                    | Formulario de contacto              | Implementar formulario con validación y diseño responsive.                                                   | 4                        | Henry Jaredt           | Done            |
+| Sprint 1     | US-28 – Corporate information              | UT-06                    | Redactar misión, visión y valores   | Escribir texto institucional coherente con la marca Smart Stay.                                              | 3                        | July Zelmira           | Done            |
+| Sprint 1     | US-28 – Corporate information              | UT-07                    | Implementar sección “About Us”      | Maquetar la sección con texto e imagen representativa.                                                       | 4                        | Italo Sebastián        | To Do           |
+| Sprint 1     | US-24 – Segmented landing page             | UT-08                    | Añadir botones CTA                  | Colocar botones visibles con enlaces a las rutas de autenticación.                                           | 3                        | Carlo Patricio         | Done            |
+| Sprint 1     | US-26 – Success stories and testimonials   | UT-09                    | Ajustar animaciones y transiciones  | Aplicar efectos de entrada y desplazamiento fluido en los testimonios.                                       | 4                        | Marcoandres            | In Process      |
+ 
 
 ##### 4.2.1.3. Development Evidence for Sprint Review
 
@@ -4685,7 +4705,7 @@ Nicole Ávila tuvo una buena impresión de la aplicación, destacando su practic
 **Problema:**
 Durante el proceso de check-in digital, no hay opción para retroceder o cancelar sin perder todo el progreso. Si el huésped necesita corregir datos (fecha, número de documento, selección de habitación) debe cerrar la aplicación y reiniciar el flujo, aumentando la frustración y el riesgo de abandono. Para el Staff Operativo, la imposibilidad de cancelar o devolver un paso en procesos administrativos también provoca errores en la asignación de tareas.
 
-**Captura de pantalla:** [AQUÍ INSERTAR CAPTURA]
+**Captura de pantalla:** 
 
 **Recomendación:**
 - Agregar un botón "Atrás" en la esquina superior izquierda y un botón "Cancelar" en pasos críticos, siguiendo convenciones de Material Design.  
@@ -4703,7 +4723,7 @@ Durante el proceso de check-in digital, no hay opción para retroceder o cancela
 **Problema:**
 Los estados de habitación se representan con símbolos no estándares y sin etiquetas textuales (ej: círculo con patrón, punto, triángulo). El Staff Operativo debe memorizar su significado, aumentando errores en la asignación de tareas y tiempos de respuesta. Durante las pruebas, varios usuarios confundieron iconos y asignaron housekeeping a habitaciones ocupadas.
 
-**Captura de pantalla:** [AQUÍ INSERTAR CAPTURA]
+**Captura de pantalla:** 
 
 **Recomendación:**
 - Rediseñar iconos usando convenciones universales: `check` verde para "Limpia", `candado` rojo para "Ocupada", `herramientas` amarillo para "Mantenimiento".  
@@ -4722,7 +4742,7 @@ Los estados de habitación se representan con símbolos no estándares y sin eti
 **Problema:**
 Los controles de iluminación y temperatura no incluyen descripciones accesibles (aria-label / accessibilityLabel) ni equivalentes textuales. Usuarios que dependen de lectores de pantalla (TalkBack, VoiceOver) no pueden identificar ni operar estos controles, lo que excluye a personas con discapacidad visual y viola recomendaciones WCAG.
 
-**Captura de pantalla:** [AQUÍ INSERTAR CAPTURA]
+**Captura de pantalla:** 
 
 **Recomendación:**
 - Para web/Angular: agregar `aria-label` y `aria-describedby` en todos los controles interactivos; ejemplo: `<mat-slider aria-label="Ajuste de temperatura en °C" aria-describedby="temp-help"></mat-slider>`.  
