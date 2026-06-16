@@ -4497,28 +4497,29 @@ Este Sprint está enfocado en establecer la presencia digital oficial del proyec
 
 ##### 4.2.1.3. Development Evidence for Sprint Review
 
-Durante el desarrollo del sprint, el equipo trabajó de manera distribuida en los distintos repositorios del ecosistema **SmartStay**, incluyendo el Project Report, Landing Page, Mobile Application, Backend y APK. Para evidenciar el avance realizado, se presenta el siguiente cuadro de commits extraídos de los repositorios oficiales del proyecto en GitHub.
+Durante el desarrollo del sprint, el equipo trabajó de manera distribuida en los distintos repositorios del ecosistema **SmartStay**, incluyendo el Project Report, Landing Page, Mobile Application, Backend y APK. Para evidenciar el avance realizado, se presenta el siguiente cuadro de commits obtenidos de los repositorios oficiales del proyecto en GitHub.
 
 | Repositorio | Commit | Autor | Fecha | Rama/Referencia | Mensaje |
 |---|---|---|---|---|---|
-| Project Report | 6c41357 | u20211d760 | 2026-05-15 | main | docs: add collaborative development insights for Sprint 1 in README |
 | Project Report | f42fb3c | Marcoandres-Mc | 2026-05-15 | main | Docs: Update README with Sprint 1 execution details |
-| Project Report | 8caef26 | u20211d760 | 2026-05-15 | main | docs: add Sprint Planning 1 details and development evidence for Landing Page in README |
-| Project Report | 17b279c | u20211d760 | 2026-05-15 | main | docs: update README with landing page URL and images |
 | Project Report | aa4d72f | atomdragon1318 | 2026-05-14 | main | docs: add Lean UX Canvas image and update related section in README |
 | Project Report | 95ab6ee | jahen17 | 2026-05-13 | main | Update README with APK repository URL |
+| Project Report | 4dcbc6c | atomdragon1318 | 2026-05-13 | main | doc: Add new asset images for application UI |
 | Project Report | bae57ee | Carlo211 | 2026-05-13 | main | docs: add Development Evidence for Sprint Review, evidencia de la Suite de Pruebas para la Revisión del Sprint and Services Documentation Evidence for Sprint Review |
+| Project Report | c62b7ed | atomdragon1318 | 2026-05-13 | main | Docs: Add Android Studio emulator image to Chapter IIII |
+| Project Report | 3a74b48 | atomdragon1318 | 2026-05-13 | main | Docs: Add Lean UX Canvas image to Chapter I |
+| Project Report | b7ac279 | atomdragon1318 | 2026-05-12 | main | doc(fix): name of the image |
+| Project Report | e9d3771 | atomdragon1318 | 2026-05-12 | main | Docs: Add interview images for hotel management application, conclusions, recommendations and glossary. |
 | Project Report | 4f67ff2 | Marcoandres-Mc | 2026-05-06 | main | Docs: Document Sprint 1 achievements for SmartStay |
+| Project Report | 7865141 | Marcoandres-Mc | 2026-05-06 | main | Docs: Refactor README with deployment details and formatting |
+| Project Report | 049fc66 | Marcoandres-Mc | 2026-05-06 | main | Docs: Revise repository links and feature branch names |
 | Project Report | c880cc3 | Marcoandres-Mc | 2026-05-06 | main | Docs: Document project repositories and GitFlow process |
-| Landing Page | 7e8b5ed | u20211d760 | 2026-05-13 | main | feat: update action on click on hero_cta |
-| Landing Page | f43aab1 | u20211d760 | 2026-05-13 | main | feat: update team member names and url. |
-| Landing Page | 16ee4f1 | u20211d760 | 2026-05-13 | main | feat: update team member images. |
-| Landing Page | eddd45d | u20211d760 | 2026-05-13 | main | feat: update call-to-action text in both languages and add project configuration files in solutions section |
-| Landing Page | 65b72fc | u20211d760 | 2026-05-13 | main | feat: update team member names and roles in both languages. |
-| Landing Page | b810a7a | u20211d760 | 2026-05-11 | main | feat: update team member files. |
-| Landing Page | 0c5d93a | u20211d760 | 2026-05-11 | main | feat: update team member details and add project configuration files. |
+| Project Report | e5c4ed9 | Marcoandres-Mc | 2026-05-06 | main | Docs: Enhance README with project management details |
 | Landing Page | a87eacb | atomdragon1318 | 2026-05-08 | main | feat: add success stories section with metrics and testimonials |
+| Landing Page | 711f5c8 | atomdragon1318 | 2026-05-06 | main | fix: remove nickname from team member name for consistency |
 | Landing Page | dee64e0 | atomdragon1318 | 2026-05-06 | main | feat(translator): enhance translation loading and application logic |
+| Landing Page | 1253f31 | atomdragon1318 | 2026-05-04 | main | fix: hide scrollbar in carousel track for cleaner appearance |
+| Landing Page | f29f340 | atomdragon1318 | 2026-05-04 | main | feat: add image to member, delete video about the team |
 | Landing Page | 32e2e01 | atomdragon1318 | 2026-05-04 | main | chore: add initial files and landing page |
 | APK | 73fa084 | jahen17 | 2026-05-13 | main | Add SmartStay demo APK |
 | APK | 5e82d86 | jahen17 | 2026-05-13 | main | Add README for SmartStay APK demo |
@@ -4533,16 +4534,13 @@ Durante el desarrollo del sprint, el equipo trabajó de manera distribuida en lo
 | Backend | d9624bc | atomdragon1318 | 2026-06-06 | main | Initial commit |
 | Backend | ad84235 | atomdragon1318 | 2026-06-06 | main | feat: Update .gitignore to include artifacts directory |
 | Backend | f5bf82d | atomdragon1318 | 2026-06-06 | main | feat: Add health checks for MySQL database connection |
-| Backend | a7d7c1c | samuelmolina281816 | 2026-06-07 | main | fix(redis) Se agregan dependencias para Redis y uso del redis |
-| Backend | 90992ad | Bardr0 | 2026-06-08 | main | Add comments for MySQL and Audit Trails packages |
-| Backend | f024bfa | Bardr0 | 2026-06-08 | main | Clean up project file by removing unused comments |
 | Backend | 35dd913 | atomdragon1318 | 2026-06-09 | main | feat: Refactor user authentication and booking commands with improved exception handling |
 | Backend | 6b58992 | atomdragon1318 | 2026-06-10 | main | feat(IAM): Implement role and user scope authorization services for enhanced user management |
 | Backend | 11a1921 | atomdragon1318 | 2026-06-11 | main | feat(IAM): Enhance user sign-up and authentication with role assignment and actor validation |
 | Backend | 6e63cfc | atomdragon1318 | 2026-06-15 | main | feat(IAM): Enhance user authentication and authorization with token versioning and improved error handling |
 | Backend | e2c761d | atomdragon1318 | 2026-06-16 | main | feat(IAM): Implement user account activation functionality with command and controller support |
 
-La evidencia demuestra que el equipo realizó avances en los principales componentes del proyecto. En el repositorio del informe se documentaron los avances del sprint, en la Landing Page se implementaron mejoras visuales y de navegación, en el repositorio APK se publicó una versión demo de la aplicación, en la Mobile Application se desarrollaron funcionalidades de autenticación, perfiles y navegación, y en el Backend se implementaron servicios relacionados con IAM, seguridad, base de datos y configuración de infraestructura.
+La evidencia demuestra que el equipo realizó avances en los principales componentes del proyecto. En el repositorio del informe se documentaron los avances del sprint; en la Landing Page se implementaron mejoras visuales, traducción y secciones informativas; en el repositorio APK se publicó una versión demo de la aplicación; en la Mobile Application se desarrollaron funcionalidades de autenticación, perfiles y navegación; y en el Backend se implementaron servicios relacionados con IAM, seguridad, base de datos y configuración de infraestructura.
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
 
@@ -4562,7 +4560,6 @@ Durante el sprint, se realizaron pruebas sobre los distintos componentes del eco
 | Backend | Prueba técnica | Health Check | Conexión con base de datos | El backend valida correctamente la conexión con MySQL. | Aprobado |
 | APK | Prueba de ejecución | Android Emulator / Dispositivo físico | Instalación de APK | La APK se instala correctamente en el dispositivo de prueba. | Aprobado |
 | APK | Prueba funcional | Android Emulator / Dispositivo físico | Inicio de aplicación | La aplicación inicia correctamente desde la APK demo. | Aprobado |
-
 
 
 ##### 4.2.1.5. Execution Evidence for Sprint Review 
