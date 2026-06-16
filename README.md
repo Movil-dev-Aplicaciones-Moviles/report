@@ -4497,31 +4497,71 @@ Este Sprint está enfocado en establecer la presencia digital oficial del proyec
 
 ##### 4.2.1.3. Development Evidence for Sprint Review
 
+Durante el desarrollo del sprint, el equipo trabajó de manera distribuida en los distintos repositorios del ecosistema **SmartStay**, incluyendo el Project Report, Landing Page, Mobile Application, Backend y APK. Para evidenciar el avance realizado, se presenta el siguiente cuadro de commits extraídos de los repositorios oficiales del proyecto en GitHub.
 
-| Commit | Autor | Fecha | Rama/Referencia | Mensaje |
-|---|---|---|---|---|
-| b810a7a | JulyP | 2026-05-11 |  (origin/section_2) | feat: update team member files. |
-| 0c5d93a | JulyP | 2026-05-11 |  | feat: update team member details and add project configuration files. |
-| a87eacb | Italo Sebastian Verona Flores | 2026-05-08 |  (origin/main, origin/feat/succes-stories, origin/HEAD) | feat: add success stories section with metrics and testimonials |
-| 258c71d | Carlo211 | 2026-05-06 |  (HEAD -> feature/resources-cleanup, origin/feature/resources-cleanup) | feat: clean up resources seccion  and add name |
-| 711f5c8 | Italo Sebastian Verona Flores | 2026-05-06 |  (main) | fix: remove nickname from team member name for consistency |
-| dee64e0 | Italo Sebastian Verona Flores | 2026-05-06 |  (origin/ui/optimize-ctas) | feat(translator): enhance translation loading and application logic |
-| 1253f31 | Okami | 2026-05-04 |  | fix: hide scrollbar in carousel track for cleaner appearance |
-| f29f340 | Okami | 2026-05-04 |  | feat: add image to member, delete video about the team |
-| 32e2e01 | Italo Sebastian Verona Flores | 2026-05-04 |  | chore: add initial files and landing page |
+| Repositorio | Commit | Autor | Fecha | Rama/Referencia | Mensaje |
+|---|---|---|---|---|---|
+| Project Report | 6c41357 | u20211d760 | 2026-05-15 | main | docs: add collaborative development insights for Sprint 1 in README |
+| Project Report | f42fb3c | Marcoandres-Mc | 2026-05-15 | main | Docs: Update README with Sprint 1 execution details |
+| Project Report | 8caef26 | u20211d760 | 2026-05-15 | main | docs: add Sprint Planning 1 details and development evidence for Landing Page in README |
+| Project Report | 17b279c | u20211d760 | 2026-05-15 | main | docs: update README with landing page URL and images |
+| Project Report | aa4d72f | atomdragon1318 | 2026-05-14 | main | docs: add Lean UX Canvas image and update related section in README |
+| Project Report | 95ab6ee | jahen17 | 2026-05-13 | main | Update README with APK repository URL |
+| Project Report | bae57ee | Carlo211 | 2026-05-13 | main | docs: add Development Evidence for Sprint Review, evidencia de la Suite de Pruebas para la Revisión del Sprint and Services Documentation Evidence for Sprint Review |
+| Project Report | 4f67ff2 | Marcoandres-Mc | 2026-05-06 | main | Docs: Document Sprint 1 achievements for SmartStay |
+| Project Report | c880cc3 | Marcoandres-Mc | 2026-05-06 | main | Docs: Document project repositories and GitFlow process |
+| Landing Page | 7e8b5ed | u20211d760 | 2026-05-13 | main | feat: update action on click on hero_cta |
+| Landing Page | f43aab1 | u20211d760 | 2026-05-13 | main | feat: update team member names and url. |
+| Landing Page | 16ee4f1 | u20211d760 | 2026-05-13 | main | feat: update team member images. |
+| Landing Page | eddd45d | u20211d760 | 2026-05-13 | main | feat: update call-to-action text in both languages and add project configuration files in solutions section |
+| Landing Page | 65b72fc | u20211d760 | 2026-05-13 | main | feat: update team member names and roles in both languages. |
+| Landing Page | b810a7a | u20211d760 | 2026-05-11 | main | feat: update team member files. |
+| Landing Page | 0c5d93a | u20211d760 | 2026-05-11 | main | feat: update team member details and add project configuration files. |
+| Landing Page | a87eacb | atomdragon1318 | 2026-05-08 | main | feat: add success stories section with metrics and testimonials |
+| Landing Page | dee64e0 | atomdragon1318 | 2026-05-06 | main | feat(translator): enhance translation loading and application logic |
+| Landing Page | 32e2e01 | atomdragon1318 | 2026-05-04 | main | chore: add initial files and landing page |
+| APK | 73fa084 | jahen17 | 2026-05-13 | main | Add SmartStay demo APK |
+| APK | 5e82d86 | jahen17 | 2026-05-13 | main | Add README for SmartStay APK demo |
+| Mobile Application | f204803 | atomdragon1318 | 2026-05-24 | main | feat: implement authentication feature with session management and API integration |
+| Mobile Application | b47b9cb | atomdragon1318 | 2026-05-24 | main | feat: implement accommodation feature with API service, repository, and UI components |
+| Mobile Application | 0d05b15 | atomdragon1318 | 2026-05-24 | main | feat: add device manager configuration and update library versions |
+| Mobile Application | 7c52949 | atomdragon1318 | 2026-06-04 | main | feat: add admin and housekeeping dashboard screens with navigation setup |
+| Mobile Application | f58b708 | atomdragon1318 | 2026-06-12 | main | feat: refactor authentication module and update navigation structure |
+| Mobile Application | 70159fc | atomdragon1318 | 2026-06-14 | main | feat(iam): implement TokenManager and user models for authentication flow |
+| Mobile Application | 10f486b | atomdragon1318 | 2026-06-16 | main | feat(profile): implement profile management features including creation, listing, and repository integration |
+| Mobile Application | a1f9bc4 | atomdragon1318 | 2026-06-16 | main | feat(user): update user permissions to include 'admin' role for management and visibility |
+| Backend | d9624bc | atomdragon1318 | 2026-06-06 | main | Initial commit |
+| Backend | ad84235 | atomdragon1318 | 2026-06-06 | main | feat: Update .gitignore to include artifacts directory |
+| Backend | f5bf82d | atomdragon1318 | 2026-06-06 | main | feat: Add health checks for MySQL database connection |
+| Backend | a7d7c1c | samuelmolina281816 | 2026-06-07 | main | fix(redis) Se agregan dependencias para Redis y uso del redis |
+| Backend | 90992ad | Bardr0 | 2026-06-08 | main | Add comments for MySQL and Audit Trails packages |
+| Backend | f024bfa | Bardr0 | 2026-06-08 | main | Clean up project file by removing unused comments |
+| Backend | 35dd913 | atomdragon1318 | 2026-06-09 | main | feat: Refactor user authentication and booking commands with improved exception handling |
+| Backend | 6b58992 | atomdragon1318 | 2026-06-10 | main | feat(IAM): Implement role and user scope authorization services for enhanced user management |
+| Backend | 11a1921 | atomdragon1318 | 2026-06-11 | main | feat(IAM): Enhance user sign-up and authentication with role assignment and actor validation |
+| Backend | 6e63cfc | atomdragon1318 | 2026-06-15 | main | feat(IAM): Enhance user authentication and authorization with token versioning and improved error handling |
+| Backend | e2c761d | atomdragon1318 | 2026-06-16 | main | feat(IAM): Implement user account activation functionality with command and controller support |
+
+La evidencia demuestra que el equipo realizó avances en los principales componentes del proyecto. En el repositorio del informe se documentaron los avances del sprint, en la Landing Page se implementaron mejoras visuales y de navegación, en el repositorio APK se publicó una versión demo de la aplicación, en la Mobile Application se desarrollaron funcionalidades de autenticación, perfiles y navegación, y en el Backend se implementaron servicios relacionados con IAM, seguridad, base de datos y configuración de infraestructura.
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review
 
-###### 4.2.1.4. Evidencia de la Suite de Pruebas para la Revisión del Sprint
+Durante el sprint, se realizaron pruebas sobre los distintos componentes del ecosistema **SmartStay** con el objetivo de validar el correcto funcionamiento de la Landing Page, la aplicación móvil, el backend y la APK demo. Las pruebas se organizaron según la tecnología utilizada en cada repositorio.
 
-Durante este sprint, el equipo realizó actividades de prueba para verificar que las funcionalidades implementadas en el landing page funcionaran correctamente. El proceso de pruebas se enfocó en comprobar la correcta visualización de las secciones principales, el comportamiento de la navegación, el diseño responsive y la funcionalidad de traducción.
-
-| Elemento evaluado | Tipo de prueba | Resultado esperado | Estado |
-|---|---|---|---|
-| Renderizado del landing page | Prueba unitaria | El landing page carga correctamente y sin errores | Aprobado |
-| Navegación entre secciones | Prueba de integración | El usuario puede desplazarse correctamente por las secciones principales | Aprobado |
-| Funcionalidad de traducción | Prueba de integración | Los textos cambian correctamente según el idioma seleccionado | Aprobado |
-| Diseño responsive | Validación de interfaz | El landing page se adapta correctamente a diferentes tamaños de pantalla | Aprobado |
+| Repositorio | Tipo de prueba | Herramienta / Comando | Elemento evaluado | Resultado esperado | Estado |
+|---|---|---|---|---|---|
+| Landing Page | Prueba unitaria | Jest / `npm test` | Renderizado de la página principal | La Landing Page carga correctamente sin errores. | Aprobado |
+| Landing Page | Prueba unitaria | Jest / `npm test` | Botones CTA | Los botones principales se visualizan correctamente y redireccionan a las secciones correspondientes. | Aprobado |
+| Landing Page | Prueba unitaria | Jest / `npm test` | Cambio de idioma | Los textos cambian correctamente entre los idiomas configurados. | Aprobado |
+| Landing Page | Prueba de interfaz | Navegador web | Diseño responsive | La Landing Page se adapta correctamente a vista desktop y móvil. | Aprobado |
+| Mobile Application | Prueba unitaria | Gradle / `./gradlew test` | Flujo de autenticación | La lógica de autenticación procesa correctamente credenciales y sesión de usuario. | Aprobado |
+| Mobile Application | Prueba unitaria | Gradle / `./gradlew test` | Gestión de perfiles | El módulo de perfiles permite cargar, crear y visualizar información del usuario. | Aprobado |
+| Mobile Application | Prueba de integración | Android Studio Emulator | Navegación de la aplicación | La aplicación permite navegar entre las pantallas principales sin errores críticos. | Aprobado |
+| Backend | Prueba unitaria | .NET / `dotnet test` | Servicios IAM | Los servicios de autenticación y autorización responden correctamente. | Aprobado |
+| Backend | Prueba de integración | Swagger / API Client | Endpoints del backend | Los endpoints principales retornan respuestas válidas. | Aprobado |
+| Backend | Prueba técnica | Health Check | Conexión con base de datos | El backend valida correctamente la conexión con MySQL. | Aprobado |
+| APK | Prueba de ejecución | Android Emulator / Dispositivo físico | Instalación de APK | La APK se instala correctamente en el dispositivo de prueba. | Aprobado |
+| APK | Prueba funcional | Android Emulator / Dispositivo físico | Inicio de aplicación | La aplicación inicia correctamente desde la APK demo. | Aprobado |
 
 
 
