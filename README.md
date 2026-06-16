@@ -287,6 +287,18 @@ En este sprint no se realizo ningun commit de código, ya que el enfoque estuvo 
       - [4.2.1.6. Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
       - [4.2.1.7. Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
       - [4.2.1.8. Team Collaboration Insights during Sprint](#4218-team-collaboration-insights-during-sprint)
+    - [4.2.2. Sprint 2](#422-sprint-2)
+      - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
+      - [4.2.2.2. Sprint Backlog 2](#4222-sprint-backlog-2)
+        - [Introducción](#introducción)
+  - [Sprint #2 – Sprint Backlog](#sprint-2--sprint-backlog)
+      - [4.2.2.3. Development Evidence for Sprint Review](#4223-development-evidence-for-sprint-review)
+      - [4.2.2.4. Testing Suite Evidence for Sprint Review](#4224-testing-suite-evidence-for-sprint-review)
+        - [Evidencia de la Suite de Pruebas para la Revisión del Sprint](#evidencia-de-la-suite-de-pruebas-para-la-revisión-del-sprint)
+      - [4.2.2.5. Execution Evidence for Sprint Review](#4225-execution-evidence-for-sprint-review)
+      - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
+      - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
+      - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -4592,6 +4604,133 @@ Se realizaron revisiones de código en equipo para garantizar la coherencia visu
 Gracias a este flujo de trabajo organizado, el equipo logró avanzar de manera paralela y eficiente, minimizando conflictos en el código y obteniendo un resultado coherente y de calidad.
 
 ![insights.png](assets/Chapter-IV/insights.png)
+
+#### 4.2.2. Sprint 2
+
+A continuación, se presenta el Sprint Planning 2, en el que se incluyen las evidencias de planificación y desarrollo de las funcionalidades implementadas durante esta iteración. Asimismo, se documentan los avances del proyecto, las evidencias de pruebas, despliegue y los insights de colaboración del equipo registrados a través de GitHub.
+
+##### 4.2.2.1. Sprint Planning 2
+
+| **Sprint #**                           | Sprint 2 |
+|----------------------------------------|----------|
+| **Sprint Planning Background**         | Reunión de planificación orientada a definir las funcionalidades prioritarias para la segunda iteración del proyecto SmartStay, enfocándose en la implementación de nuevas características de negocio y mejoras en la aplicación móvil. |
+| **Date**                               | [FECHA] |
+| **Time**                               | [HORA] |
+| **Location**                           | Modalidad remota mediante Discord |
+| **Prepared By**                        | Equipo SmartStay |
+| **Attendees (to planning meeting)**    | [INTEGRANTES DEL EQUIPO] |
+| **Sprint n – 1 Review Summary**        | Durante el Sprint 1 se logró publicar la Landing Page institucional del proyecto, desplegar la primera versión funcional del backend y validar la ejecución inicial de la aplicación móvil. |
+| **Sprint n – 1 Retrospective Summary** | Se identificó la necesidad de mejorar la distribución de tareas, aumentar la frecuencia de revisión de código y fortalecer la comunicación para acelerar la integración de funcionalidades. |
+| **Sprint Goal & User Stories**         | — |
+| **Sprint n Goal**                      | [OBJETIVO DEL SPRINT 2] |
+| **Sprint n Velocity**                  | [VELOCIDAD] |
+| **Sum of Story Points**                | [TOTAL STORY POINTS] |
+
+---
+
+##### 4.2.2.2. Sprint Backlog 2
+
+###### Introducción
+
+El objetivo principal del Sprint 2 es [DESCRIPCIÓN GENERAL DEL OBJETIVO].
+
+Durante esta iteración se desarrollarán funcionalidades relacionadas con [MÓDULOS O BOUNDED CONTEXTS], permitiendo incrementar el valor funcional de la aplicación y acercar el producto a una versión más completa y operativa.
+
+### Sprint #2 – Sprint Backlog
+
+| **Sprint #** | **User Story** | **Work-Item/Task** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+|--------------|---------------|-------------------|--------|-----------|-----------------|------------------------|-----------------|------------|
+| Sprint 2 | US-XX | UT-01 | [TAREA] | [TÍTULO] | [DESCRIPCIÓN] | [HORAS] | [RESPONSABLE] | Done |
+| Sprint 2 | US-XX | UT-02 | [TAREA] | [TÍTULO] | [DESCRIPCIÓN] | [HORAS] | [RESPONSABLE] | Done |
+| Sprint 2 | US-XX | UT-03 | [TAREA] | [TÍTULO] | [DESCRIPCIÓN] | [HORAS] | [RESPONSABLE] | In Process |
+| Sprint 2 | US-XX | UT-04 | [TAREA] | [TÍTULO] | [DESCRIPCIÓN] | [HORAS] | [RESPONSABLE] | To Review |
+
+---
+
+##### 4.2.2.3. Development Evidence for Sprint Review
+
+| Commit | Autor | Fecha | Rama/Referencia | Mensaje |
+|---------|--------|--------|----------------|----------|
+| [HASH] | [AUTOR] | [FECHA] | [RAMA] | [MENSAJE] |
+| [HASH] | [AUTOR] | [FECHA] | [RAMA] | [MENSAJE] |
+| [HASH] | [AUTOR] | [FECHA] | [RAMA] | [MENSAJE] |
+| [HASH] | [AUTOR] | [FECHA] | [RAMA] | [MENSAJE] |
+
+---
+
+##### 4.2.2.4. Testing Suite Evidence for Sprint Review
+
+###### Evidencia de la Suite de Pruebas para la Revisión del Sprint
+
+Durante este sprint, el equipo realizó actividades de prueba para validar las funcionalidades desarrolladas, asegurando su correcto funcionamiento tanto a nivel de lógica de negocio como de experiencia de usuario.
+
+| Elemento evaluado | Tipo de prueba | Resultado esperado | Estado |
+|---|---|---|---|
+| [FUNCIONALIDAD] | Prueba unitaria | [RESULTADO] | Aprobado |
+| [FUNCIONALIDAD] | Prueba de integración | [RESULTADO] | Aprobado |
+| [FUNCIONALIDAD] | Validación de interfaz | [RESULTADO] | Aprobado |
+| [FUNCIONALIDAD] | Prueba funcional | [RESULTADO] | Aprobado |
+
+---
+
+##### 4.2.2.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 2 se ejecutaron y validaron las funcionalidades desarrolladas dentro de la aplicación móvil SmartStay. Las pruebas se realizaron utilizando Android Studio, dispositivos físicos y servicios desplegados en la nube para verificar la correcta integración entre frontend y backend.
+
+![Execution 1](./assets/execution1.png)
+
+![Execution 2](./assets/execution2.png)
+
+![Execution 3](./assets/execution3.png)
+
+---
+
+##### 4.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante este sprint se implementaron y/o actualizaron los siguientes servicios REST correspondientes a los bounded contexts del sistema.
+
+**[Bounded Context 1]**: Descripción funcional del contexto y sus endpoints principales.
+
+![swagger1.png](assets/Chapter-IV/swagger1.png)
+
+**[Bounded Context 2]**: Descripción funcional del contexto y sus endpoints principales.
+
+![swagger2.png](assets/Chapter-IV/swagger2.png)
+
+**[Bounded Context 3]**: Descripción funcional del contexto y sus endpoints principales.
+
+![swagger3.png](assets/Chapter-IV/swagger3.png)
+
+---
+
+##### 4.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2 se desplegaron las funcionalidades implementadas tanto en la aplicación móvil como en los servicios backend correspondientes.
+
+El trabajo realizado permitió ampliar las capacidades del sistema mediante la incorporación de nuevas funcionalidades relacionadas con [MÓDULOS IMPLEMENTADOS].
+
+La aplicación fue ejecutada y validada utilizando Android Studio y dispositivos físicos, verificando la correcta comunicación con los servicios desplegados y el adecuado comportamiento de las interfaces desarrolladas.
+
+Asimismo, se realizaron actualizaciones en la infraestructura de despliegue para garantizar la disponibilidad de los servicios requeridos por la aplicación.
+
+---
+
+##### 4.2.2.8. Team Collaboration Insights during Sprint
+
+Las actividades de desarrollo correspondientes al Sprint 2 fueron ejecutadas de manera colaborativa por todos los integrantes del equipo.
+
+Acciones de colaboración destacadas:
+
+- Se continuó utilizando GitHub como herramienta principal para el control de versiones y seguimiento del avance.
+- Se gestionaron ramas específicas para cada funcionalidad desarrollada.
+- Se realizaron commits frecuentes y descriptivos para facilitar la trazabilidad de cambios.
+- Se utilizaron Pull Requests para la integración controlada de nuevas funcionalidades.
+- Se llevaron a cabo revisiones de código entre miembros del equipo.
+- Se realizaron reuniones de seguimiento para resolver bloqueos y coordinar avances.
+
+Gracias a estas prácticas, el equipo mantuvo un flujo de trabajo organizado y logró integrar exitosamente las funcionalidades desarrolladas durante el Sprint 2.
+
+![insights-sprint2.png](assets/Chapter-IV/insights-sprint2.png)
 
 ### 4.3. Validation Interviews
 
