@@ -4567,12 +4567,12 @@ Durante el sprint, se realizaron pruebas sobre los distintos componentes del eco
 Durante el Sprint 1, se logró ejecutar y validar la aplicación móvil en el entorno de desarrollo de Android Studio, utilizando tanto el emulador como dispositivos físicos para asegurar la correcta funcionalidad de las características implementadas. Así mismo, el despliegue del backend y landing page.
 
 
-# Capturas de la Aplicación Android
+![App Execution 1](./assets/appexecution1.jpeg)
 
-![App Android 1](assets/Chapter-IV/appAndroid1.jpeg)
-![App Android 2](assets/Chapter-IV/appAndroid2.jpeg)
-![App Android 3](assets/Chapter-IV/appAndroid3.jpeg)
-![App Android 4](assets/Chapter-IV/appAndroid4.jpeg)
+![App Execution 2](./assets/appexecution2.jpg)
+
+![App Execution 3](./assets/appexecution3.jpg)
+
 
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
