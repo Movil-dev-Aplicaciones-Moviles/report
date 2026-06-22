@@ -4728,21 +4728,13 @@ Durante el Sprint 2 se ejecutaron y validaron las funcionalidades desarrolladas 
 
 ##### 4.2.2.6. Services Documentation Evidence for Sprint Review
 
-Durante este sprint se implementaron y/o actualizaron los siguientes servicios REST correspondientes a los bounded contexts del sistema.
+Durante este sprint se actualizó el bounded context de IAM/Authentication, incorporando mejoras relacionadas con la autenticación de usuarios y la gestión de roles dentro del sistema. La documentación de los servicios REST fue verificada mediante Swagger/OpenAPI, donde se evidencian los endpoints disponibles para el inicio de sesión y registro de usuarios.
 
-**[Bounded Context 1]**: Descripción funcional del contexto y sus endpoints principales.
+**Authentication**: Este bounded context gestiona la autenticación de usuarios y el control de acceso basado en roles dentro de SmartStay. Sus servicios permiten registrar nuevos usuarios e iniciar sesión en la aplicación, retornando la información necesaria para identificar el rol del usuario y habilitar las funcionalidades correspondientes según sus permisos.
 
-![swagger1.png](assets/Chapter-IV/swagger1.png)
+![swagerautenticacion.png](assets/Chapter-IV/swagerautenticacion.png)
 
-**[Bounded Context 2]**: Descripción funcional del contexto y sus endpoints principales.
-
-![swagger2.png](assets/Chapter-IV/swagger2.png)
-
-**[Bounded Context 3]**: Descripción funcional del contexto y sus endpoints principales.
-
-![swagger3.png](assets/Chapter-IV/swagger3.png)
-
----
+Asimismo, durante el sprint se trabajó con la lógica de roles para diferenciar el acceso de los distintos tipos de usuario del sistema, como Guest, Admin y ChainAdmin, permitiendo controlar qué secciones y acciones están disponibles para cada perfil dentro de la aplicación.
 
 ##### 4.2.2.7. Software Deployment Evidence for Sprint Review
 
