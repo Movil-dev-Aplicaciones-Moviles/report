@@ -4677,6 +4677,7 @@ Durante esta iteración se desarrollarán funcionalidades relacionadas con IAM (
 
 ##### 4.2.2.3. Development Evidence for Sprint Review
 
+
 | Commit    | Autor          | Fecha      | Rama/Referencia      | Mensaje                                                                                                  |
 | --------- | -------------- | ---------- |----------------------| -------------------------------------------------------------------------------------------------------- |
 | `5a2cfdd` | VB25           | 18/06/2026 | `feature/main`       | cambio de nombre                                                                                         |
