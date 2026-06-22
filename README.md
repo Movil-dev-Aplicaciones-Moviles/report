@@ -4567,11 +4567,12 @@ Durante el sprint, se realizaron pruebas sobre los distintos componentes del eco
 Durante el Sprint 1, se logró ejecutar y validar la aplicación móvil en el entorno de desarrollo de Android Studio, utilizando tanto el emulador como dispositivos físicos para asegurar la correcta funcionalidad de las características implementadas. Así mismo, el despliegue del backend y landing page.
 
 
-![App Execution 1](./assets/appexecution1.jpeg)
+# Capturas de la Aplicación Android
 
-![App Execution 2](./assets/appexecution2.jpg)
-
-![App Execution 3](./assets/appexecution3.jpg)
+![App Android 1](assets/Chapter-IV/appAndroid1.jpeg)
+![App Android 2](assets/Chapter-IV/appAndroid2.jpeg)
+![App Android 3](assets/Chapter-IV/appAndroid3.jpeg)
+![App Android 4](assets/Chapter-IV/appAndroid4.jpeg)
 
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review
@@ -4714,11 +4715,15 @@ Durante este sprint, el equipo realizó actividades de prueba para validar las f
 
 Durante el Sprint 2 se ejecutaron y validaron las funcionalidades desarrolladas dentro de la aplicación móvil SmartStay. Las pruebas se realizaron utilizando Android Studio, dispositivos físicos y servicios desplegados en la nube para verificar la correcta integración entre frontend y backend.
 
-![Execution 1](./assets/execution1.png)
 
-![Execution 2](./assets/execution2.png)
-
-![Execution 3](./assets/execution3.png)
+![App Android 1](assets/Chapter-IV/appAndroid1.jpeg)
+![App Android 2](assets/Chapter-IV/appAndroid2.jpeg)
+![App Android 3](assets/Chapter-IV/appAndroid3.jpeg)
+![App Android 4](assets/Chapter-IV/appAndroid4.jpeg)
+![App Android 5](assets/Chapter-IV/appAndroid5.jpeg)
+![App Android 6](assets/Chapter-IV/appAndroid6.jpeg)
+![App Android 7](assets/Chapter-IV/appAndroid7.jpeg)
+![App Android 8](assets/Chapter-IV/appAndroid8.jpeg)
 
 ---
 
