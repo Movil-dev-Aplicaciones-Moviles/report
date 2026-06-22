@@ -4602,7 +4602,23 @@ Gracias a esta configuración, la página quedó disponible públicamente, confi
 
 **URL de la Landing Page: https://movil-dev-aplicaciones-moviles.github.io/landing-page/# **  
 
+![LANDING.png](assets/Chapter-IV/LANDING.png)
+
 Como evidencia complementaria, se presenta una captura de la landing page desplegada y accesible desde su URL pública.
+
+
+
+A continuación, se presentan las evidencias del **despliegue del Back End** de Smart Stay, publicado en la plataforma **Render**.
+
+El servicio backend fue enlazado con el repositorio principal del proyecto, permitiendo que la plataforma tome el código de la rama **main** para su despliegue en producción. Gracias a esta configuración, el servicio puede mantenerse actualizado de manera consistente con los cambios validados en el repositorio.
+
+Como evidencia del despliegue, se presenta la **URL pública del servicio** junto con una captura de la documentación **Swagger/OpenAPI** ejecutándose correctamente desde el entorno desplegado. Esto confirma que la API se encuentra activa, accesible y lista para ser consumida por los demás componentes del sistema.
+
+**URL del Back End / Swagger: https://application-mobile-backend.onrender.com/swagger/index.html **  
+
+![render.png](assets/Chapter-IV/render.png)
+
+La evidencia visual demuestra que el backend fue desplegado correctamente y que sus endpoints pueden consultarse desde la interfaz de Swagger.
 
 #### 4.2.2.8. Team Collaboration Insights during Sprint
 
