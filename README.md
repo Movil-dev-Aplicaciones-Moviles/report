@@ -4583,6 +4583,29 @@ Gracias a este flujo de trabajo organizado, el equipo logró avanzar de manera p
 
 ![insights.png](assets/Chapter-IV/insights.png)
 
+#### 4.2.2 Sprint 2
+#### 4.2.2.1. Sprint Planning 1
+#### 4.2.2.2. Sprint Backlog 1
+#### 4.2.2.3. Development Evidence for Sprint Review
+#### 4.2.2.4. Testing Suite Evidence for Sprint Review
+#### 4.2.2.4. Evidencia de la Suite de Pruebas para la Revisión del Sprint
+#### 4.2.2.5. Execution Evidence for Sprint Review
+#### 4.2.2.6. Services Documentation Evidence for Sprint Review
+#### 4.2.2.7. Software Deployment Evidence for Sprint Review
+
+
+A continuación, se presentan las evidencias del **despliegue de la Landing Page** de Smart Stay, desarrollada y publicada mediante **GitHub Pages**.
+
+La landing page fue vinculada directamente con el repositorio del proyecto, permitiendo que la publicación se realice a partir de la rama **main**. De este modo, cada cambio validado en el repositorio puede reflejarse en la versión pública del sitio, asegurando consistencia entre el desarrollo y el entorno desplegado.
+
+Gracias a esta configuración, la página quedó disponible públicamente, confirmando el correcto funcionamiento del flujo de despliegue y la integración entre el repositorio y **GitHub Pages**.
+
+**URL de la Landing Page: https://movil-dev-aplicaciones-moviles.github.io/landing-page/# **  
+
+Como evidencia complementaria, se presenta una captura de la landing page desplegada y accesible desde su URL pública.
+
+#### 4.2.2.8. Team Collaboration Insights during Sprint
+
 ### 4.3. Validation Interviews
 
 #### 4.3.1. Diseño de Entrevistas
@@ -4787,6 +4810,8 @@ Los controles de iluminación y temperatura no incluyen descripciones accesibles
 - Registrar cada corrección como un requisito en el backlog (EPIC/US) e incluir criterios de aceptación claros para QA.  
 - Priorizar las fichas de severidad 3 para el próximo sprint de refinamiento.  
 - Incluir pruebas de accesibilidad y pruebas en dispositivos reales distribuidos vía Firebase App Distribution como parte del plan de validación.
+
+
 
 
 ## Conclusiones y recomendaciones
