@@ -4648,20 +4648,20 @@ A continuación, se presenta el Sprint Planning 2, en el que se incluyen las evi
 
 ##### 4.2.2.1. Sprint Planning 2
 
-| **Sprint #**                           | Sprint 2 |
-|----------------------------------------|----------|
-| **Sprint Planning Background**         | Reunión de planificación orientada a definir las funcionalidades prioritarias para la segunda iteración del proyecto SmartStay, enfocándose en la implementación de nuevas características de negocio y mejoras en la aplicación móvil. |
-| **Date**                               | [FECHA] |
-| **Time**                               | [HORA] |
-| **Location**                           | Modalidad remota mediante Discord |
-| **Prepared By**                        | Equipo SmartStay |
-| **Attendees (to planning meeting)**    | [INTEGRANTES DEL EQUIPO] |
-| **Sprint n – 1 Review Summary**        | Durante el Sprint 1 se logró publicar la Landing Page institucional del proyecto, desplegar la primera versión funcional del backend y validar la ejecución inicial de la aplicación móvil. |
-| **Sprint n – 1 Retrospective Summary** | Se identificó la necesidad de mejorar la distribución de tareas, aumentar la frecuencia de revisión de código y fortalecer la comunicación para acelerar la integración de funcionalidades. |
-| **Sprint Goal & User Stories**         | — |
-| **Sprint n Goal**                      | [OBJETIVO DEL SPRINT 2] |
-| **Sprint n Velocity**                  | [VELOCIDAD] |
-| **Sum of Story Points**                | [TOTAL STORY POINTS] |
+| **Sprint #**                        | Sprint 2                                                                                                                                                                                                                                |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**      | Reunión de planificación orientada a definir las funcionalidades prioritarias para la segunda iteración del proyecto SmartStay, enfocándose en la implementación de nuevas características de negocio y mejoras en la aplicación móvil. |
+| **Date**                            | 15/06/2026                                                                                                                                                                                                                              |
+| **Time**                            | 19:00                                                                                                                                                                                                                                   |
+| **Location**                        | Modalidad remota mediante Discord                                                                                                                                                                                                       |
+| **Prepared By**                     | Equipo SmartStay                                                                                                                                                                                                                        |
+| **Attendees (to planning meeting)** | Herrera Albites, Marcoandres; Montes Ramos, Henry Jaredt; Paico Calderon, July Zelmira; Ramirez Escalante, Carlo Patricio; Verona Flores, Ítalo Sebastián                                                                               |
+| **Sprint 2 Review Summary**         | Durante el Sprint 1 se logró publicar la Landing Page institucional del proyecto, desplegar la primera versión funcional del backend y validar la ejecución inicial de la aplicación móvil.                                             |
+| **Sprint 2 Retrospective Summary**  | Se identificó la necesidad de mejorar la distribución de tareas, aumentar la frecuencia de revisión de código y fortalecer la comunicación para acelerar la integración de funcionalidades.                                             |
+| **Sprint Goal & User Stories**      | —                                                                                                                                                                                                                                       |
+| **Sprint 2 Goal**                   | Desarrollar una aplicación móvil funcional en Kotlin, incorporando módulos de autenticación y seguridad, gestión de perfiles y usuarios, administración de hoteles y habitaciones, así como procesamiento de pagos.                     |
+| **Sprint 2 Velocity**               | 2                                                                                                                                                                                                                                       |
+| **Sum of Story Points**             | 2                                                                                                                                                                                                                                       |
 
 ---
 
@@ -4669,31 +4669,49 @@ A continuación, se presenta el Sprint Planning 2, en el que se incluyen las evi
 
 ###### Introducción
 
-El objetivo principal del Sprint 2 es [DESCRIPCIÓN GENERAL DEL OBJETIVO].
+El objetivo principal del Sprint 2 es la implementación del núcleo de seguridad, gestión de perfiles, gestión de hoteles y habitaciones en ambos perfiles (Staff y Guest).
 
-Durante esta iteración se desarrollarán funcionalidades relacionadas con [MÓDULOS O BOUNDED CONTEXTS], permitiendo incrementar el valor funcional de la aplicación y acercar el producto a una versión más completa y operativa.
+Durante esta iteración se desarrollarán funcionalidades relacionadas con IAM (Identity & Access Management), Profiles, Properties Management y Bookings & Payments, permitiendo incrementar el valor funcional de la aplicación y acercar el producto a una versión más completa y operativa mediante la gestión de sesiones seguras y control de acceso.
 
-### Sprint #2 – Sprint Backlog
 
-| **Sprint #** | **User Story** | **Work-Item/Task** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-|--------------|---------------|-------------------|--------|-----------|-----------------|------------------------|-----------------|------------|
-| Sprint 2 | US-XX | UT-01 | [TAREA] | [TÍTULO] | [DESCRIPCIÓN] | [HORAS] | [RESPONSABLE] | Done |
-| Sprint 2 | US-XX | UT-02 | [TAREA] | [TÍTULO] | [DESCRIPCIÓN] | [HORAS] | [RESPONSABLE] | Done |
-| Sprint 2 | US-XX | UT-03 | [TAREA] | [TÍTULO] | [DESCRIPCIÓN] | [HORAS] | [RESPONSABLE] | In Process |
-| Sprint 2 | US-XX | UT-04 | [TAREA] | [TÍTULO] | [DESCRIPCIÓN] | [HORAS] | [RESPONSABLE] | To Review |
-
----
 
 ##### 4.2.2.3. Development Evidence for Sprint Review
 
-| Commit | Autor | Fecha | Rama/Referencia | Mensaje |
-|---------|--------|--------|----------------|----------|
-| [HASH] | [AUTOR] | [FECHA] | [RAMA] | [MENSAJE] |
-| [HASH] | [AUTOR] | [FECHA] | [RAMA] | [MENSAJE] |
-| [HASH] | [AUTOR] | [FECHA] | [RAMA] | [MENSAJE] |
-| [HASH] | [AUTOR] | [FECHA] | [RAMA] | [MENSAJE] |
+| Commit    | Autor          | Fecha      | Rama/Referencia      | Mensaje                                                                                                  |
+| --------- | -------------- | ---------- |----------------------| -------------------------------------------------------------------------------------------------------- |
+| `5a2cfdd` | VB25           | 18/06/2026 | `feature/main`       | cambio de nombre                                                                                         |
+| `96771e5` | VB25           | 18/06/2026 | `feature/main`                 | se AGREGO LOGO                                                                                           |
+| `225ecb4` | VB25           | 18/06/2026 | `feature/main`                 | se AGREGO LOGO                                                                                           |
+| `d908219` | VB25           | 18/06/2026 | `feature/main`                 | fix booking                                                                                              |
+| `5b58562` | VB25           | 18/06/2026 | `feature/main`                 | Fix:Errores booking                                                                                      |
+| `183b2f2` | Marcoandres-Mc | 17/06/2026 | `feature/main`                 | Se agrego booking                                                                                        |
+| `a1f9bc4` | atomdragon1318 | 16/06/2026 | `feature/main`                 | feat(user): update user permissions to include 'admin' role for management and visibility                |
+| `9e41bf5` | atomdragon1318 | 16/06/2026 | `feature/main`                 | feat(profile): update ProfileDetailScreen and ViewModel for improved profile loading and error handling  |
+| `f8bf74b` | atomdragon1318 | 16/06/2026 | `feature/main`                 | feat(profile): add CreateProfileScreen and ViewModel for profile creation                                |
+| `7c71da2` | atomdragon1318 | 16/06/2026 | `feature/main`                 | feat(profile): enhance profile creation and editing screens with email prefill and material3 integration |
+| `d758243` | atomdragon1318 | 15/06/2026 | `feature/main`                 | feat(profile): implement profile detail screen and related navigation logic                              |
+| `0b0b4e9` | u20211d760     | 18/06/2026 | `feature/accomodations-rebase` | feat: refactor accommodation options and update navigation                                               |
+| `396861d` | u20211d760     | 18/06/2026 | `feature/accomodations-rebase` | refactor: replace mock data with repository calls in OptionsViewModel                                    |
+| `69841b6` | u20211d760     | 18/06/2026 | `feature/accomodations-rebase` | refactor: handle optional location and description in HotelListScreen                                    |
+| `eddbd09` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(accommodation): implement room list inventory for guests and hosts                                  |
+| `e0d6b69` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(admin): implement hotel edition screen and administrative viewmodel                                 |
+| `f1ff850` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(accommodation): expand API service and implement room management infrastructure                     |
+| `311df36` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(nav): implement tab-based main navigation and register new administration routes                    |
+| `cdabdca` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(admin): implement room creation and category management                                             |
+| `df48baf` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(admin): implement property registration flow for hosts                                              |
+| `e3e9a4e` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(accommodation): redesign hotel cards for admin management and update RBAC permissions               |
+| `def1952` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | refactor(data): sync accommodation models with backend schema and remove hotel-level pricing             |
+| `5449b6b` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(nav): implement tab-based navigation and fix back navigation flow                                   |
+| `038bf12` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(accommodation): add address, city, and country fields to hotel mock data in HotelListScreen         |
+| `c3a8067` | atomdragon1318 | 14/06/2026 | `feature/chain-admin-dashboard`                | refactor: remove obsolete TODO comment from UserListScreen                                               |
+| `70159fc` | atomdragon1318 | 14/06/2026 | `feature/chain-admin-dashboard`                  | feat(iam): implement TokenManager and user models for authentication flow                                |
+| `87ed41f` | atomdragon1318 | 14/06/2026 | `feature/chain-admin-dashboard`                  | feat(IAM): update accommodation module with new API service and refactor navigation strings              |
+| `354850b` | atomdragon1318 | 14/06/2026 | `feature/chain-admin-dashboard`       | feat: implement AuthInterceptor for JWT token management and update navigation graph                     |
+| `2e94c47` | Carlo211       | 20/06/2026 | `feature/payments`   | feat: connect payments with accommodations                                                               |
+| `f241581` | Carlo211       | 20/06/2026 | `feature/payments`   | Merge remote-tracking branch 'origin/accomodations-rebase' into feature/payments                         |
 
----
+
+![img.png](assets/Chapter-IV/img.png)
 
 ##### 4.2.2.4. Testing Suite Evidence for Sprint Review
 
