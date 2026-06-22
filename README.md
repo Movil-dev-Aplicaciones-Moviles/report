@@ -4657,9 +4657,9 @@ A continuación, se presenta el Sprint Planning 2, en el que se incluyen las evi
 | **Location**                           | Modalidad remota mediante Discord |
 | **Prepared By**                        | Equipo SmartStay |
 | **Attendees (to planning meeting)**    | [INTEGRANTES DEL EQUIPO] |
-| **Sprint n – 1 Review Summary**        | Durante el Sprint 1 se logró publicar la Landing Page institucional del proyecto, desplegar la primera versión funcional del backend y validar la ejecución inicial de la aplicación móvil. |
-| **Sprint n – 1 Retrospective Summary** | Se identificó la necesidad de mejorar la distribución de tareas, aumentar la frecuencia de revisión de código y fortalecer la comunicación para acelerar la integración de funcionalidades. |
-| **Sprint Goal & User Stories**         | — |
+| **Sprint n - 1 Review Summary**        | Durante el Sprint 1 se logró publicar la Landing Page institucional del proyecto, desplegar la primera versión funcional del backend y validar la ejecución inicial de la aplicación móvil. |
+| **Sprint n - 1 Retrospective Summary** | Se identificó la necesidad de mejorar la distribución de tareas, aumentar la frecuencia de revisión de código y fortalecer la comunicación para acelerar la integración de funcionalidades. |
+| **Sprint Goal & User Stories**         | - |
 | **Sprint n Goal**                      | [OBJETIVO DEL SPRINT 2] |
 | **Sprint n Velocity**                  | [VELOCIDAD] |
 | **Sum of Story Points**                | [TOTAL STORY POINTS] |
@@ -4674,7 +4674,7 @@ El objetivo principal del Sprint 2 es [DESCRIPCIÓN GENERAL DEL OBJETIVO].
 
 Durante esta iteración se desarrollarán funcionalidades relacionadas con [MÓDULOS O BOUNDED CONTEXTS], permitiendo incrementar el valor funcional de la aplicación y acercar el producto a una versión más completa y operativa.
 
-### Sprint #2 – Sprint Backlog
+### Sprint #2 - Sprint Backlog
 
 | **Sprint #** | **User Story** | **Work-Item/Task** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
 |--------------|---------------|-------------------|--------|-----------|-----------------|------------------------|-----------------|------------|
@@ -4715,7 +4715,6 @@ Durante este sprint, el equipo realizó actividades de prueba para validar las f
 
 Durante el Sprint 2 se ejecutaron y validaron las funcionalidades desarrolladas dentro de la aplicación móvil SmartStay. Las pruebas se realizaron utilizando Android Studio, dispositivos físicos y servicios desplegados en la nube para verificar la correcta integración entre frontend y backend.
 
-
 ![App Android 1](assets/Chapter-IV/appAndroid1.jpeg)
 ![App Android 2](assets/Chapter-IV/appAndroid2.jpeg)
 ![App Android 3](assets/Chapter-IV/appAndroid3.jpeg)
@@ -4747,13 +4746,29 @@ Durante este sprint se implementaron y/o actualizaron los siguientes servicios R
 
 ##### 4.2.2.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 2 se desplegaron las funcionalidades implementadas tanto en la aplicación móvil como en los servicios backend correspondientes.
+A continuación, se presentan las evidencias del **despliegue de la Landing Page** de Smart Stay, desarrollada y publicada mediante **GitHub Pages**.
 
-El trabajo realizado permitió ampliar las capacidades del sistema mediante la incorporación de nuevas funcionalidades relacionadas con [MÓDULOS IMPLEMENTADOS].
+La landing page fue vinculada directamente con el repositorio del proyecto, permitiendo que la publicación se realice a partir de la rama **main**. De este modo, cada cambio validado en el repositorio puede reflejarse en la versión pública del sitio, asegurando consistencia entre el desarrollo y el entorno desplegado.
 
-La aplicación fue ejecutada y validada utilizando Android Studio y dispositivos físicos, verificando la correcta comunicación con los servicios desplegados y el adecuado comportamiento de las interfaces desarrolladas.
+Gracias a esta configuración, la página quedó disponible públicamente, confirmando el correcto funcionamiento del flujo de despliegue y la integración entre el repositorio y **GitHub Pages**.
 
-Asimismo, se realizaron actualizaciones en la infraestructura de despliegue para garantizar la disponibilidad de los servicios requeridos por la aplicación.
+**URL de la Landing Page: https://movil-dev-aplicaciones-moviles.github.io/landing-page/# **
+
+![LANDING.png](assets/Chapter-IV/LANDING.png)
+
+Como evidencia complementaria, se presenta una captura de la landing page desplegada y accesible desde su URL pública.
+
+A continuación, se presentan las evidencias del **despliegue del Back End** de Smart Stay, publicado en la plataforma **Render**.
+
+El servicio backend fue enlazado con el repositorio principal del proyecto, permitiendo que la plataforma tome el código de la rama **main** para su despliegue en producción. Gracias a esta configuración, el servicio puede mantenerse actualizado de manera consistente con los cambios validados en el repositorio.
+
+Como evidencia del despliegue, se presenta la **URL pública del servicio** junto con una captura de la documentación **Swagger/OpenAPI** ejecutándose correctamente desde el entorno desplegado. Esto confirma que la API se encuentra activa, accesible y lista para ser consumida por los demás componentes del sistema.
+
+**URL del Back End / Swagger: https://application-mobile-backend.onrender.com/swagger/index.html **
+
+![render.png](assets/Chapter-IV/render.png)
+
+La evidencia visual demuestra que el backend fue desplegado correctamente y que sus endpoints pueden consultarse desde la interfaz de Swagger.
 
 ---
 
@@ -4978,6 +4993,8 @@ Los controles de iluminación y temperatura no incluyen descripciones accesibles
 - Registrar cada corrección como un requisito en el backlog (EPIC/US) e incluir criterios de aceptación claros para QA.  
 - Priorizar las fichas de severidad 3 para el próximo sprint de refinamiento.  
 - Incluir pruebas de accesibilidad y pruebas en dispositivos reales distribuidos vía Firebase App Distribution como parte del plan de validación.
+
+
 
 
 ## Conclusiones y recomendaciones
