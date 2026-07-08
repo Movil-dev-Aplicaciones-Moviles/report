@@ -4822,6 +4822,192 @@ Gracias a estas prácticas, el equipo mantuvo un flujo de trabajo organizado y l
 
 ![insights-sprint2.png](assets/Chapter-IV/insights-sprint2.png)
 
+
+#### 4.2.3. Sprint 3
+
+A continuación, se presenta el Sprint Planning 2, en el que se incluyen las evidencias de planificación y desarrollo de las funcionalidades implementadas durante esta iteración. Asimismo, se documentan los avances del proyecto, las evidencias de pruebas, despliegue y los insights de colaboración del equipo registrados a través de GitHub.
+
+##### 4.2.3.1. Sprint Planning 2
+
+| **Sprint #**                        | Sprint 2                                                                                                                                                                                                                                |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**      | Reunión de planificación orientada a definir las funcionalidades prioritarias para la segunda iteración del proyecto SmartStay, enfocándose en la implementación de nuevas características de negocio y mejoras en la aplicación móvil. |
+| **Date**                            | 15/06/2026                                                                                                                                                                                                                              |
+| **Time**                            | 19:00                                                                                                                                                                                                                                   |
+| **Location**                        | Modalidad remota mediante Discord                                                                                                                                                                                                       |
+| **Prepared By**                     | Equipo SmartStay                                                                                                                                                                                                                        |
+| **Attendees (to planning meeting)** | Herrera Albites, Marcoandres; Montes Ramos, Henry Jaredt; Paico Calderon, July Zelmira; Ramirez Escalante, Carlo Patricio; Verona Flores, Ítalo Sebastián                                                                               |
+| **Sprint 2 Review Summary**         | Durante el Sprint 1 se logró publicar la Landing Page institucional del proyecto, desplegar la primera versión funcional del backend y validar la ejecución inicial de la aplicación móvil.                                             |
+| **Sprint 2 Retrospective Summary**  | Se identificó la necesidad de mejorar la distribución de tareas, aumentar la frecuencia de revisión de código y fortalecer la comunicación para acelerar la integración de funcionalidades.                                             |
+| **Sprint Goal & User Stories**      | —                                                                                                                                                                                                                                       |
+| **Sprint 2 Goal**                   | Desarrollar una aplicación móvil funcional en Kotlin, incorporando módulos de autenticación y seguridad, gestión de perfiles y usuarios, administración de hoteles y habitaciones, así como procesamiento de pagos.                     |
+| **Sprint 2 Velocity**               | 2                                                                                                                                                                                                                                       |
+| **Sum of Story Points**             | 2                                                                                                                                                                                                                                       |
+
+---
+
+##### 4.2.3.2. Sprint Backlog 3
+
+###### Introducción
+
+El objetivo principal del Sprint 3 es la implementación del núcleo de seguridad, gestión de perfiles, gestión de hoteles y habitaciones en ambos perfiles (Staff y Guest).
+
+Durante esta iteración se desarrollarán funcionalidades relacionadas con IAM (Identity & Access Management), Profiles, Properties Management y Bookings & Payments, accomodations permitiendo incrementar el valor funcional de la aplicación y acercar el producto a una versión más completa y operativa mediante la gestión de sesiones seguras y control de acceso.
+
+### Sprint #3 – Sprint Backlog
+
+| **Sprint #** | **User Story** | **Work-Item/Task** | **Id**                              | **Title**                                                           | **Description**                                                                                                       | **Estimation (Hours)** | **Assigned To**                   | **Status** |
+|--------------|----------------|--------------------|-------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------|------------|
+| Sprint 2     | US-02          | UT-01              | Secure login                        | Implementar AuthInterceptor JWT                                     | Desarrollar el interceptor OkHttp para inyección y revocación dinámica de tokens JWT en cada petición autenticada.    | 6                      | Verona Flores, Ítalo Sebastián    | Done       |
+| Sprint 2     | US-02          | UT-02              | Secure login                        | Implementar TokenManager                                            | Crear el gestor de tokens que almacena, recupera y valida el ciclo de vida del JWT en la aplicación móvil.            | 5                      | Verona Flores, Ítalo Sebastián    | Done       |
+| Sprint 2     | US-03          | UT-03              | Profile and role management         | Actualizar permisos de usuario con rol admin                        | Extender el modelo de usuario para incluir el rol `admin` con visibilidad y permisos de gestión diferenciados.        | 4                      | Verona Flores, Ítalo Sebastián    | Done       |
+| Sprint 2     | US-03          | UT-04              | Profile and role management         | Implementar ProfileDetailScreen y ViewModel                         | Desarrollar la pantalla de detalle de perfil con lógica de carga de datos y manejo de errores desde el ViewModel.     | 5                      | Verona Flores, Ítalo Sebastián    | Done       |
+| Sprint 2     | US-03          | UT-05              | Profile and role management         | Implementar CreateProfileScreen y ViewModel                         | Crear la pantalla y ViewModel para el flujo de creación de perfil de usuario con prellenado de email.                 | 5                      | Verona Flores, Ítalo Sebastián    | Done       |
+| Sprint 2     | US-03          | UT-06              | Profile and role management         | Integrar Material3 en pantallas de perfil                           | Refactorizar las pantallas de creación y edición de perfil incorporando componentes de Material Design 3.             | 3                      | Verona Flores, Ítalo Sebastián    | Done       |
+| Sprint 2     | US-06          | UT-07              | Room and status management          | Implementar listado de habitaciones para guests y hosts             | Desarrollar la pantalla de inventario de habitaciones con vistas diferenciadas según el rol del usuario autenticado.  | 6                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-06          | UT-08              | Room and status management          | Rediseñar tarjetas de hotel para administración                     | Adaptar el componente de hotel cards incorporando controles de gestión RBAC para el perfil administrador.             | 4                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-06          | UT-09              | Room and status management          | Sincronizar modelos de alojamiento con schema del backend           | Refactorizar los modelos de datos de accommodation eliminando pricing a nivel de hotel y alineándolos con la API.     | 4                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-07          | UT-10              | Centralized reservation management  | Implementar pantalla de creación de habitaciones                    | Desarrollar el formulario y lógica de negocio para el registro de nuevas habitaciones con gestión de categorías.      | 5                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-07          | UT-11              | Centralized reservation management  | Agregar campos de dirección, ciudad y país a hoteles                | Incorporar los campos `address`, `city` y `country` en la pantalla HotelListScreen con datos de prueba actualizados.  | 3                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-08          | UT-12              | Automated digital check-in          | Conectar módulo de pagos con alojamientos                           | Integrar el bounded context de Bookings & Payments con el módulo de accommodations para el flujo de reserva completo. | 6                      | Ramirez Escalante, Carlo Patricio | Done       |
+| Sprint 2     | US-08          | UT-13              | Automated digital check-in          | Merge rama accommodations-rebase en feature/payments                | Resolver conflictos de integración entre la rama de alojamientos y el módulo de pagos garantizando consistencia.      | 3                      | Ramirez Escalante, Carlo Patricio | Done       |
+| Sprint 2     | US-05          | UT-14              | Mobile administrative dashboard     | Implementar pantalla de edición de hotel y ViewModel administrativo | Desarrollar la pantalla de edición de propiedades hoteleras con ViewModel para administración de datos del hotel.     | 5                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-05          | UT-15              | Mobile administrative dashboard     | Implementar flujo de registro de propiedades para hosts             | Desarrollar el flujo completo de alta de nuevas propiedades hoteleras accesible desde el perfil host.                 | 6                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-20          | UT-16              | OTA and booking channel integration | Expandir API service e infraestructura de gestión de habitaciones   | Ampliar el servicio de API con nuevos endpoints y repositorios para la administración completa de habitaciones.       | 5                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-10          | UT-17              | Staff task assignment and tracking  | Implementar navegación por tabs y rutas de administración           | Desarrollar la navegación principal basada en tabs e incorporar las nuevas rutas del módulo de administración.        | 4                      | Paico Calderon, July Zelmira      | Done       |
+| Sprint 2     | US-02          | UT-18              | Secure login                        | Agregar booking al dashboard del staff                              | Incorporar el módulo de booking en la vista principal del staff con acceso desde la navegación inferior.              | 4                      | Herrera Albites, Marcoandres      | Done       |
+| Sprint 2     | US-07          | UT-19              | Centralized reservation management  | Corrección de errores en módulo booking                             | Identificar y resolver errores funcionales en el flujo de booking detectados durante pruebas de integración.          | 4                      | VB25                              | Done       |
+| Sprint 2     | US-24          | UT-20              | Segmented landing page              | Actualizar logo e identidad visual                                  | Incorporar el logotipo actualizado de SmartStay en la aplicación móvil y ajustar el nombre del proyecto.              | 2                      | VB25                              | Done       |
+
+##### 4.2.3.3. Development Evidence for Sprint Review
+
+
+| Commit    | Autor          | Fecha      | Rama/Referencia      | Mensaje                                                                                                  |
+| --------- | -------------- | ---------- |----------------------| -------------------------------------------------------------------------------------------------------- |
+| `5a2cfdd` | VB25           | 18/06/2026 | `feature/main`       | cambio de nombre                                                                                         |
+| `96771e5` | VB25           | 18/06/2026 | `feature/main`                 | se AGREGO LOGO                                                                                           |
+| `225ecb4` | VB25           | 18/06/2026 | `feature/main`                 | se AGREGO LOGO                                                                                           |
+| `d908219` | VB25           | 18/06/2026 | `feature/main`                 | fix booking                                                                                              |
+| `5b58562` | VB25           | 18/06/2026 | `feature/main`                 | Fix:Errores booking                                                                                      |
+| `183b2f2` | Marcoandres-Mc | 17/06/2026 | `feature/main`                 | Se agrego booking                                                                                        |
+| `a1f9bc4` | atomdragon1318 | 16/06/2026 | `feature/main`                 | feat(user): update user permissions to include 'admin' role for management and visibility                |
+| `9e41bf5` | atomdragon1318 | 16/06/2026 | `feature/main`                 | feat(profile): update ProfileDetailScreen and ViewModel for improved profile loading and error handling  |
+| `f8bf74b` | atomdragon1318 | 16/06/2026 | `feature/main`                 | feat(profile): add CreateProfileScreen and ViewModel for profile creation                                |
+| `7c71da2` | atomdragon1318 | 16/06/2026 | `feature/main`                 | feat(profile): enhance profile creation and editing screens with email prefill and material3 integration |
+| `d758243` | atomdragon1318 | 15/06/2026 | `feature/main`                 | feat(profile): implement profile detail screen and related navigation logic                              |
+| `0b0b4e9` | u20211d760     | 18/06/2026 | `feature/accomodations-rebase` | feat: refactor accommodation options and update navigation                                               |
+| `396861d` | u20211d760     | 18/06/2026 | `feature/accomodations-rebase` | refactor: replace mock data with repository calls in OptionsViewModel                                    |
+| `69841b6` | u20211d760     | 18/06/2026 | `feature/accomodations-rebase` | refactor: handle optional location and description in HotelListScreen                                    |
+| `eddbd09` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(accommodation): implement room list inventory for guests and hosts                                  |
+| `e0d6b69` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(admin): implement hotel edition screen and administrative viewmodel                                 |
+| `f1ff850` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(accommodation): expand API service and implement room management infrastructure                     |
+| `311df36` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(nav): implement tab-based main navigation and register new administration routes                    |
+| `cdabdca` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(admin): implement room creation and category management                                             |
+| `df48baf` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(admin): implement property registration flow for hosts                                              |
+| `e3e9a4e` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(accommodation): redesign hotel cards for admin management and update RBAC permissions               |
+| `def1952` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | refactor(data): sync accommodation models with backend schema and remove hotel-level pricing             |
+| `5449b6b` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(nav): implement tab-based navigation and fix back navigation flow                                   |
+| `038bf12` | u20211d760     | 20/06/2026 | `feature/accomodations-rebase` | feat(accommodation): add address, city, and country fields to hotel mock data in HotelListScreen         |
+| `c3a8067` | atomdragon1318 | 14/06/2026 | `feature/chain-admin-dashboard`                | refactor: remove obsolete TODO comment from UserListScreen                                               |
+| `70159fc` | atomdragon1318 | 14/06/2026 | `feature/chain-admin-dashboard`                  | feat(iam): implement TokenManager and user models for authentication flow                                |
+| `87ed41f` | atomdragon1318 | 14/06/2026 | `feature/chain-admin-dashboard`                  | feat(IAM): update accommodation module with new API service and refactor navigation strings              |
+| `354850b` | atomdragon1318 | 14/06/2026 | `feature/chain-admin-dashboard`       | feat: implement AuthInterceptor for JWT token management and update navigation graph                     |
+| `2e94c47` | Carlo211       | 20/06/2026 | `feature/payments`   | feat: connect payments with accommodations                                                               |
+| `f241581` | Carlo211       | 20/06/2026 | `feature/payments`   | Merge remote-tracking branch 'origin/accomodations-rebase' into feature/payments                         |
+
+
+![img.png](assets/Chapter-IV/img.png)
+
+##### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+###### Evidencia de la Suite de Pruebas para la Revisión del Sprint
+
+Durante este sprint, el equipo realizó actividades de prueba para validar las funcionalidades desarrolladas, asegurando su correcto funcionamiento tanto a nivel de lógica de negocio como de experiencia de usuario.
+
+| Elemento evaluado | Tipo de prueba | Resultado esperado | Estado |
+|---|---|---|---|
+| [FUNCIONALIDAD] | Prueba unitaria | [RESULTADO] | Aprobado |
+| [FUNCIONALIDAD] | Prueba de integración | [RESULTADO] | Aprobado |
+| [FUNCIONALIDAD] | Validación de interfaz | [RESULTADO] | Aprobado |
+| [FUNCIONALIDAD] | Prueba funcional | [RESULTADO] | Aprobado |
+
+---
+
+##### 4.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 2 se ejecutaron y validaron las funcionalidades desarrolladas dentro de la aplicación móvil SmartStay. Las pruebas se realizaron utilizando Android Studio, dispositivos físicos y servicios desplegados en la nube para verificar la correcta integración entre frontend y backend.
+
+![App Android 1](assets/Chapter-IV/appAndroid1.jpeg)
+![App Android 2](assets/Chapter-IV/appAndroid2.jpeg)
+![App Android 3](assets/Chapter-IV/appAndroid3.jpeg)
+![App Android 4](assets/Chapter-IV/appAndroid4.jpeg)
+![App Android 5](assets/Chapter-IV/appAndroid5.jpeg)
+![App Android 6](assets/Chapter-IV/appAndroid6.jpeg)
+![App Android 7](assets/Chapter-IV/appAndroid7.jpeg)
+![App Android 8](assets/Chapter-IV/appAndroid8.jpeg)
+
+---
+
+##### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante este sprint se actualizó el bounded context de IAM/Authentication, incorporando mejoras relacionadas con la autenticación de usuarios y la gestión de roles dentro del sistema. La documentación de los servicios REST fue verificada mediante Swagger/OpenAPI, donde se evidencian los endpoints disponibles para el inicio de sesión y registro de usuarios.
+
+**Authentication**: Este bounded context gestiona la autenticación de usuarios y el control de acceso basado en roles dentro de SmartStay. Sus servicios permiten registrar nuevos usuarios e iniciar sesión en la aplicación, retornando la información necesaria para identificar el rol del usuario y habilitar las funcionalidades correspondientes según sus permisos.
+
+![swagerautenticacion.png](assets/Chapter-IV/swagerautenticacion.png)
+
+Asimismo, durante el sprint se trabajó con la lógica de roles para diferenciar el acceso de los distintos tipos de usuario del sistema, como Guest, Admin y ChainAdmin, permitiendo controlar qué secciones y acciones están disponibles para cada perfil dentro de la aplicación.
+
+##### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+A continuación, se presentan las evidencias del **despliegue de la Landing Page** de Smart Stay, desarrollada y publicada mediante **GitHub Pages**.
+
+La landing page fue vinculada directamente con el repositorio del proyecto, permitiendo que la publicación se realice a partir de la rama **main**. De este modo, cada cambio validado en el repositorio puede reflejarse en la versión pública del sitio, asegurando consistencia entre el desarrollo y el entorno desplegado.
+
+Gracias a esta configuración, la página quedó disponible públicamente, confirmando el correcto funcionamiento del flujo de despliegue y la integración entre el repositorio y **GitHub Pages**.
+
+**URL de la Landing Page: https://movil-dev-aplicaciones-moviles.github.io/landing-page/# **
+
+![LANDING.png](assets/Chapter-IV/LANDING.png)
+
+Como evidencia complementaria, se presenta una captura de la landing page desplegada y accesible desde su URL pública.
+
+A continuación, se presentan las evidencias del **despliegue del Back End** de Smart Stay, publicado en la plataforma **Render**.
+
+El servicio backend fue enlazado con el repositorio principal del proyecto, permitiendo que la plataforma tome el código de la rama **main** para su despliegue en producción. Gracias a esta configuración, el servicio puede mantenerse actualizado de manera consistente con los cambios validados en el repositorio.
+
+Como evidencia del despliegue, se presenta la **URL pública del servicio** junto con una captura de la documentación **Swagger/OpenAPI** ejecutándose correctamente desde el entorno desplegado. Esto confirma que la API se encuentra activa, accesible y lista para ser consumida por los demás componentes del sistema.
+
+**URL del Back End / Swagger: https://application-mobile-backend.onrender.com/swagger/index.html **
+
+![render.png](assets/Chapter-IV/render.png)
+
+La evidencia visual demuestra que el backend fue desplegado correctamente y que sus endpoints pueden consultarse desde la interfaz de Swagger.
+
+---
+
+##### 4.2.3.8. Team Collaboration Insights during Sprint
+
+Las actividades de desarrollo correspondientes al Sprint 2 fueron ejecutadas de manera colaborativa por todos los integrantes del equipo.
+
+Acciones de colaboración destacadas:
+
+- Se continuó utilizando GitHub como herramienta principal para el control de versiones y seguimiento del avance.
+- Se gestionaron ramas específicas para cada funcionalidad desarrollada.
+- Se realizaron commits frecuentes y descriptivos para facilitar la trazabilidad de cambios.
+- Se utilizaron Pull Requests para la integración controlada de nuevas funcionalidades.
+- Se llevaron a cabo revisiones de código entre miembros del equipo.
+- Se realizaron reuniones de seguimiento para resolver bloqueos y coordinar avances.
+
+Gracias a estas prácticas, el equipo mantuvo un flujo de trabajo organizado y logró integrar exitosamente las funcionalidades desarrolladas durante el Sprint 2.
+
+![insights-sprint2.png](assets/Chapter-IV/insights-sprint2.png)
+
+
+
+
+
+
 ### 4.3. Validation Interviews
 
 #### 4.3.1. Diseño de Entrevistas
