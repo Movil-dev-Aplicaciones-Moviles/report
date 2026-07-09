@@ -5048,6 +5048,8 @@ En tercer y último lugar, se considera importante fortalecer la documentación 
 
 ### Video About the product
 
+Link del video About the product: https://youtu.be/m7hbZUlO3tg
+
 ### Video About the team
 
 ## Glosario
