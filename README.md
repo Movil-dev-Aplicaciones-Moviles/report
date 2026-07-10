@@ -4787,7 +4787,6 @@ Durante este sprint se actualizó el bounded context de IAM/Authentication, inco
 
 **Authentication**: Este bounded context gestiona la autenticación de usuarios y el control de acceso basado en roles dentro de SmartStay. Sus servicios permiten registrar nuevos usuarios e iniciar sesión en la aplicación, retornando la información necesaria para identificar el rol del usuario y habilitar las funcionalidades correspondientes según sus permisos.
 
-![swagerautenticacion.png](assets/Chapter-IV/swagerautenticacion.png)
 
 Asimismo, durante el sprint se trabajó con la lógica de roles para diferenciar el acceso de los distintos tipos de usuario del sistema, como Guest, Admin y ChainAdmin, permitiendo controlar qué secciones y acciones están disponibles para cada perfil dentro de la aplicación.
 
