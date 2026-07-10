@@ -4970,14 +4970,11 @@ Los flujos ejecutados fueron los siguientes:
 - Validación de errores de conexión y datos inválidos.
 - Navegación final entre módulos principales de la aplicación.
 
-![Sprint 3 App 1](assets/Chapter-IV/sprint3-app-1.jpeg)
-![Sprint 3 App 2](assets/Chapter-IV/sprint3-app-2.jpeg)
-![Sprint 3 App 3](assets/Chapter-IV/sprint3-app-3.jpeg)
-![Sprint 3 App 4](assets/Chapter-IV/sprint3-app-4.jpeg)
-![Sprint 3 App 5](assets/Chapter-IV/sprint3-app-5.jpeg)
-![Sprint 3 App 6](assets/Chapter-IV/sprint3-app-6.jpeg)
-![Sprint 3 App 7](assets/Chapter-IV/sprint3-app-7.jpeg)
-![Sprint 3 App 8](assets/Chapter-IV/sprint3-app-8.jpeg)
+![Sprint 3 App 1](assets/Chapter-IV/sprint3-app-1.png)
+![Sprint 3 App 2](assets/Chapter-IV/sprint3-app-2.png)
+![Sprint 3 App 3](assets/Chapter-IV/sprint3-app-3.png)
+![Sprint 3 App 4](assets/Chapter-IV/sprint3-app-4.png)
+
 
 ---
 
