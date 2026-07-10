@@ -4997,7 +4997,6 @@ Los servicios documentados fueron:
 
 La documentación fue revisada mediante Swagger/OpenAPI, verificando que los endpoints respondan correctamente y puedan ser consumidos desde la aplicación móvil.
 
-![sprint3-swagger-services.png](assets/Chapter-IV/sprint3-swagger-services.png)
 
 Además, se verificó que los servicios mantengan una estructura coherente en sus respuestas, utilizando códigos de estado HTTP apropiados y mensajes comprensibles para los casos de éxito y error.
 
