@@ -4834,7 +4834,6 @@ Acciones de colaboración destacadas:
 
 Gracias a estas prácticas, el equipo mantuvo un flujo de trabajo organizado y logró integrar exitosamente las funcionalidades desarrolladas durante el Sprint 2.
 
-![insights-sprint2.png](assets/Chapter-IV/insights-sprint2.png)
 
 
 
@@ -5014,21 +5013,18 @@ En primer lugar, se verificó que la Landing Page se encuentre publicada correct
 **URL de la Landing Page:**  
 https://movil-dev-aplicaciones-moviles.github.io/landing-page/#
 
-![sprint3-landing-deployment.png](assets/Chapter-IV/sprint3-landing-deployment.png)
 
 Asimismo, se validó el despliegue del backend en Render, confirmando que los servicios principales se encuentren activos y accesibles desde la documentación Swagger/OpenAPI.
 
 **URL del Back End / Swagger:**  
 https://application-mobile-backend.onrender.com/swagger/index.html
 
-![sprint3-render-deployment.png](assets/Chapter-IV/sprint3-render-deployment.png)
 
 Finalmente, se generó una versión final de la aplicación móvil en formato APK para su ejecución y validación. Esta versión contiene los módulos integrados y fue utilizada para la demostración final del producto.
 
 **Repositorio del APK:**  
 https://github.com/Movil-dev-Aplicaciones-Moviles/APK.git
 
-![sprint3-apk-build.png](assets/Chapter-IV/sprint3-apk-build.png)
 
 Con estas evidencias, se confirma que SmartStay cuenta con una landing page pública, servicios backend desplegados y una aplicación móvil lista para ser presentada como producto final del curso.
 
